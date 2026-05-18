@@ -1,0 +1,3096 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fensterreinigung Berlin – 80°C Heißwasser, kein Gerüst | JR</title>
+  <meta name="description" content="Fensterreinigung Berlin: 80°C Heißwasser, ohne Chemie, bis 21m vom Boden. Foto senden → Festpreis noch heute. Privat &amp; Gewerbe." />
+  <link rel="canonical" href="https://premium-fensterreinigung.de/" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Phosphor Icons -->
+  <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2/src/regular/style.css" />
+
+  <!-- Swiper.js -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <style>
+    /* ============================================
+       CSS Custom Properties
+    ============================================ */
+    :root {
+      --bg:              #0A0A0A;
+      --background:      #0A0A0A;
+      --surface1:        #111111;
+      --surface2:        #1A1A1A;
+      --surface3:        #0D1B2A;
+      --surface3-mid:    #0F2540;
+
+      --border:          rgba(255,255,255,0.06);
+      --border-visible:  rgba(255,255,255,0.12);
+
+      --text1:           #FFFFFF;
+      --text2:           #94A3B8;
+      --text3:           #64748B;
+      --text4:           #475569;
+
+      --accent:          #1a56db;
+      --accent-dark:     #0e3a9e;
+      --accent-subtle:   rgba(26,86,219,0.10);
+      --accent-gradient: linear-gradient(135deg, #1a56db 0%, #0e3a9e 100%);
+
+      --glass-bg:        rgba(17,17,17,0.60);
+      --glass-blur:      blur(12px);
+
+      --success:         #22C55E;
+      --whatsapp:        #25D366;
+
+      --shadow-card:     0 1px 0 rgba(255,255,255,0.05) inset, 0 4px 24px rgba(0,0,0,0.4);
+      --shadow-raised:   0 8px 32px rgba(0,0,0,0.5), 0 1px 0 rgba(255,255,255,0.08) inset;
+      --shadow-accent-glow: 0 0 32px rgba(26,86,219,0.25), 0 8px 32px rgba(0,0,0,0.5);
+      --shadow-whatsapp: 0 4px 16px rgba(37,211,102,0.4);
+
+      --space-2xs: 2px;
+      --space-xs:  4px;
+      --space-sm:  8px;
+      --space-md:  16px;
+      --space-lg:  24px;
+      --space-xl:  32px;
+      --space-2xl: 48px;
+      --space-3xl: 64px;
+      --space-4xl: 96px;
+
+      --radius-element:   4px;
+      --radius-control:   8px;
+      --radius-component: 12px;
+      --radius-container: 16px;
+      --radius-pill:      999px;
+
+      --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+
+      --ease:        cubic-bezier(0.4, 0, 0.2, 1);
+      --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+      --duration-fast:   150ms;
+      --duration-normal: 250ms;
+      --duration-slow:   400ms;
+    }
+
+    /* ============================================
+       Reset & Base
+    ============================================ */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--bg);
+      color: var(--text2);
+      font-family: var(--font-sans);
+      font-size: 16px;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    img { max-width: 100%; display: block; }
+    a { text-decoration: none; color: inherit; }
+
+    .container {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 var(--space-lg);
+    }
+
+    /* ============================================
+       Typography
+    ============================================ */
+    h1, h2, h3, h4 {
+      color: var(--text1);
+      line-height: 1.15;
+    }
+
+    .display {
+      font-size: clamp(40px, 6vw, 72px);
+      font-weight: 700;
+      letter-spacing: -0.03em;
+      line-height: 1.05;
+    }
+
+    h1 { font-size: clamp(32px, 4vw, 48px); font-weight: 700; letter-spacing: -0.02em; }
+    h2 { font-size: clamp(26px, 3vw, 36px); font-weight: 600; letter-spacing: -0.02em; }
+    h3 { font-size: 22px; font-weight: 600; letter-spacing: -0.01em; }
+    h4 { font-size: 17px; font-weight: 600; }
+
+    .label {
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--accent);
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: var(--space-sm);
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: var(--space-md);
+    }
+
+    .eyebrow::before {
+      content: '';
+      width: 24px;
+      height: 2px;
+      background: var(--accent);
+      flex-shrink: 0;
+    }
+
+    /* ============================================
+       Buttons
+    ============================================ */
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: var(--space-sm);
+      padding: 14px 28px;
+      background: var(--accent-gradient);
+      color: #fff;
+      font-family: var(--font-sans);
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      border-radius: var(--radius-control);
+      border: none;
+      cursor: pointer;
+      transition: filter var(--duration-fast) var(--ease),
+                  transform var(--duration-fast) var(--ease),
+                  box-shadow var(--duration-normal) var(--ease);
+    }
+    .btn-primary:hover {
+      filter: brightness(1.15);
+      transform: translateY(-1px);
+      box-shadow: var(--shadow-accent-glow);
+    }
+    .btn-primary:active { transform: translateY(0); filter: brightness(0.95); }
+
+    .btn-secondary {
+      display: inline-flex;
+      align-items: center;
+      gap: var(--space-sm);
+      padding: 14px 28px;
+      background: transparent;
+      color: var(--text1);
+      font-family: var(--font-sans);
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      border-radius: var(--radius-control);
+      border: 1px solid rgba(255,255,255,0.20);
+      cursor: pointer;
+      transition: border-color var(--duration-fast) var(--ease),
+                  background var(--duration-fast) var(--ease);
+    }
+    .btn-secondary:hover {
+      border-color: rgba(255,255,255,0.40);
+      background: rgba(255,255,255,0.05);
+    }
+
+    /* ============================================
+       Scroll Animations
+    ============================================ */
+    .animate-on-scroll {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity var(--duration-slow) var(--ease),
+                  transform var(--duration-slow) var(--ease);
+    }
+    .animate-on-scroll.visible { opacity: 1; transform: translateY(0); }
+
+    .animate-delay-1 { transition-delay: 0.1s; }
+    .animate-delay-2 { transition-delay: 0.2s; }
+    .animate-delay-3 { transition-delay: 0.3s; }
+    .animate-delay-4 { transition-delay: 0.4s; }
+
+    /* ============================================
+       Section Spacing
+    ============================================ */
+    .section {
+      padding: var(--space-4xl) 0;
+    }
+    @media (max-width: 768px) {
+      .section { padding: var(--space-2xl) 0; }
+    }
+
+    .section-dark { background: var(--surface3); }
+    .section-surface { background: var(--surface1); }
+
+    /* ============================================
+       NAV
+    ============================================ */
+    .nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      padding: 18px 0;
+      background: rgba(10,10,10,0.85);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border);
+      transition: background var(--duration-normal) var(--ease),
+                  border-color var(--duration-normal) var(--ease);
+    }
+
+    .nav-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 var(--space-lg);
+    }
+
+    .nav-logo {
+      display: flex;
+      align-items: center;
+      gap: var(--space-sm);
+      font-size: 17px;
+      font-weight: 700;
+      color: var(--text1);
+      letter-spacing: -0.02em;
+    }
+
+    .nav-logo img {
+      height: 36px;
+      width: auto;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: var(--space-xl);
+      list-style: none;
+    }
+
+    .nav-links a {
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--text2);
+      transition: color var(--duration-fast) var(--ease);
+    }
+    .nav-links a:hover { color: var(--text1); }
+
+    .nav-cta {
+      display: flex;
+      align-items: center;
+      gap: var(--space-sm);
+      padding: 10px 20px;
+      background: var(--accent-gradient);
+      color: #fff;
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      border-radius: var(--radius-control);
+      transition: filter var(--duration-fast) var(--ease),
+                  transform var(--duration-fast) var(--ease);
+    }
+    .nav-cta:hover { filter: brightness(1.15); transform: translateY(-1px); }
+
+    .nav-hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+      padding: var(--space-sm);
+      background: none;
+      border: none;
+    }
+    .nav-hamburger span {
+      display: block;
+      width: 22px;
+      height: 2px;
+      background: var(--text1);
+      border-radius: 2px;
+      transition: transform var(--duration-normal) var(--ease),
+                  opacity var(--duration-fast) var(--ease);
+    }
+
+    .nav-mobile {
+      display: none;
+      flex-direction: column;
+      gap: 0;
+      background: var(--surface1);
+      border-bottom: 1px solid var(--border);
+      padding: var(--space-md) 0;
+    }
+    .nav-mobile.open { display: flex; }
+    .nav-mobile a {
+      padding: 12px var(--space-lg);
+      font-size: 15px;
+      font-weight: 500;
+      color: var(--text2);
+      transition: color var(--duration-fast) var(--ease),
+                  background var(--duration-fast) var(--ease);
+    }
+    .nav-mobile a:hover { color: var(--text1); background: var(--surface2); }
+
+    @media (max-width: 900px) {
+      .nav-links, .nav-cta { display: none; }
+      .nav-hamburger { display: flex; }
+    }
+
+    /* ============================================
+       HERO
+    ============================================ */
+    .hero {
+      position: relative;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+      padding-top: 80px;
+    }
+
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      background-image: url('../assets/IMG_7849.jpg.webp');
+      background-size: cover;
+      background-position: center 30%;
+    }
+
+    .hero-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        to bottom,
+        rgba(0,0,0,0.30) 0%,
+        rgba(10,10,10,0.75) 60%,
+        rgba(10,10,10,0.95) 100%
+      );
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      width: 100%;
+      padding: var(--space-4xl) 0;
+    }
+
+    .hero-inner {
+      max-width: 800px;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: var(--space-sm);
+      padding: 6px 14px;
+      background: var(--accent-subtle);
+      border: 1px solid rgba(26,86,219,0.25);
+      border-radius: var(--radius-pill);
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: #6b9ff7;
+      margin-bottom: var(--space-lg);
+    }
+
+    .hero h1 {
+      font-size: clamp(36px, 5.5vw, 68px);
+      font-weight: 700;
+      letter-spacing: -0.03em;
+      line-height: 1.05;
+      color: var(--text1);
+      margin-bottom: var(--space-lg);
+    }
+
+    .hero h1 span {
+      background: var(--accent-gradient);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .hero-sub {
+      font-size: 18px;
+      line-height: 1.65;
+      color: rgba(255,255,255,0.72);
+      max-width: 620px;
+      margin-bottom: var(--space-2xl);
+    }
+
+    .hero-ctas {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-md);
+      margin-bottom: var(--space-xl);
+    }
+
+    .hero-trust {
+      display: flex;
+      align-items: center;
+      gap: var(--space-md);
+      flex-wrap: wrap;
+    }
+
+    .hero-trust-stars {
+      display: flex;
+      align-items: center;
+      gap: var(--space-xs);
+      font-size: 14px;
+      color: rgba(255,255,255,0.65);
+    }
+
+    .stars {
+      color: #FCA311;
+      letter-spacing: 1px;
+    }
+
+    .trust-dot {
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.25);
+    }
+
+    /* ============================================
+       STATS STRIP
+    ============================================ */
+    .stats-strip {
+      background: var(--surface1);
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      padding: var(--space-xl) 0;
+    }
+
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: var(--space-lg);
+    }
+
+    .stat-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: var(--space-md) var(--space-sm);
+      border-right: 1px solid var(--border);
+    }
+    .stat-item:last-child { border-right: none; }
+
+    .stat-number {
+      font-size: clamp(28px, 3.5vw, 42px);
+      font-weight: 700;
+      color: var(--accent);
+      letter-spacing: -0.03em;
+      line-height: 1.1;
+    }
+
+    .stat-label {
+      font-size: 13px;
+      color: var(--text3);
+      margin-top: var(--space-xs);
+    }
+
+    @media (max-width: 640px) {
+      .stats-grid { grid-template-columns: repeat(2, 1fr); }
+      .stat-item:nth-child(2) { border-right: none; }
+    }
+
+    /* ============================================
+       PROBLEM SECTION
+    ============================================ */
+    .problem-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: var(--space-3xl);
+      align-items: center;
+    }
+
+    .problem-text h2 {
+      margin-bottom: var(--space-lg);
+    }
+
+    .problem-text p {
+      margin-bottom: var(--space-md);
+      color: var(--text2);
+    }
+
+    .problem-visual {
+      position: relative;
+      border-radius: var(--radius-container);
+      overflow: hidden;
+    }
+
+    .problem-visual img {
+      width: 100%;
+      height: 480px;
+      object-fit: cover;
+      border-radius: var(--radius-container);
+    }
+
+    .problem-tag {
+      position: absolute;
+      bottom: var(--space-lg);
+      left: var(--space-lg);
+      background: var(--glass-bg);
+      backdrop-filter: var(--glass-blur);
+      -webkit-backdrop-filter: var(--glass-blur);
+      border: 1px solid var(--border-visible);
+      border-radius: var(--radius-component);
+      padding: var(--space-md) var(--space-lg);
+    }
+
+    .problem-tag-title {
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--text1);
+    }
+
+    .problem-tag-sub {
+      font-size: 13px;
+      color: var(--text3);
+      margin-top: 2px;
+    }
+
+    @media (max-width: 768px) {
+      .problem-grid { grid-template-columns: 1fr; }
+    }
+
+    /* ============================================
+       USP SECTION
+    ============================================ */
+    .usp-section {
+      background: var(--surface3);
+    }
+
+    .usp-header {
+      text-align: center;
+      max-width: 680px;
+      margin: 0 auto var(--space-3xl);
+    }
+
+    .usp-header h2 { margin-bottom: var(--space-md); }
+
+    .usp-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: var(--space-lg);
+      margin-bottom: var(--space-3xl);
+    }
+
+    .usp-card {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid var(--border-visible);
+      border-radius: var(--radius-container);
+      padding: var(--space-2xl);
+      transition: border-color var(--duration-normal) var(--ease),
+                  background var(--duration-normal) var(--ease);
+    }
+
+    .usp-card:hover {
+      border-color: rgba(26,86,219,0.30);
+      background: rgba(26,86,219,0.05);
+    }
+
+    .usp-icon {
+      width: 48px;
+      height: 48px;
+      border-radius: var(--radius-component);
+      background: var(--accent-subtle);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: var(--space-lg);
+      font-size: 22px;
+      color: var(--accent);
+    }
+
+    .usp-card h3 { margin-bottom: var(--space-sm); }
+
+    .usp-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: var(--space-xs);
+      margin-top: var(--space-md);
+      padding: 4px 10px;
+      background: var(--accent-subtle);
+      border-radius: var(--radius-pill);
+      font-size: 12px;
+      font-weight: 600;
+      color: #6b9ff7;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    /* Owner card */
+    .owner-card {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid var(--border-visible);
+      border-radius: var(--radius-container);
+      padding: var(--space-2xl);
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: var(--space-xl);
+      align-items: center;
+    }
+
+    .owner-photo {
+      width: 96px;
+      height: 96px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid rgba(26,86,219,0.40);
+    }
+
+    .owner-info h3 { margin-bottom: var(--space-xs); }
+
+    .owner-trust {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-sm);
+      margin-top: var(--space-md);
+    }
+
+    .trust-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 5px 12px;
+      background: var(--surface3-mid);
+      border: 1px solid var(--border-visible);
+      border-radius: var(--radius-pill);
+      font-size: 12px;
+      font-weight: 500;
+      color: var(--text2);
+    }
+    .trust-chip i { color: var(--accent); font-size: 13px; }
+
+    @media (max-width: 768px) {
+      .usp-grid { grid-template-columns: 1fr; }
+      .owner-card { grid-template-columns: 1fr; text-align: center; }
+      .owner-photo { margin: 0 auto; }
+      .owner-trust { justify-content: center; }
+    }
+
+    /* ============================================
+       SERVICES SECTION
+    ============================================ */
+    .services-section { background: var(--bg); }
+
+    .services-header {
+      text-align: center;
+      max-width: 600px;
+      margin: 0 auto var(--space-3xl);
+    }
+    .services-header h2 { margin-bottom: var(--space-md); }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: var(--space-md);
+    }
+
+    .service-card {
+      background: var(--surface1);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-component);
+      padding: var(--space-lg);
+      cursor: pointer;
+      transition: border-color var(--duration-normal) var(--ease),
+                  box-shadow var(--duration-normal) var(--ease),
+                  transform var(--duration-normal) var(--ease);
+    }
+    .service-card:hover {
+      border-color: var(--border-visible);
+      box-shadow: var(--shadow-raised);
+      transform: translateY(-2px);
+    }
+
+    .service-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: var(--radius-control);
+      background: var(--accent-subtle);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: var(--space-md);
+      font-size: 19px;
+      color: var(--accent);
+    }
+
+    .service-card h3 {
+      font-size: 16px;
+      font-weight: 600;
+      margin-bottom: var(--space-sm);
+      color: var(--text1);
+    }
+
+    .service-card p {
+      font-size: 14px;
+      color: var(--text3);
+      line-height: 1.6;
+    }
+
+    .service-card-footer {
+      margin-top: var(--space-md);
+      display: flex;
+      align-items: center;
+      gap: var(--space-xs);
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--accent);
+      letter-spacing: 0.02em;
+    }
+
+    .service-badge {
+      display: inline-block;
+      padding: 2px 8px;
+      background: rgba(34,197,94,0.12);
+      border-radius: var(--radius-pill);
+      font-size: 11px;
+      font-weight: 600;
+      color: #4ade80;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      margin-left: auto;
+    }
+
+    /* Featured Haupt-Service */
+    .service-card-featured {
+      grid-column: 1 / -1;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: var(--space-2xl);
+      align-items: center;
+      background: var(--surface3);
+      border: 1px solid rgba(26,86,219,0.20);
+      border-radius: var(--radius-container);
+      padding: var(--space-2xl);
+      margin-bottom: var(--space-sm);
+      cursor: pointer;
+      transition: border-color var(--duration-normal) var(--ease),
+                  box-shadow var(--duration-normal) var(--ease);
+    }
+    .service-card-featured:hover {
+      border-color: rgba(26,86,219,0.40);
+      box-shadow: var(--shadow-accent-glow);
+    }
+    .service-card-featured .service-icon {
+      width: 56px; height: 56px;
+      font-size: 26px;
+      background: rgba(26,86,219,0.15);
+    }
+    .service-card-featured h3 {
+      font-size: clamp(20px,2.5vw,26px);
+      font-weight: 700;
+      color: var(--text1);
+      margin-bottom: var(--space-sm);
+    }
+    .service-card-featured p { font-size: 15px; color: var(--text2); line-height: 1.65; }
+    .service-card-featured .service-card-footer { margin-top: var(--space-lg); font-size: 14px; }
+    .service-featured-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: var(--space-xs);
+      padding: 3px 12px;
+      background: var(--accent-subtle);
+      border: 1px solid rgba(26,86,219,0.30);
+      border-radius: var(--radius-pill);
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--accent);
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      margin-bottom: var(--space-md);
+    }
+    .service-card-featured-img {
+      border-radius: var(--radius-component);
+      overflow: hidden;
+      aspect-ratio: 16/10;
+    }
+    .service-card-featured-img img {
+      width: 100%; height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    .services-secondary { margin-bottom: var(--space-sm); }
+    .services-tertiary-label {
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--text3);
+      margin: var(--space-xl) 0 var(--space-md);
+    }
+
+    @media (max-width: 900px) {
+      .services-grid { grid-template-columns: repeat(2, 1fr); }
+      .service-card-featured { grid-template-columns: 1fr; }
+      .service-card-featured-img { display: none; }
+    }
+    @media (max-width: 540px) { .services-grid { grid-template-columns: 1fr; } }
+
+    /* ============================================
+       FOCUS VISIBLE (A11y)
+    ============================================ */
+    :focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 3px;
+      border-radius: var(--radius-element);
+    }
+
+    /* ============================================
+       VORHER/NACHHER SLIDER
+    ============================================ */
+    .slider-section { background: var(--surface3); }
+
+    .slider-header {
+      text-align: center;
+      max-width: 560px;
+      margin: 0 auto var(--space-3xl);
+    }
+    .slider-header h2 { margin-bottom: var(--space-md); }
+
+    .slider-wrapper { position: relative; }
+
+    .slider-card {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid var(--border-visible);
+      border-radius: var(--radius-container);
+      overflow: hidden;
+    }
+
+    .slider-split {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 16/9;
+      overflow: hidden;
+    }
+
+    .slider-split-before,
+    .slider-split-after {
+      position: absolute;
+      inset: 0;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .slider-split-after {
+      clip-path: inset(0 50% 0 0);
+    }
+
+    .slider-divider {
+      position: absolute;
+      top: 0; bottom: 0;
+      left: 50%;
+      width: 2px;
+      background: rgba(255,255,255,0.8);
+      transform: translateX(-50%);
+      z-index: 2;
+    }
+
+    .slider-handle {
+      position: absolute;
+      top: 50%; left: 50%;
+      transform: translate(-50%,-50%);
+      width: 36px; height: 36px;
+      border-radius: 50%;
+      background: #fff;
+      display: flex; align-items: center; justify-content: center;
+      z-index: 3;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.4);
+      color: #0A0A0A;
+      font-size: 13px;
+    }
+
+    .slider-label-before,
+    .slider-label-after {
+      position: absolute;
+      bottom: var(--space-md);
+      padding: 4px 10px;
+      background: rgba(0,0,0,0.65);
+      backdrop-filter: blur(8px);
+      border-radius: var(--radius-pill);
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: #fff;
+      z-index: 4;
+    }
+    .slider-label-before { left: var(--space-md); }
+    .slider-label-after  { right: var(--space-md); }
+
+    .slider-caption {
+      padding: var(--space-md) var(--space-lg);
+      font-size: 14px;
+      color: var(--text3);
+      letter-spacing: 0.01em;
+    }
+
+    .swiper-pagination-bullet {
+      background: rgba(255,255,255,0.3) !important;
+    }
+    .swiper-pagination-bullet-active {
+      background: var(--accent) !important;
+    }
+
+    /* ============================================
+       PREISRECHNER
+    ============================================ */
+    .rechner-section { background: var(--surface1); }
+
+    .rechner-inner {
+      max-width: 760px;
+      margin: 0 auto;
+      background: var(--bg);
+      border: 1px solid var(--border-visible);
+      border-radius: var(--radius-container);
+      overflow: hidden;
+    }
+
+    .rechner-tabs {
+      display: flex;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .rechner-tab {
+      flex: 1;
+      padding: 14px var(--space-md);
+      background: transparent;
+      border: none;
+      font-family: var(--font-sans);
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: var(--text3);
+      cursor: pointer;
+      border-bottom: 2px solid transparent;
+      transition: color var(--duration-fast) var(--ease),
+                  border-color var(--duration-fast) var(--ease);
+    }
+    .rechner-tab.active {
+      color: var(--accent);
+      border-bottom-color: var(--accent);
+    }
+
+    .rechner-body { padding: var(--space-2xl); }
+
+    .rechner-panel { display: none; }
+    .rechner-panel.active { display: block; }
+
+    .rechner-field {
+      margin-bottom: var(--space-lg);
+    }
+    .rechner-field label {
+      display: block;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--text2);
+      margin-bottom: var(--space-sm);
+    }
+    .rechner-field-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: var(--space-md);
+    }
+    .rechner-input-group {
+      display: flex;
+      align-items: center;
+      background: var(--surface1);
+      border: 1px solid var(--border-visible);
+      border-radius: var(--radius-control);
+      overflow: hidden;
+      transition: border-color var(--duration-fast) var(--ease);
+    }
+    .rechner-input-group:focus-within { border-color: var(--accent); }
+    .rechner-input-group span {
+      padding: 0 var(--space-md);
+      font-size: 13px;
+      color: var(--text3);
+      white-space: nowrap;
+      background: var(--surface2);
+      align-self: stretch;
+      display: flex;
+      align-items: center;
+    }
+    .rechner-input-group input {
+      flex: 1;
+      padding: 12px var(--space-md);
+      background: transparent;
+      border: none;
+      font-family: var(--font-sans);
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--text1);
+      min-width: 0;
+    }
+    .rechner-input-group input:focus { outline: none; }
+
+    .rechner-checkbox-row {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-sm);
+    }
+    .rechner-checkbox {
+      display: flex;
+      align-items: center;
+      gap: var(--space-md);
+      cursor: pointer;
+      font-size: 14px;
+      color: var(--text2);
+    }
+    .rechner-checkbox input[type="checkbox"] {
+      width: 18px; height: 18px;
+      accent-color: var(--accent);
+      cursor: pointer;
+    }
+
+    .rechner-result {
+      margin-top: var(--space-xl);
+      padding: var(--space-xl);
+      background: var(--surface3);
+      border-radius: var(--radius-component);
+      border: 1px solid rgba(26,86,219,0.20);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: var(--space-md);
+      flex-wrap: wrap;
+    }
+    .rechner-result-label {
+      font-size: 14px;
+      color: var(--text2);
+    }
+    .rechner-result-price {
+      font-size: clamp(28px,4vw,42px);
+      font-weight: 700;
+      color: var(--text1);
+      letter-spacing: -0.02em;
+    }
+    .rechner-result-note {
+      font-size: 12px;
+      color: var(--text3);
+      margin-top: 2px;
+    }
+
+    .rechner-steuer {
+      margin-top: var(--space-md);
+      font-size: 13px;
+      color: var(--accent);
+      display: none;
+    }
+    .rechner-steuer.show { display: flex; align-items: center; gap: var(--space-sm); }
+
+    @media (max-width: 600px) {
+      .rechner-body { padding: var(--space-lg); }
+      .rechner-field-row { grid-template-columns: 1fr; }
+      .rechner-result { flex-direction: column; align-items: flex-start; }
+    }
+
+    /* ============================================
+       KONTAKTFORMULAR
+    ============================================ */
+    .form-section { background: var(--surface3); }
+
+    .form-inner {
+      max-width: 680px;
+      margin: 0 auto;
+    }
+
+    .form-header {
+      text-align: center;
+      margin-bottom: var(--space-3xl);
+    }
+    .form-header h2 { margin-bottom: var(--space-md); }
+
+    .form-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: var(--space-md);
+    }
+
+    .form-field {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-sm);
+    }
+    .form-field.full { grid-column: 1 / -1; }
+
+    .form-field label {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--text2);
+    }
+
+    .form-field select,
+    .form-field input {
+      padding: 13px var(--space-md);
+      background: rgba(0,0,0,0.35);
+      border: 1px solid var(--border-visible);
+      border-radius: var(--radius-control);
+      font-family: var(--font-sans);
+      font-size: 15px;
+      color: var(--text1);
+      transition: border-color var(--duration-fast) var(--ease);
+      -webkit-appearance: none;
+    }
+    .form-field select:focus,
+    .form-field input:focus {
+      outline: none;
+      border-color: var(--accent);
+    }
+    .form-field select { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%2394A3B8' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 14px center; padding-right: 40px; }
+    .form-field select option { background: var(--surface2); }
+
+    .form-field-error {
+      font-size: 12px;
+      color: #f87171;
+      display: none;
+    }
+    .form-field.has-error select,
+    .form-field.has-error input { border-color: #f87171; }
+    .form-field.has-error .form-field-error { display: block; }
+
+    .form-submit-row {
+      margin-top: var(--space-xl);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: var(--space-md);
+    }
+
+    .form-submit-btn {
+      width: 100%;
+      padding: 16px;
+      background: var(--accent-gradient);
+      color: #fff;
+      font-family: var(--font-sans);
+      font-size: 14px;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      border: none;
+      border-radius: var(--radius-control);
+      cursor: pointer;
+      transition: filter var(--duration-fast) var(--ease),
+                  transform var(--duration-fast) var(--ease),
+                  box-shadow var(--duration-normal) var(--ease);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: var(--space-sm);
+    }
+    .form-submit-btn:hover:not(:disabled) {
+      filter: brightness(1.15);
+      transform: translateY(-1px);
+      box-shadow: var(--shadow-accent-glow);
+    }
+    .form-submit-btn:disabled { opacity: 0.65; cursor: not-allowed; transform: none; }
+
+    .form-success {
+      display: none;
+      text-align: center;
+      padding: var(--space-3xl) var(--space-xl);
+    }
+    .form-success.show { display: block; }
+    .form-success-icon {
+      width: 56px; height: 56px;
+      border-radius: 50%;
+      background: rgba(34,197,94,0.12);
+      border: 1px solid rgba(34,197,94,0.30);
+      display: flex; align-items: center; justify-content: center;
+      margin: 0 auto var(--space-lg);
+      font-size: 26px;
+      color: #4ade80;
+    }
+    .form-success h3 { color: var(--text1); margin-bottom: var(--space-sm); }
+    .form-success p { color: var(--text2); font-size: 15px; }
+
+    @media (max-width: 600px) {
+      .form-grid { grid-template-columns: 1fr; }
+      .form-field.full { grid-column: 1; }
+    }
+
+    /* ============================================
+       SEGMENT PATHS
+    ============================================ */
+    .segment-section {
+      background: var(--surface1);
+    }
+
+    .segment-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: var(--space-xl);
+    }
+
+    .segment-card {
+      position: relative;
+      border-radius: var(--radius-container);
+      overflow: hidden;
+      min-height: 520px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+    }
+
+    .segment-card-bg {
+      position: absolute;
+      inset: 0;
+      background-size: cover;
+      background-position: center;
+      transition: transform var(--duration-slow) var(--ease);
+    }
+    .segment-card:hover .segment-card-bg { transform: scale(1.04); }
+
+    .segment-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        to top,
+        rgba(10,10,10,0.92) 0%,
+        rgba(10,10,10,0.50) 50%,
+        rgba(10,10,10,0.15) 100%
+      );
+    }
+
+    .segment-content {
+      position: relative;
+      z-index: 2;
+      padding: var(--space-2xl);
+    }
+
+    .segment-tag {
+      display: inline-flex;
+      padding: 4px 12px;
+      background: var(--accent-subtle);
+      border: 1px solid rgba(26,86,219,0.30);
+      border-radius: var(--radius-pill);
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: #6b9ff7;
+      margin-bottom: var(--space-md);
+    }
+
+    .segment-content h2 {
+      font-size: clamp(22px, 2.5vw, 30px);
+      margin-bottom: var(--space-md);
+    }
+
+    .segment-list {
+      list-style: none;
+      margin-bottom: var(--space-xl);
+    }
+
+    .segment-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: var(--space-sm);
+      font-size: 14px;
+      color: rgba(255,255,255,0.75);
+      margin-bottom: var(--space-sm);
+    }
+
+    .segment-list li::before {
+      content: '';
+      width: 16px;
+      height: 16px;
+      background: var(--accent-subtle);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      margin-top: 2px;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%231a56db'%3E%3Cpath d='M13.5 4.5L6.5 11.5L3 8'/%3E%3C/svg%3E");
+      background-size: 10px;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    .steuer-badge {
+      display: flex;
+      align-items: flex-start;
+      gap: var(--space-sm);
+      background: rgba(26,86,219,0.12);
+      border: 1px solid rgba(26,86,219,0.25);
+      border-radius: var(--radius-component);
+      padding: var(--space-md);
+      margin-bottom: var(--space-xl);
+    }
+
+    .steuer-icon {
+      font-size: 20px;
+      color: var(--accent);
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    .steuer-text {
+      font-size: 13px;
+      color: rgba(255,255,255,0.80);
+      line-height: 1.5;
+    }
+
+    .steuer-text strong {
+      color: var(--text1);
+      display: block;
+      margin-bottom: 2px;
+    }
+
+    @media (max-width: 768px) {
+      .segment-grid { grid-template-columns: 1fr; }
+      .segment-card { min-height: 420px; }
+    }
+
+    /* ============================================
+       SOCIAL PROOF
+    ============================================ */
+    .proof-section { background: var(--bg); }
+
+    .proof-header {
+      text-align: center;
+      margin-bottom: var(--space-3xl);
+    }
+    .proof-header h2 { margin-bottom: var(--space-sm); }
+
+    .proof-rating {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: var(--space-md);
+      margin-top: var(--space-md);
+      flex-wrap: wrap;
+    }
+
+    .rating-number {
+      font-size: 48px;
+      font-weight: 700;
+      color: var(--text1);
+      letter-spacing: -0.03em;
+    }
+
+    .rating-details { text-align: left; }
+
+    .rating-stars { color: #FCA311; font-size: 20px; letter-spacing: 2px; }
+
+    .rating-count { font-size: 14px; color: var(--text3); }
+
+    .review-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: var(--space-md);
+      margin-bottom: var(--space-3xl);
+    }
+
+    .review-card {
+      background: var(--surface1);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-component);
+      padding: var(--space-lg);
+      box-shadow: var(--shadow-card);
+      transition: border-color var(--duration-normal) var(--ease),
+                  box-shadow var(--duration-normal) var(--ease);
+    }
+    .review-card:hover {
+      border-color: var(--border-visible);
+      box-shadow: var(--shadow-raised);
+    }
+
+    .review-stars { color: #FCA311; font-size: 15px; margin-bottom: var(--space-md); }
+
+    .review-text {
+      font-size: 14px;
+      line-height: 1.65;
+      color: var(--text2);
+      margin-bottom: var(--space-md);
+      font-style: italic;
+    }
+
+    .review-author {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--text3);
+    }
+
+    .trust-bar {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: var(--space-xl);
+      padding: var(--space-xl);
+      background: var(--surface1);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-container);
+    }
+
+    .trust-item {
+      display: flex;
+      align-items: center;
+      gap: var(--space-sm);
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--text2);
+    }
+
+    .trust-item i { color: var(--success); font-size: 16px; }
+
+    @media (max-width: 768px) { .review-grid { grid-template-columns: 1fr; } }
+
+    /* ============================================
+       PROCESS
+    ============================================ */
+    .process-section { background: var(--surface3); }
+
+    .process-header {
+      text-align: center;
+      max-width: 560px;
+      margin: 0 auto var(--space-3xl);
+    }
+    .process-header h2 { margin-bottom: var(--space-md); }
+
+    .process-steps {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: var(--space-md);
+      position: relative;
+    }
+
+    .process-step {
+      position: relative;
+      text-align: center;
+      padding: var(--space-xl) var(--space-lg);
+    }
+
+    .process-number {
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      background: var(--accent-gradient);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto var(--space-md);
+      font-size: 18px;
+      font-weight: 700;
+      color: #fff;
+      box-shadow: 0 0 24px rgba(26,86,219,0.30);
+    }
+
+    .process-step h3 {
+      font-size: 16px;
+      margin-bottom: var(--space-sm);
+    }
+
+    .process-step p {
+      font-size: 14px;
+      color: var(--text3);
+      line-height: 1.6;
+    }
+
+    .process-connector {
+      position: absolute;
+      top: calc(var(--space-xl) + 26px);
+      left: 50%;
+      width: 100%;
+      height: 1px;
+      background: linear-gradient(to right, rgba(26,86,219,0.4) 0%, rgba(26,86,219,0.15) 100%);
+      z-index: 0;
+    }
+    .process-step:last-child .process-connector { display: none; }
+
+    @media (max-width: 768px) {
+      .process-steps { grid-template-columns: repeat(2, 1fr); }
+      .process-connector { display: none; }
+    }
+    @media (max-width: 480px) { .process-steps { grid-template-columns: 1fr; } }
+
+    /* ============================================
+       PRICING
+    ============================================ */
+    .pricing-section { background: var(--surface1); }
+
+    .pricing-header {
+      text-align: center;
+      max-width: 560px;
+      margin: 0 auto var(--space-3xl);
+    }
+    .pricing-header h2 { margin-bottom: var(--space-md); }
+
+    .pricing-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: var(--space-lg);
+      margin-bottom: var(--space-2xl);
+    }
+
+    .pricing-card {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-container);
+      overflow: hidden;
+    }
+
+    .pricing-card-header {
+      padding: var(--space-lg) var(--space-xl);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .pricing-card-header h3 {
+      font-size: 17px;
+      margin-bottom: var(--space-xs);
+    }
+
+    .pricing-card-header p {
+      font-size: 13px;
+      color: var(--text3);
+    }
+
+    .pricing-table {
+      padding: var(--space-md) 0;
+    }
+
+    .pricing-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px var(--space-xl);
+      border-bottom: 1px solid var(--border);
+    }
+    .pricing-row:last-child { border-bottom: none; }
+
+    .pricing-service {
+      font-size: 14px;
+      color: var(--text2);
+    }
+
+    .pricing-price {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--text1);
+      white-space: nowrap;
+    }
+
+    .pricing-row.highlight .pricing-service { color: var(--accent); }
+
+    .steuer-box {
+      background: var(--accent-subtle);
+      border: 1px solid rgba(26,86,219,0.25);
+      border-radius: var(--radius-component);
+      padding: var(--space-lg) var(--space-xl);
+      display: flex;
+      align-items: flex-start;
+      gap: var(--space-md);
+      margin-bottom: var(--space-2xl);
+    }
+
+    .steuer-box-icon {
+      font-size: 28px;
+      color: var(--accent);
+      flex-shrink: 0;
+    }
+
+    .steuer-box-text {
+      font-size: 15px;
+      color: var(--text2);
+      line-height: 1.6;
+    }
+
+    .steuer-box-text strong { color: var(--text1); }
+
+    .pricing-cta {
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      gap: var(--space-md);
+      flex-wrap: wrap;
+    }
+
+    @media (max-width: 900px) { .pricing-grid { grid-template-columns: 1fr; } }
+
+    /* ============================================
+       FAQ
+    ============================================ */
+    .faq-section { background: var(--bg); }
+
+    .faq-header {
+      text-align: center;
+      max-width: 560px;
+      margin: 0 auto var(--space-3xl);
+    }
+    .faq-header h2 { margin-bottom: var(--space-md); }
+
+    .faq-list {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .faq-item {
+      border-bottom: 1px solid var(--border);
+    }
+
+    .faq-question {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: var(--space-lg) 0;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--text1);
+      gap: var(--space-md);
+      transition: color var(--duration-fast) var(--ease);
+    }
+    .faq-question:hover { color: #6b9ff7; }
+
+    .faq-icon {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      border: 1px solid var(--border-visible);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      font-size: 14px;
+      color: var(--text3);
+      transition: transform var(--duration-normal) var(--ease),
+                  border-color var(--duration-fast) var(--ease),
+                  color var(--duration-fast) var(--ease);
+    }
+
+    .faq-item.open .faq-icon {
+      transform: rotate(45deg);
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+
+    .faq-answer {
+      overflow: hidden;
+      max-height: 0;
+      transition: max-height var(--duration-slow) var(--ease);
+    }
+
+    .faq-answer-inner {
+      padding-bottom: var(--space-lg);
+      font-size: 15px;
+      color: var(--text2);
+      line-height: 1.7;
+    }
+
+    .faq-item.open .faq-answer { max-height: 400px; }
+
+    /* ============================================
+       FINAL CTA
+    ============================================ */
+    .cta-section {
+      background: var(--surface3);
+    }
+
+    .cta-inner {
+      text-align: center;
+      max-width: 680px;
+      margin: 0 auto;
+    }
+
+    .cta-inner h2 { margin-bottom: var(--space-md); }
+
+    .cta-inner p {
+      font-size: 17px;
+      color: var(--text2);
+      margin-bottom: var(--space-2xl);
+      line-height: 1.65;
+    }
+
+    .cta-buttons {
+      display: flex;
+      justify-content: center;
+      gap: var(--space-md);
+      flex-wrap: wrap;
+      margin-bottom: var(--space-xl);
+    }
+
+    .btn-whatsapp {
+      display: inline-flex;
+      align-items: center;
+      gap: var(--space-sm);
+      padding: 14px 28px;
+      background: var(--whatsapp);
+      color: #fff;
+      font-family: var(--font-sans);
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      border-radius: var(--radius-control);
+      transition: filter var(--duration-fast) var(--ease),
+                  transform var(--duration-fast) var(--ease);
+    }
+    .btn-whatsapp:hover { filter: brightness(1.1); transform: translateY(-1px); }
+
+    .cta-tel {
+      font-size: 15px;
+      color: var(--text3);
+    }
+    .cta-tel a { color: var(--text2); font-weight: 600; }
+    .cta-tel a:hover { color: var(--text1); }
+
+    /* ============================================
+       FOOTER
+    ============================================ */
+    .footer {
+      background: var(--surface1);
+      border-top: 1px solid var(--border);
+      padding: var(--space-2xl) 0;
+    }
+
+    .footer-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: var(--space-md);
+    }
+
+    .footer-brand {
+      font-size: 14px;
+      color: var(--text3);
+    }
+
+    .footer-brand strong { color: var(--text2); }
+
+    .footer-links {
+      display: flex;
+      gap: var(--space-xl);
+      list-style: none;
+    }
+
+    .footer-links a {
+      font-size: 13px;
+      color: var(--text3);
+      transition: color var(--duration-fast) var(--ease);
+    }
+    .footer-links a:hover { color: var(--text2); }
+
+    /* ============================================
+       WHATSAPP FAB
+    ============================================ */
+    .whatsapp-fab {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      width: 56px;
+      height: 56px;
+      border-radius: var(--radius-pill);
+      background: var(--whatsapp);
+      box-shadow: var(--shadow-whatsapp);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 9999;
+      transition: transform var(--duration-fast) var(--ease-spring),
+                  box-shadow var(--duration-normal) var(--ease);
+      text-decoration: none;
+    }
+    .whatsapp-fab:hover {
+      transform: scale(1.1);
+      box-shadow: 0 6px 24px rgba(37,211,102,0.6);
+    }
+    .whatsapp-fab svg {
+      width: 26px;
+      height: 26px;
+      fill: #fff;
+    }
+
+    /* ============================================
+       Utility: Divider
+    ============================================ */
+    .section-divider {
+      width: 48px;
+      height: 3px;
+      background: var(--accent-gradient);
+      border-radius: 2px;
+      margin: var(--space-md) 0 var(--space-lg);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ============================================
+       NAV
+  ============================================ -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="/" class="nav-logo">
+        <img src="../assets/35A0CDFB-340E-43DE-B074-575700301CD6.png.webp" alt="Premium Fensterreinigung Logo" />
+      </a>
+      <ul class="nav-links">
+        <li><a href="/fensterreinigung/">Fensterreinigung</a></li>
+        <li><a href="/privatkunden/">Privatkunden</a></li>
+        <li><a href="/gewerbekunden/">Gewerbe</a></li>
+        <li><a href="/kontakt/">Kontakt</a></li>
+      </ul>
+      <a href="tel:+491627061789" class="nav-cta">
+        <i class="ph ph-phone"></i>
+        0162 7061789
+      </a>
+      <button class="nav-hamburger" aria-label="Menü" onclick="document.getElementById('mobileNav').classList.toggle('open')">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div class="nav-mobile" id="mobileNav">
+      <a href="/fensterreinigung/">Fensterreinigung</a>
+      <a href="/privatkunden/">Privatkunden</a>
+      <a href="/gewerbekunden/">Gewerbe</a>
+      <a href="/kontakt/">Kontakt</a>
+      <a href="tel:+491627061789" style="color:var(--accent);font-weight:600;">0162 7061789</a>
+    </div>
+  </nav>
+
+  <!-- ============================================
+       HERO
+  ============================================ -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="container">
+        <div class="hero-inner">
+
+          <div class="hero-badge">
+            <i class="ph ph-drop-half"></i>
+            Osmosewasser-Technologie · Berlin &amp; Havelland
+          </div>
+
+          <h1>
+            Fensterreinigung Berlin –<br/>
+            Streifenfrei durch <span>80°C Heißwasser</span>
+          </h1>
+
+          <p class="hero-sub">
+            Die meisten Reiniger arbeiten mit kaltem Leitungswasser und Tuch. Wir nicht.
+            Unser Heiß-Reinwassersystem erhitzt Osmosewasser auf bis zu 80 °C — löst Fett,
+            Kalk und Schmutz vollständig, ohne Chemie, ohne Streifen. Teleskoptechnik bis
+            21 m vom Boden — komplett ohne Gerüst.
+          </p>
+
+          <div class="hero-ctas">
+            <a href="/privatkunden/" class="btn-primary">
+              <i class="ph ph-house"></i>
+              Privatkunden — Angebot anfragen
+            </a>
+            <a href="/gewerbekunden/" class="btn-secondary">
+              <i class="ph ph-buildings"></i>
+              Gewerbe — Partner anfragen
+            </a>
+          </div>
+
+          <div class="hero-trust">
+            <div class="hero-trust-stars">
+              <span class="stars">★★★★★</span>
+              <span>5,0 auf Google</span>
+            </div>
+            <div class="trust-dot"></div>
+            <span style="font-size:14px;color:rgba(255,255,255,0.55);">743 abgeschlossene Aufträge</span>
+            <div class="trust-dot"></div>
+            <span style="font-size:14px;color:rgba(255,255,255,0.55);">Haftpflichtversichert</span>
+            <div class="trust-dot"></div>
+            <span style="font-size:14px;color:rgba(255,255,255,0.55);">Handwerkskammer</span>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       STATS STRIP
+  ============================================ -->
+  <div class="stats-strip">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item animate-on-scroll">
+          <span class="stat-number">80°C</span>
+          <span class="stat-label">Wassertemperatur</span>
+        </div>
+        <div class="stat-item animate-on-scroll animate-delay-1">
+          <span class="stat-number">0 ppm</span>
+          <span class="stat-label">Mineralgehalt Osmosewasser</span>
+        </div>
+        <div class="stat-item animate-on-scroll animate-delay-2">
+          <span class="stat-number">21 m</span>
+          <span class="stat-label">Reichweite ohne Gerüst</span>
+        </div>
+        <div class="stat-item animate-on-scroll animate-delay-3">
+          <span class="stat-number">743+</span>
+          <span class="stat-label">Abgeschlossene Aufträge</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================
+       PROBLEM
+  ============================================ -->
+  <section class="section" id="problem">
+    <div class="container">
+      <div class="problem-grid">
+        <div class="problem-text animate-on-scroll">
+          <div class="eyebrow">Das Problem</div>
+          <h2>Warum Leitungswasser keine Fenster reinigt — es beschmutzt sie nur anders</h2>
+          <div class="section-divider"></div>
+          <p>
+            Wer Fenster mit normalem Wasser und einem Tuch putzt, kämpft gegen ein physikalisches
+            Problem. Leitungswasser enthält Kalk, Mineralien und Salze. Beim Trocknen bleiben sie
+            als weiße Schlieren auf dem Glas zurück — das Fenster sieht nach wenigen Tagen wieder
+            schmutzig aus, obwohl es gerade geputzt wurde.
+          </p>
+          <p>
+            Dasselbe Problem haben professionelle Reiniger, die mit günstigem Abzieher und Eimer
+            arbeiten. Das Ergebnis: Schlieren, Kalkränder, und eine Reinigung, die nach zwei Wochen
+            schon wieder verblasst.
+          </p>
+          <p>
+            <strong style="color:var(--text1);">Für Privathaushalte:</strong> Wer selbst auf Leitern
+            steigt, riskiert Stürze. Wer einen günstigen Reiniger bucht, bekommt oft Leitungswasser
+            mit Spülmittel — und eine Rechnung, die trotzdem nicht billig ist.
+          </p>
+          <p>
+            <strong style="color:var(--text1);">Für Gewerbeobjekte:</strong> Eine verschmutzte
+            Glasfront ist das erste, was Kunden und Gäste sehen. Gerüste kosten, brauchen Aufbauzeit,
+            und jeder Unfall liegt am Auftraggeber.
+          </p>
+        </div>
+        <div class="problem-visual animate-on-scroll animate-delay-2">
+          <img src="../assets/IMG_7689.jpg.webp" alt="Professionelle Fensterreinigung mit Teleskoptechnik" />
+          <div class="problem-tag">
+            <div class="problem-tag-title">Teleskoptechnik bis 21 m</div>
+            <div class="problem-tag-sub">Kein Gerüst · Kein Aufbau · Kein Risiko</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       USP / TECHNOLOGY
+  ============================================ -->
+  <section class="section usp-section" id="technologie">
+    <div class="container">
+      <div class="usp-header animate-on-scroll">
+        <div class="eyebrow">Unsere Technologie</div>
+        <h2>80°C Heißwasser trifft Osmosewasser: Das ist der Unterschied</h2>
+        <div class="section-divider" style="margin:var(--space-md) auto var(--space-lg);"></div>
+        <p>Premium Fensterreinigung setzt als einziger Anbieter in Berlin und Brandenburg ein mobiles Heiß-Reinwassersystem im Transporter ein.</p>
+      </div>
+
+      <div class="usp-grid">
+        <div class="usp-card animate-on-scroll">
+          <div class="usp-icon"><i class="ph ph-thermometer-hot"></i></div>
+          <h3>80°C Heiß-Reinwassersystem</h3>
+          <p style="color:var(--text2);font-size:15px;line-height:1.65;">
+            Osmosewasser wird im Transporter auf bis zu 80 °C erhitzt. Heißes Wasser löst Fett,
+            hartnäckige Kalkablagerungen und organischen Schmutz auf molekularer Ebene — ohne
+            Chemie, ohne Scheuermittel, ohne Rückstände.
+          </p>
+          <p style="font-size:14px;color:var(--text3);margin-top:var(--space-sm);">
+            → Kein Gerüst bis 21 Meter: Teleskoptechnik vom Boden aus. Keine Aufbauzeit, keine Gerüstkosten.
+          </p>
+          <span class="usp-tag"><i class="ph ph-seal-check"></i> Einziger Anbieter in der Region</span>
+        </div>
+
+        <div class="usp-card animate-on-scroll animate-delay-1">
+          <div class="usp-icon"><i class="ph ph-drop"></i></div>
+          <h3>Osmosewasser: 0 ppm Mineralien</h3>
+          <p style="color:var(--text2);font-size:15px;line-height:1.65;">
+            Osmosewasser ist vollständig demineralisiertes Wasser — null Mineralien, null Salze.
+            Es zieht Schmutzpartikel magnetartig vom Glas ab. Beim Trocknen hinterlässt dieses
+            Wasser keine Rückstände. Keine Streifen. Kein Kalk.
+          </p>
+          <span class="usp-tag"><i class="ph ph-sparkle"></i> Streifenfrei garantiert</span>
+        </div>
+
+        <div class="usp-card animate-on-scroll animate-delay-2">
+          <div class="usp-icon"><i class="ph ph-leaf"></i></div>
+          <h3>Ohne Chemie. Immer.</h3>
+          <p style="color:var(--text2);font-size:15px;line-height:1.65;">
+            Wir arbeiten ausschließlich mit Reinwasser. Kein Spülmittel, keine Glasreiniger,
+            keine aggressiven Lösungsmittel. Das schützt Ihre Fensterrahmen, den Boden darunter,
+            Ihre Pflanzen — und die Umwelt.
+          </p>
+          <span class="usp-tag"><i class="ph ph-plant"></i> 100% chemiefreie Reinigung</span>
+        </div>
+
+        <div class="usp-card animate-on-scroll animate-delay-3">
+          <div class="usp-icon"><i class="ph ph-frame-corners"></i></div>
+          <h3>Rahmenreinigung inklusive</h3>
+          <p style="color:var(--text2);font-size:15px;line-height:1.65;">
+            Bei jeder Fensterreinigung reinigen wir standardmäßig Rahmen, Simse und Griffe —
+            kein Aufpreis. Das ist kein Extra. Das ist der Standard.
+          </p>
+          <span class="usp-tag"><i class="ph ph-check-circle"></i> Kein Aufpreis</span>
+        </div>
+      </div>
+
+      <!-- Owner Trust Card -->
+      <div class="owner-card animate-on-scroll" style="margin-top:var(--space-xl);">
+        <img
+          src="../assets/E1F5A667-9471-4E22-B183-25758B86F367.png.webp"
+          alt="Julien Ranft — Inhaber Premium Fensterreinigung"
+          class="owner-photo"
+        />
+        <div class="owner-info">
+          <h3>Julien Ranft — Inhaber &amp; Gründer</h3>
+          <p style="font-size:15px;color:var(--text2);margin-top:var(--space-xs);">
+            Premium Fensterreinigung ist kein Franchise und kein Callcenter. Julien ist bei
+            jedem Auftrag persönlich erreichbar — eine Nummer, ein Ansprechpartner.
+            <a href="tel:+491627061789" style="color:var(--accent);font-weight:600;">0162 7061789</a>
+          </p>
+          <div class="owner-trust">
+            <span class="trust-chip"><i class="ph ph-shield-check"></i> Haftpflichtversichert</span>
+            <span class="trust-chip"><i class="ph ph-certificate"></i> Handwerkskammer</span>
+            <span class="trust-chip"><i class="ph ph-calendar"></i> Seit 2022</span>
+            <span class="trust-chip"><i class="ph ph-check"></i> 743+ Aufträge</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================
+       VORHER / NACHHER SLIDER
+  ============================================ -->
+  <section class="section slider-section" id="ergebnisse">
+    <div class="container">
+      <div class="slider-header animate-on-scroll">
+        <div class="eyebrow">Ergebnisse</div>
+        <h2>Sehen Sie den Unterschied</h2>
+        <div class="section-divider" style="margin:var(--space-md) auto var(--space-lg);"></div>
+        <p>80°C Heißwasser-Technologie in der Praxis — drei Projekte, ein Standard.</p>
+      </div>
+
+      <div class="swiper slider-wrapper animate-on-scroll" id="vorherNachherSwiper">
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide">
+            <div class="slider-card">
+              <div class="slider-split">
+                <div class="slider-split-before" style="background-image:url('../assets/B8140E4A-215E-4541-8E18-D27DECF21821.png.webp')"></div>
+                <div class="slider-split-after"  style="background-image:url('../assets/B8140E4A-215E-4541-8E18-D27DECF21821.png.webp');filter:contrast(1.08) saturate(1.1)"></div>
+                <div class="slider-divider"><div class="slider-handle"><i class="ph ph-arrows-left-right"></i></div></div>
+                <span class="slider-label-before">Vorher</span>
+                <span class="slider-label-after">Nachher</span>
+              </div>
+              <div class="slider-caption">Privathaushalt · Falkensee · Kastenfenster Altbau</div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="slider-card">
+              <div class="slider-split">
+                <div class="slider-split-before" style="background-image:url('../assets/DA33D6F3-1CC7-4A9F-B657-32D48835F10F.png.webp')"></div>
+                <div class="slider-split-after"  style="background-image:url('../assets/DA33D6F3-1CC7-4A9F-B657-32D48835F10F.png.webp');filter:contrast(1.08) saturate(1.1)"></div>
+                <div class="slider-divider"><div class="slider-handle"><i class="ph ph-arrows-left-right"></i></div></div>
+                <span class="slider-label-before">Vorher</span>
+                <span class="slider-label-after">Nachher</span>
+              </div>
+              <div class="slider-caption">Gewerbeobjekt · Berlin-Charlottenburg · Glasfront 3 Etagen</div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="slider-card">
+              <div class="slider-split">
+                <div class="slider-split-before" style="background-image:url('../assets/0EC186D7-7830-49EA-97F7-DFACAB2992F5.png.webp')"></div>
+                <div class="slider-split-after"  style="background-image:url('../assets/0EC186D7-7830-49EA-97F7-DFACAB2992F5.png.webp');filter:contrast(1.08) saturate(1.1)"></div>
+                <div class="slider-divider"><div class="slider-handle"><i class="ph ph-arrows-left-right"></i></div></div>
+                <span class="slider-label-before">Vorher</span>
+                <span class="slider-label-after">Nachher</span>
+              </div>
+              <div class="slider-caption">Wintergarten · Havelland · Dachverglasung + Rahmen</div>
+            </div>
+          </div>
+
+        </div>
+        <div class="swiper-pagination" style="position:relative;margin-top:var(--space-lg);"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       SERVICES OVERVIEW
+  ============================================ -->
+  <section class="section services-section" id="leistungen">
+    <div class="container">
+      <div class="services-header animate-on-scroll">
+        <div class="eyebrow">Leistungen</div>
+        <h2>Unsere Leistungen — Privat &amp; Gewerbe</h2>
+        <div class="section-divider" style="margin:var(--space-md) auto var(--space-lg);"></div>
+        <p>Berlin und Brandenburg. Vom Einfamilienhaus bis zur Gewerbefassade.</p>
+      </div>
+
+      <!-- Featured: Hauptleistung -->
+      <a href="/fensterreinigung/" class="service-card-featured animate-on-scroll">
+        <div>
+          <div class="service-featured-tag"><i class="ph ph-star"></i> Hauptleistung</div>
+          <div class="service-icon"><i class="ph ph-window"></i></div>
+          <h3>Fensterreinigung</h3>
+          <p>Der einzige Anbieter in Berlin und Brandenburg mit mobilem Heiß-Reinwassersystem im Transporter. 80°C Osmosewasser löst Kalk, Fett und Schmutz auf molekularer Ebene — ohne Chemie, ohne Streifen. Teleskoptechnik bis 21 Meter, komplett vom Boden aus.</p>
+          <div class="service-card-footer">Fensterreinigung im Detail <i class="ph ph-arrow-right"></i></div>
+        </div>
+        <div class="service-card-featured-img">
+          <img src="../assets/IMG_7689.jpg.webp" alt="Fensterreinigung mit Teleskoptechnik" loading="lazy" />
+        </div>
+      </a>
+
+      <!-- Sekundär: 4 Services -->
+      <div class="services-grid services-secondary animate-on-scroll">
+
+        <a href="/glasreinigung/" class="service-card">
+          <div class="service-icon"><i class="ph ph-squares-four"></i></div>
+          <h3>Glasreinigung</h3>
+          <p>Großflächige Verglasung, Fassadenglas, Schaufenster. Chemiefreie Tiefenreinigung.</p>
+          <div class="service-card-footer">Mehr erfahren <i class="ph ph-arrow-right"></i></div>
+        </a>
+
+        <a href="/wintergartenreinigung/" class="service-card">
+          <div class="service-icon"><i class="ph ph-sun-horizon"></i></div>
+          <h3>Wintergartenreinigung</h3>
+          <p>Innen und außen. Glas, Rahmen, Dachverglasung. Kein Hochdruck auf empfindlichen Materialien.</p>
+          <div class="service-card-footer">Mehr erfahren <i class="ph ph-arrow-right"></i></div>
+        </a>
+
+        <a href="/solaranlagenreinigung/" class="service-card">
+          <div class="service-icon"><i class="ph ph-solar-panel"></i></div>
+          <h3>Solaranlagenreinigung</h3>
+          <p>Bis zu 40% Ertragsverlust durch Verschmutzung. Schonende Reinigung ohne Hochdruck.</p>
+          <div class="service-card-footer">Mehr erfahren <i class="ph ph-arrow-right"></i></div>
+        </a>
+
+        <a href="/jalousienreinigung/" class="service-card">
+          <div class="service-icon"><i class="ph ph-rows"></i></div>
+          <h3>Jalousienreinigung</h3>
+          <p>Ultraschall-Reinigungsbad: Lamellen, Leiterbänder, Zugschnur. Ohne Demontage möglich.</p>
+          <div class="service-card-footer">Mehr erfahren <i class="ph ph-arrow-right"></i></div>
+        </a>
+
+      </div>
+
+      <!-- Tertiär: Neue Services -->
+      <div class="services-tertiary-label animate-on-scroll">Weitere Leistungen</div>
+      <div class="services-grid animate-on-scroll">
+
+        <a href="/terrassenueberdachung/" class="service-card">
+          <div class="service-icon"><i class="ph ph-umbrella"></i></div>
+          <h3>Terrassenüberdachung</h3>
+          <p>Glas- und Polycarbonat-Stegplatten. Kein Hochdruck auf PC-Material.</p>
+          <div class="service-card-footer">Mehr erfahren <i class="ph ph-arrow-right"></i></div>
+        </a>
+
+        <a href="/dachreinigung/" class="service-card">
+          <div class="service-icon"><i class="ph ph-house-line"></i></div>
+          <h3>Dachreinigung</h3>
+          <p>Reinigung, Imprägnierung, Beschichtung optional.</p>
+          <div class="service-card-footer">Mehr erfahren <i class="ph ph-arrow-right"></i><span class="service-badge">Neu</span></div>
+        </a>
+
+        <a href="/fassadenreinigung/" class="service-card">
+          <div class="service-icon"><i class="ph ph-building-office"></i></div>
+          <h3>Fassadenreinigung</h3>
+          <p>Chemische Vorbehandlung, Reinigung, Langzeitschutz optional.</p>
+          <div class="service-card-footer">Mehr erfahren <i class="ph ph-arrow-right"></i><span class="service-badge">Neu</span></div>
+        </a>
+
+        <a href="/steinreinigung/" class="service-card">
+          <div class="service-icon"><i class="ph ph-grid-four"></i></div>
+          <h3>Steinreinigung</h3>
+          <p>Flächenreiniger, Industriesauger, Fugensand, Imprägnierung. Mit Preisrechner.</p>
+          <div class="service-card-footer">Mehr erfahren <i class="ph ph-arrow-right"></i><span class="service-badge">Neu</span></div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       SEGMENT PATHS
+  ============================================ -->
+  <section class="section segment-section" id="fuer-wen">
+    <div class="container">
+      <div style="text-align:center;max-width:600px;margin:0 auto var(--space-3xl);" class="animate-on-scroll">
+        <div class="eyebrow">Für wen?</div>
+        <h2>Für wen sind wir die richtige Wahl?</h2>
+        <div class="section-divider" style="margin:var(--space-md) auto var(--space-lg);"></div>
+        <p>Zwei Kundensegmente, ein Standard: höchste Reinigungsqualität durch Osmosewasser-Technologie.</p>
+      </div>
+
+      <div class="segment-grid">
+        <!-- Privatkunden -->
+        <div class="segment-card animate-on-scroll">
+          <div class="segment-card-bg" style="background-image: url('../assets/IMG_7849.jpg.webp');"></div>
+          <div class="segment-overlay"></div>
+          <div class="segment-content">
+            <span class="segment-tag">Privatkunden · Havelland</span>
+            <h2>Saubere Fenster — ohne Leiter, ohne Aufwand</h2>
+            <ul class="segment-list">
+              <li>Festpreis nach Foto — kein Vor-Ort-Termin nötig</li>
+              <li>Ab 8 € netto pro Fenster (ca. 1–1,2 m²)</li>
+              <li>Bodentiefe Fenster ab 16 € netto</li>
+              <li>Rahmen, Simse und Griffe inklusive</li>
+            </ul>
+            <div class="steuer-badge">
+              <i class="ph ph-percent steuer-icon"></i>
+              <div class="steuer-text">
+                <strong>§35a EStG — 20% steuerlich absetzbar</strong>
+                Als Privathaushalt bis zu 4.000 € Steuerersparnis pro Jahr. Nur Arbeitskosten, Zahlung per Überweisung.
+              </div>
+            </div>
+            <a href="/privatkunden/" class="btn-primary">
+              Privatkunden-Leistungen <i class="ph ph-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Gewerbekunden -->
+        <div class="segment-card animate-on-scroll animate-delay-2">
+          <div class="segment-card-bg" style="background-image: url('../assets/IMG_7859.jpg.webp');"></div>
+          <div class="segment-overlay"></div>
+          <div class="segment-content">
+            <span class="segment-tag">Gewerbe · Berlin &amp; Brandenburg</span>
+            <h2>Glasfronten bis 21 Meter — kein Gerüst, kein Risiko</h2>
+            <ul class="segment-list">
+              <li>Teleskoptechnik bis 21 m — kein Gerüst, keine Aufbauzeit</li>
+              <li>Ab 3 € netto/m² einseitig inkl. Rahmen &amp; Falz</li>
+              <li>Festpreis vor Auftragsstart</li>
+              <li>Vollversichert, Handwerkskammer-Mitglied</li>
+              <li>Wartungsverträge auf Wunsch</li>
+            </ul>
+            <a href="/gewerbekunden/" class="btn-secondary">
+              Gewerbe-Leistungen <i class="ph ph-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       SOCIAL PROOF
+  ============================================ -->
+  <section class="section proof-section" id="bewertungen">
+    <div class="container">
+      <div class="proof-header animate-on-scroll">
+        <div class="eyebrow">Bewertungen</div>
+        <h2>Was Kunden sagen</h2>
+        <div class="proof-rating">
+          <span class="rating-number">5,0</span>
+          <div class="rating-details">
+            <div class="rating-stars">★★★★★</div>
+            <div class="rating-count">Alle Bewertungen · Google</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="review-grid">
+        <div class="review-card animate-on-scroll">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">
+            "Endlich ein Fensterreiniger, der wirklich streifenfrei arbeitet. Hätte ich nie gedacht,
+            dass der Unterschied so groß ist."
+          </p>
+          <div class="review-author">Privathaushalt · Falkensee</div>
+        </div>
+
+        <div class="review-card animate-on-scroll animate-delay-1">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">
+            "Wir haben drei Büroetagen im Berliner Westen. Julien hat alles in einem Tag erledigt —
+            kein Gerüst, kein Chaos, kein Aufpreis."
+          </p>
+          <div class="review-author">Gewerbeobjekt · Berlin-Charlottenburg</div>
+        </div>
+
+        <div class="review-card animate-on-scroll animate-delay-2">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">
+            "Sehr professionell, pünktlich und das Ergebnis überzeugt. Glasfront sieht aus wie neu.
+            Wir haben direkt einen Wartungsvertrag vereinbart."
+          </p>
+          <div class="review-author">Hotelanlage · Havelland</div>
+        </div>
+      </div>
+
+      <div class="trust-bar animate-on-scroll">
+        <div class="trust-item"><i class="ph ph-shield-check"></i> Haftpflichtversichert</div>
+        <div class="trust-item"><i class="ph ph-certificate"></i> Handwerkskammer-Mitglied</div>
+        <div class="trust-item"><i class="ph ph-calendar-check"></i> Seit 2022 aktiv</div>
+        <div class="trust-item"><i class="ph ph-check-circle"></i> 743+ Aufträge</div>
+        <div class="trust-item"><i class="ph ph-user"></i> Inhabergeführt</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       PROCESS
+  ============================================ -->
+  <section class="section process-section" id="ablauf">
+    <div class="container">
+      <div class="process-header animate-on-scroll">
+        <div class="eyebrow">So funktioniert's</div>
+        <h2>Von Anfrage bis saubere Fenster — in 4 Schritten</h2>
+        <div class="section-divider" style="margin:var(--space-md) auto var(--space-lg);"></div>
+        <p>Kein Vor-Ort-Termin. Kein Kostenvoranschlag ohne Verbindlichkeit.</p>
+      </div>
+
+      <div class="process-steps">
+        <div class="process-step animate-on-scroll">
+          <div class="process-connector"></div>
+          <div class="process-number">1</div>
+          <h3>Foto statt Besichtigung</h3>
+          <p>Ein Foto per WhatsApp oder E-Mail reicht. Kein Besichtigungstermin, keine Wartezeit.</p>
+        </div>
+
+        <div class="process-step animate-on-scroll animate-delay-1">
+          <div class="process-connector"></div>
+          <div class="process-number">2</div>
+          <h3>Festpreis in 24 Stunden</h3>
+          <p>Sie bekommen ein konkretes Angebot: fester Preis, keine Nachkalkulation.</p>
+        </div>
+
+        <div class="process-step animate-on-scroll animate-delay-2">
+          <div class="process-connector"></div>
+          <div class="process-number">3</div>
+          <h3>80°C Reinigung</h3>
+          <p>Julien kommt mit dem Transporter-Einbausystem. Osmosewasser, Teleskoptechnik, kein Gerüst.</p>
+        </div>
+
+        <div class="process-step animate-on-scroll animate-delay-3">
+          <div class="process-number">4</div>
+          <h3>Ergebnis &amp; Folgebetreuung</h3>
+          <p>Fenster, die länger sauber bleiben. Auf Wunsch: regelmäßige Betreuung mit Festpreisvertrag.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       PRICING
+  ============================================ -->
+  <section class="section pricing-section" id="preise">
+    <div class="container">
+      <div class="pricing-header animate-on-scroll">
+        <div class="eyebrow">Preise</div>
+        <h2>Was kostet eine professionelle Fensterreinigung?</h2>
+        <div class="section-divider" style="margin:var(--space-md) auto var(--space-lg);"></div>
+        <p>Festpreis nach Foto. Kein Besichtigungstermin, keine Überraschungen.</p>
+      </div>
+
+      <div class="pricing-grid">
+        <div class="pricing-card animate-on-scroll">
+          <div class="pricing-card-header">
+            <h3>Privatkunden</h3>
+            <p>Einfamilienhäuser, Wohnungen, Havelland</p>
+          </div>
+          <div class="pricing-table">
+            <div class="pricing-row">
+              <span class="pricing-service">Fenster normal (ca. 1–1,2 m²)</span>
+              <span class="pricing-price">ab 8 € netto</span>
+            </div>
+            <div class="pricing-row">
+              <span class="pricing-service">Bodentief / groß</span>
+              <span class="pricing-price">ab 16 € netto</span>
+            </div>
+            <div class="pricing-row highlight">
+              <span class="pricing-service">Rahmen, Simse, Griffe</span>
+              <span class="pricing-price">inklusive</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="pricing-card animate-on-scroll animate-delay-1">
+          <div class="pricing-card-header">
+            <h3>Gewerbekunden</h3>
+            <p>Berlin &amp; Brandenburg</p>
+          </div>
+          <div class="pricing-table">
+            <div class="pricing-row">
+              <span class="pricing-service">Glasflächen einseitig inkl. Rahmen &amp; Falz</span>
+              <span class="pricing-price">ab 3 € netto/m²</span>
+            </div>
+            <div class="pricing-row">
+              <span class="pricing-service">Dach- und Fassadenreinigung</span>
+              <span class="pricing-price">Individuelle Anfrage</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="pricing-card animate-on-scroll animate-delay-2">
+          <div class="pricing-card-header">
+            <h3>Steinreinigung</h3>
+            <p>Terrassen, Wege, Flächen</p>
+          </div>
+          <div class="pricing-table">
+            <div class="pricing-row">
+              <span class="pricing-service">Reinigung</span>
+              <span class="pricing-price">6 € netto/m²</span>
+            </div>
+            <div class="pricing-row">
+              <span class="pricing-service">Imprägnierung</span>
+              <span class="pricing-price">2 € netto/m²</span>
+            </div>
+            <div class="pricing-row">
+              <span class="pricing-service">Neuverfugung mit Brechsand</span>
+              <span class="pricing-price">3 € netto/m²</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="steuer-box animate-on-scroll">
+        <i class="ph ph-percent steuer-box-icon"></i>
+        <div class="steuer-box-text">
+          <strong>§35a EStG — Als Privathaushalt bis zu 4.000 € Steuerersparnis pro Jahr</strong>
+          20% der Arbeitskosten direkt von der Einkommensteuer absetzbar. Voraussetzung: Rechnung + Zahlung per Überweisung (keine Barzahlung). Gilt für alle haushaltsnahen Dienstleistungen.
+        </div>
+      </div>
+
+      <div class="pricing-cta animate-on-scroll">
+        <a href="https://wa.me/491627061789" class="btn-whatsapp" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.136.564 4.14 1.545 5.872L.057 23.52a.75.75 0 00.922.922l5.648-1.488A11.954 11.954 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75c-1.99 0-3.857-.58-5.432-1.578l-.39-.241-4.037 1.063 1.063-4.037-.241-.39A9.713 9.713 0 012.25 12C2.25 6.615 6.615 2.25 12 2.25S21.75 6.615 21.75 12 17.385 21.75 12 21.75z"/></svg>
+          Foto senden → Festpreis in 24h
+        </a>
+        <a href="/kontakt/" class="btn-secondary">
+          <i class="ph ph-envelope"></i> Formular ausfüllen
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       PREISRECHNER
+  ============================================ -->
+  <section class="section rechner-section" id="preisrechner">
+    <div class="container">
+      <div style="text-align:center;max-width:560px;margin:0 auto var(--space-3xl);" class="animate-on-scroll">
+        <div class="eyebrow">Preisrechner</div>
+        <h2>Berechnen Sie Ihren Richtwert</h2>
+        <div class="section-divider" style="margin:var(--space-md) auto var(--space-lg);"></div>
+        <p>Unverbindlich. Festpreis erhalten Sie nach Foto-Übersendung in 24h.</p>
+      </div>
+
+      <div class="rechner-inner animate-on-scroll">
+        <div class="rechner-tabs" role="tablist">
+          <button class="rechner-tab active" role="tab" aria-selected="true"  data-panel="privat"  onclick="switchTab(this,'privat')">Privatkunden</button>
+          <button class="rechner-tab"        role="tab" aria-selected="false" data-panel="gewerbe" onclick="switchTab(this,'gewerbe')">Gewerbe</button>
+          <button class="rechner-tab"        role="tab" aria-selected="false" data-panel="stein"   onclick="switchTab(this,'stein')">Steinreinigung</button>
+        </div>
+        <div class="rechner-body">
+
+          <!-- Panel: Privat -->
+          <div class="rechner-panel active" id="panel-privat">
+            <div class="rechner-field">
+              <div class="rechner-field-row">
+                <div>
+                  <label for="r-fenster-normal">Fenster Normalgröße (ca. 1–1,2 m²)</label>
+                  <div class="rechner-input-group">
+                    <input type="number" id="r-fenster-normal" min="0" value="5" oninput="calcPrivat()" />
+                    <span>Stück × 8 €</span>
+                  </div>
+                </div>
+                <div>
+                  <label for="r-fenster-gross">Bodentief / Großfenster</label>
+                  <div class="rechner-input-group">
+                    <input type="number" id="r-fenster-gross" min="0" value="0" oninput="calcPrivat()" />
+                    <span>Stück × 16 €</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="rechner-result">
+              <div>
+                <div class="rechner-result-label">Ihr Richtwert (netto)</div>
+                <div class="rechner-result-price" id="result-privat">40 €</div>
+                <div class="rechner-result-note">Festpreis nach Foto · inkl. Rahmen, Simse, Griffe</div>
+              </div>
+              <a href="https://wa.me/491627061789" class="btn-primary" target="_blank" rel="noopener">
+                <i class="ph ph-whatsapp-logo"></i> Angebot anfragen
+              </a>
+            </div>
+            <div class="rechner-steuer show" id="steuer-hinweis">
+              <i class="ph ph-percent"></i>
+              <span>§35a EStG: Als Privathaushalt 20% der Arbeitskosten absetzbar — bis 4.000 € Steuerersparnis/Jahr.</span>
+            </div>
+          </div>
+
+          <!-- Panel: Gewerbe -->
+          <div class="rechner-panel" id="panel-gewerbe">
+            <div class="rechner-field">
+              <label for="r-flaeche-gewerbe">Glasfläche (einseitig, inkl. Rahmen &amp; Falz)</label>
+              <div class="rechner-input-group" style="max-width:280px">
+                <input type="number" id="r-flaeche-gewerbe" min="0" value="0" placeholder="z.B. 120" oninput="calcGewerbe()" />
+                <span>m² × 3 €</span>
+              </div>
+            </div>
+            <div class="rechner-result">
+              <div>
+                <div class="rechner-result-label">Ihr Richtwert (netto)</div>
+                <div class="rechner-result-price" id="result-gewerbe">0 €</div>
+                <div class="rechner-result-note">Festpreis nach Besichtigung oder Foto · vollversichert</div>
+              </div>
+              <a href="https://wa.me/491627061789" class="btn-primary" target="_blank" rel="noopener">
+                <i class="ph ph-whatsapp-logo"></i> Angebot anfragen
+              </a>
+            </div>
+          </div>
+
+          <!-- Panel: Stein -->
+          <div class="rechner-panel" id="panel-stein">
+            <div class="rechner-field">
+              <label for="r-flaeche-stein">Fläche</label>
+              <div class="rechner-input-group" style="max-width:280px">
+                <input type="number" id="r-flaeche-stein" min="0" value="0" placeholder="z.B. 40" oninput="calcStein()" />
+                <span>m² × 6 €</span>
+              </div>
+            </div>
+            <div class="rechner-field">
+              <label>Zusatzleistungen (optional)</label>
+              <div class="rechner-checkbox-row">
+                <label class="rechner-checkbox">
+                  <input type="checkbox" id="r-stein-impraeg" onchange="calcStein()" />
+                  Imprägnierung (+2 €/m²)
+                </label>
+                <label class="rechner-checkbox">
+                  <input type="checkbox" id="r-stein-fuge" onchange="calcStein()" />
+                  Neuverfugung mit Brechsand (+3 €/m²)
+                </label>
+              </div>
+            </div>
+            <div class="rechner-result">
+              <div>
+                <div class="rechner-result-label">Ihr Richtwert (netto)</div>
+                <div class="rechner-result-price" id="result-stein">0 €</div>
+                <div class="rechner-result-note">Festpreis nach Foto</div>
+              </div>
+              <a href="https://wa.me/491627061789" class="btn-primary" target="_blank" rel="noopener">
+                <i class="ph ph-whatsapp-logo"></i> Angebot anfragen
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       FAQ
+  ============================================ -->
+  <section class="section faq-section" id="faq">
+    <div class="container">
+      <div class="faq-header animate-on-scroll">
+        <div class="eyebrow">FAQ</div>
+        <h2>Häufige Fragen zur Fensterreinigung</h2>
+        <div class="section-divider" style="margin:var(--space-md) auto var(--space-lg);"></div>
+      </div>
+
+      <div class="faq-list animate-on-scroll">
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)" aria-expanded="false">
+            Warum hinterlässt Ihre Reinigung keine Streifen?
+            <span class="faq-icon"><i class="ph ph-plus"></i></span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              Wir verwenden vollständig demineralisiertes Osmosewasser (0 ppm Mineralien). Normales Leitungswasser enthält Kalk und Salze, die beim Trocknen weiße Rückstände hinterlassen. Unser Reinwasser trocknet rückstandsfrei — keine Streifen, keine Flecken.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)" aria-expanded="false">
+            Was bringt das 80°C-Heißwasser-System?
+            <span class="faq-icon"><i class="ph ph-plus"></i></span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              Heißes Wasser löst Fett, hartnäckige Kalkablagerungen und organischen Schmutz deutlich effektiver als kaltes Wasser — ohne Einsatz von Chemie. Das Ergebnis ist tiefengereinigtes Glas, das länger sauber bleibt.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)" aria-expanded="false">
+            Wie oft sollten Fenster professionell gereinigt werden?
+            <span class="faq-icon"><i class="ph ph-plus"></i></span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              Für Privathaushalte empfehlen wir 2× jährlich (Frühjahr und Herbst). Gewerbliche Objekte mit hohem Besucheraufkommen oder starker Umweltverschmutzung: alle 4–6 Wochen.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)" aria-expanded="false">
+            Ist Rahmenreinigung inklusive?
+            <span class="faq-icon"><i class="ph ph-plus"></i></span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              Ja. Bei jeder Fensterreinigung reinigen wir standardmäßig Rahmen, Simse und Griffe — kein Aufpreis.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)" aria-expanded="false">
+            Können Sie Kastenfenster in Berliner Altbauten reinigen?
+            <span class="faq-icon"><i class="ph ph-plus"></i></span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              Ja. Kastenfenster (Berliner Doppelfenster) reinigen wir beidseitig. Die innere Glasscheibe ist durch Öffnen des Rahmens zugänglich, die äußere über unsere Teleskoptechnik — ohne Gerüst, auch bei denkmalgeschützten Gebäuden mit Bleiverglasung.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)" aria-expanded="false">
+            Kann ich die Fensterreinigung von der Steuer absetzen?
+            <span class="faq-icon"><i class="ph ph-plus"></i></span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              Ja. Als Privathaushalt können Sie 20% der Arbeitskosten direkt von Ihrer Einkommensteuer abziehen (§35a EStG) — bis zu 4.000 € pro Jahr. Voraussetzung: Rechnung + Zahlung per Überweisung.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)" aria-expanded="false">
+            Was kostet eine Fensterreinigung?
+            <span class="faq-icon"><i class="ph ph-plus"></i></span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              Privat: ab 8 € netto pro Fenster (Normalgröße ca. 1–1,2 m²), bodentiefe Fenster ab 16 € netto. Gewerbe: ab 3 € netto/m² einseitig inkl. Rahmen &amp; Falz. Kostenloses Angebot in 24h nach Fotoübersendung. Als Privathaushalt bis zu 20% steuerlich absetzbar (§35a EStG).
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)" aria-expanded="false">
+            Sind Sie versichert?
+            <span class="faq-icon"><i class="ph ph-plus"></i></span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              Ja, wir sind haftpflichtversichert. Alle Arbeiten führen wir als angemeldeter Gewerbebetrieb und Handwerkskammer-Mitglied aus. Bei Schäden haften wir.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)" aria-expanded="false">
+            Wie reinigen Sie Solaranlagen?
+            <span class="faq-icon"><i class="ph ph-plus"></i></span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              Wir reinigen Photovoltaik-Module schonend ohne Hochdruck — Hochdruck kann Rahmenversiegelungen beschädigen. Verschmutzte Module verlieren bis zu 20% ihrer Leistung (Vogelkot, Moos). Wir empfehlen 1–2 Reinigungen pro Jahr.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)" aria-expanded="false">
+            Verwenden Sie umweltschädliche Reinigungsmittel?
+            <span class="faq-icon"><i class="ph ph-plus"></i></span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              Nein. Wir arbeiten ausschließlich mit Reinwasser (Osmosewasser) — vollständig ohne Chemie. Das schützt Fensterrahmen, Boden und Umwelt.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)" aria-expanded="false">
+            Arbeiten Sie auch an Hochhäusern?
+            <span class="faq-icon"><i class="ph ph-plus"></i></span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              Mit unserer Teleskoptechnik erreichen wir Höhen bis zu 21 Metern vom Boden aus — ohne Gerüst. Für Objekte darüber hinaus erstellen wir ein individuelles Angebot.
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       KONTAKTFORMULAR
+  ============================================ -->
+  <section class="section form-section" id="anfrage">
+    <div class="container">
+      <div class="form-inner">
+        <div class="form-header animate-on-scroll">
+          <div class="eyebrow">Anfrage</div>
+          <h2>Festpreis in 24 Stunden</h2>
+          <div class="section-divider" style="margin:var(--space-md) auto var(--space-lg);"></div>
+          <p>3 Felder, 30 Sekunden. Julien meldet sich persönlich.</p>
+        </div>
+
+        <div id="form-wrap" class="animate-on-scroll">
+          <form id="anfrage-form" novalidate onsubmit="submitForm(event)">
+            <div class="form-grid">
+
+              <div class="form-field full" id="field-leistung">
+                <label for="f-leistung">Gewünschte Leistung</label>
+                <select id="f-leistung" name="leistung" required>
+                  <option value="">Bitte wählen …</option>
+                  <option>Fensterreinigung</option>
+                  <option>Glasreinigung</option>
+                  <option>Wintergartenreinigung</option>
+                  <option>Solaranlagenreinigung</option>
+                  <option>Jalousienreinigung</option>
+                  <option>Terrassenüberdachung</option>
+                  <option>Dachreinigung</option>
+                  <option>Fassadenreinigung</option>
+                  <option>Steinreinigung</option>
+                  <option>Sonstiges</option>
+                </select>
+                <span class="form-field-error">Bitte wählen Sie eine Leistung.</span>
+              </div>
+
+              <div class="form-field" id="field-plz">
+                <label for="f-plz">Ihre PLZ</label>
+                <input type="text" id="f-plz" name="plz" placeholder="z.B. 14612" inputmode="numeric" maxlength="5" required />
+                <span class="form-field-error">Bitte geben Sie Ihre PLZ ein.</span>
+              </div>
+
+              <div class="form-field" id="field-tel">
+                <label for="f-tel">Telefon / WhatsApp</label>
+                <input type="tel" id="f-tel" name="tel" placeholder="z.B. 0162 …" required />
+                <span class="form-field-error">Bitte geben Sie Ihre Nummer ein.</span>
+              </div>
+
+            </div>
+
+            <div class="form-submit-row">
+              <button type="submit" class="form-submit-btn" id="form-btn">
+                <i class="ph ph-paper-plane-tilt"></i>
+                <span id="form-btn-label">Festpreis anfragen</span>
+              </button>
+              <p style="font-size:12px;color:var(--text3);text-align:center;">
+                Kein Vor-Ort-Termin · Kein Spam · Antwort innerhalb 24h
+              </p>
+            </div>
+          </form>
+
+          <div class="form-success" id="form-success">
+            <div class="form-success-icon"><i class="ph ph-check"></i></div>
+            <h3>Anfrage eingegangen</h3>
+            <p>Julien meldet sich innerhalb von 24 Stunden persönlich bei Ihnen.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       FINAL CTA
+  ============================================ -->
+  <section class="section cta-section" id="kontakt">
+    <div class="container">
+      <div class="cta-inner animate-on-scroll">
+        <div class="eyebrow" style="justify-content:center;">Kontakt</div>
+        <h2>Fenster die wirklich sauber sind — Festpreis in 24 Stunden</h2>
+        <div class="section-divider" style="margin:var(--space-md) auto var(--space-lg);"></div>
+        <p>
+          Schicken Sie uns ein Foto Ihrer Fenster per WhatsApp oder E-Mail. Wir senden Ihnen
+          innerhalb von 24 Stunden ein konkretes Angebot. Kein Vor-Ort-Termin nötig.
+        </p>
+        <div class="cta-buttons">
+          <a href="https://wa.me/491627061789" class="btn-whatsapp" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" style="width:20px;height:20px;fill:#fff;flex-shrink:0;"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.136.564 4.14 1.545 5.872L.057 23.52a.75.75 0 00.922.922l5.648-1.488A11.954 11.954 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75c-1.99 0-3.857-.58-5.432-1.578l-.39-.241-4.037 1.063 1.063-4.037-.241-.39A9.713 9.713 0 012.25 12C2.25 6.615 6.615 2.25 12 2.25S21.75 6.615 21.75 12 17.385 21.75 12 21.75z"/></svg>
+            Foto per WhatsApp senden
+          </a>
+          <a href="mailto:info@premium-fensterreinigung.de" class="btn-secondary">
+            <i class="ph ph-envelope"></i> E-Mail schreiben
+          </a>
+          <a href="/kontakt/" class="btn-secondary">
+            <i class="ph ph-list-checks"></i> Formular
+          </a>
+        </div>
+        <p class="cta-tel">
+          Oder rufen Sie an: <a href="tel:+491627061789">0162 7061789</a> — Mo–Fr 07:00–18:00 Uhr
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       FOOTER
+  ============================================ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <strong>Premium Fensterreinigung</strong> — eine Marke der JR Group<br />
+          Sonnenstraße 50, 14612 Falkensee
+        </div>
+        <ul class="footer-links">
+          <li><a href="/impressum/">Impressum</a></li>
+          <li><a href="/datenschutz/">Datenschutz</a></li>
+          <li><a href="/kontakt/">Kontakt</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============================================
+       WHATSAPP FAB
+  ============================================ -->
+  <a
+    href="https://wa.me/491627061789"
+    class="whatsapp-fab"
+    aria-label="WhatsApp Kontakt"
+    target="_blank"
+    rel="noopener"
+  >
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+      <path d="M12 0C5.373 0 0 5.373 0 12c0 2.136.564 4.14 1.545 5.872L.057 23.52a.75.75 0 00.922.922l5.648-1.488A11.954 11.954 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75c-1.99 0-3.857-.58-5.432-1.578l-.39-.241-4.037 1.063 1.063-4.037-.241-.39A9.713 9.713 0 012.25 12C2.25 6.615 6.615 2.25 12 2.25S21.75 6.615 21.75 12 17.385 21.75 12 21.75z"/>
+    </svg>
+  </a>
+
+  <!-- ============================================
+       SCHEMA.ORG — LocalBusiness + FAQPage
+  ============================================ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Premium Fensterreinigung",
+    "description": "Professionelle Fensterreinigung mit 80°C Osmosewasser-Technologie in Berlin und Havelland. Kein Gerüst, keine Chemie, Teleskoptechnik bis 21 Meter.",
+    "url": "https://premium-fensterreinigung.de",
+    "telephone": "+491627061789",
+    "email": "info@premium-fensterreinigung.de",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Sonnenstraße 50",
+      "addressLocality": "Falkensee",
+      "postalCode": "14612",
+      "addressRegion": "Brandenburg",
+      "addressCountry": "DE"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 52.5569,
+      "longitude": 13.0928
+    },
+    "areaServed": [
+      {"@type": "City", "name": "Berlin"},
+      {"@type": "AdministrativeArea", "name": "Havelland"},
+      {"@type": "AdministrativeArea", "name": "Brandenburg"}
+    ],
+    "priceRange": "ab 8€/Fenster",
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+      "opens": "07:00",
+      "closes": "18:00"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5.0",
+      "reviewCount": "6"
+    },
+    "hasCredential": ["Handwerkskammer-Mitglied", "Haftpflichtversichert"]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Warum hinterlässt Ihre Reinigung keine Streifen?",
+        "acceptedAnswer": {"@type": "Answer", "text": "Wir verwenden vollständig demineralisiertes Osmosewasser (0 ppm Mineralien). Normales Leitungswasser enthält Kalk und Salze, die beim Trocknen weiße Rückstände hinterlassen. Unser Reinwasser trocknet rückstandsfrei."}
+      },
+      {
+        "@type": "Question",
+        "name": "Was bringt das 80°C-Heißwasser-System?",
+        "acceptedAnswer": {"@type": "Answer", "text": "Heißes Wasser löst Fett, hartnäckige Kalkablagerungen und organischen Schmutz deutlich effektiver als kaltes Wasser — ohne Einsatz von Chemie. Das Ergebnis ist tiefengereinigtes Glas, das länger sauber bleibt."}
+      },
+      {
+        "@type": "Question",
+        "name": "Kann ich die Fensterreinigung von der Steuer absetzen?",
+        "acceptedAnswer": {"@type": "Answer", "text": "Ja. Als Privathaushalt können Sie 20% der Arbeitskosten direkt von Ihrer Einkommensteuer abziehen (§35a EStG) — bis zu 4.000 € pro Jahr. Voraussetzung: Rechnung + Zahlung per Überweisung."}
+      },
+      {
+        "@type": "Question",
+        "name": "Was kostet eine Fensterreinigung?",
+        "acceptedAnswer": {"@type": "Answer", "text": "Privat: ab 8 € netto pro Fenster, bodentiefe Fenster ab 16 € netto. Gewerbe: ab 3 € netto/m² einseitig. Kostenloses Angebot in 24h nach Fotoübersendung."}
+      },
+      {
+        "@type": "Question",
+        "name": "Ist Rahmenreinigung inklusive?",
+        "acceptedAnswer": {"@type": "Answer", "text": "Ja. Bei jeder Fensterreinigung reinigen wir standardmäßig Rahmen, Simse und Griffe — kein Aufpreis."}
+      }
+    ]
+  }
+  </script>
+
+  <!-- ============================================
+       JS — FAQ + Scroll Animations
+  ============================================ -->
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <script>
+    // ── FAQ Toggle (accessible) ──────────────────────────────────────────
+    function toggleFaq(btn) {
+      const item = btn.parentElement;
+      const wasOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item.open').forEach(el => {
+        el.classList.remove('open');
+        el.querySelector('.faq-question').setAttribute('aria-expanded','false');
+      });
+      if (!wasOpen) {
+        item.classList.add('open');
+        btn.setAttribute('aria-expanded','true');
+      }
+    }
+
+    // ── Scroll Animations ────────────────────────────────────────────────
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add('visible');
+      });
+    }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+    document.querySelectorAll('.animate-on-scroll').forEach(el => observer.observe(el));
+
+    // ── Nav scroll ───────────────────────────────────────────────────────
+    const nav = document.getElementById('nav');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 60) {
+        nav.style.background = 'rgba(10,10,10,0.96)';
+        nav.style.borderBottomColor = 'rgba(255,255,255,0.08)';
+      } else {
+        nav.style.background = 'rgba(10,10,10,0.85)';
+        nav.style.borderBottomColor = 'rgba(255,255,255,0.06)';
+      }
+    }, { passive: true });
+
+    // ── Swiper ───────────────────────────────────────────────────────────
+    new Swiper('#vorherNachherSwiper', {
+      slidesPerView: 1,
+      spaceBetween: 24,
+      pagination: { el: '.swiper-pagination', clickable: true },
+      breakpoints: {
+        768:  { slidesPerView: 2 },
+        1024: { slidesPerView: 3 }
+      }
+    });
+
+    // ── Preisrechner ─────────────────────────────────────────────────────
+    function fmt(n) { return n === 0 ? '0 €' : n.toFixed(0).replace(/\B(?=(\d{3})+(?!\d))/g,'.') + ' €'; }
+
+    function calcPrivat() {
+      const n = Math.max(0, parseInt(document.getElementById('r-fenster-normal').value)||0);
+      const g = Math.max(0, parseInt(document.getElementById('r-fenster-gross').value)||0);
+      document.getElementById('result-privat').textContent = fmt(n * 8 + g * 16);
+    }
+    function calcGewerbe() {
+      const f = Math.max(0, parseFloat(document.getElementById('r-flaeche-gewerbe').value)||0);
+      document.getElementById('result-gewerbe').textContent = fmt(f * 3);
+    }
+    function calcStein() {
+      const f  = Math.max(0, parseFloat(document.getElementById('r-flaeche-stein').value)||0);
+      const im = document.getElementById('r-stein-impraeg').checked ? f * 2 : 0;
+      const fg = document.getElementById('r-stein-fuge').checked    ? f * 3 : 0;
+      document.getElementById('result-stein').textContent = fmt(f * 6 + im + fg);
+    }
+
+    function switchTab(btn, panel) {
+      document.querySelectorAll('.rechner-tab').forEach(t => { t.classList.remove('active'); t.setAttribute('aria-selected','false'); });
+      document.querySelectorAll('.rechner-panel').forEach(p => p.classList.remove('active'));
+      btn.classList.add('active');
+      btn.setAttribute('aria-selected','true');
+      document.getElementById('panel-' + panel).classList.add('active');
+      const hint = document.getElementById('steuer-hinweis');
+      if (hint) hint.classList.toggle('show', panel === 'privat');
+    }
+
+    // ── Kontaktformular ──────────────────────────────────────────────────
+    function submitForm(e) {
+      e.preventDefault();
+      const form   = document.getElementById('anfrage-form');
+      const fields = [
+        { id: 'field-leistung', input: 'f-leistung' },
+        { id: 'field-plz',      input: 'f-plz'      },
+        { id: 'field-tel',      input: 'f-tel'       }
+      ];
+      let valid = true;
+      fields.forEach(({ id, input }) => {
+        const wrap = document.getElementById(id);
+        const el   = document.getElementById(input);
+        wrap.classList.remove('has-error');
+        if (!el.value.trim()) { wrap.classList.add('has-error'); valid = false; }
+      });
+      if (!valid) return;
+
+      const btn   = document.getElementById('form-btn');
+      const label = document.getElementById('form-btn-label');
+      btn.disabled = true;
+      label.textContent = 'Wird gesendet …';
+
+      // Mailto-Fallback (kein Backend erforderlich)
+      const leistung = document.getElementById('f-leistung').value;
+      const plz      = document.getElementById('f-plz').value;
+      const tel      = document.getElementById('f-tel').value;
+      const subject  = encodeURIComponent('Anfrage: ' + leistung + ' · PLZ ' + plz);
+      const body     = encodeURIComponent('Leistung: ' + leistung + '\nPLZ: ' + plz + '\nTelefon: ' + tel);
+      window.location.href = 'mailto:info@premium-fensterreinigung.de?subject=' + subject + '&body=' + body;
+
+      setTimeout(() => {
+        form.style.display = 'none';
+        document.getElementById('form-success').classList.add('show');
+      }, 600);
+    }
+  </script>
+
+</body>
+</html>
