@@ -1,0 +1,51 @@
+# Alte URLs — premium-fensterreinigung.de
+# Erstellt: 2026-05-18 (Phase 0 / website-klon)
+# Zweck: 301-Redirects in vercel.json (Phase 7)
+# Format: ALTE_URL → NEUE_URL
+
+# === HAUPTSEITEN ===
+/                                                    → /
+/kontakt/                                            → /kontakt/
+/kontakt/impressum/                                  → /kontakt/impressum/
+/kontakt/datenschutzerklaerung/                      → /kontakt/datenschutzerklaerung/
+
+# === SERVICE-PAGES (URL-Korrekturen nötig) ===
+/fensterreinigung/                                   → /fensterreinigung/
+/wintergartenreinigung/                              → /wintergartenreinigung/
+/glasreinigung/                                      → /glasreinigung/
+/terassenueberdachung/           ← 1x 's' (FALSCH)  → /terrassenueberdachung/  (2x 's', NEU)
+/solaranlagenreinigung/                              → /solaranlagenreinigung/
+/jalousienreinigung/                                 → /jalousienreinigung/
+
+# === NEUE SEITEN (kein Redirect nötig — existieren noch nicht) ===
+# /dachreinigung/          NEU
+# /fassadenreinigung/      NEU
+# /steinreinigung/         NEU
+# /privatkunden/           NEU
+# /gewerbekunden/          NEU
+
+# === LOCATION PAGES — FENSTERREINIGUNG ===
+/fensterreinigung/fensterreinigung-im-havelland/         → /fensterreinigung/fensterreinigung-im-havelland/
+/fensterreinigung/fensterreinigung-in-berlin/            → /fensterreinigung/fensterreinigung-in-berlin/
+/fensterreinigung/fensterreinigung-in-berlin-spandau/    → /fensterreinigung/fensterreinigung-in-berlin-spandau/
+/fensterreinigung/fensterreinigung-in-brandenburg/       → /fensterreinigung/fensterreinigung-in-brandenburg/
+/fensterreinigung/fensterreinigung-in-brieselang/        → /fensterreinigung/fensterreinigung-in-brieselang/
+/fensterreinigung/fensterreinigung-in-dallgow-doeberitz/ → /fensterreinigung/fensterreinigung-in-dallgow-doeberitz/
+/fensterreinigung/fensterreinigung-in-elstal/            → /fensterreinigung/fensterreinigung-in-elstal/
+/fensterreinigung/fensterreinigung-in-falkensee/         → /fensterreinigung/fensterreinigung-in-falkensee/
+/fensterreinigung/fensterreinigung-in-gatow/             → /fensterreinigung/fensterreinigung-in-gatow/
+/fensterreinigung/fensterreinigung-in-gross-glienicke/   → /fensterreinigung/fensterreinigung-in-gross-glienicke/
+/fensterreinigung/fensterreinigung-in-kladow/            → /fensterreinigung/fensterreinigung-in-kladow/
+/fensterreinigung/fensterreinigung-in-schoenwalde-glien/ → /fensterreinigung/fensterreinigung-in-schoenwalde-glien/
+/fensterreinigung/fensterreinigung-in-staaken/           → /fensterreinigung/fensterreinigung-in-staaken/
+/fensterreinigung/fensterreinigung-in-wustermark/        → /fensterreinigung/fensterreinigung-in-wustermark/
+
+# === LOCATION PAGES — GLASREINIGUNG (auf alter Site nicht vorhanden → neue URLs) ===
+# Alle /glasreinigung/glasreinigung-in-*/  → NEU, kein Redirect
+
+# === LOCATION PAGES — WINTERGARTENREINIGUNG (auf alter Site nicht vorhanden → neue URLs) ===
+# Alle /wintergartenreinigung/wintergartenreinigung-in-*/ → NEU, kein Redirect
+
+# === KRITISCHE 301-REDIRECTS FÜR PHASE 7 (vercel.json) ===
+# 1. /terassenueberdachung/ → /terrassenueberdachung/ (Tippfehler-Fix, SEO-kritisch)
+# 2. jr-gebaeudeservice.de/* → premium-fensterreinigung.de/* (erst nach Juliens OK)
