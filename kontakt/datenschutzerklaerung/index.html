@@ -385,6 +385,17 @@
   const ro = new IntersectionObserver(entries => { entries.forEach(e => { if (e.isIntersecting) { setTimeout(() => { e.target.classList.add('on'); }, e.target.dataset.delay || 0); ro.unobserve(e.target); } }); }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
   document.querySelectorAll('.reveal').forEach((el, i) => { el.dataset.delay = i * 80; ro.observe(el); });
   function toggleMenu(){const btn=document.getElementById('menu-btn');const menu=document.getElementById('mobile-menu');const icon=document.getElementById('menu-icon');const open=menu.classList.toggle('open');btn.setAttribute('aria-expanded',open);menu.setAttribute('aria-hidden',!open);icon.className=open?'ph ph-x text-xl':'ph ph-list text-xl';document.body.classList.toggle('menu-open',open);}
+  
+  function toggleLeistungen(){
+    var sub=document.getElementById('leistungen-sub');
+    var icon=document.getElementById('leistungen-icon');
+    var btn=document.getElementById('leistungen-btn');
+    var open=sub.classList.toggle('hidden');
+    sub.style.display=open?'none':'flex';
+    sub.classList.toggle('flex',!open);
+    icon.style.transform=open?'':'rotate(180deg)';
+    btn.setAttribute('aria-expanded',String(!open));
+  }
   function closeMenu(){const menu=document.getElementById('mobile-menu');if(!menu.classList.contains('open'))return;menu.classList.remove('open');document.getElementById('menu-btn').setAttribute('aria-expanded','false');menu.setAttribute('aria-hidden','true');document.getElementById('menu-icon').className='ph ph-list text-xl';document.body.classList.remove('menu-open');}
   document.addEventListener('keydown',e=>{if(e.key==='Escape')closeMenu();});
 </script>

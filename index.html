@@ -164,7 +164,22 @@
     </a>
     <div class="hidden lg:flex items-center gap-8 text-sm font-medium text-t2">
       <a href="/fensterreinigung/" class="hover:text-t1 transition-colors py-2">Fensterreinigung</a>
-      <a href="#leistungen"        class="hover:text-t1 transition-colors py-2">Leistungen</a>
+      <div class="relative group">
+      <button class="flex items-center gap-1 hover:text-t1 transition-colors py-2 cursor-pointer" aria-haspopup="true">Leistungen <i class="ph ph-caret-down text-xs transition-transform duration-200 group-hover:rotate-180"></i></button>
+      <div class="absolute top-full left-1/2 -translate-x-1/2 pt-3 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-150 z-50 pointer-events-none group-hover:pointer-events-auto">
+        <div class="border border-white/8 rounded-xl shadow-2xl overflow-hidden" style="min-width:220px;background:#161A20">
+          <a href="/fensterreinigung/"       class="block px-5 py-3 text-t2 hover:text-t1 hover:bg-white/5 transition-colors text-sm">Fensterreinigung</a>
+          <a href="/glasreinigung/"          class="block px-5 py-3 text-t2 hover:text-t1 hover:bg-white/5 transition-colors text-sm border-t border-white/5">Glasreinigung</a>
+          <a href="/wintergartenreinigung/"  class="block px-5 py-3 text-t2 hover:text-t1 hover:bg-white/5 transition-colors text-sm border-t border-white/5">Wintergarten</a>
+          <a href="/solaranlagenreinigung/"  class="block px-5 py-3 text-t2 hover:text-t1 hover:bg-white/5 transition-colors text-sm border-t border-white/5">Solaranlagen</a>
+          <a href="/jalousienreinigung/"     class="block px-5 py-3 text-t2 hover:text-t1 hover:bg-white/5 transition-colors text-sm border-t border-white/5">Jalousienreinigung</a>
+          <a href="/terrassenueberdachung/"  class="block px-5 py-3 text-t2 hover:text-t1 hover:bg-white/5 transition-colors text-sm border-t border-white/5">Terrassenüberdachung</a>
+          <a href="/dachreinigung/"          class="block px-5 py-3 text-t2 hover:text-t1 hover:bg-white/5 transition-colors text-sm border-t border-white/5">Dachreinigung</a>
+          <a href="/fassadenreinigung/"      class="block px-5 py-3 text-t2 hover:text-t1 hover:bg-white/5 transition-colors text-sm border-t border-white/5">Fassadenreinigung</a>
+          <a href="/steinreinigung/"         class="block px-5 py-3 text-t2 hover:text-t1 hover:bg-white/5 transition-colors text-sm border-t border-white/5">Steinreinigung</a>
+        </div>
+      </div>
+    </div>
       <a href="#preisrechner"      class="hover:text-t1 transition-colors py-2">Preisrechner</a>
       <a href="#anfrage"           class="hover:text-t1 transition-colors py-2">Kontakt</a>
     </div>
@@ -185,7 +200,22 @@
 <div id="mobile-menu" class="fixed inset-0 z-30 bg-bg flex-col pt-20 px-6 lg:hidden" style="background:rgba(13,15,18,0.98);backdrop-filter:blur(20px);" aria-hidden="true">
   <nav class="flex flex-col mt-8 border-t border-white/5">
     <a href="/fensterreinigung/" class="text-t2 hover:text-t1 transition-colors py-5 text-lg font-medium border-b border-white/5" onclick="closeMenu()">Fensterreinigung</a>
-    <a href="/#leistungen"       class="text-t2 hover:text-t1 transition-colors py-5 text-lg font-medium border-b border-white/5" onclick="closeMenu()">Leistungen</a>
+    <div class="border-b border-white/5">
+    <button onclick="toggleLeistungen()" class="w-full flex items-center justify-between text-t2 hover:text-t1 transition-colors py-5 text-lg font-medium" aria-expanded="false" id="leistungen-btn">
+      Leistungen <i id="leistungen-icon" class="ph ph-caret-down text-base transition-transform duration-200"></i>
+    </button>
+    <div id="leistungen-sub" class="hidden flex-col pb-2 pl-4">
+      <a href="/fensterreinigung/"       class="text-t2 hover:text-t1 transition-colors py-3 text-base border-b border-white/5 block" onclick="closeMenu()">Fensterreinigung</a>
+      <a href="/glasreinigung/"          class="text-t2 hover:text-t1 transition-colors py-3 text-base border-b border-white/5 block" onclick="closeMenu()">Glasreinigung</a>
+      <a href="/wintergartenreinigung/"  class="text-t2 hover:text-t1 transition-colors py-3 text-base border-b border-white/5 block" onclick="closeMenu()">Wintergarten</a>
+      <a href="/solaranlagenreinigung/"  class="text-t2 hover:text-t1 transition-colors py-3 text-base border-b border-white/5 block" onclick="closeMenu()">Solaranlagen</a>
+      <a href="/jalousienreinigung/"     class="text-t2 hover:text-t1 transition-colors py-3 text-base border-b border-white/5 block" onclick="closeMenu()">Jalousienreinigung</a>
+      <a href="/terrassenueberdachung/"  class="text-t2 hover:text-t1 transition-colors py-3 text-base border-b border-white/5 block" onclick="closeMenu()">Terrassenüberdachung</a>
+      <a href="/dachreinigung/"          class="text-t2 hover:text-t1 transition-colors py-3 text-base border-b border-white/5 block" onclick="closeMenu()">Dachreinigung</a>
+      <a href="/fassadenreinigung/"      class="text-t2 hover:text-t1 transition-colors py-3 text-base border-b border-white/5 block" onclick="closeMenu()">Fassadenreinigung</a>
+      <a href="/steinreinigung/"         class="text-t2 hover:text-t1 transition-colors py-3 text-base border-b border-white/5 block" onclick="closeMenu()">Steinreinigung</a>
+    </div>
+  </div>
     <a href="/#preisrechner"     class="text-t2 hover:text-t1 transition-colors py-5 text-lg font-medium border-b border-white/5" onclick="closeMenu()">Preisrechner</a>
     <a href="/kontakt/"          class="text-t2 hover:text-t1 transition-colors py-5 text-lg font-medium border-b border-white/5" onclick="closeMenu()">Kontakt</a>
   </nav>
@@ -1248,6 +1278,7 @@
     document.getElementById('form-success').classList.remove('hidden');
   }
   function toggleMenu(){const btn=document.getElementById('menu-btn');const menu=document.getElementById('mobile-menu');const icon=document.getElementById('menu-icon');const open=menu.classList.toggle('open');btn.setAttribute('aria-expanded',open);menu.setAttribute('aria-hidden',!open);icon.className=open?'ph ph-x text-xl':'ph ph-list text-xl';document.body.classList.toggle('menu-open',open);}
+    function toggleLeistungen(){var sub=document.getElementById('leistungen-sub');var icon=document.getElementById('leistungen-icon');var btn=document.getElementById('leistungen-btn');var hidden=sub.classList.contains('hidden');if(hidden){sub.classList.remove('hidden');sub.style.display='flex';icon.style.transform='rotate(180deg)';btn.setAttribute('aria-expanded','true');}else{sub.classList.add('hidden');sub.style.display='none';icon.style.transform='';btn.setAttribute('aria-expanded','false');}}
   function closeMenu(){const menu=document.getElementById('mobile-menu');if(!menu.classList.contains('open'))return;menu.classList.remove('open');document.getElementById('menu-btn').setAttribute('aria-expanded','false');menu.setAttribute('aria-hidden','true');document.getElementById('menu-icon').className='ph ph-list text-xl';document.body.classList.remove('menu-open');}
   document.addEventListener('keydown',e=>{if(e.key==='Escape')closeMenu();});
 </script>
