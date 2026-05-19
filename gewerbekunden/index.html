@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="de" style="color-scheme:dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fensterreinigung &amp; Gebäudereinigung Gewerbe Berlin</title>
+  <meta name="description" content="Gebäudereinigung Gewerbekunden Berlin &amp; Havelland: alle 9 Services, Festpreis vor Auftragsstart, Wartungsvertrag, kein Betriebsausfall." />
+  <link rel="canonical" href="https://premium-fensterreinigung.de/gewerbekunden/" />
+  <meta property="og:title" content="Fensterreinigung &amp; Gebäudereinigung Gewerbe Berlin" />
+  <meta property="og:description" content="Alle 9 Services für Gewerbekunden in Berlin &amp; Havelland. Festpreis vor Auftragsstart, Wartungsverträge, Rechnung für Buchhaltung." />
+  <meta property="og:url" content="https://premium-fensterreinigung.de/gewerbekunden/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://premium-fensterreinigung.de/assets/IMG_4337.jpg.webp" />
+  <meta property="og:locale" content="de_DE" />
+  <link rel="preconnect" href="https://fonts.bunny.net" />
+  <link href="https://fonts.bunny.net/css2?family=bebas-neue&family=plus-jakarta-sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: { extend: { colors: { bg:'#0D0F12',s1:'#161A20',s2:'#1E2530',s3:'#0D1B2A',blue:{DEFAULT:'#1a56db',light:'#4A8FFF',dark:'#0e3a9e'},t1:'#F2F4F8',t2:'#8A95A3',t3:'#5A6472',wa:'#25D366' }, fontFamily: { display:['"Bebas Neue"','Impact','sans-serif'], body:['"Plus Jakarta Sans"','sans-serif'] } } }
+    }
+  </script>
+  <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2/src/regular/style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <style>
+    * { -webkit-font-smoothing: antialiased; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Plus Jakarta Sans', sans-serif; margin: 0; }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; } }
+    #nav { transition: background 0.3s ease, border-color 0.3s ease; }
+    #nav.scrolled { background: rgba(13,15,18,0.96) !important; backdrop-filter: blur(14px); border-bottom: 1px solid rgba(242,244,248,0.07); }
+    .reveal { opacity: 0; transform: translateY(28px); transition: opacity 0.55s ease, transform 0.55s ease; }
+    .reveal-l { opacity: 0; transform: translateX(-28px); transition: opacity 0.55s ease, transform 0.55s ease; }
+    .reveal.on, .reveal-l.on { opacity: 1; transform: none; }
+    .svc { position: relative; overflow: hidden; border-radius: 3px; display: block; text-decoration: none; }
+    .svc-bg { position: absolute; inset: 0; background-size: cover; background-position: center; transition: transform 0.65s ease; }
+    .svc:hover .svc-bg { transform: scale(1.05); }
+    .svc-overlay { position: absolute; inset: 0; background: linear-gradient(to top, rgba(13,15,18,0.90) 0%, rgba(13,15,18,0.22) 55%, transparent 100%); transition: background 0.4s ease; }
+    .svc:hover .svc-overlay { background: linear-gradient(to top, rgba(26,86,219,0.50) 0%, rgba(13,15,18,0.38) 55%, transparent 100%); }
+    .svc-body { position: relative; z-index: 2; display: flex; flex-direction: column; justify-content: flex-end; height: 100%; padding: 24px; }
+    .svc-num { font-size: 10px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(255,255,255,0.38); margin-bottom: 4px; }
+    .svc-name { font-family: 'Bebas Neue', sans-serif; letter-spacing: 0.05em; color: #fff; line-height: 1; margin-bottom: 5px; }
+    .svc-sub { font-size: 11px; color: rgba(255,255,255,0.50); line-height: 1.4; }
+    .svc-arrow { position: absolute; top: 18px; right: 18px; width: 30px; height: 30px; border-radius: 50%; background: rgba(255,255,255,0.10); display: flex; align-items: center; justify-content: center; color: rgba(255,255,255,0.55); font-size: 13px; z-index: 3; transition: background 0.25s ease, transform 0.25s ease; }
+    .svc:hover .svc-arrow { background: #1a56db; color: #fff; transform: translate(2px,-2px); }
+    .faq-body { max-height: 0; overflow: hidden; transition: max-height 0.35s ease; }
+    .faq-body.open { max-height: 400px; }
+    .faq-icon { transition: transform 0.25s ease; }
+    [aria-expanded="true"] .faq-icon { transform: rotate(45deg); }
+    .swiper-pagination-bullet { background: rgba(255,255,255,0.25) !important; }
+    .swiper-pagination-bullet-active { background: #1a56db !important; }
+    :focus-visible { outline: 2px solid #1a56db; outline-offset: 3px; border-radius: 4px; }
+    #nav a, #nav button { min-height: 44px; display: inline-flex; align-items: center; }
+    a[href^="tel:"] { min-height: 44px; display: inline-flex; align-items: center; }
+    .btn-tap:active { transform: scale(0.96); transition-duration: 80ms; }
+    h1, h2, h3 { text-wrap: balance; }
+    p { text-wrap: pretty; }
+    .tabular { font-variant-numeric: tabular-nums; }
+    img:not([aria-hidden]) { outline: 1px solid rgba(255,255,255,0.06); outline-offset: 0; }
+    .svc, .svc-bg, .svc-overlay, .svc-arrow { transition-property: transform, opacity, background, border-color, box-shadow, filter; }
+    #mobile-menu { display:none; }
+    #mobile-menu.open { display:flex; }
+    body.menu-open { overflow:hidden; }
+  </style>
+  <!-- Consent Mode v2 — Standard: verweigert bis Klaro-Zustimmung -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('consent', 'default', {
+      'analytics_storage': 'denied',
+      'ad_storage': 'denied',
+      'wait_for_update': 500
+    });
+  </script>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-XXXXXXX');</script>
+  <!-- Klaro Cookie Consent -->
+  <script src="/klaro-config.js"></script>
+  <script defer src="https://cdn.kiprotect.com/klaro/v0.7/klaro.js"></script>
+</head>
+<body class="bg-bg text-t1">
+  <!-- GTM noscript fallback -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+
+<a href="https://wa.me/491627061789?text=Hallo%2C+ich+m%C3%B6chte+ein+Angebot+anfragen." class="btn-tap fixed bottom-6 right-6 w-14 h-14 rounded-full bg-wa flex items-center justify-center z-50 shadow-xl hover:scale-110 transition-transform duration-200" aria-label="WhatsApp kontaktieren">
+  <i class="ph ph-whatsapp-logo text-white text-2xl"></i>
+</a>
+
+<nav id="nav" class="fixed top-0 inset-x-0 z-40">
+  <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+    <a href="/" class="flex items-center gap-3 shrink-0 min-h-[44px]">
+      <img src="../../assets/35A0CDFB-340E-43DE-B074-575700301CD6.png.webp" alt="JR Gebäudeservice" class="h-8 w-auto" />
+    </a>
+    <div class="hidden lg:flex items-center gap-8 text-sm font-medium text-t2">
+      <a href="/gewerbekunden/" class="text-t1 border-b border-blue pb-0.5 py-2" aria-current="page">Gewerbekunden</a>
+      <a href="#leistungen"   class="hover:text-t1 transition-colors py-2">Leistungen</a>
+      <a href="#preisrechner" class="hover:text-t1 transition-colors py-2">Preisrechner</a>
+      <a href="#anfrage"      class="hover:text-t1 transition-colors py-2">Kontakt</a>
+    </div>
+    <div class="flex items-center gap-3">
+      <a href="tel:+491627061789" class="hidden md:flex items-center gap-1.5 text-t2 hover:text-t1 text-sm transition-colors">
+        <i class="ph ph-phone text-blue"></i> 0162 7061789
+      </a>
+      <a href="#anfrage" class="btn-tap bg-blue hover:bg-blue-dark text-white text-xs font-semibold tracking-widest uppercase px-4 py-2.5 rounded transition-[background-color]">Angebot</a>
+      <button id="menu-btn" onclick="toggleMenu()" class="lg:hidden btn-tap w-10 h-10 flex items-center justify-center rounded text-t2 hover:text-t1 transition-colors" aria-label="Menü öffnen" aria-expanded="false">
+        <i id="menu-icon" class="ph ph-list text-xl"></i>
+      </button>
+    </div>
+  </div>
+</nav>
+<!-- Mobile Menu Overlay -->
+<div id="mobile-menu" class="fixed inset-0 z-30 bg-bg flex-col pt-20 px-6 lg:hidden" style="background:rgba(13,15,18,0.98);backdrop-filter:blur(20px);" aria-hidden="true">
+  <nav class="flex flex-col mt-8 border-t border-white/5">
+    <a href="/fensterreinigung/" class="text-t2 hover:text-t1 transition-colors py-5 text-lg font-medium border-b border-white/5" onclick="closeMenu()">Fensterreinigung</a>
+    <a href="/glasreinigung/"    class="text-t2 hover:text-t1 transition-colors py-5 text-lg font-medium border-b border-white/5" onclick="closeMenu()">Glasreinigung</a>
+    <a href="/wintergartenreinigung/" class="text-t2 hover:text-t1 transition-colors py-5 text-lg font-medium border-b border-white/5" onclick="closeMenu()">Wintergarten</a>
+    <a href="/solaranlagenreinigung/" class="text-t2 hover:text-t1 transition-colors py-5 text-lg font-medium border-b border-white/5" onclick="closeMenu()">Solaranlagen</a>
+    <a href="/kontakt/"         class="text-t2 hover:text-t1 transition-colors py-5 text-lg font-medium border-b border-white/5" onclick="closeMenu()">Kontakt</a>
+  </nav>
+  <div class="mt-8 flex flex-col gap-3">
+    <a href="tel:+491627061789" class="flex items-center gap-3 text-t2 hover:text-t1 py-3 text-base transition-colors">
+      <i class="ph ph-phone text-blue text-xl"></i> 0162 7061789
+    </a>
+    <a href="https://wa.me/491627061789?text=Hallo%2C+ich+m%C3%B6chte+ein+Angebot+anfragen." onclick="closeMenu()" class="flex items-center justify-center gap-2 bg-wa text-white font-semibold text-sm tracking-wide uppercase px-5 py-4 rounded-lg mt-2">
+      <i class="ph ph-whatsapp-logo text-xl"></i> WhatsApp schreiben
+    </a>
+  </div>
+</div>
+
+<section class="relative min-h-[100dvh] flex items-end pb-20 overflow-hidden">
+  <div class="absolute inset-0">
+    <img src="../../assets/IMG_4337.jpg.webp" alt="" class="absolute inset-0 w-full h-full object-cover" aria-hidden="true" />
+    <div class="absolute inset-0" style="background:linear-gradient(to bottom,rgba(13,15,18,.18) 0%,rgba(13,15,18,.68) 58%,rgba(13,15,18,.97) 100%)"></div>
+    <div class="absolute bottom-0 inset-x-0 h-40" style="background:linear-gradient(to top,#0D0F12,transparent)"></div>
+  </div>
+  <div class="absolute left-[76px] top-24 bottom-24 w-px bg-blue opacity-40 hidden xl:block"></div>
+  <div class="relative z-10 max-w-7xl mx-auto px-6 w-full">
+    <div class="max-w-3xl">
+      <div class="flex items-center gap-3 mb-6">
+        <div class="w-8 h-px bg-blue"></div>
+        <span class="text-blue text-xs font-semibold tracking-widest uppercase">Berlin · Havelland · Brandenburg</span>
+      </div>
+      <h1 class="font-display text-t1 leading-none mb-6" style="font-size:clamp(56px,9vw,108px);letter-spacing:0.02em">
+        GEBÄUDE-<br/>REINIGUNG<br/><span class="text-blue">GEWERBEKUNDEN</span>
+        <span class="sr-only">: Fensterreinigung und Gebäudereinigung für Gewerbekunden in Berlin und im Havelland. Alle 9 Services aus einer Hand. Festpreis vor Auftragsstart, Wartungsverträge, kein Betriebsausfall.</span>
+      </h1>
+      <p class="text-t2 text-lg mb-10 max-w-lg leading-relaxed">
+        Büros, Hotels, Praxen und Mehrfamilienhäuser in Berlin und im Havelland. Alle 9 Gebäudereinigungs-Services aus einer Hand: Festpreis vor Auftragsstart, Wartungsvertrag auf Wunsch, Rechnung für Ihre Buchhaltung.
+      </p>
+      <div class="flex flex-wrap gap-4 mb-12">
+        <a href="#anfrage" class="btn-tap inline-flex items-center gap-2 bg-blue hover:bg-blue-dark text-white font-semibold text-sm tracking-widest uppercase px-8 py-4 rounded transition-[background-color,transform,box-shadow] duration-150 hover:-translate-y-0.5 hover:shadow-lg">
+          Festpreis anfragen <i class="ph ph-arrow-right"></i>
+        </a>
+        <a href="https://wa.me/491627061789?text=Hallo%2C+ich+m%C3%B6chte+ein+Angebot+anfragen." class="btn-tap inline-flex items-center gap-2 border border-white/20 hover:border-white/40 hover:bg-white/5 text-t1 font-semibold text-sm tracking-widest uppercase px-8 py-4 rounded transition-[background-color,border-color] duration-150">
+          <i class="ph ph-whatsapp-logo text-wa"></i> Anfrage senden
+        </a>
+      </div>
+      <div class="flex flex-wrap items-center gap-x-5 gap-y-2 text-xs text-t3">
+        <span class="flex items-center gap-1.5 text-yellow-400">★★★★★ <span class="text-t3">5,0</span></span>
+        <span>743 abgeschlossene Aufträge</span>
+        <span class="flex items-center gap-1.5"><i class="ph ph-shield-check text-blue text-sm"></i> Haftpflichtversichert</span>
+        <span class="flex items-center gap-1.5"><i class="ph ph-seal-check text-blue text-sm"></i> Handwerkskammer</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="py-28 bg-s3" id="leistung">
+  <div class="max-w-7xl mx-auto px-6">
+
+    <div class="mb-24 reveal">
+      <div class="flex items-center gap-3 mb-8">
+        <div class="w-8 h-px bg-blue opacity-60"></div>
+        <span class="text-t3 text-xs font-semibold tracking-widest uppercase">Alle Services</span>
+      </div>
+      <h2 class="font-display text-t1 leading-none mb-10" style="font-size:clamp(34px,4.5vw,50px);letter-spacing:.02em">
+        9 SERVICES FÜR<br/>GEWERBEKUNDEN
+      </h2>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
+        <a href="/fensterreinigung/" class="bg-bg border border-white/6 rounded p-5 flex items-start gap-4 hover:border-blue/30 transition-[border-color] group">
+          <i class="ph ph-window text-blue text-xl shrink-0 mt-0.5"></i>
+          <div>
+            <div class="text-t1 text-sm font-semibold mb-1 group-hover:text-blue transition-colors">Fensterreinigung</div>
+            <div class="text-t3 text-xs leading-relaxed">Bürofassaden · Schaufenster · bodentiefe Verglasung</div>
+          </div>
+        </a>
+        <a href="/glasreinigung/" class="bg-bg border border-white/6 rounded p-5 flex items-start gap-4 hover:border-blue/30 transition-[border-color] group">
+          <i class="ph ph-squares-four text-blue text-xl shrink-0 mt-0.5"></i>
+          <div>
+            <div class="text-t1 text-sm font-semibold mb-1 group-hover:text-blue transition-colors">Glasreinigung</div>
+            <div class="text-t3 text-xs leading-relaxed">Glasfassaden · Trennwände · Atrien · Eingangsanlagen</div>
+          </div>
+        </a>
+        <a href="/wintergartenreinigung/" class="bg-bg border border-white/6 rounded p-5 flex items-start gap-4 hover:border-blue/30 transition-[border-color] group">
+          <i class="ph ph-plant text-blue text-xl shrink-0 mt-0.5"></i>
+          <div>
+            <div class="text-t1 text-sm font-semibold mb-1 group-hover:text-blue transition-colors">Wintergartenreinigung</div>
+            <div class="text-t3 text-xs leading-relaxed">Restaurant-Terrassen · Büro-Wintergärten</div>
+          </div>
+        </a>
+        <a href="/solaranlagenreinigung/" class="bg-bg border border-white/6 rounded p-5 flex items-start gap-4 hover:border-blue/30 transition-[border-color] group">
+          <i class="ph ph-sun text-blue text-xl shrink-0 mt-0.5"></i>
+          <div>
+            <div class="text-t1 text-sm font-semibold mb-1 group-hover:text-blue transition-colors">Solaranlagenreinigung</div>
+            <div class="text-t3 text-xs leading-relaxed">Gewerbedächer · Flachdach · Carports · Ertrag</div>
+          </div>
+        </a>
+        <a href="/jalousienreinigung/" class="bg-bg border border-white/6 rounded p-5 flex items-start gap-4 hover:border-blue/30 transition-[border-color] group">
+          <i class="ph ph-sliders text-blue text-xl shrink-0 mt-0.5"></i>
+          <div>
+            <div class="text-t1 text-sm font-semibold mb-1 group-hover:text-blue transition-colors">Jalousienreinigung</div>
+            <div class="text-t3 text-xs leading-relaxed">Außenschutz · Raffstores · gewerbliche Rollläden</div>
+          </div>
+        </a>
+        <a href="/dachreinigung/" class="bg-bg border border-white/6 rounded p-5 flex items-start gap-4 hover:border-blue/30 transition-[border-color] group">
+          <i class="ph ph-house text-blue text-xl shrink-0 mt-0.5"></i>
+          <div>
+            <div class="text-t1 text-sm font-semibold mb-1 group-hover:text-blue transition-colors">Dachreinigung</div>
+            <div class="text-t3 text-xs leading-relaxed">Flachdach · Schrägdach · Moos und Grünbelag</div>
+          </div>
+        </a>
+        <a href="/fassadenreinigung/" class="bg-bg border border-white/6 rounded p-5 flex items-start gap-4 hover:border-blue/30 transition-[border-color] group">
+          <i class="ph ph-building text-blue text-xl shrink-0 mt-0.5"></i>
+          <div>
+            <div class="text-t1 text-sm font-semibold mb-1 group-hover:text-blue transition-colors">Fassadenreinigung</div>
+            <div class="text-t3 text-xs leading-relaxed">Klinker · Putz · Graffiti-Entfernung · Biozid-Schutz</div>
+          </div>
+        </a>
+        <a href="/steinreinigung/" class="bg-bg border border-white/6 rounded p-5 flex items-start gap-4 hover:border-blue/30 transition-[border-color] group">
+          <i class="ph ph-mountains text-blue text-xl shrink-0 mt-0.5"></i>
+          <div>
+            <div class="text-t1 text-sm font-semibold mb-1 group-hover:text-blue transition-colors">Steinreinigung</div>
+            <div class="text-t3 text-xs leading-relaxed">Außenanlagen · Einfahrten · Gehwege · Rutschgefahr</div>
+          </div>
+        </a>
+        <a href="/terrassenueberdachung/" class="bg-bg border border-white/6 rounded p-5 flex items-start gap-4 hover:border-blue/30 transition-[border-color] group">
+          <i class="ph ph-umbrella text-blue text-xl shrink-0 mt-0.5"></i>
+          <div>
+            <div class="text-t1 text-sm font-semibold mb-1 group-hover:text-blue transition-colors">Terrassenüberdachung</div>
+            <div class="text-t3 text-xs leading-relaxed">Gastronomieterrassen · Hotel-Außenbereiche</div>
+          </div>
+        </a>
+      </div>
+      <p class="text-t3 text-xs mt-4">Ein Ansprechpartner. Eine Rechnung. Kein Extratermin für Rinnen oder Profile.</p>
+    </div>
+
+    <div class="reveal mb-24">
+      <div class="flex items-center gap-3 mb-8">
+        <div class="w-8 h-px bg-blue opacity-60"></div>
+        <span class="text-t3 text-xs font-semibold tracking-widest uppercase">Wartungsverträge</span>
+      </div>
+      <h2 class="font-display text-t1 leading-none mb-10" style="font-size:clamp(34px,4.5vw,50px);letter-spacing:.02em">
+        FESTE TERMINE.<br/>FESTER PREIS.<br/>KEIN AUFWAND.
+      </h2>
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="bg-bg border border-blue/20 rounded p-8">
+          <div class="text-t3 text-xs uppercase tracking-widest mb-6">Im Wartungsvertrag enthalten</div>
+          <ul class="space-y-3 text-t2 text-sm">
+            <li class="flex items-start gap-3"><i class="ph ph-check text-blue text-base shrink-0 mt-0.5"></i><span>Feste Reinigungstermine für das gesamte Jahr</span></li>
+            <li class="flex items-start gap-3"><i class="ph ph-check text-blue text-base shrink-0 mt-0.5"></i><span>Festpreis für die gesamte Vertragslaufzeit</span></li>
+            <li class="flex items-start gap-3"><i class="ph ph-check text-blue text-base shrink-0 mt-0.5"></i><span>Vorrang bei kurzfristigen Terminanfragen</span></li>
+            <li class="flex items-start gap-3"><i class="ph ph-check text-blue text-base shrink-0 mt-0.5"></i><span>Quartalsrechnung oder Jahresrechnung auf Anfrage</span></li>
+            <li class="flex items-start gap-3"><i class="ph ph-check text-blue text-base shrink-0 mt-0.5"></i><span>Halbjährliche oder jährliche Behandlung wählbar</span></li>
+          </ul>
+        </div>
+        <div class="bg-bg border border-white/6 rounded p-8">
+          <div class="text-t3 text-xs uppercase tracking-widest mb-6">Für wen geeignet</div>
+          <ul class="space-y-3 text-t2 text-sm">
+            <li class="flex items-start gap-3"><i class="ph ph-buildings text-blue text-base shrink-0 mt-0.5"></i><span>Bürogebäude und Gewerbeobjekte</span></li>
+            <li class="flex items-start gap-3"><i class="ph ph-fork-knife text-blue text-base shrink-0 mt-0.5"></i><span>Restaurants und Gastronomiebetriebe</span></li>
+            <li class="flex items-start gap-3"><i class="ph ph-bed text-blue text-base shrink-0 mt-0.5"></i><span>Hotels und Beherbergungsbetriebe</span></li>
+            <li class="flex items-start gap-3"><i class="ph ph-first-aid text-blue text-base shrink-0 mt-0.5"></i><span>Praxen und medizinische Einrichtungen</span></li>
+            <li class="flex items-start gap-3"><i class="ph ph-house-line text-blue text-base shrink-0 mt-0.5"></i><span>Mehrfamilienhäuser und Hausverwaltungen</span></li>
+          </ul>
+          <p class="text-t3 text-xs mt-4">Rahmenverträge für Mehrfachstandorte auf Anfrage.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-bg border border-white/6 rounded p-8 reveal mb-16">
+      <div class="flex items-center gap-3 mb-6">
+        <div class="w-6 h-px bg-blue"></div>
+        <span class="text-t3 text-xs font-semibold tracking-widest uppercase">Steuerliche Absetzbarkeit</span>
+      </div>
+      <h3 class="font-display text-t1 leading-none mb-4" style="font-size:clamp(26px,3vw,38px);letter-spacing:.02em">BETRIEBSAUSGABEN<br/>ABSETZBAR</h3>
+      <p class="text-t2 text-sm leading-relaxed mb-4">
+        Reinigungskosten für gewerbliche Objekte sind Betriebsausgaben. Sie mindern den steuerpflichtigen Gewinn in voller Höhe. Wir stellen Rechnungen mit Einzelpositionen nach Leistung und ausgewiesener MwSt. aus.
+      </p>
+      <p class="text-t3 text-xs">Format auf Anfrage anpassbar für Ihre Buchhaltungssoftware.</p>
+    </div>
+
+  </div>
+</section>
+
+<section class="border-y border-white/5 bg-s1">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="grid grid-cols-2 md:grid-cols-4 divide-x divide-white/5">
+      <div class="py-10 px-8 text-center reveal"><div class="font-display text-blue leading-none mb-2" style="font-size:clamp(44px,6vw,68px)">9</div><div class="text-t3 text-xs uppercase tracking-widest">Services</div><div class="text-t3 text-xs mt-1">Alle aus einer Hand</div></div>
+      <div class="py-10 px-8 text-center reveal" style="transition-delay:.08s"><div class="font-display text-t1 leading-none mb-2" style="font-size:clamp(44px,6vw,68px)">24h</div><div class="text-t3 text-xs uppercase tracking-widest">Festpreis</div><div class="text-t3 text-xs mt-1">Vor Auftragsstart</div></div>
+      <div class="py-10 px-8 text-center reveal" style="transition-delay:.16s"><div class="font-display text-blue leading-none mb-2" style="font-size:clamp(44px,6vw,68px)">0</div><div class="text-t3 text-xs uppercase tracking-widest">Betriebsausfall</div><div class="text-t3 text-xs mt-1">Außerhalb der Kernzeiten</div></div>
+      <div class="py-10 px-8 text-center reveal" style="transition-delay:.24s"><div class="font-display text-t1 leading-none mb-2" style="font-size:clamp(44px,6vw,68px)">743+</div><div class="text-t3 text-xs uppercase tracking-widest">Aufträge</div><div class="text-t3 text-xs mt-1">seit 2022 selbstständig</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="py-28" id="ergebnisse">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="flex items-end justify-between mb-12 reveal">
+      <div>
+        <div class="flex items-center gap-3 mb-6"><div class="w-8 h-px bg-blue"></div><span class="text-t3 text-xs font-semibold tracking-widest uppercase">Ergebnisse</span></div>
+        <h2 class="font-display text-t1 leading-none" style="font-size:clamp(38px,5vw,54px);letter-spacing:.02em">VORHER · NACHHER</h2>
+      </div>
+    </div>
+    <div class="swiper" id="resultsSwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><div class="relative aspect-video rounded overflow-hidden"><img src="../../assets/IMG_4337.jpg.webp" alt="Fassadenreinigung Gewerbeobjekt Berlin Ergebnis" class="w-full h-full object-cover" /><div class="absolute bottom-0 inset-x-0 p-4" style="background:linear-gradient(to top,rgba(13,15,18,.85),transparent)"><p class="text-xs text-t2 uppercase tracking-widest">Fassadenreinigung · Bürogebäude · Berlin</p></div></div></div>
+        <div class="swiper-slide"><div class="relative aspect-video rounded overflow-hidden"><img src="../../assets/B8140E4A-215E-4541-8E18-D27DECF21821.png.webp" alt="Glasreinigung Gewerbefassade Ergebnis" class="w-full h-full object-cover" /><div class="absolute bottom-0 inset-x-0 p-4" style="background:linear-gradient(to top,rgba(13,15,18,.85),transparent)"><p class="text-xs text-t2 uppercase tracking-widest">Glasreinigung · Gewerbefassade · Havelland</p></div></div></div>
+        <div class="swiper-slide"><div class="relative aspect-video rounded overflow-hidden"><img src="../../assets/0EC186D7-7830-49EA-97F7-DFACAB2992F5.png.webp" alt="Gebäudereinigung Gewerbe Ergebnis" class="w-full h-full object-cover" loading="lazy" /><div class="absolute bottom-0 inset-x-0 p-4" style="background:linear-gradient(to top,rgba(13,15,18,.85),transparent)"><p class="text-xs text-t2 uppercase tracking-widest">Außenanlage · Gewerbeobjekt · Berlin</p></div></div></div>
+      </div>
+      <div class="swiper-pagination mt-5"></div>
+    </div>
+  </div>
+</section>
+
+<section class="py-28 bg-s1" id="leistungen">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="flex items-end justify-between mb-12 reveal">
+      <div>
+        <div class="flex items-center gap-3 mb-6"><div class="w-8 h-px bg-blue"></div><span class="text-t3 text-xs font-semibold tracking-widest uppercase">Unsere Leistungen</span></div>
+        <h2 class="font-display text-t1 leading-none" style="font-size:clamp(38px,5vw,54px);letter-spacing:.02em">ALLE SERVICES<br/>IM ÜBERBLICK</h2>
+      </div>
+      <p class="hidden md:block text-t3 text-sm max-w-xs text-right leading-relaxed">Berlin und Havelland.<br/>9 Services für Ihr Objekt.</p>
+    </div>
+    <div class="flex flex-col gap-3">
+      <div class="svc reveal" style="height:300px;cursor:default" aria-label="Gewerbekunden — aktuelle Seite">
+        <div class="svc-bg" style="background-image:url('../../assets/IMG_4337.jpg.webp')"></div>
+        <div class="svc-overlay" style="background:linear-gradient(to top,rgba(26,86,219,0.45) 0%,rgba(13,15,18,0.38) 55%,transparent 100%)"></div>
+        <div class="svc-body" style="justify-content:center;max-width:500px">
+          <span class="svc-num">Aktuelle Seite</span>
+          <div class="svc-name" style="font-size:clamp(30px,4vw,46px)">GEWERBEKUNDEN</div>
+          <div class="svc-sub" style="font-size:13px">Büros · Hotels · Praxen · Gastronomie · Mehrfamilienhäuser</div>
+        </div>
+      </div>
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-3 reveal">
+        <a href="/fensterreinigung/" class="svc" style="height:280px" aria-label="Fensterreinigung">
+          <div class="svc-bg" style="background-image:url('../../assets/IMG_7689.jpg.webp')"></div>
+          <div class="svc-overlay"></div><div class="svc-arrow"><i class="ph ph-arrow-right"></i></div>
+          <div class="svc-body"><span class="svc-num">01</span><div class="svc-name">FENSTERREINIGUNG</div><div class="svc-sub">ab 8 €/Fenster · Rahmen inkl.</div></div>
+        </a>
+        <a href="/glasreinigung/" class="svc" style="height:280px" aria-label="Glasreinigung">
+          <div class="svc-bg" style="background-image:url('../../assets/IMG_7859.jpg.webp')"></div>
+          <div class="svc-overlay"></div><div class="svc-arrow"><i class="ph ph-arrow-right"></i></div>
+          <div class="svc-body"><span class="svc-num">02</span><div class="svc-name">GLASREINIGUNG</div><div class="svc-sub">Fassaden · Geländer · Trennwände</div></div>
+        </a>
+        <a href="/fassadenreinigung/" class="svc" style="height:280px" aria-label="Fassadenreinigung">
+          <div class="svc-bg" style="background-image:url('../../assets/IMG_4337.jpg.webp')"></div>
+          <div class="svc-overlay"></div><div class="svc-arrow"><i class="ph ph-arrow-right"></i></div>
+          <div class="svc-body"><span class="svc-num">08</span><div class="svc-name">FASSADENREINIGUNG</div><div class="svc-sub">Putz · Klinker · Graffiti</div></div>
+        </a>
+        <a href="/dachreinigung/" class="svc" style="height:280px" aria-label="Dachreinigung">
+          <div class="svc-bg" style="background-image:url('../../assets/IMG_4444.jpg.webp')"></div>
+          <div class="svc-overlay"></div><div class="svc-arrow"><i class="ph ph-arrow-right"></i></div>
+          <div class="svc-body"><span class="svc-num">07</span><div class="svc-name">DACHREINIGUNG</div><div class="svc-sub">Moos · Flechten · Biozid-Option</div></div>
+        </a>
+      </div>
+      <div class="grid grid-cols-2 lg:grid-cols-5 gap-3 reveal">
+        <a href="/wintergartenreinigung/" class="svc" style="height:200px" aria-label="Wintergartenreinigung">
+          <div class="svc-bg" style="background-image:url('../../assets/IMG_7654.jpg.webp')"></div>
+          <div class="svc-overlay"></div><div class="svc-arrow"><i class="ph ph-arrow-right"></i></div>
+          <div class="svc-body"><span class="svc-num">03</span><div class="svc-name">WINTERGARTEN</div></div>
+        </a>
+        <a href="/solaranlagenreinigung/" class="svc" style="height:200px" aria-label="Solaranlagenreinigung">
+          <div class="svc-bg" style="background-image:url('../../assets/0F0D24C2-3558-4046-BCEC-E52ECBEAC058.png.webp')"></div>
+          <div class="svc-overlay"></div><div class="svc-arrow"><i class="ph ph-arrow-right"></i></div>
+          <div class="svc-body"><span class="svc-num">04</span><div class="svc-name">SOLARANLAGE</div></div>
+        </a>
+        <a href="/jalousienreinigung/" class="svc" style="height:200px" aria-label="Jalousienreinigung">
+          <div class="svc-bg" style="background-image:url('../../assets/IMG_4180.jpg.webp')"></div>
+          <div class="svc-overlay"></div><div class="svc-arrow"><i class="ph ph-arrow-right"></i></div>
+          <div class="svc-body"><span class="svc-num">05</span><div class="svc-name">JALOUSIEN</div></div>
+        </a>
+        <a href="/terrassenueberdachung/" class="svc" style="height:200px" aria-label="Terrassenüberdachung">
+          <div class="svc-bg" style="background-image:url('../../assets/IMG_4520.jpg.webp')"></div>
+          <div class="svc-overlay"></div><div class="svc-arrow"><i class="ph ph-arrow-right"></i></div>
+          <div class="svc-body"><span class="svc-num">06</span><div class="svc-name">TERRASSENÜBERDACHUNG</div></div>
+        </a>
+        <a href="/steinreinigung/" class="svc" style="height:200px" aria-label="Steinreinigung">
+          <div class="svc-bg" style="background-image:url('../../assets/IMG_4107.jpg.webp')"></div>
+          <div class="svc-overlay"></div><div class="svc-arrow"><i class="ph ph-arrow-right"></i></div>
+          <div class="svc-body"><span class="svc-num">09</span><div class="svc-name">STEINREINIGUNG</div></div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="py-28 overflow-hidden">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="grid lg:grid-cols-2 gap-20 items-center">
+      <div class="relative reveal-l">
+        <img src="../../assets/E1F5A667-9471-4E22-B183-25758B86F367.png.webp" alt="Julien Ranft — Inhaber Premium Fensterreinigung" class="w-full max-w-sm rounded aspect-[3/4] object-cover object-top" />
+        <div class="absolute bottom-6 right-6 bg-bg border border-white/10 px-4 py-3 rounded text-xs"><div class="text-blue font-semibold mb-1">Julien Ranft</div><div class="text-t3">Inhaber · seit 2022</div></div>
+      </div>
+      <div class="reveal">
+        <div class="flex items-center gap-3 mb-8"><div class="w-8 h-px bg-blue"></div><span class="text-t3 text-xs font-semibold tracking-widest uppercase">Über uns</span></div>
+        <h2 class="font-display text-t1 leading-none mb-8" style="font-size:clamp(34px,4.5vw,50px);letter-spacing:.02em">KEIN FRANCHISE.<br/>KEIN CALLCENTER.<br/>NUR JULIEN.</h2>
+        <p class="text-t2 text-base leading-relaxed mb-5">Julien ist bei jedem Auftrag persönlich vor Ort: direkte Kommunikation, konsistente Qualität, echte Verantwortung.</p>
+        <p class="text-t2 text-base leading-relaxed mb-8">Das mobile Heiß-Reinwassersystem im Transporter wurde nicht von einem Konzern lizenziert — Julien hat es selbst entwickelt und optimiert. Kein Konkurrent in Berlin &amp; Brandenburg bietet das.</p>
+        <p class="text-t2 text-sm leading-relaxed mb-8">Seit 2022 selbstständig. Über 743 abgeschlossene Aufträge. Handwerkskammer-Mitglied. Haftpflichtversichert.</p>
+        <div class="flex items-center gap-4">
+          <img src="../../assets/A54B9F4B-C854-426C-849F-A3DAAD9F362A.png.webp" alt="Team JR Gebäudeservice" class="w-12 h-12 rounded-full object-cover" />
+          <div><div class="text-t1 text-sm font-semibold">Kleines Team. Große Qualität.</div><div class="text-t3 text-xs">Familienbetrieb aus Falkensee</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="py-28 bg-s1" id="bewertungen">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="mb-16 reveal">
+      <div class="flex items-center gap-3 mb-6"><div class="w-8 h-px bg-blue"></div><span class="text-t3 text-xs font-semibold tracking-widest uppercase">Bewertungen</span></div>
+      <div class="flex flex-wrap items-end gap-6">
+        <h2 class="font-display text-t1 leading-none" style="font-size:clamp(38px,5vw,54px);letter-spacing:.02em">WAS KUNDEN SAGEN</h2>
+        <div class="flex gap-1 text-yellow-400 text-xl mb-2"><i class="ph ph-star-fill"></i><i class="ph ph-star-fill"></i><i class="ph ph-star-fill"></i><i class="ph ph-star-fill"></i><i class="ph ph-star-fill"></i></div>
+        <div class="text-t3 text-sm mb-2">5,0 · 6 Bewertungen auf Google</div>
+      </div>
+    </div>
+    <div class="grid md:grid-cols-2 gap-4 mb-10">
+      <div class="bg-bg border border-white/5 rounded p-6 reveal">
+        <div class="flex gap-1 text-yellow-400 text-sm mb-4"><i class="ph ph-star-fill"></i><i class="ph ph-star-fill"></i><i class="ph ph-star-fill"></i><i class="ph ph-star-fill"></i><i class="ph ph-star-fill"></i></div>
+        <p class="text-t2 text-sm leading-relaxed mb-6">"Wir haben drei Büroetagen im Berliner Westen. Julien hat alles in einem Tag erledigt — kein Gerüst, kein Chaos, kein Aufpreis."</p>
+        <div class="flex items-center gap-3 border-t border-white/5 pt-4"><div class="w-8 h-8 rounded-full bg-blue/15 flex items-center justify-center text-blue text-xs font-bold">G</div><div><div class="text-t1 text-xs font-semibold">Gewerbeobjekt</div><div class="text-t3 text-xs">Berlin-Charlottenburg</div></div></div>
+      </div>
+      <div class="bg-bg border border-white/5 rounded p-6 reveal" style="transition-delay:.08s">
+        <div class="flex gap-1 text-yellow-400 text-sm mb-4"><i class="ph ph-star-fill"></i><i class="ph ph-star-fill"></i><i class="ph ph-star-fill"></i><i class="ph ph-star-fill"></i><i class="ph ph-star-fill"></i></div>
+        <p class="text-t2 text-sm leading-relaxed mb-6">"Wartungsvertrag für unsere Praxis: feste Termine, fester Preis, immer pünktlich. Keine Überraschungen auf der Rechnung."</p>
+        <div class="flex items-center gap-3 border-t border-white/5 pt-4"><div class="w-8 h-8 rounded-full bg-blue/15 flex items-center justify-center text-blue text-xs font-bold">P</div><div><div class="text-t1 text-xs font-semibold">Arztpraxis</div><div class="text-t3 text-xs">Berlin-Spandau</div></div></div>
+      </div>
+    </div>
+    <div class="flex flex-wrap gap-x-6 gap-y-2 text-t3 text-xs reveal">
+      <span class="flex items-center gap-1.5"><i class="ph ph-check text-blue"></i> Haftpflichtversichert</span>
+      <span class="flex items-center gap-1.5"><i class="ph ph-check text-blue"></i> Handwerkskammer-Mitglied</span>
+      <span class="flex items-center gap-1.5"><i class="ph ph-check text-blue"></i> Seit 2022 aktiv</span>
+      <span class="flex items-center gap-1.5"><i class="ph ph-check text-blue"></i> 743+ Aufträge</span>
+      <span class="flex items-center gap-1.5"><i class="ph ph-check text-blue"></i> Inhabergeführt</span>
+    </div>
+  </div>
+</section>
+
+<section class="py-28" id="ablauf">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="max-w-xl mb-16 reveal">
+      <div class="flex items-center gap-3 mb-6"><div class="w-8 h-px bg-blue"></div><span class="text-t3 text-xs font-semibold tracking-widest uppercase">So läuft es ab</span></div>
+      <h2 class="font-display text-t1 leading-none" style="font-size:clamp(38px,5vw,54px);letter-spacing:.02em">ANFRAGE.<br/>FESTPREIS.<br/>TERMIN.</h2>
+    </div>
+    <div class="grid md:grid-cols-3 gap-0">
+      <div class="p-6 reveal"><div class="w-12 h-12 rounded-full bg-blue flex items-center justify-center font-display text-white text-2xl mb-6">1</div><h3 class="text-t1 font-bold text-sm mb-2">Anfrage senden</h3><p class="text-t3 text-xs leading-relaxed">Objektbeschreibung, Fläche oder Fotos per E-Mail oder WhatsApp. Kein Vor-Ort-Termin für die Angebotserstellung.</p></div>
+      <div class="p-6 reveal" style="transition-delay:.08s"><div class="w-12 h-12 rounded-full bg-s2 border border-blue/20 flex items-center justify-center font-display text-blue text-2xl mb-6">2</div><h3 class="text-t1 font-bold text-sm mb-2">Festpreis innerhalb von 24 Stunden</h3><p class="text-t3 text-xs leading-relaxed">Konkretes Angebot: fester Preis vor Auftragsstart, keine Nachkalkulation. Wartungsvertrag auf Wunsch.</p></div>
+      <div class="p-6 reveal" style="transition-delay:.16s"><div class="w-12 h-12 rounded-full bg-s2 border border-blue/20 flex items-center justify-center font-display text-blue text-2xl mb-6">3</div><h3 class="text-t1 font-bold text-sm mb-2">Termin nach Betriebsplan</h3><p class="text-t3 text-xs leading-relaxed">Reinigung außerhalb der Kernzeiten auf Wunsch. Rechnung mit Einzelpositionen für Ihre Buchhaltung.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="py-28 bg-s1" id="preisrechner">
+  <div class="max-w-3xl mx-auto px-6">
+    <div class="text-center mb-12 reveal">
+      <div class="flex items-center justify-center gap-3 mb-6"><div class="w-8 h-px bg-blue"></div><span class="text-t3 text-xs font-semibold tracking-widest uppercase">Preisrechner</span><div class="w-8 h-px bg-blue"></div></div>
+      <h2 class="font-display text-t1 leading-none mb-3" style="font-size:clamp(38px,5vw,54px);letter-spacing:.02em">WAS KOSTET ES?</h2>
+      <p class="text-t2 text-sm">Indikativpreis — verbindlich wird's nach Anfrage.</p>
+    </div>
+    <div class="flex border border-white/10 rounded overflow-hidden mb-8 reveal">
+      <button onclick="switchTab(this,'privat')" data-panel="privat" role="tab" aria-selected="true" class="rechner-tab flex-1 py-3 text-xs font-semibold uppercase tracking-widest bg-blue text-white transition-[background-color,color]" style="min-height:44px">Fensterreinigung</button>
+      <button onclick="switchTab(this,'gewerbe')" data-panel="gewerbe" role="tab" aria-selected="false" class="rechner-tab flex-1 py-3 text-xs font-semibold uppercase tracking-widest text-t3 hover:text-t1 transition-[background-color,color]" style="min-height:44px">Glasfläche m²</button>
+    </div>
+    <div id="panel-privat" class="tab-panel active">
+      <div class="bg-s2 border border-white/5 rounded p-8">
+        <div class="grid md:grid-cols-2 gap-8 mb-8">
+          <div><label class="text-t3 text-xs uppercase tracking-widest block mb-3">Fenster normal</label><div class="flex items-center gap-4"><button onclick="changeVal('pn',-1)" class="btn-tap w-11 h-11 rounded border border-white/10 hover:border-blue hover:text-blue text-t1 font-display text-xl transition-[border-color,color]">-</button><span id="val-pn" class="font-display text-4xl text-t1 w-10 text-center tabular">10</span><button onclick="changeVal('pn',1)" class="btn-tap w-11 h-11 rounded border border-white/10 hover:border-blue hover:text-blue text-t1 font-display text-xl transition-[border-color,color]">+</button><span class="text-t3 text-xs">× 8 €</span></div></div>
+          <div><label class="text-t3 text-xs uppercase tracking-widest block mb-3">Bodentief / Groß</label><div class="flex items-center gap-4"><button onclick="changeVal('pg',-1)" class="btn-tap w-11 h-11 rounded border border-white/10 hover:border-blue hover:text-blue text-t1 font-display text-xl transition-[border-color,color]">-</button><span id="val-pg" class="font-display text-4xl text-t1 w-10 text-center tabular">0</span><button onclick="changeVal('pg',1)" class="btn-tap w-11 h-11 rounded border border-white/10 hover:border-blue hover:text-blue text-t1 font-display text-xl transition-[border-color,color]">+</button><span class="text-t3 text-xs">× 16 €</span></div></div>
+        </div>
+        <div class="border-t border-white/5 pt-6 flex items-center justify-between gap-4">
+          <div><div class="text-t3 text-xs mb-1 uppercase tracking-widest">Geschätzter Preis</div><div class="font-display text-t1 leading-none" style="font-size:52px">ab <span id="result-privat" class="tabular">80</span> €</div><div class="text-t3 text-xs mt-1">zzgl. MwSt. · Betriebsausgabe absetzbar</div></div>
+          <a href="#anfrage" class="shrink-0 bg-blue hover:bg-blue-dark text-white text-xs font-semibold uppercase tracking-widest px-5 py-3 rounded transition-[background-color]">Angebot</a>
+        </div>
+      </div>
+    </div>
+    <div id="panel-gewerbe" class="tab-panel">
+      <div class="bg-s2 border border-white/5 rounded p-8">
+        <div class="mb-8"><label class="text-t3 text-xs uppercase tracking-widest block mb-3">Glasfläche in m²</label><div class="flex items-center gap-4"><button onclick="changeVal('gf',-10)" class="btn-tap w-11 h-11 rounded border border-white/10 hover:border-blue hover:text-blue text-t1 font-display text-xl transition-[border-color,color]">-</button><span id="val-gf" class="font-display text-4xl text-t1 w-16 text-center tabular">100</span><button onclick="changeVal('gf',10)" class="btn-tap w-11 h-11 rounded border border-white/10 hover:border-blue hover:text-blue text-t1 font-display text-xl transition-[border-color,color]">+</button><span class="text-t3 text-xs">m²</span></div></div>
+        <div class="border-t border-white/5 pt-6 flex items-center justify-between gap-4">
+          <div><div class="text-t3 text-xs mb-1 uppercase tracking-widest">Geschätzter Preis</div><div class="font-display text-t1 leading-none" style="font-size:52px">ab <span id="result-gewerbe" class="tabular">300</span> €</div><div class="text-t3 text-xs mt-1">zzgl. MwSt. · Rahmenvertrag möglich</div></div>
+          <a href="#anfrage" class="shrink-0 bg-blue hover:bg-blue-dark text-white text-xs font-semibold uppercase tracking-widest px-5 py-3 rounded transition-[background-color]">Angebot</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="py-28" id="faq">
+  <div class="max-w-3xl mx-auto px-6">
+    <div class="mb-12 reveal">
+      <div class="flex items-center gap-3 mb-6"><div class="w-8 h-px bg-blue"></div><span class="text-t3 text-xs font-semibold tracking-widest uppercase">FAQ</span></div>
+      <h2 class="font-display text-t1 leading-none" style="font-size:clamp(38px,5vw,54px);letter-spacing:.02em">HÄUFIGE FRAGEN<br/>GEWERBEKUNDEN</h2>
+    </div>
+    <div class="border-t border-white/5">
+      <div class="border-b border-white/5 reveal">
+        <button onclick="toggleFaq(this)" aria-expanded="false" class="w-full flex items-center justify-between py-5 text-left group">
+          <span class="text-t1 text-sm font-semibold pr-8 group-hover:text-blue transition-colors">Können Reinigungsarbeiten außerhalb der Geschäftszeiten durchgeführt werden?</span>
+          <i class="ph ph-plus text-t3 group-hover:text-blue faq-icon text-lg shrink-0"></i>
+        </button>
+        <div class="faq-body"><p class="text-t2 text-sm leading-relaxed pb-5">Ja. Wir reinigen früh morgens, abends oder am Wochenende. Kein Betriebsausfall, keine Kundenbeeinträchtigung. Das Zeitfenster wird im Angebot festgehalten.</p></div>
+      </div>
+      <div class="border-b border-white/5 reveal">
+        <button onclick="toggleFaq(this)" aria-expanded="false" class="w-full flex items-center justify-between py-5 text-left group">
+          <span class="text-t1 text-sm font-semibold pr-8 group-hover:text-blue transition-colors">Wie läuft ein Wartungsvertrag ab?</span>
+          <i class="ph ph-plus text-t3 group-hover:text-blue faq-icon text-lg shrink-0"></i>
+        </button>
+        <div class="faq-body"><p class="text-t2 text-sm leading-relaxed pb-5">Sie erhalten feste Reinigungstermine für das gesamte Jahr. Wir koordinieren alle Flächen und Services. Bei kurzfristigem Bedarf erhalten Vertragspartner Vorrang. Der Preis gilt für die Vertragslaufzeit, keine Anpassung ohne Vorankündigung.</p></div>
+      </div>
+      <div class="border-b border-white/5 reveal">
+        <button onclick="toggleFaq(this)" aria-expanded="false" class="w-full flex items-center justify-between py-5 text-left group">
+          <span class="text-t1 text-sm font-semibold pr-8 group-hover:text-blue transition-colors">Gibt es Rabatte für mehrere Objekte oder Standorte?</span>
+          <i class="ph ph-plus text-t3 group-hover:text-blue faq-icon text-lg shrink-0"></i>
+        </button>
+        <div class="faq-body"><p class="text-t2 text-sm leading-relaxed pb-5">Ja. Hausverwaltungen und Unternehmen mit mehreren Standorten erhalten Rahmenverträge mit Staffelpreisen. Anfrage per E-Mail mit Objektliste.</p></div>
+      </div>
+      <div class="border-b border-white/5 reveal">
+        <button onclick="toggleFaq(this)" aria-expanded="false" class="w-full flex items-center justify-between py-5 text-left group">
+          <span class="text-t1 text-sm font-semibold pr-8 group-hover:text-blue transition-colors">Wie werden Rechnungen für die Buchhaltung ausgestellt?</span>
+          <i class="ph ph-plus text-t3 group-hover:text-blue faq-icon text-lg shrink-0"></i>
+        </button>
+        <div class="faq-body"><p class="text-t2 text-sm leading-relaxed pb-5">Einzelpositionen nach Leistung, ausgewiesene MwSt., Objekt und Datum. Format auf Anfrage anpassbar. Reinigungskosten sind Betriebsausgaben und mindern den steuerpflichtigen Gewinn in voller Höhe.</p></div>
+      </div>
+      <div class="border-b border-white/5 reveal">
+        <button onclick="toggleFaq(this)" aria-expanded="false" class="w-full flex items-center justify-between py-5 text-left group">
+          <span class="text-t1 text-sm font-semibold pr-8 group-hover:text-blue transition-colors">Welche Gewerbeobjekte werden bedient?</span>
+          <i class="ph ph-plus text-t3 group-hover:text-blue faq-icon text-lg shrink-0"></i>
+        </button>
+        <div class="faq-body"><p class="text-t2 text-sm leading-relaxed pb-5">Bürogebäude, Hotels, Restaurants, Praxen, Shoppingcenter, Mehrfamilienhäuser und Hausverwaltungen in Berlin und Brandenburg. Für Großobjekte: Besichtigung auf Anfrage möglich.</p></div>
+      </div>
+      <div class="border-b border-white/5 reveal">
+        <button onclick="toggleFaq(this)" aria-expanded="false" class="w-full flex items-center justify-between py-5 text-left group">
+          <span class="text-t1 text-sm font-semibold pr-8 group-hover:text-blue transition-colors">Sind Rahmen und angrenzende Flächen im Preis enthalten?</span>
+          <i class="ph ph-plus text-t3 group-hover:text-blue faq-icon text-lg shrink-0"></i>
+        </button>
+        <div class="faq-body"><p class="text-t2 text-sm leading-relaxed pb-5">Rahmen und angrenzende Flächen immer inklusive — kein versteckter Aufpreis.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="py-28 bg-s1" id="anfrage">
+  <div class="max-w-3xl mx-auto px-6">
+    <div class="text-center mb-12 reveal">
+      <div class="flex items-center justify-center gap-3 mb-6"><div class="w-8 h-px bg-blue"></div><span class="text-t3 text-xs font-semibold tracking-widest uppercase">Kontakt</span><div class="w-8 h-px bg-blue"></div></div>
+      <h2 class="font-display text-t1 leading-none mb-3" style="font-size:clamp(38px,5vw,54px);letter-spacing:.02em">ANFRAGE SENDEN</h2>
+      <p class="text-t2 text-sm">Objekt beschreiben oder Foto senden → Festpreis innerhalb von 24h</p>
+    </div>
+    <div class="bg-bg border border-white/5 rounded p-8 reveal">
+      <div id="form-success" class="hidden text-center py-8"><div class="w-12 h-12 rounded-full bg-blue/10 flex items-center justify-center mx-auto mb-4"><i class="ph ph-check text-blue text-2xl"></i></div><h3 class="text-t1 font-bold mb-2">Anfrage gesendet</h3><p class="text-t2 text-sm">Wir melden uns innerhalb von 24h mit Ihrem Festpreis.</p></div>
+      <form id="contact-form" onsubmit="submitForm(event)" novalidate>
+        <div class="grid md:grid-cols-2 gap-4 mb-4">
+          <div class="md:col-span-2">
+            <label class="text-t3 text-xs uppercase tracking-widest block mb-2">Leistung</label>
+            <select name="leistung" class="w-full bg-s1 border border-white/10 rounded px-4 py-3 text-t1 text-sm focus:border-blue focus:outline-none transition-[border-color]">
+              <option selected>Mehrere Services / Wartungsvertrag</option>
+              <option>Fensterreinigung Gewerbe</option><option>Glasreinigung Gewerbe</option>
+              <option>Wintergartenreinigung Gewerbe</option><option>Solaranlagenreinigung Gewerbe</option>
+              <option>Jalousienreinigung Gewerbe</option><option>Terrassenüberdachung Gewerbe</option>
+              <option>Dachreinigung Gewerbe</option><option>Fassadenreinigung Gewerbe</option>
+              <option>Steinreinigung Gewerbe</option><option>Sonstiges</option>
+            </select>
+          </div>
+          <div><label class="text-t3 text-xs uppercase tracking-widest block mb-2">PLZ / Standort</label><input type="text" name="plz" placeholder="z.B. 10115 Berlin" required class="w-full bg-s1 border border-white/10 rounded px-4 py-3 text-t1 text-sm placeholder:text-t3 focus:border-blue focus:outline-none transition-[border-color]" /></div>
+          <div><label class="text-t3 text-xs uppercase tracking-widest block mb-2">Telefon</label><input type="tel" name="telefon" placeholder="Ihre Nummer" required class="w-full bg-s1 border border-white/10 rounded px-4 py-3 text-t1 text-sm placeholder:text-t3 focus:border-blue focus:outline-none transition-[border-color]" /></div>
+        </div>
+        <button type="submit" class="btn-tap w-full bg-blue hover:bg-blue-dark text-white font-semibold text-xs uppercase tracking-widest py-4 rounded transition-[background-color] mt-2">Festpreis anfragen</button>
+        <p class="text-t3 text-xs text-center mt-4">Kein Spam. Nur Ihr Festpreis.</p>
+      </form>
+    </div>
+    <div class="grid grid-cols-3 gap-3 mt-4 reveal">
+      <a href="tel:+491627061789" class="flex flex-col items-center gap-2 p-4 bg-bg border border-white/5 rounded hover:border-blue/30 transition-[border-color] group"><i class="ph ph-phone text-blue text-xl group-hover:scale-110 transition-transform"></i><span class="text-t3 text-xs text-center">0162 7061789</span></a>
+      <a href="https://wa.me/491627061789?text=Hallo%2C+ich+m%C3%B6chte+ein+Angebot+anfragen." class="flex flex-col items-center gap-2 p-4 bg-bg border border-white/5 rounded hover:border-wa/30 transition-[border-color] group"><i class="ph ph-whatsapp-logo text-wa text-xl group-hover:scale-110 transition-transform"></i><span class="text-t3 text-xs text-center">WhatsApp</span></a>
+      <a href="mailto:info@premium-fensterreinigung.de" class="flex flex-col items-center gap-2 p-4 bg-bg border border-white/5 rounded hover:border-blue/30 transition-[border-color] group"><i class="ph ph-envelope text-blue text-xl group-hover:scale-110 transition-transform"></i><span class="text-t3 text-xs text-center">E-Mail</span></a>
+    </div>
+  </div>
+</section>
+
+<section class="relative py-36 overflow-hidden">
+  <div class="absolute inset-0"><img src="../../assets/JR_Fensterreinigung_26-05-15_13.08.28-2.jpg.webp" alt="" class="w-full h-full object-cover" aria-hidden="true" /><div class="absolute inset-0" style="background:linear-gradient(to bottom,rgba(13,15,18,.55),rgba(13,15,18,.92))"></div></div>
+  <div class="relative z-10 max-w-3xl mx-auto px-6 text-center reveal">
+    <h2 class="font-display text-t1 leading-none mb-6" style="font-size:clamp(48px,8vw,88px);letter-spacing:.02em">ANFRAGE.<br/>FESTPREIS.<br/>FERTIG.</h2>
+    <p class="text-t2 text-base mb-10 max-w-md mx-auto">Festpreis vor Auftragsstart. Wartungsvertrag auf Wunsch.</p>
+    <div class="flex flex-wrap gap-4 justify-center">
+      <a href="#anfrage" class="btn-tap inline-flex items-center gap-2 bg-blue hover:bg-blue-dark text-white font-semibold text-sm tracking-widest uppercase px-10 py-4 rounded transition-[background-color]">Jetzt anfragen <i class="ph ph-arrow-right"></i></a>
+      <a href="https://wa.me/491627061789?text=Hallo%2C+ich+m%C3%B6chte+ein+Angebot+anfragen." class="btn-tap inline-flex items-center gap-2 bg-wa/90 hover:bg-wa text-white font-semibold text-sm tracking-widest uppercase px-10 py-4 rounded transition-[background-color]"><i class="ph ph-whatsapp-logo"></i> WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<footer class="bg-s1 border-t border-white/5">
+  <div class="max-w-7xl mx-auto px-6 py-16">
+    <div class="grid md:grid-cols-4 gap-12 mb-12">
+      <div class="md:col-span-2">
+        <img src="../../assets/35A0CDFB-340E-43DE-B074-575700301CD6.png.webp" alt="JR Gebäudeservice" class="h-10 w-auto mb-4" />
+        <p class="text-t3 text-sm leading-relaxed mb-4 max-w-xs">Professionelle Fenster- und Gebäudereinigung mit 80°C Osmosewasser-Technologie. Berlin · Havelland · Brandenburg.</p>
+        <div class="flex gap-1 text-yellow-400 text-sm mb-1"><i class="ph ph-star-fill"></i><i class="ph ph-star-fill"></i><i class="ph ph-star-fill"></i><i class="ph ph-star-fill"></i><i class="ph ph-star-fill"></i></div>
+        <p class="text-t3 text-xs">5,0 · 6 Google-Bewertungen</p>
+      </div>
+      <div>
+        <h4 class="text-t3 text-xs uppercase tracking-widest mb-4">Leistungen</h4>
+        <ul class="space-y-2 text-t3 text-sm">
+          <li><a href="/fensterreinigung/" class="hover:text-t1 transition-colors">Fensterreinigung</a></li>
+          <li><a href="/glasreinigung/" class="hover:text-t1 transition-colors">Glasreinigung</a></li>
+          <li><a href="/fassadenreinigung/" class="hover:text-t1 transition-colors">Fassadenreinigung</a></li>
+          <li><a href="/dachreinigung/" class="hover:text-t1 transition-colors">Dachreinigung</a></li>
+          <li><a href="/steinreinigung/" class="hover:text-t1 transition-colors">Steinreinigung</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-t3 text-xs uppercase tracking-widest mb-4">Kontakt</h4>
+        <ul class="space-y-3 text-t3 text-sm">
+          <li><a href="tel:+491627061789" class="hover:text-t1 transition-colors flex items-center gap-2"><i class="ph ph-phone text-blue"></i>0162 7061789</a></li>
+          <li><a href="https://wa.me/491627061789?text=Hallo%2C+ich+m%C3%B6chte+ein+Angebot+anfragen." class="hover:text-t1 transition-colors flex items-center gap-2"><i class="ph ph-whatsapp-logo text-wa"></i>WhatsApp</a></li>
+          <li><a href="mailto:info@premium-fensterreinigung.de" class="hover:text-t1 transition-colors flex items-center gap-2"><i class="ph ph-envelope text-blue"></i>E-Mail</a></li>
+          <li><a href="/privatkunden/" class="hover:text-t1 transition-colors flex items-center gap-2"><i class="ph ph-user text-blue"></i>Privatkunden</a></li>
+          <li><a href="/gewerbekunden/" class="text-t1 transition-colors flex items-center gap-2"><i class="ph ph-buildings text-blue"></i>Gewerbekunden</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-white/5 pt-6 flex flex-wrap items-center justify-between gap-4">
+      <p class="text-t3 text-xs">© 2026 JR Gebäudeservice · Premium Fensterreinigung — eine Marke der JR Group · Sonnenstraße 50, 14612 Falkensee</p>
+      <div class="flex gap-6 text-t3 text-xs"><a href="/kontakt/impressum/" class="hover:text-t1 transition-colors">Impressum</a><a href="/kontakt/datenschutzerklaerung/" class="hover:text-t1 transition-colors">Datenschutz</a></div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+  const nav = document.getElementById('nav');
+  window.addEventListener('scroll', () => { nav.classList.toggle('scrolled', window.scrollY > 50); }, { passive: true });
+  const ro = new IntersectionObserver(entries => { entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('on'); ro.unobserve(e.target); } }); }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+  document.querySelectorAll('.reveal, .reveal-l').forEach(el => ro.observe(el));
+  new Swiper('#resultsSwiper', { slidesPerView: 1, spaceBetween: 16, pagination: { el: '.swiper-pagination', clickable: true }, breakpoints: { 768: { slidesPerView: 2 }, 1024: { slidesPerView: 3 } } });
+  function toggleFaq(btn) { const open = btn.getAttribute('aria-expanded') === 'true'; document.querySelectorAll('[aria-expanded]').forEach(b => { b.setAttribute('aria-expanded', 'false'); b.nextElementSibling.classList.remove('open'); }); if (!open) { btn.setAttribute('aria-expanded', 'true'); btn.nextElementSibling.classList.add('open'); } }
+  const vals = { pn:10, pg:0, gf:100 };
+  const mins = { pn:0, pg:0, gf:10 };
+  function changeVal(k, d) { vals[k] = Math.max(mins[k], vals[k] + d); document.getElementById('val-' + k).textContent = vals[k]; if (k==='pn'||k==='pg') calcPrivat(); if (k==='gf') calcGewerbe(); }
+  function calcPrivat() { const t = vals.pn*8 + vals.pg*16; document.getElementById('result-privat').textContent = t; }
+  function calcGewerbe() { document.getElementById('result-gewerbe').textContent = vals.gf * 3; }
+  const tabPanels = document.querySelectorAll('.tab-panel');
+  function switchTab(btn, panel) { document.querySelectorAll('.rechner-tab').forEach(t => { t.classList.remove('bg-blue','text-white'); t.classList.add('text-t3'); t.setAttribute('aria-selected','false'); }); btn.classList.add('bg-blue','text-white'); btn.classList.remove('text-t3'); btn.setAttribute('aria-selected','true'); tabPanels.forEach(p => p.classList.remove('active')); document.getElementById('panel-' + panel).classList.add('active'); }
+  function submitForm(e) { e.preventDefault(); const f = e.target; const plz = f.querySelector('[name="plz"]').value.trim(); const tel = f.querySelector('[name="telefon"]').value.trim(); if (!plz || !tel) return; const leistung = f.querySelector('[name="leistung"]').value; window.location.href = `mailto:info@premium-fensterreinigung.de?subject=${encodeURIComponent('Gewerbe-Anfrage: ' + leistung + ' · ' + plz)}&body=${encodeURIComponent('Leistung: ' + leistung + '\nStandort/PLZ: ' + plz + '\nTelefon: ' + tel)}`; document.getElementById('contact-form').classList.add('hidden'); document.getElementById('form-success').classList.remove('hidden'); }
+  function toggleMenu(){const btn=document.getElementById('menu-btn');const menu=document.getElementById('mobile-menu');const icon=document.getElementById('menu-icon');const open=menu.classList.toggle('open');btn.setAttribute('aria-expanded',open);menu.setAttribute('aria-hidden',!open);icon.className=open?'ph ph-x text-xl':'ph ph-list text-xl';document.body.classList.toggle('menu-open',open);}
+  function closeMenu(){const menu=document.getElementById('mobile-menu');if(!menu.classList.contains('open'))return;menu.classList.remove('open');document.getElementById('menu-btn').setAttribute('aria-expanded','false');menu.setAttribute('aria-hidden','true');document.getElementById('menu-icon').className='ph ph-list text-xl';document.body.classList.remove('menu-open');}
+  document.addEventListener('keydown',e=>{if(e.key==='Escape')closeMenu();});
+</script>
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"LocalBusiness","name":"Premium Fensterreinigung","alternateName":"JR Gebäudeservice","url":"https://premium-fensterreinigung.de","telephone":"+491627061789","email":"info@premium-fensterreinigung.de","priceRange":"ab 8 € / Fenster","description":"Professionelle Gebäudereinigung für Gewerbekunden in Berlin und Havelland. 9 Services: Fenster, Glas, Wintergarten, Solar, Jalousien, Dach, Fassade, Stein, Terrassenüberdachung. Festpreis vor Auftragsstart, Wartungsverträge.","address":{"@type":"PostalAddress","streetAddress":"Sonnenstraße 50","addressLocality":"Falkensee","addressRegion":"Brandenburg","postalCode":"14612","addressCountry":"DE"},"areaServed":["Berlin","Havelland","Brandenburg"],"aggregateRating":{"@type":"AggregateRating","ratingValue":"5.0","reviewCount":"6"}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Service","name":"Fensterreinigung Gewerbe Berlin & Havelland","serviceType":"Gebäudereinigung Gewerbe","provider":{"@type":"LocalBusiness","name":"Premium Fensterreinigung","telephone":"+491627061789","address":{"@type":"PostalAddress","streetAddress":"Sonnenstraße 50","addressLocality":"Falkensee","postalCode":"14612","addressCountry":"DE"}},"areaServed":["Berlin","Havelland","Brandenburg"],"description":"Gebäudereinigung für Gewerbekunden: 9 Services aus einer Hand. Festpreis vor Auftragsstart. Wartungsverträge mit festen Terminen. Rechnung für Buchhaltung."}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Können Reinigungsarbeiten außerhalb der Geschäftszeiten durchgeführt werden?","acceptedAnswer":{"@type":"Answer","text":"Ja. Wir reinigen früh morgens, abends oder am Wochenende. Kein Betriebsausfall, keine Kundenbeeinträchtigung. Das Zeitfenster wird im Angebot festgehalten."}},{"@type":"Question","name":"Wie läuft ein Wartungsvertrag ab?","acceptedAnswer":{"@type":"Answer","text":"Feste Reinigungstermine für das gesamte Jahr. Festpreis für die Vertragslaufzeit. Vertragspartner erhalten Vorrang bei kurzfristigen Terminanfragen."}},{"@type":"Question","name":"Gibt es Rabatte für mehrere Objekte oder Standorte?","acceptedAnswer":{"@type":"Answer","text":"Ja. Hausverwaltungen und Unternehmen mit mehreren Standorten erhalten Rahmenverträge mit Staffelpreisen."}},{"@type":"Question","name":"Wie werden Rechnungen für die Buchhaltung ausgestellt?","acceptedAnswer":{"@type":"Answer","text":"Einzelpositionen nach Leistung, ausgewiesene MwSt., Objekt und Datum. Format auf Anfrage anpassbar."}},{"@type":"Question","name":"Welche Gewerbeobjekte werden bedient?","acceptedAnswer":{"@type":"Answer","text":"Bürogebäude, Hotels, Restaurants, Praxen, Shoppingcenter, Mehrfamilienhäuser und Hausverwaltungen in Berlin und Brandenburg."}}]}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Premium Fensterreinigung","item":"https://premium-fensterreinigung.de/"},{"@type":"ListItem","position":2,"name":"Gewerbekunden","item":"https://premium-fensterreinigung.de/gewerbekunden/"}]}
+</script>
+
+  <script src="/analytics-events.js"></script>
+</body>
+</html>

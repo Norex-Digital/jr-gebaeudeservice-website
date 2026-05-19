@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="de" style="color-scheme:dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Steinreinigung Berlin &amp; Havelland | JR</title>
+  <meta name="description" content="Steinreinigung Berlin &amp; Havelland: Terrassen, Einfahrten, Pflaster. Heißwasser-Niederdruck, keine Fugenauswaschung, Imprägnierung optional." />
+  <link rel="canonical" href="https://premium-fensterreinigung.de/steinreinigung/" />
+  <meta property="og:title" content="Steinreinigung Berlin &amp; Havelland | JR" />
+  <meta property="og:description" content="Terrassen, Einfahrten, Pflaster. Heißwasser-Niederdruck, keine Fugenauswaschung, Imprägnierung auf Wunsch. Festpreis nach Foto." />
+  <meta property="og:url" content="https://premium-fensterreinigung.de/steinreinigung/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://premium-fensterreinigung.de/assets/IMG_4107.jpg.webp" />
+  <meta property="og:locale" content="de_DE" />
+  <link rel="preconnect" href="https://fonts.bunny.net" />
+  <link href="https://fonts.bunny.net/css2?family=bebas-neue&family=plus-jakarta-sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: { extend: { colors: { bg:'#0D0F12',s1:'#161A20',s2:'#1E2530',s3:'#0D1B2A',blue:{DEFAULT:'#1a56db',light:'#4A8FFF',dark:'#0e3a9e'},t1:'#F2F4F8',t2:'#8A95A3',t3:'#5A6472',wa:'#25D366' }, fontFamily: { display:['"Bebas Neue"','Impact','sans-serif'], body:['"Plus Jakarta Sans"','sans-serif'] } } }
+    }
+  </script>
+  <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2/src/regular/style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <style>
+    * { -webkit-font-smoothing: antialiased; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Plus Jakarta Sans', sans-serif; margin: 0; }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; } }
+    #nav { transition: background 0.3s ease, border-color 0.3s ease; }
+    #nav.scrolled { background: rgba(13,15,18,0.96) !important; backdrop-filter: blur(14px); border-bottom: 1px solid rgba(242,244,248,0.07); }
+    .reveal { opacity: 0; transform: translateY(28px); transition: opacity 0.55s ease, transform 0.55s ease; }
+    .reveal-l { opacity: 0; transform: translateX(-28px); transition: opacity 0.55s ease, transform 0.55s ease; }
+    .reveal.on, .reveal-l.on { opacity: 1; transform: none; }
+    .svc { position: relative; overflow: hidden; border-radius: 3px; display: block; text-decoration: none; }
+    .svc-bg { position: absolute; inset: 0; background-size: cover; background-position: center; transition: transform 0.65s ease; }
+    .svc:hover .svc-bg { transform: scale(1.05); }
+    .svc-overlay { position: absolute; inset: 0; background: linear-gradient(to top, rgba(13,15,18,0.90) 0%, rgba(13,15,18,0.22) 55%, transparent 100%); transition: background 0.4s ease; }
+    .svc:hover .svc-overlay { background: linear-gradient(to top, rgba(26,86,219,0.50) 0%, rgba(13,15,18,0.38) 55%, transparent 100%); }
+    .svc-body { position: relative; z-index: 2; display: flex; flex-direction: column; justify-content: flex-end; height: 100%; padding: 24px; }
+    .svc-num { font-size: 10px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(255,255,255,0.38); margin-bottom: 4px; }
+    .svc-name { font-family: 'Bebas Neue', sans-serif; letter-spacing: 0.05em; color: #fff; line-height: 1; margin-bottom: 5px; }
+    .svc-sub { font-size: 11px; color: rgba(255,255,255,0.50); line-height: 1.4; }
+    .svc-arrow { position: absolute; top: 18px; right: 18px; width: 30px; height: 30px; border-radius: 50%; background: rgba(255,255,255,0.10); display: flex; align-items: center; justify-content: center; color: rgba(255,255,255,0.55); font-size: 13px; z-index: 3; transition: background 0.25s ease, transform 0.25s ease; }
+    .svc:hover .svc-arrow { background: #1a56db; color: #fff; transform: translate(2px,-2px); }
+    .faq-body { max-height: 0; overflow: hidden; transition: max-height 0.35s ease; }
+    .faq-body.open { max-height: 400px; }
+    .faq-icon { transition: transform 0.25s ease; }
+    [aria-expanded="true"] .faq-icon { transform: rotate(45deg); }
+    .tab-panel { display: none; }
+    .tab-panel.active { display: block; }
+    .swiper-pagination-bullet { background: rgba(255,255,255,0.25) !important; }
+    .swiper-pagination-bullet-active { background: #1a56db !important; }
+    :focus-visible { outline: 2px solid #1a56db; outline-offset: 3px; border-radius: 4px; }
+    #nav a, #nav button { min-height: 44px; display: inline-flex; align-items: center; }
+    a[href^="tel:"] { min-height: 44px; display: inline-flex; align-items: center; }
+    .rechner-tab { min-height: 44px !important; }
+    .btn-tap:active { transform: scale(0.96); transition-duration: 80ms; }
+    h1, h2, h3 { text-wrap: balance; }
+    p { text-wrap: pretty; }
+    .tabular { font-variant-numeric: tabular-nums; }
+    img:not([aria-hidden]) { outline: 1px solid rgba(255,255,255,0.06); outline-offset: 0; }
+    .svc, .svc-bg, .svc-overlay, .svc-arrow { transition-property: transform, opacity, background, border-color, box-shadow, filter; }
+    .loc-link:hover { border-color: rgba(26,86,219,0.35); background: rgba(26,86,219,0.05); }
+    #mobile-menu { display:none; }
+    #mobile-menu.open { display:flex; }
+    body.menu-open { overflow:hidden; }
+  </style>
+  <!-- Consent Mode v2 — Standard: verweigert bis Klaro-Zustimmung -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('consent', 'default', {
+      'analytics_storage': 'denied',
+      'ad_storage': 'denied',
+      'wait_for_update': 500
+    });
+  </script>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-XXXXXXX');</script>
+  <!-- Klaro Cookie Consent -->
+  <script src="/klaro-config.js"></script>
+  <script defer src="https://cdn.kiprotect.com/klaro/v0.7/klaro.js"></script>
+</head>
+<body class="bg-bg text-t1">
+  <!-- GTM noscript fallback -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+
+<a href="https://wa.me/491627061789?text=Hallo%2C+ich+m%C3%B6chte+ein+Angebot+anfragen." class="btn-tap fixed bottom-6 right-6 w-14 h-14 rounded-full bg-wa flex items-center justify-center z-50 shadow-xl hover:scale-110 transition-transform duration-200" aria-label="WhatsApp kontaktieren">
+  <i class="ph ph-whatsapp-logo text-white text-2xl"></i>
+</a>
+
+<nav id="nav" class="fixed top-0 inset-x-0 z-40">
+  <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+    <a href="/" class="flex items-center gap-3 shrink-0 min-h-[44px]">
+      <img src="../../assets/35A0CDFB-340E-43DE-B074-575700301CD6.png.webp" alt="JR Gebäudeservice" class="h-8 w-auto" />
+    </a>
+    <div class="hidden lg:flex items-center gap-8 text-sm font-medium text-t2">
+      <a href="/steinreinigung/" class="text-t1 border-b border-blue pb-0.5 py-2" aria-current="page">Steinreinigung</a>
+      <a href="#leistungen"   class="hover:text-t1 transition-colors py-2">Leistungen</a>
+      <a href="#preisrechner" class="hover:text-t1 transition-colors py-2">Preisrechner</a>
+      <a href="#anfrage"      class="hover:text-t1 transition-colors py-2">Kontakt</a>
+    </div>
+    <div class="flex items-center gap-3">
+      <a href="tel:+491627061789" class="hidden md:flex items-center gap-1.5 text-t2 hover:text-t1 text-sm transition-colors">
+        <i class="ph ph-phone text-blue"></i> 0162 7061789
+      </a>
+      <a href="#anfrage" class="btn-tap bg-blue hover:bg-blue-dark text-white text-xs font-semibold tracking-widest uppercase px-4 py-2.5 rounded transition-colors">Angebot</a>
+      <button id="menu-btn" onclick="toggleMenu()" class="lg:hidden btn-tap w-10 h-10 flex items-center justify-center rounded text-t2 hover:text-t1 transition-colors" aria-label="Menü öffnen" aria-expanded="false">
+        <i id="menu-icon" class="ph ph-list text-xl"></i>
+      </button>
+    </div>
+  </div>
+</nav>
+<!-- Mobile Menu Overlay -->
+<div id="mobile-menu" class="fixed inset-0 z-30 bg-bg flex-col pt-20 px-6 lg:hidden" style="background:rgba(13,15,18,0.98);backdrop-filter:blur(20px);" aria-hidden="true">
+  <nav class="flex flex-col mt-8 border-t border-white/5">
+    <a href="/fensterreinigung/" class="text-t2 hover:text-t1 transition-colors py-5 text-lg font-medium border-b border-white/5" onclick="closeMenu()">Fensterreinigung</a>
+    <a href="/glasreinigung/"    class="text-t2 hover:text-t1 transition-colors py-5 text-lg font-medium border-b border-white/5" onclick="closeMenu()">Glasreinigung</a>
+    <a href="/wintergartenreinigung/" class="text-t2 hover:text-t1 transition-colors py-5 text-lg font-medium border-b border-white/5" onclick="closeMenu()">Wintergarten</a>
+    <a href="/solaranlagenreinigung/" class="text-t2 hover:text-t1 transition-colors py-5 text-lg font-medium border-b border-white/5" onclick="closeMenu()">Solaranlagen</a>
+    <a href="/kontakt/"         class="text-t2 hover:text-t1 transition-colors py-5 text-lg font-medium border-b border-white/5" onclick="closeMenu()">Kontakt</a>
+  </nav>
+  <div class="mt-8 flex flex-col gap-3">
+    <a href="tel:+491627061789" class="flex items-center gap-3 text-t2 hover:text-t1 py-3 text-base transition-colors">
+      <i class="ph ph-phone text-blue text-xl"></i> 0162 7061789
+    </a>
+    <a href="https://wa.me/491627061789?text=Hallo%2C+ich+m%C3%B6chte+ein+Angebot+anfragen." onclick="closeMenu()" class="flex items-center justify-center gap-2 bg-wa text-white font-semibold text-sm tracking-wide uppercase px-5 py-4 rounded-lg mt-2">
+      <i class="ph ph-whatsapp-logo text-xl"></i> WhatsApp schreiben
+    </a>
+  </div>
+</div>
+
+<section class="relative min-h-[100dvh] flex items-end pb-20 overflow-hidden">
+  <div class="absolute inset-0">
+    <img src="../../assets/IMG_4107.jpg.webp" alt="" class="absolute inset-0 w-full h-full object-cover" aria-hidden="true" />
+    <div class="absolute inset-0" style="background:linear-gradient(to bottom,rgba(13,15,18,.18) 0%,rgba(13,15,18,.68) 58%,rgba(13,15,18,.97) 100%)"></div>
+    <div class="absolute bottom-0 inset-x-0 h-40" style="background:linear-gradient(to top,#0D0F12,transparent)"></div>
+  </div>
+  <div class="absolute left-[76px] top-24 bottom-24 w-px bg-blue opacity-40 hidden xl:block"></div>
+  <div class="relative z-10 max-w-7xl mx-auto px-6 w-full">
+    <div class="max-w-3xl">
+      <div class="flex items-center gap-3 mb-6">
+        <div class="w-8 h-px bg-blue"></div>
+        <span class="text-blue text-xs font-semibold tracking-widest uppercase">Berlin · Havelland · Brandenburg</span>
+      </div>
+      <h1 class="font-display text-t1 leading-none mb-6" style="font-size:clamp(56px,9vw,108px);letter-spacing:0.02em">
+        STEIN-<br/>REINIGUNG<br/><span class="text-blue">TERRASSE &amp; HOF</span>
+        <span class="sr-only">: Steinreinigung in Berlin und im Havelland. Terrassen, Einfahrten, Pflasterflächen. Heißwasser-Niederdruck, Imprägnierung-Option. Festpreis nach Foto.</span>
+      </h1>
+      <p class="text-t2 text-lg mb-10 max-w-lg leading-relaxed">
+        Algen, Moos und Schmutz auf Terrassen, Einfahrten und Pflasterflächen sind kein optisches Problem. Algen machen Steinoberflächen rutschig. Hochdruck reißt Fugensand heraus. Wir reinigen mit Heißwasser-Niederdruck: Fugen bleiben intakt, Imprägnierung-Option inklusive.
+      </p>
+      <div class="flex flex-wrap gap-4 mb-12">
+        <a href="#anfrage" class="btn-tap inline-flex items-center gap-2 bg-blue hover:bg-blue-dark text-white font-semibold text-sm tracking-widest uppercase px-8 py-4 rounded transition-[background-color,transform,box-shadow] duration-150 hover:-translate-y-0.5 hover:shadow-lg">
+          Festpreis anfragen <i class="ph ph-arrow-right"></i>
+        </a>
+        <a href="https://wa.me/491627061789?text=Hallo%2C+ich+m%C3%B6chte+ein+Angebot+anfragen." class="btn-tap inline-flex items-center gap-2 border border-white/20 hover:border-white/40 hover:bg-white/5 text-t1 font-semibold text-sm tracking-widest uppercase px-8 py-4 rounded transition-[background-color,border-color] duration-150">
+          <i class="ph ph-whatsapp-logo text-wa"></i> Foto senden
+        </a>
+      </div>
+      <div class="flex flex-wrap items-center gap-x-5 gap-y-2 text-xs text-t3">
+        <span class="flex items-center gap-1.5 text-yellow-400">★★★★★ <span class="text-t3">5,0</span></span>
+        <span>743 abgeschlossene Aufträge</span>
+        <span class="flex items-center gap-1.5"><i class="ph ph-shield-check text-blue text-sm"></i> Haftpflichtversichert</span>
+        <span class="flex items-center gap-1.5"><i class="ph ph-seal-check text-blue text-sm"></i> Handwerkskammer</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="py-28 bg-s3" id="leistung">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="grid lg:grid-cols-2 gap-20 items-start mb-24">
+      <div class="reveal-l">
+        <div class="flex items-center gap-3 mb-8">
+          <div class="w-8 h-px bg-blue opacity-60"></div>
+          <span class="text-t3 text-xs font-semibold tracking-widest uppercase">Technologie</span>
+        </div>
+        <h2 class="font-display text-t1 leading-none mb-8" style="font-size:clamp(34px,4.5vw,50px);letter-spacing:.02em">
+          WARUM HOCHDRUCK<br/>STEINFLÄCHEN<br/>DAUERHAFT SCHÄDIGT
+        </h2>
+        <p class="text-t2 text-base leading-relaxed mb-5">
+          Hochdruck treibt Fugensand aus dem Verbund. Einmal herausgewaschen, fehlt die Stabilisierung der Pflastersteine. Wasser läuft unter die Fläche, friert im Winter und hebt Steine heraus. Porös gewordene Steinoberflächen nehmen Schmutz schneller auf als zuvor.
+        </p>
+        <p class="text-t2 text-base leading-relaxed mb-5">
+          Heißwasser-Niederdruck löst organische Beläge thermisch: Algen, Moos und Schimmel werden abgetötet, ohne Fugenmaterial zu bewegen. Die Steinstruktur bleibt intakt. Optional: Imprägnierung versiegelt die Oberfläche für 3–5 Jahre, Fugensand füllt ausgewaschene Zwischenräume wieder auf.
+        </p>
+        <p class="text-t2 text-base leading-relaxed">
+          Reinigung, Imprägnierung und Fugensand in einem Durchgang. Kein Extratermin.
+        </p>
+      </div>
+      <div class="reveal">
+        <div class="grid grid-cols-2 gap-3">
+          <div class="bg-bg border border-white/6 rounded p-6">
+            <div class="font-display text-blue leading-none mb-2" style="font-size:48px">80°C</div>
+            <div class="text-t3 text-xs uppercase tracking-widest mb-2">Heißwasser</div>
+            <p class="text-t3 text-xs leading-relaxed">Tötet Algen und Moos thermisch ohne Fugenaustrag</p>
+          </div>
+          <div class="bg-bg border border-white/6 rounded p-6">
+            <div class="font-display text-t1 leading-none mb-2" style="font-size:48px">0 ppm</div>
+            <div class="text-t3 text-xs uppercase tracking-widest mb-2">Osmosewasser</div>
+            <p class="text-t3 text-xs leading-relaxed">Kein Kalkfilm auf Naturstein oder Betonpflaster</p>
+          </div>
+          <div class="bg-bg border border-white/6 rounded p-6">
+            <div class="font-display text-t1 leading-none mb-2" style="font-size:36px">Impräg.</div>
+            <div class="text-t3 text-xs uppercase tracking-widest mb-2">Nachbehandlung</div>
+            <p class="text-t3 text-xs leading-relaxed">Versiegelt Steinporen gegen Bewuchs 3–5 Jahre</p>
+          </div>
+          <div class="bg-bg border border-white/6 rounded p-6">
+            <div class="font-display text-blue leading-none mb-2" style="font-size:36px">Fugen</div>
+            <div class="text-t3 text-xs uppercase tracking-widest mb-2">Nachbehandlung</div>
+            <p class="text-t3 text-xs leading-relaxed">Stabilisiert Pflasterverbund nach Reinigung</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mb-24 reveal">
+      <div class="flex items-center gap-3 mb-8">
+        <div class="w-8 h-px bg-blue opacity-60"></div>
+        <span class="text-t3 text-xs font-semibold tracking-widest uppercase">Leistungsumfang</span>
+      </div>
+      <h2 class="font-display text-t1 leading-none mb-10" style="font-size:clamp(34px,4.5vw,50px);letter-spacing:.02em">
+        WAS WIR BEI DER<br/>STEINREINIGUNG REINIGEN
+      </h2>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
+        <div class="bg-bg border border-white/6 rounded p-5 flex items-start gap-4">
+          <i class="ph ph-mountains text-blue text-xl shrink-0 mt-0.5"></i>
+          <div>
+            <div class="text-t1 text-sm font-semibold mb-1">Natursteinterrassen</div>
+            <div class="text-t3 text-xs leading-relaxed">Granit, Sandstein, Schiefer, Basalt</div>
+          </div>
+        </div>
+        <div class="bg-bg border border-white/6 rounded p-5 flex items-start gap-4">
+          <i class="ph ph-path text-blue text-xl shrink-0 mt-0.5"></i>
+          <div>
+            <div class="text-t1 text-sm font-semibold mb-1">Betonsteinpflaster und Verbundpflaster</div>
+            <div class="text-t3 text-xs leading-relaxed">Einfahrten, Wege, Hofbereiche</div>
+          </div>
+        </div>
+        <div class="bg-bg border border-white/6 rounded p-5 flex items-start gap-4">
+          <i class="ph ph-squares-four text-blue text-xl shrink-0 mt-0.5"></i>
+          <div>
+            <div class="text-t1 text-sm font-semibold mb-1">Terrassenplatten</div>
+            <div class="text-t3 text-xs leading-relaxed">Beton, Feinsteinzeug, Klinker</div>
+          </div>
+        </div>
+        <div class="bg-bg border border-white/6 rounded p-5 flex items-start gap-4">
+          <i class="ph ph-wall text-blue text-xl shrink-0 mt-0.5"></i>
+          <div>
+            <div class="text-t1 text-sm font-semibold mb-1">Natursteinmauern und Sockel</div>
+            <div class="text-t3 text-xs leading-relaxed">Algenbelag, Schmutzpatina, Moos</div>
+          </div>
+        </div>
+        <div class="bg-bg border border-white/6 rounded p-5 flex items-start gap-4">
+          <i class="ph ph-arrows-out-cardinal text-blue text-xl shrink-0 mt-0.5"></i>
+          <div>
+            <div class="text-t1 text-sm font-semibold mb-1">Gehwegplatten</div>
+            <div class="text-t3 text-xs leading-relaxed">Algen, Moos, eingelagerter Schmutz</div>
+          </div>
+        </div>
+        <div class="bg-bg border border-white/6 rounded p-5 flex items-start gap-4">
+          <i class="ph ph-shield-check text-blue text-xl shrink-0 mt-0.5"></i>
+          <div>
+            <div class="text-t1 text-sm font-semibold mb-1">Imprägnierung + Fugensand</div>
+            <div class="text-t3 text-xs leading-relaxed">Schutz 3–5 Jahre, Verbund stabilisiert</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-4 mb-16 reveal">
+      <div class="bg-bg border border-white/6 rounded p-8">
+        <div class="flex items-center gap-3 mb-6">
+          <div class="w-6 h-px bg-blue"></div>
+          <span class="text-t3 text-xs font-semibold tracking-widest uppercase">Privatkunden</span>
+        </div>
+        <h3 class="font-display text-t1 leading-none mb-4" style="font-size:clamp(26px,3vw,38px);letter-spacing:.02em">HAVELLAND &amp;<br/>UMGEBUNG</h3>
+        <p class="text-t2 text-sm leading-relaxed mb-6">
+          Falkensee, Brieselang, Dallgow-Döberitz, Schönwalde-Glien, Wustermark, Elstal, Staaken, Kladow, Groß Glienicke. Kein Anfahrtsaufschlag. Festpreis nach Foto.
+        </p>
+        <div class="bg-blue/10 border border-blue/20 rounded px-4 py-3 text-xs text-blue font-semibold">
+          §35a EStG: 20% steuerlich absetzbar — bis 4.000 € im Jahr
+        </div>
+      </div>
+      <div class="bg-s1 border border-white/6 rounded p-8">
+        <div class="flex items-center gap-3 mb-6">
+          <div class="w-6 h-px bg-blue-light opacity-60"></div>
+          <span class="text-t3 text-xs font-semibold tracking-widest uppercase">Gewerbekunden</span>
+        </div>
+        <h3 class="font-display text-t1 leading-none mb-4" style="font-size:clamp(26px,3vw,38px);letter-spacing:.02em">BERLIN &amp;<br/>BRANDENBURG</h3>
+        <p class="text-t2 text-sm leading-relaxed mb-6">
+          Mehrfamilienhäuser, Gewerbeobjekte, Außenanlagen. Algen und Moos auf Steinflächen verursachen Rutschgefahr und Haftungsrisiken. Festpreis vor Auftragsstart. Wartungsverträge auf Anfrage.
+        </p>
+        <a href="/gewerbekunden/" class="inline-flex items-center gap-2 text-blue-light opacity-70 hover:opacity-100 text-sm font-semibold transition-opacity">
+          Gewerbekunden-Details <i class="ph ph-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+
+    <div class="reveal">
+      <div class="flex items-center gap-3 mb-8">
+        <div class="w-8 h-px bg-blue opacity-60"></div>
+        <span class="text-t3 text-xs font-semibold tracking-widest uppercase">Preise</span>
+      </div>
+      <div class="grid md:grid-cols-3 gap-4">
+        <div class="bg-bg border border-blue/25 rounded p-6 relative">
+          <div class="absolute top-4 right-4 bg-blue text-white text-xs px-2 py-1 rounded font-semibold tracking-wide">Empfohlen</div>
+          <div class="text-t3 text-xs uppercase tracking-widest mb-4">Grundreinigung</div>
+          <div class="font-display text-blue leading-none mb-1" style="font-size:52px">ab 6 €</div>
+          <div class="text-t3 text-xs mb-4">pro m² · Festpreis nach Foto</div>
+          <ul class="space-y-2 text-t2 text-xs">
+            <li class="flex items-center gap-2"><i class="ph ph-check text-blue"></i> Algen, Moos, Schmutz</li>
+            <li class="flex items-center gap-2"><i class="ph ph-check text-blue"></i> Heißwasser-Niederdruck</li>
+            <li class="flex items-center gap-2"><i class="ph ph-check text-blue"></i> §35a absetzbar</li>
+          </ul>
+        </div>
+        <div class="bg-bg border border-white/6 rounded p-6">
+          <div class="text-t3 text-xs uppercase tracking-widest mb-4">+ Imprägnierung</div>
+          <div class="font-display text-t1 leading-none mb-1" style="font-size:52px">+ 2 €</div>
+          <div class="text-t3 text-xs mb-4">pro m² · Festpreis nach Foto</div>
+          <ul class="space-y-2 text-t2 text-xs">
+            <li class="flex items-center gap-2"><i class="ph ph-check text-blue"></i> Schutz 3–5 Jahre</li>
+            <li class="flex items-center gap-2"><i class="ph ph-check text-blue"></i> Empfohlen bei Schatten</li>
+          </ul>
+        </div>
+        <div class="bg-bg border border-white/6 rounded p-6">
+          <div class="text-t3 text-xs uppercase tracking-widest mb-4">+ Fugensand</div>
+          <div class="font-display text-blue leading-none mb-1" style="font-size:52px">+ 3 €</div>
+          <div class="text-t3 text-xs mb-4">pro m² · Festpreis nach Foto</div>
+          <ul class="space-y-2 text-t2 text-xs">
+            <li class="flex items-center gap-2"><i class="ph ph-check text-blue-light"></i> Verbund stabilisiert</li>
+            <li class="flex items-center gap-2"><i class="ph ph-check text-blue-light"></i> Unkrautwuchs verhindert</li>
+          </ul>
+        </div>
+      </div>
+      <p class="text-t3 text-xs mt-4 text-center">Alle Preise zzgl. MwSt. · Festpreis nach Foto-Einsendung · Kombination Reinigung + Imprägnierung auf Anfrage</p>
+    </div>
+  </div>
+</section>
+
+<section class="border-y border-white/5 bg-s1">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="grid grid-cols-2 md:grid-cols-4 divide-x divide-white/5">
+      <div class="py-10 px-8 text-center reveal"><div class="font-display text-blue leading-none mb-2" style="font-size:clamp(44px,6vw,68px)">80°C</div><div class="text-t3 text-xs uppercase tracking-widest">Heißwasser</div><div class="text-t3 text-xs mt-1">Algen thermisch gelöst ohne Fugenaustrag</div></div>
+      <div class="py-10 px-8 text-center reveal" style="transition-delay:.08s"><div class="font-display text-t1 leading-none mb-2" style="font-size:clamp(44px,6vw,68px)">0 ppm</div><div class="text-t3 text-xs uppercase tracking-widest">Osmosewasser</div><div class="text-t3 text-xs mt-1">Kein Kalkfilm auf Stein und Pflaster</div></div>
+      <div class="py-10 px-8 text-center reveal" style="transition-delay:.16s"><div class="font-display text-blue leading-none mb-2" style="font-size:clamp(44px,6vw,68px)">5J</div><div class="text-t3 text-xs uppercase tracking-widest">Impräg.-Schutz</div><div class="text-t3 text-xs mt-1">Versiegelt gegen erneuten Bewuchs</div></div>
+      <div class="py-10 px-8 text-center reveal" style="transition-delay:.24s"><div class="font-display text-t1 leading-none mb-2" style="font-size:clamp(44px,6vw,68px)">743+</div><div class="text-t3 text-xs uppercase tracking-widest">Kunden</div><div class="text-t3 text-xs mt-1">seit 2022 selbstständig</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="py-28" id="ergebnisse">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="flex items-end justify-between mb-12 reveal">
+      <div>
+        <div class="flex items-center gap-3 mb-6"><div class="w-8 h-px bg-blue"></div><span class="text-t3 text-xs font-semibold tracking-widest uppercase">Ergebnisse</span></div>
+        <h2 class="font-display text-t1 leading-none" style="font-size:clamp(38px,5vw,54px);letter-spacing:.02em">VORHER · NACHHER</h2>
+      </div>
+    </div>
+    <div class="swiper" id="resultsSwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><div class="relative aspect-video rounded overflow-hidden"><img src="../../assets/IMG_4107.jpg.webp" alt="Steinreinigung Vorher Nachher Berlin Terrasse Algen entfernt" class="w-full h-full object-cover" /><div class="absolute bottom-0 inset-x-0 p-4" style="background:linear-gradient(to top,rgba(13,15,18,.85),transparent)"><p class="text-xs text-t2 uppercase tracking-widest">Terrasse · Havelland · Algen + Moos entfernt</p></div></div></div>
+        <div class="swiper-slide"><div class="relative aspect-video rounded overflow-hidden"><img src="../../assets/B8140E4A-215E-4541-8E18-D27DECF21821.png.webp" alt="Reinigung Vorher Nachher Ergebnis" class="w-full h-full object-cover" /><div class="absolute bottom-0 inset-x-0 p-4" style="background:linear-gradient(to top,rgba(13,15,18,.85),transparent)"><p class="text-xs text-t2 uppercase tracking-widest">Einfamilienhaus · Havelland · Komplettservice</p></div></div></div>
+        <div class="swiper-slide"><div class="relative aspect-video rounded overflow-hidden"><img src="../../assets/0EC186D7-7830-49EA-97F7-DFACAB2992F5.png.webp" alt="Außenanlage Reinigung Ergebnis" class="w-full h-full object-cover" loading="lazy" /><div class="absolute bottom-0 inset-x-0 p-4" style="background:linear-gradient(to top,rgba(13,15,18,.85),transparent)"><p class="text-xs text-t2 uppercase tracking-widest">Außenanlage · Berlin · Pflaster gereinigt</p></div></div></div>
+      </div>
+      <div class="swiper-pagination mt-5"></div>
+    </div>
+  </div>
+</section>
+
+<section class="py-28 bg-s1" id="leistungen">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="flex items-end justify-between mb-12 reveal">
+      <div>
+        <div class="flex items-center gap-3 mb-6"><div class="w-8 h-px bg-blue"></div><span class="text-t3 text-xs font-semibold tracking-widest uppercase">Weitere Leistungen</span></div>
+        <h2 class="font-display text-t1 leading-none" style="font-size:clamp(38px,5vw,54px);letter-spacing:.02em">PRIVAT &amp; GEWERBE</h2>
+      </div>
+      <p class="hidden md:block text-t3 text-sm max-w-xs text-right leading-relaxed">Berlin und Brandenburg.<br/>Vom Einfamilienhaus bis zur Gewerbefassade.</p>
+    </div>
+    <div class="flex flex-col gap-3">
+      <div class="svc reveal" style="height:300px;cursor:default" aria-label="Steinreinigung — aktuelle Seite">
+        <div class="svc-bg" style="background-image:url('../../assets/IMG_4107.jpg.webp')"></div>
+        <div class="svc-overlay" style="background:linear-gradient(to top,rgba(26,86,219,0.45) 0%,rgba(13,15,18,0.38) 55%,transparent 100%)"></div>
+        <div class="svc-body" style="justify-content:center;max-width:500px">
+          <span class="svc-num">09 · Aktuelle Seite</span>
+          <div class="svc-name" style="font-size:clamp(30px,4vw,46px)">STEINREINIGUNG</div>
+          <div class="svc-sub" style="font-size:13px">Terrasse · Einfahrt · Pflaster · Imprägnierung · Fugensand</div>
+        </div>
+      </div>
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-3 reveal">
+        <a href="/fassadenreinigung/" class="svc" style="height:280px" aria-label="Fassadenreinigung">
+          <div class="svc-bg" style="background-image:url('../../assets/IMG_4337.jpg.webp')"></div>
+          <div class="svc-overlay"></div><div class="svc-arrow"><i class="ph ph-arrow-right"></i></div>
+          <div class="svc-body"><span class="svc-num">08</span><div class="svc-name">FASSADENREINIGUNG</div><div class="svc-sub">Putz · Klinker · Naturstein</div></div>
+        </a>
+        <a href="/dachreinigung/" class="svc" style="height:280px" aria-label="Dachreinigung">
+          <div class="svc-bg" style="background-image:url('../../assets/IMG_4444.jpg.webp')"></div>
+          <div class="svc-overlay"></div><div class="svc-arrow"><i class="ph ph-arrow-right"></i></div>
+          <div class="svc-body"><span class="svc-num">07</span><div class="svc-name">DACHREINIGUNG</div><div class="svc-sub">Moos · Flechten · Biozid-Option</div></div>
+        </a>
+        <a href="/fensterreinigung/" class="svc" style="height:280px" aria-label="Fensterreinigung">
+          <div class="svc-bg" style="background-image:url('../../assets/IMG_7689.jpg.webp')"></div>
+          <div class="svc-overlay"></div><div class="svc-arrow"><i class="ph ph-arrow-right"></i></div>
+          <div class="svc-body"><span class="svc-num">01</span><div class="svc-name">FENSTERREINIGUNG</div><div class="svc-sub">ab 8 €/Fenster · Rahmen inkl.</div></div>
+        </a>
+        <a href="/glasreinigung/" class="svc" style="height:280px" aria-label="Glasreinigung">
+          <div class="svc-bg" style="background-image:url('../../assets/IMG_7859.jpg.webp')"></div>
+          <div class="svc-overlay"></div><div class="svc-arrow"><i class="ph ph-arrow-right"></i></div>
+          <div class="svc-body"><span class="svc-num">02</span><div class="svc-name">GLASREINIGUNG</div><div class="svc-sub">Fassaden · Geländer · Trennwände</div></div>
+        </a>
+      </div>
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-3 reveal">
+        <a href="/wintergartenreinigung/" class="svc" style="height:200px" aria-label="Wintergartenreinigung">
+          <div class="svc-bg" style="background-image:url('../../assets/IMG_7654.jpg.webp')"></div>
+          <div class="svc-overlay"></div><div class="svc-arrow"><i class="ph ph-arrow-right"></i></div>
+          <div class="svc-body"><span class="svc-num">03</span><div class="svc-name">WINTERGARTEN</div></div>
+        </a>
+        <a href="/solaranlagenreinigung/" class="svc" style="height:200px" aria-label="Solaranlagenreinigung">
+          <div class="svc-bg" style="background-image:url('../../assets/0F0D24C2-3558-4046-BCEC-E52ECBEAC058.png.webp')"></div>
+          <div class="svc-overlay"></div><div class="svc-arrow"><i class="ph ph-arrow-right"></i></div>
+          <div class="svc-body"><span class="svc-num">04</span><div class="svc-name">SOLARANLAGE</div></div>
+        </a>
+        <a href="/jalousienreinigung/" class="svc" style="height:200px" aria-label="Jalousienreinigung">
+          <div class="svc-bg" style="background-image:url('../../assets/IMG_4180.jpg.webp')"></div>
+          <div class="svc-overlay"></div><div class="svc-arrow"><i class="ph ph-arrow-right"></i></div>
+          <div class="svc-body"><span class="svc-num">05</span><div class="svc-name">JALOUSIEN</div></div>
+        </a>
+        <a href="/terrassenueberdachung/" class="svc" style="height:200px" aria-label="Terrassenüberdachung">
+          <div class="svc-bg" style="background-image:url('../../assets/IMG_4520.jpg.webp')"></div>
+          <div class="svc-overlay"></div><div class="svc-arrow"><i class="ph ph-arrow-right"></i></div>
+          <div class="svc-body"><span class="svc-num">06</span><div class="svc-name">TERRASSENÜBERDACHUNG</div></div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="py-28 overflow-hidden">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="grid lg:grid-cols-2 gap-20 items-center">
+      <div class="relative reveal-l">
+        <img src="../../assets/E1F5A667-9471-4E22-B183-25758B86F367.png.webp" alt="Julien Ranft — Inhaber Premium Fensterreinigung" class="w-full max-w-sm rounded aspect-[3/4] object-cover object-top" />
+        <div class="absolute bottom-6 right-6 bg-bg border border-white/10 px-4 py-3 rounded text-xs"><div class="text-blue font-semibold mb-1">Julien Ranft</div><div class="text-t3">Inhaber · seit 2022</div></div>
+      </div>
+      <div class="reveal">
+        <div class="flex items-center gap-3 mb-8"><div class="w-8 h-px bg-blue"></div><span class="text-t3 text-xs font-semibold tracking-widest uppercase">Über uns</span></div>
+        <h2 class="font-display text-t1 leading-none mb-8" style="font-size:clamp(34px,4.5vw,50px);letter-spacing:.02em">KEIN FRANCHISE.<br/>KEIN CALLCENTER.<br/>NUR JULIEN.</h2>
+        <p class="text-t2 text-base leading-relaxed mb-5">Julien ist bei jedem Auftrag persönlich vor Ort: direkte Kommunikation, konsistente Qualität, echte Verantwortung.</p>
+        <p class="text-t2 text-base leading-relaxed mb-8">Das mobile Heiß-Reinwassersystem im Transporter wurde nicht von einem Konzern lizenziert — Julien hat es selbst entwickelt und optimiert. Kein Konkurrent in Berlin &amp; Brandenburg bietet das.</p>
+        <p class="text-t2 text-sm leading-relaxed mb-8">Seit 2022 selbstständig. Über 743 abgeschlossene Aufträge. Handwerkskammer-Mitglied. Haftpflichtversichert.</p>
+        <div class="flex items-center gap-4">
+          <img src="../../assets/A54B9F4B-C854-426C-849F-A3DAAD9F362A.png.webp" alt="Team JR Gebäudeservice" class="w-12 h-12 rounded-full object-cover" />
+          <div><div class="text-t1 text-sm font-semibold">Kleines Team. Große Qualität.</div><div class="text-t3 text-xs">Familienbetrieb aus Falkensee</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="py-28 bg-s1" id="bewertungen">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="mb-16 reveal">
+      <div class="flex items-center gap-3 mb-6"><div class="w-8 h-px bg-blue"></div><span class="text-t3 text-xs font-semibold tracking-widest uppercase">Bewertungen</span></div>
+      <div class="flex flex-wrap items-end gap-6">
+        <h2 class="font-display text-t1 leading-none" style="font-size:clamp(38px,5vw,54px);letter-spacing:.02em">WAS KUNDEN SAGEN</h2>
+        <div class="flex gap-1 text-yellow-400 text-xl mb-2"><i class="ph ph-star-fill"></i><i class="ph ph-star-fill"></i><i class="ph ph-star-fill"></i><i class="ph ph-star-fill"></i><i class="ph ph-star-fill"></i></div>
+        <div class="text-t3 text-sm mb-2">5,0 · 6 Bewertungen auf Google</div>
+      </div>
+    </div>
+    <div class="grid md:grid-cols-2 gap-4 mb-10">
+      <div class="bg-bg border border-white/5 rounded p-6 reveal">
+        <div class="flex gap-1 text-yellow-400 text-sm mb-4"><i class="ph ph-star-fill"></i><i class="ph ph-star-fill"></i><i class="ph ph-star-fill"></i><i class="ph ph-star-fill"></i><i class="ph ph-star-fill"></i></div>
+        <p class="text-t2 text-sm leading-relaxed mb-6">"Unsere Terrasse war seit Jahren grün. Julien hat sie in einem Nachmittag komplett sauber bekommen — die Fugen sind noch intakt."</p>
+        <div class="flex items-center gap-3 border-t border-white/5 pt-4"><div class="w-8 h-8 rounded-full bg-blue/15 flex items-center justify-center text-blue text-xs font-bold">P</div><div><div class="text-t1 text-xs font-semibold">Privathaushalt</div><div class="text-t3 text-xs">Falkensee</div></div></div>
+      </div>
+      <div class="bg-bg border border-white/5 rounded p-6 reveal" style="transition-delay:.08s">
+        <div class="flex gap-1 text-yellow-400 text-sm mb-4"><i class="ph ph-star-fill"></i><i class="ph ph-star-fill"></i><i class="ph ph-star-fill"></i><i class="ph ph-star-fill"></i><i class="ph ph-star-fill"></i></div>
+        <p class="text-t2 text-sm leading-relaxed mb-6">"Wir haben drei Büroetagen im Berliner Westen. Julien hat alles in einem Tag erledigt — kein Gerüst, kein Chaos, kein Aufpreis."</p>
+        <div class="flex items-center gap-3 border-t border-white/5 pt-4"><div class="w-8 h-8 rounded-full bg-blue/15 flex items-center justify-center text-blue text-xs font-bold">G</div><div><div class="text-t1 text-xs font-semibold">Gewerbeobjekt</div><div class="text-t3 text-xs">Berlin-Charlottenburg</div></div></div>
+      </div>
+    </div>
+    <div class="flex flex-wrap gap-x-6 gap-y-2 text-t3 text-xs reveal">
+      <span class="flex items-center gap-1.5"><i class="ph ph-check text-blue"></i> Haftpflichtversichert</span>
+      <span class="flex items-center gap-1.5"><i class="ph ph-check text-blue"></i> Handwerkskammer-Mitglied</span>
+      <span class="flex items-center gap-1.5"><i class="ph ph-check text-blue"></i> Seit 2022 aktiv</span>
+      <span class="flex items-center gap-1.5"><i class="ph ph-check text-blue"></i> 743+ Aufträge</span>
+      <span class="flex items-center gap-1.5"><i class="ph ph-check text-blue"></i> Inhabergeführt</span>
+    </div>
+  </div>
+</section>
+
+<section class="py-28" id="ablauf">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="max-w-xl mb-16 reveal">
+      <div class="flex items-center gap-3 mb-6"><div class="w-8 h-px bg-blue"></div><span class="text-t3 text-xs font-semibold tracking-widest uppercase">So läuft es ab</span></div>
+      <h2 class="font-display text-t1 leading-none" style="font-size:clamp(38px,5vw,54px);letter-spacing:.02em">VON FOTO<br/>BIS FESTPREIS<br/>IN 24H</h2>
+    </div>
+    <div class="grid md:grid-cols-4 gap-0">
+      <div class="p-6 reveal"><div class="w-12 h-12 rounded-full bg-blue flex items-center justify-center font-display text-white text-2xl mb-6">1</div><h3 class="text-t1 font-bold text-sm mb-2">Foto statt Vor-Ort-Termin</h3><p class="text-t3 text-xs leading-relaxed">Ein Foto der Terrasse oder Einfahrt per WhatsApp oder E-Mail. Kein Besichtigungstermin, keine Wartezeit.</p></div>
+      <div class="p-6 reveal" style="transition-delay:.08s"><div class="w-12 h-12 rounded-full bg-s2 border border-blue/20 flex items-center justify-center font-display text-blue text-2xl mb-6">2</div><h3 class="text-t1 font-bold text-sm mb-2">Festpreis innerhalb von 24 Stunden</h3><p class="text-t3 text-xs leading-relaxed">Konkretes Angebot: fester Preis, keine Nachkalkulation. Imprägnierung und Fugensand auf Wunsch.</p></div>
+      <div class="p-6 reveal" style="transition-delay:.16s"><div class="w-12 h-12 rounded-full bg-s2 border border-blue/20 flex items-center justify-center font-display text-blue text-2xl mb-6">3</div><h3 class="text-t1 font-bold text-sm mb-2">Heißwasser-Steinreinigung</h3><p class="text-t3 text-xs leading-relaxed">80°C Osmosewasser löst Algen und Moos thermisch ohne Fugenaustrag. Imprägnierung direkt danach.</p></div>
+      <div class="p-6 reveal" style="transition-delay:.24s"><div class="w-12 h-12 rounded-full bg-s2 border border-blue/20 flex items-center justify-center font-display text-blue text-2xl mb-6">4</div><h3 class="text-t1 font-bold text-sm mb-2">Saubere Fläche, Schutz optional</h3><p class="text-t3 text-xs leading-relaxed">Sauberer Stein ohne Fugenabrieb. Mit Imprägnierung: Schutz für 3–5 Jahre.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="py-28 bg-s1" id="preisrechner">
+  <div class="max-w-3xl mx-auto px-6">
+    <div class="text-center mb-12 reveal">
+      <div class="flex items-center justify-center gap-3 mb-6"><div class="w-8 h-px bg-blue"></div><span class="text-t3 text-xs font-semibold tracking-widest uppercase">Preisrechner</span><div class="w-8 h-px bg-blue"></div></div>
+      <h2 class="font-display text-t1 leading-none mb-3" style="font-size:clamp(38px,5vw,54px);letter-spacing:.02em">WAS KOSTET ES?</h2>
+      <p class="text-t2 text-sm">Indikativpreis — verbindlich wird's nach Foto-Einsendung.</p>
+    </div>
+    <div class="flex border border-white/10 rounded overflow-hidden mb-8 reveal">
+      <button onclick="switchTab(this,'privat')" data-panel="privat" role="tab" aria-selected="true" class="rechner-tab flex-1 py-3 text-xs font-semibold uppercase tracking-widest bg-blue text-white transition-[background-color,color]">Privat</button>
+      <button onclick="switchTab(this,'gewerbe')" data-panel="gewerbe" role="tab" aria-selected="false" class="rechner-tab flex-1 py-3 text-xs font-semibold uppercase tracking-widest text-t3 hover:text-t1 transition-[background-color,color]">Gewerbe</button>
+      <button onclick="switchTab(this,'stein')" data-panel="stein" role="tab" aria-selected="false" class="rechner-tab flex-1 py-3 text-xs font-semibold uppercase tracking-widest text-t3 hover:text-t1 transition-[background-color,color]">Steinreinigung</button>
+    </div>
+    <div id="panel-privat" class="tab-panel active">
+      <div class="bg-s2 border border-white/5 rounded p-8">
+        <div class="grid md:grid-cols-2 gap-8 mb-8">
+          <div><label class="text-t3 text-xs uppercase tracking-widest block mb-3">Fenster normal</label><div class="flex items-center gap-4"><button onclick="changeVal('pn',-1)" class="btn-tap w-11 h-11 rounded border border-white/10 hover:border-blue hover:text-blue text-t1 font-display text-xl transition-colors">-</button><span id="val-pn" class="font-display text-4xl text-t1 w-10 text-center tabular">5</span><button onclick="changeVal('pn',1)" class="btn-tap w-11 h-11 rounded border border-white/10 hover:border-blue hover:text-blue text-t1 font-display text-xl transition-colors">+</button><span class="text-t3 text-xs">× 8 €</span></div></div>
+          <div><label class="text-t3 text-xs uppercase tracking-widest block mb-3">Bodentief</label><div class="flex items-center gap-4"><button onclick="changeVal('pg',-1)" class="btn-tap w-11 h-11 rounded border border-white/10 hover:border-blue hover:text-blue text-t1 font-display text-xl transition-colors">-</button><span id="val-pg" class="font-display text-4xl text-t1 w-10 text-center tabular">0</span><button onclick="changeVal('pg',1)" class="btn-tap w-11 h-11 rounded border border-white/10 hover:border-blue hover:text-blue text-t1 font-display text-xl transition-colors">+</button><span class="text-t3 text-xs">× 16 €</span></div></div>
+        </div>
+        <div class="border-t border-white/5 pt-6 flex items-center justify-between gap-4">
+          <div><div class="text-t3 text-xs mb-1 uppercase tracking-widest">Geschätzter Preis</div><div class="font-display text-t1 leading-none" style="font-size:52px">ab <span id="result-privat" class="tabular">40</span> €</div><div id="steuer-hint" class="text-blue text-xs mt-1">§35a EStG: bis 8 € steuerlich absetzbar</div></div>
+          <a href="#anfrage" class="shrink-0 bg-blue hover:bg-blue-dark text-white text-xs font-semibold uppercase tracking-widest px-5 py-3 rounded transition-colors">Angebot</a>
+        </div>
+      </div>
+    </div>
+    <div id="panel-gewerbe" class="tab-panel">
+      <div class="bg-s2 border border-white/5 rounded p-8">
+        <div class="mb-8"><label class="text-t3 text-xs uppercase tracking-widest block mb-3">Glasfläche in m²</label><div class="flex items-center gap-4"><button onclick="changeVal('gf',-10)" class="btn-tap w-11 h-11 rounded border border-white/10 hover:border-blue hover:text-blue text-t1 font-display text-xl transition-colors">-</button><span id="val-gf" class="font-display text-4xl text-t1 w-16 text-center tabular">100</span><button onclick="changeVal('gf',10)" class="btn-tap w-11 h-11 rounded border border-white/10 hover:border-blue hover:text-blue text-t1 font-display text-xl transition-colors">+</button><span class="text-t3 text-xs">m²</span></div></div>
+        <div class="border-t border-white/5 pt-6 flex items-center justify-between gap-4">
+          <div><div class="text-t3 text-xs mb-1 uppercase tracking-widest">Geschätzter Preis</div><div class="font-display text-t1 leading-none" style="font-size:52px">ab <span id="result-gewerbe" class="tabular">300</span> €</div><div class="text-t3 text-xs mt-1">zzgl. MwSt. · Rahmenvertrag möglich</div></div>
+          <a href="#anfrage" class="shrink-0 bg-blue hover:bg-blue-dark text-white text-xs font-semibold uppercase tracking-widest px-5 py-3 rounded transition-colors">Angebot</a>
+        </div>
+      </div>
+    </div>
+    <div id="panel-stein" class="tab-panel">
+      <div class="bg-s2 border border-white/5 rounded p-8">
+        <div class="grid md:grid-cols-2 gap-8 mb-6">
+          <div><label class="text-t3 text-xs uppercase tracking-widest block mb-3">Fläche in m²</label><div class="flex items-center gap-4"><button onclick="changeVal('sf',-10)" class="btn-tap w-11 h-11 rounded border border-white/10 hover:border-blue hover:text-blue text-t1 font-display text-xl transition-colors">-</button><span id="val-sf" class="font-display text-4xl text-t1 w-16 text-center tabular">50</span><button onclick="changeVal('sf',10)" class="btn-tap w-11 h-11 rounded border border-white/10 hover:border-blue hover:text-blue text-t1 font-display text-xl transition-colors">+</button><span class="text-t3 text-xs">m²</span></div></div>
+          <div class="flex flex-col gap-3 justify-center"><label class="flex items-center gap-3 cursor-pointer text-t2 text-sm"><input type="checkbox" id="check-impraeg" onchange="calcStein()" class="w-4 h-4 accent-blue" /> + Imprägnierung (2 €/m²)</label><label class="flex items-center gap-3 cursor-pointer text-t2 text-sm"><input type="checkbox" id="check-fuge" onchange="calcStein()" class="w-4 h-4 accent-blue" /> + Fugensand (3 €/m²)</label></div>
+        </div>
+        <div class="border-t border-white/5 pt-6 flex items-center justify-between gap-4">
+          <div><div class="text-t3 text-xs mb-1 uppercase tracking-widest">Geschätzter Preis</div><div class="font-display text-t1 leading-none" style="font-size:52px">ab <span id="result-stein" class="tabular">300</span> €</div><div class="text-t3 text-xs mt-1">zzgl. MwSt.</div></div>
+          <a href="#anfrage" class="shrink-0 bg-blue hover:bg-blue-dark text-white text-xs font-semibold uppercase tracking-widest px-5 py-3 rounded transition-colors">Angebot</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="py-28" id="faq">
+  <div class="max-w-3xl mx-auto px-6">
+    <div class="mb-12 reveal">
+      <div class="flex items-center gap-3 mb-6"><div class="w-8 h-px bg-blue"></div><span class="text-t3 text-xs font-semibold tracking-widest uppercase">FAQ</span></div>
+      <h2 class="font-display text-t1 leading-none" style="font-size:clamp(38px,5vw,54px);letter-spacing:.02em">HÄUFIGE FRAGEN</h2>
+    </div>
+    <div class="border-t border-white/5">
+      <div class="border-b border-white/5 reveal">
+        <button onclick="toggleFaq(this)" aria-expanded="false" class="w-full flex items-center justify-between py-5 text-left group">
+          <span class="text-t1 text-sm font-semibold pr-8 group-hover:text-blue transition-colors">Schadet Hochdruckreinigung Steinflächen?</span>
+          <i class="ph ph-plus text-t3 group-hover:text-blue faq-icon text-lg shrink-0"></i>
+        </button>
+        <div class="faq-body"><p class="text-t2 text-sm leading-relaxed pb-5">Ja. Hochdruck treibt Fugensand heraus, öffnet Steinporen und beschleunigt erneuten Bewuchs. Ohne Fugenstabilisierung sacken Pflastersteine ab und Frostschäden entstehen schneller. Wir arbeiten mit Heißwasser-Niederdruck: Algen und Moos werden thermisch gelöst, Fugen bleiben intakt.</p></div>
+      </div>
+      <div class="border-b border-white/5 reveal">
+        <button onclick="toggleFaq(this)" aria-expanded="false" class="w-full flex items-center justify-between py-5 text-left group">
+          <span class="text-t1 text-sm font-semibold pr-8 group-hover:text-blue transition-colors">Was bewirkt eine Imprägnierung nach der Steinreinigung?</span>
+          <i class="ph ph-plus text-t3 group-hover:text-blue faq-icon text-lg shrink-0"></i>
+        </button>
+        <div class="faq-body"><p class="text-t2 text-sm leading-relaxed pb-5">Imprägnierung versiegelt die Steinporen gegen Wasser, Algen und Schmutz für 3–5 Jahre. Behandelte Flächen trocknen schneller und nehmen weniger organisches Material auf. Empfohlen für schattige Flächen und Bereiche unter Bäumen.</p></div>
+      </div>
+      <div class="border-b border-white/5 reveal">
+        <button onclick="toggleFaq(this)" aria-expanded="false" class="w-full flex items-center justify-between py-5 text-left group">
+          <span class="text-t1 text-sm font-semibold pr-8 group-hover:text-blue transition-colors">Können Fugen nach der Reinigung wieder aufgefüllt werden?</span>
+          <i class="ph ph-plus text-t3 group-hover:text-blue faq-icon text-lg shrink-0"></i>
+        </button>
+        <div class="faq-body"><p class="text-t2 text-sm leading-relaxed pb-5">Ja. Wenn Hochdruck oder Witterung Fugensand herausgewaschen hat, füllen wir nach der Reinigung frischen Fugensand ein. Das stabilisiert den Verbund, verhindert Unkrautwuchs und schließt Eintrittspunkte für Wasser.</p></div>
+      </div>
+      <div class="border-b border-white/5 reveal">
+        <button onclick="toggleFaq(this)" aria-expanded="false" class="w-full flex items-center justify-between py-5 text-left group">
+          <span class="text-t1 text-sm font-semibold pr-8 group-hover:text-blue transition-colors">Wie oft sollte eine Terrasse gereinigt werden?</span>
+          <i class="ph ph-plus text-t3 group-hover:text-blue faq-icon text-lg shrink-0"></i>
+        </button>
+        <div class="faq-body"><p class="text-t2 text-sm leading-relaxed pb-5">Einmal jährlich im Frühjahr für normale Nutzung. Flächen unter Bäumen oder mit starkem Schatten benötigen häufigere Behandlung. Mit Imprägnierung genügt alle 2–3 Jahre eine Vollreinigung.</p></div>
+      </div>
+      <div class="border-b border-white/5 reveal">
+        <button onclick="toggleFaq(this)" aria-expanded="false" class="w-full flex items-center justify-between py-5 text-left group">
+          <span class="text-t1 text-sm font-semibold pr-8 group-hover:text-blue transition-colors">Ist Steinreinigung im Herbst oder Frühjahr sinnvoller?</span>
+          <i class="ph ph-plus text-t3 group-hover:text-blue faq-icon text-lg shrink-0"></i>
+        </button>
+        <div class="faq-body"><p class="text-t2 text-sm leading-relaxed pb-5">Frühjahr ist optimal: Moos und Algen nach dem Winter entfernen, dann Imprägnierung für die Nutzungssaison. Herbstreinigung sinnvoll bei starkem Laubfall, um Fäulnis zu vermeiden. Beide Zeitpunkte sind bei Temperaturen über 5°C möglich.</p></div>
+      </div>
+      <div class="border-b border-white/5 reveal">
+        <button onclick="toggleFaq(this)" aria-expanded="false" class="w-full flex items-center justify-between py-5 text-left group">
+          <span class="text-t1 text-sm font-semibold pr-8 group-hover:text-blue transition-colors">Werden Fugen und Ränder mitgereinigt?</span>
+          <i class="ph ph-plus text-t3 group-hover:text-blue faq-icon text-lg shrink-0"></i>
+        </button>
+        <div class="faq-body"><p class="text-t2 text-sm leading-relaxed pb-5">Ja, Randstrukturen und angrenzende Fugen werden inklusive behandelt.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="py-28 bg-s1" id="anfrage">
+  <div class="max-w-3xl mx-auto px-6">
+    <div class="text-center mb-12 reveal">
+      <div class="flex items-center justify-center gap-3 mb-6"><div class="w-8 h-px bg-blue"></div><span class="text-t3 text-xs font-semibold tracking-widest uppercase">Kontakt</span><div class="w-8 h-px bg-blue"></div></div>
+      <h2 class="font-display text-t1 leading-none mb-3" style="font-size:clamp(38px,5vw,54px);letter-spacing:.02em">ANGEBOT ANFRAGEN</h2>
+      <p class="text-t2 text-sm">Foto senden → Festpreis innerhalb von 24h</p>
+    </div>
+    <div class="bg-bg border border-white/5 rounded p-8 reveal">
+      <div id="form-success" class="hidden text-center py-8"><div class="w-12 h-12 rounded-full bg-blue/10 flex items-center justify-center mx-auto mb-4"><i class="ph ph-check text-blue text-2xl"></i></div><h3 class="text-t1 font-bold mb-2">Anfrage gesendet</h3><p class="text-t2 text-sm">Wir melden uns innerhalb von 24h mit deinem Festpreis.</p></div>
+      <form id="contact-form" onsubmit="submitForm(event)" novalidate>
+        <div class="grid md:grid-cols-2 gap-4 mb-4">
+          <div class="md:col-span-2">
+            <label class="text-t3 text-xs uppercase tracking-widest block mb-2">Leistung</label>
+            <select name="leistung" class="w-full bg-s1 border border-white/10 rounded px-4 py-3 text-t1 text-sm focus:border-blue focus:outline-none transition-colors">
+              <option>Fensterreinigung</option><option>Glasreinigung</option>
+              <option>Wintergartenreinigung</option><option>Solaranlagenreinigung</option>
+              <option>Jalousienreinigung</option><option>Terrassenüberdachung</option>
+              <option>Dachreinigung</option><option>Fassadenreinigung</option>
+              <option selected>Steinreinigung</option><option>Sonstiges</option>
+            </select>
+          </div>
+          <div><label class="text-t3 text-xs uppercase tracking-widest block mb-2">PLZ</label><input type="text" name="plz" placeholder="z.B. 14612" maxlength="5" required class="w-full bg-s1 border border-white/10 rounded px-4 py-3 text-t1 text-sm placeholder:text-t3 focus:border-blue focus:outline-none transition-colors" /></div>
+          <div><label class="text-t3 text-xs uppercase tracking-widest block mb-2">Telefon</label><input type="tel" name="telefon" placeholder="Ihre Nummer" required class="w-full bg-s1 border border-white/10 rounded px-4 py-3 text-t1 text-sm placeholder:text-t3 focus:border-blue focus:outline-none transition-colors" /></div>
+        </div>
+        <button type="submit" class="btn-tap w-full bg-blue hover:bg-blue-dark text-white font-semibold text-xs uppercase tracking-widest py-4 rounded transition-colors mt-2">Festpreis anfragen</button>
+        <p class="text-t3 text-xs text-center mt-4">Kein Spam. Nur dein Festpreis.</p>
+      </form>
+    </div>
+    <div class="grid grid-cols-3 gap-3 mt-4 reveal">
+      <a href="tel:+491627061789" class="flex flex-col items-center gap-2 p-4 bg-bg border border-white/5 rounded hover:border-blue/30 transition-colors group"><i class="ph ph-phone text-blue text-xl group-hover:scale-110 transition-transform"></i><span class="text-t3 text-xs text-center">0162 7061789</span></a>
+      <a href="https://wa.me/491627061789?text=Hallo%2C+ich+m%C3%B6chte+ein+Angebot+anfragen." class="flex flex-col items-center gap-2 p-4 bg-bg border border-white/5 rounded hover:border-wa/30 transition-colors group"><i class="ph ph-whatsapp-logo text-wa text-xl group-hover:scale-110 transition-transform"></i><span class="text-t3 text-xs text-center">WhatsApp</span></a>
+      <a href="mailto:info@premium-fensterreinigung.de" class="flex flex-col items-center gap-2 p-4 bg-bg border border-white/5 rounded hover:border-blue/30 transition-colors group"><i class="ph ph-envelope text-blue text-xl group-hover:scale-110 transition-transform"></i><span class="text-t3 text-xs text-center">E-Mail</span></a>
+    </div>
+  </div>
+</section>
+
+<section class="relative py-36 overflow-hidden">
+  <div class="absolute inset-0"><img src="../../assets/JR_Fensterreinigung_26-05-15_13.08.28-2.jpg.webp" alt="" class="w-full h-full object-cover" aria-hidden="true" /><div class="absolute inset-0" style="background:linear-gradient(to bottom,rgba(13,15,18,.55),rgba(13,15,18,.92))"></div></div>
+  <div class="relative z-10 max-w-3xl mx-auto px-6 text-center reveal">
+    <h2 class="font-display text-t1 leading-none mb-6" style="font-size:clamp(48px,8vw,88px);letter-spacing:.02em">FOTO SENDEN.<br/>PREIS ERHALTEN.<br/>FERTIG.</h2>
+    <p class="text-t2 text-base mb-10 max-w-md mx-auto">Kein Termin vor Ort. Foto reicht — Festpreis in 24h.</p>
+    <div class="flex flex-wrap gap-4 justify-center">
+      <a href="#anfrage" class="btn-tap inline-flex items-center gap-2 bg-blue hover:bg-blue-dark text-white font-semibold text-sm tracking-widest uppercase px-10 py-4 rounded transition-colors">Jetzt Angebot <i class="ph ph-arrow-right"></i></a>
+      <a href="https://wa.me/491627061789?text=Hallo%2C+ich+m%C3%B6chte+ein+Angebot+anfragen." class="btn-tap inline-flex items-center gap-2 bg-wa/90 hover:bg-wa text-white font-semibold text-sm tracking-widest uppercase px-10 py-4 rounded transition-colors"><i class="ph ph-whatsapp-logo"></i> WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<section class="py-20 bg-s1" id="standorte">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="mb-10 reveal">
+      <div class="flex items-center gap-3 mb-4"><div class="w-8 h-px bg-blue opacity-60"></div><span class="text-t3 text-xs font-semibold tracking-widest uppercase">Regionale Verfügbarkeit</span></div>
+      <h2 class="font-display text-t1 leading-none" style="font-size:clamp(28px,3.5vw,42px);letter-spacing:.02em">STEINREINIGUNG IN IHRER REGION</h2>
+    </div>
+    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-7 gap-2 reveal">
+      <a href="/steinreinigung/steinreinigung-im-havelland/" class="loc-link block border border-white/6 rounded px-4 py-3 text-center transition-[background-color,border-color] duration-200"><div class="text-t1 text-xs font-semibold mb-0.5">Havelland</div><div class="text-t3 text-xs">Region</div></a>
+      <a href="/steinreinigung/steinreinigung-in-berlin/" class="loc-link block border border-white/6 rounded px-4 py-3 text-center transition-[background-color,border-color] duration-200"><div class="text-t1 text-xs font-semibold mb-0.5">Berlin</div><div class="text-t3 text-xs">Stadt</div></a>
+      <a href="/steinreinigung/steinreinigung-in-berlin-spandau/" class="loc-link block border border-white/6 rounded px-4 py-3 text-center transition-[background-color,border-color] duration-200"><div class="text-t1 text-xs font-semibold mb-0.5">Berlin-Spandau</div><div class="text-t3 text-xs">Bezirk</div></a>
+      <a href="/steinreinigung/steinreinigung-in-brandenburg/" class="loc-link block border border-white/6 rounded px-4 py-3 text-center transition-[background-color,border-color] duration-200"><div class="text-t1 text-xs font-semibold mb-0.5">Brandenburg</div><div class="text-t3 text-xs">Land</div></a>
+      <a href="/steinreinigung/steinreinigung-in-brieselang/" class="loc-link block border border-white/6 rounded px-4 py-3 text-center transition-[background-color,border-color] duration-200"><div class="text-t1 text-xs font-semibold mb-0.5">Brieselang</div><div class="text-t3 text-xs">Gemeinde</div></a>
+      <a href="/steinreinigung/steinreinigung-in-dallgow-doeberitz/" class="loc-link block border border-white/6 rounded px-4 py-3 text-center transition-[background-color,border-color] duration-200"><div class="text-t1 text-xs font-semibold mb-0.5">Dallgow</div><div class="text-t3 text-xs">Döberitz</div></a>
+      <a href="/steinreinigung/steinreinigung-in-elstal/" class="loc-link block border border-white/6 rounded px-4 py-3 text-center transition-[background-color,border-color] duration-200"><div class="text-t1 text-xs font-semibold mb-0.5">Elstal</div><div class="text-t3 text-xs">Ort</div></a>
+      <a href="/steinreinigung/steinreinigung-in-falkensee/" class="loc-link block border border-white/6 rounded px-4 py-3 text-center transition-[background-color,border-color] duration-200"><div class="text-t1 text-xs font-semibold mb-0.5">Falkensee</div><div class="text-t3 text-xs">Sitz</div></a>
+      <a href="/steinreinigung/steinreinigung-in-gatow/" class="loc-link block border border-white/6 rounded px-4 py-3 text-center transition-[background-color,border-color] duration-200"><div class="text-t1 text-xs font-semibold mb-0.5">Gatow</div><div class="text-t3 text-xs">Ortsteil</div></a>
+      <a href="/steinreinigung/steinreinigung-in-gross-glienicke/" class="loc-link block border border-white/6 rounded px-4 py-3 text-center transition-[background-color,border-color] duration-200"><div class="text-t1 text-xs font-semibold mb-0.5">Groß Glienicke</div><div class="text-t3 text-xs">Ortsteil</div></a>
+      <a href="/steinreinigung/steinreinigung-in-kladow/" class="loc-link block border border-white/6 rounded px-4 py-3 text-center transition-[background-color,border-color] duration-200"><div class="text-t1 text-xs font-semibold mb-0.5">Kladow</div><div class="text-t3 text-xs">Ortsteil</div></a>
+      <a href="/steinreinigung/steinreinigung-in-schoenwalde-glien/" class="loc-link block border border-white/6 rounded px-4 py-3 text-center transition-[background-color,border-color] duration-200"><div class="text-t1 text-xs font-semibold mb-0.5">Schönwalde-Glien</div><div class="text-t3 text-xs">Gemeinde</div></a>
+      <a href="/steinreinigung/steinreinigung-in-staaken/" class="loc-link block border border-white/6 rounded px-4 py-3 text-center transition-[background-color,border-color] duration-200"><div class="text-t1 text-xs font-semibold mb-0.5">Staaken</div><div class="text-t3 text-xs">Ortsteil</div></a>
+      <a href="/steinreinigung/steinreinigung-in-wustermark/" class="loc-link block border border-white/6 rounded px-4 py-3 text-center transition-[background-color,border-color] duration-200"><div class="text-t1 text-xs font-semibold mb-0.5">Wustermark</div><div class="text-t3 text-xs">Gemeinde</div></a>
+    </div>
+  </div>
+</section>
+
+<footer class="bg-s1 border-t border-white/5">
+  <div class="max-w-7xl mx-auto px-6 py-16">
+    <div class="grid md:grid-cols-4 gap-12 mb-12">
+      <div class="md:col-span-2">
+        <img src="../../assets/35A0CDFB-340E-43DE-B074-575700301CD6.png.webp" alt="JR Gebäudeservice" class="h-10 w-auto mb-4" />
+        <p class="text-t3 text-sm leading-relaxed mb-4 max-w-xs">Professionelle Fenster- und Glasreinigung mit 80°C Osmosewasser-Technologie. Berlin · Havelland · Brandenburg.</p>
+        <div class="flex gap-1 text-yellow-400 text-sm mb-1"><i class="ph ph-star-fill"></i><i class="ph ph-star-fill"></i><i class="ph ph-star-fill"></i><i class="ph ph-star-fill"></i><i class="ph ph-star-fill"></i></div>
+        <p class="text-t3 text-xs">5,0 · 6 Google-Bewertungen</p>
+      </div>
+      <div>
+        <h4 class="text-t3 text-xs uppercase tracking-widest mb-4">Leistungen</h4>
+        <ul class="space-y-2 text-t3 text-sm">
+          <li><a href="/fensterreinigung/" class="hover:text-t1 transition-colors">Fensterreinigung</a></li>
+          <li><a href="/glasreinigung/" class="hover:text-t1 transition-colors">Glasreinigung</a></li>
+          <li><a href="/fassadenreinigung/" class="hover:text-t1 transition-colors">Fassadenreinigung</a></li>
+          <li><a href="/dachreinigung/" class="hover:text-t1 transition-colors">Dachreinigung</a></li>
+          <li><a href="/steinreinigung/" class="text-t1 transition-colors">Steinreinigung</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-t3 text-xs uppercase tracking-widest mb-4">Kontakt</h4>
+        <ul class="space-y-3 text-t3 text-sm">
+          <li><a href="tel:+491627061789" class="hover:text-t1 transition-colors flex items-center gap-2"><i class="ph ph-phone text-blue"></i>0162 7061789</a></li>
+          <li><a href="https://wa.me/491627061789?text=Hallo%2C+ich+m%C3%B6chte+ein+Angebot+anfragen." class="hover:text-t1 transition-colors flex items-center gap-2"><i class="ph ph-whatsapp-logo text-wa"></i>WhatsApp</a></li>
+          <li><a href="mailto:info@premium-fensterreinigung.de" class="hover:text-t1 transition-colors flex items-center gap-2"><i class="ph ph-envelope text-blue"></i>E-Mail</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-white/5 pt-6 flex flex-wrap items-center justify-between gap-4">
+      <p class="text-t3 text-xs">© 2026 JR Gebäudeservice · Premium Fensterreinigung — eine Marke der JR Group · Sonnenstraße 50, 14612 Falkensee</p>
+      <div class="flex gap-6 text-t3 text-xs"><a href="/kontakt/impressum/" class="hover:text-t1 transition-colors">Impressum</a><a href="/kontakt/datenschutzerklaerung/" class="hover:text-t1 transition-colors">Datenschutz</a></div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+  const nav = document.getElementById('nav');
+  window.addEventListener('scroll', () => { nav.classList.toggle('scrolled', window.scrollY > 50); }, { passive: true });
+  const ro = new IntersectionObserver(entries => { entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('on'); ro.unobserve(e.target); } }); }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+  document.querySelectorAll('.reveal, .reveal-l').forEach(el => ro.observe(el));
+  new Swiper('#resultsSwiper', { slidesPerView: 1, spaceBetween: 16, pagination: { el: '.swiper-pagination', clickable: true }, breakpoints: { 768: { slidesPerView: 2 }, 1024: { slidesPerView: 3 } } });
+  function toggleFaq(btn) { const open = btn.getAttribute('aria-expanded') === 'true'; document.querySelectorAll('[aria-expanded]').forEach(b => { b.setAttribute('aria-expanded', 'false'); b.nextElementSibling.classList.remove('open'); }); if (!open) { btn.setAttribute('aria-expanded', 'true'); btn.nextElementSibling.classList.add('open'); } }
+  const vals = { pn:5, pg:0, gf:100, sf:50 };
+  const mins = { pn:0, pg:0, gf:10, sf:10 };
+  function changeVal(k, d) { vals[k] = Math.max(mins[k], vals[k] + d); document.getElementById('val-' + k).textContent = vals[k]; if (k==='pn'||k==='pg') calcPrivat(); if (k==='gf') calcGewerbe(); if (k==='sf') calcStein(); }
+  function calcPrivat() { const t = vals.pn*8 + vals.pg*16; document.getElementById('result-privat').textContent = t; document.getElementById('steuer-hint').textContent = t > 0 ? `§35a EStG: bis ${Math.round(t*.2)} € steuerlich absetzbar` : '§35a EStG: steuerlich absetzbar'; }
+  function calcGewerbe() { document.getElementById('result-gewerbe').textContent = vals.gf * 3; }
+  function calcStein() { const imp = document.getElementById('check-impraeg').checked ? 2 : 0; const fuge = document.getElementById('check-fuge').checked ? 3 : 0; document.getElementById('result-stein').textContent = Math.round(vals.sf * (6 + imp + fuge)); }
+  function switchTab(btn, panel) { document.querySelectorAll('.rechner-tab').forEach(t => { t.classList.remove('bg-blue','text-white'); t.classList.add('text-t3'); t.setAttribute('aria-selected','false'); }); btn.classList.add('bg-blue','text-white'); btn.classList.remove('text-t3'); btn.setAttribute('aria-selected','true'); document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active')); document.getElementById('panel-' + panel).classList.add('active'); }
+  function submitForm(e) { e.preventDefault(); const f = e.target; const plz = f.querySelector('[name="plz"]').value.trim(); const tel = f.querySelector('[name="telefon"]').value.trim(); if (!plz || !tel) return; const leistung = f.querySelector('[name="leistung"]').value; window.location.href = `mailto:info@premium-fensterreinigung.de?subject=${encodeURIComponent('Anfrage: ' + leistung + ' · PLZ ' + plz)}&body=${encodeURIComponent('Leistung: ' + leistung + '\nPLZ: ' + plz + '\nTelefon: ' + tel)}`; document.getElementById('contact-form').classList.add('hidden'); document.getElementById('form-success').classList.remove('hidden'); }
+  function toggleMenu(){const btn=document.getElementById('menu-btn');const menu=document.getElementById('mobile-menu');const icon=document.getElementById('menu-icon');const open=menu.classList.toggle('open');btn.setAttribute('aria-expanded',open);menu.setAttribute('aria-hidden',!open);icon.className=open?'ph ph-x text-xl':'ph ph-list text-xl';document.body.classList.toggle('menu-open',open);}
+  function closeMenu(){const menu=document.getElementById('mobile-menu');if(!menu.classList.contains('open'))return;menu.classList.remove('open');document.getElementById('menu-btn').setAttribute('aria-expanded','false');menu.setAttribute('aria-hidden','true');document.getElementById('menu-icon').className='ph ph-list text-xl';document.body.classList.remove('menu-open');}
+  document.addEventListener('keydown',e=>{if(e.key==='Escape')closeMenu();});
+</script>
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"LocalBusiness","name":"Premium Fensterreinigung","alternateName":"JR Gebäudeservice","url":"https://premium-fensterreinigung.de","telephone":"+491627061789","email":"info@premium-fensterreinigung.de","priceRange":"ab 6 € / m²","description":"Professionelle Steinreinigung mit Heißwasser-Niederdruck in Berlin und Havelland. Terrassen, Einfahrten, Pflaster — keine Fugenauswaschung, Imprägnierung-Option.","address":{"@type":"PostalAddress","streetAddress":"Sonnenstraße 50","addressLocality":"Falkensee","addressRegion":"Brandenburg","postalCode":"14612","addressCountry":"DE"},"areaServed":["Berlin","Havelland","Brandenburg"],"aggregateRating":{"@type":"AggregateRating","ratingValue":"5.0","reviewCount":"6"}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Service","name":"Steinreinigung Berlin & Havelland","serviceType":"Steinreinigung","provider":{"@type":"LocalBusiness","name":"Premium Fensterreinigung","telephone":"+491627061789","address":{"@type":"PostalAddress","streetAddress":"Sonnenstraße 50","addressLocality":"Falkensee","postalCode":"14612","addressCountry":"DE"}},"areaServed":["Berlin","Havelland","Brandenburg","Falkensee","Brieselang","Dallgow-Döberitz","Schönwalde-Glien","Wustermark"],"description":"Steinreinigung mit Heißwasser-Niederdruck: Terrassen, Einfahrten, Pflaster. Keine Fugenauswaschung. Imprägnierung und Fugensand-Nachbehandlung auf Wunsch. Festpreis nach Foto."}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Schadet Hochdruckreinigung Steinflächen?","acceptedAnswer":{"@type":"Answer","text":"Ja. Hochdruck treibt Fugensand heraus und öffnet Steinporen. Wir arbeiten mit Heißwasser-Niederdruck: Algen werden thermisch gelöst, Fugen bleiben intakt."}},{"@type":"Question","name":"Was bewirkt eine Imprägnierung nach der Steinreinigung?","acceptedAnswer":{"@type":"Answer","text":"Imprägnierung versiegelt Steinporen gegen Wasser, Algen und Schmutz für 3–5 Jahre. Empfohlen für schattige Flächen und Bereiche unter Bäumen."}},{"@type":"Question","name":"Können Fugen nach der Reinigung wieder aufgefüllt werden?","acceptedAnswer":{"@type":"Answer","text":"Ja. Frischer Fugensand nach der Reinigung stabilisiert den Verbund, verhindert Unkrautwuchs und schließt Eintrittspunkte für Wasser."}},{"@type":"Question","name":"Wie oft sollte eine Terrasse gereinigt werden?","acceptedAnswer":{"@type":"Answer","text":"Einmal jährlich im Frühjahr für normale Nutzung. Mit Imprägnierung genügt alle 2–3 Jahre eine Vollreinigung."}},{"@type":"Question","name":"Ist Steinreinigung im Herbst oder Frühjahr sinnvoller?","acceptedAnswer":{"@type":"Answer","text":"Frühjahr ist optimal: Moos und Algen nach dem Winter entfernen, dann Imprägnierung für die Nutzungssaison. Herbstreinigung sinnvoll bei starkem Laubfall."}}]}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Premium Fensterreinigung","item":"https://premium-fensterreinigung.de/"},{"@type":"ListItem","position":2,"name":"Steinreinigung","item":"https://premium-fensterreinigung.de/steinreinigung/"}]}
+</script>
+
+  <script src="/analytics-events.js"></script>
+</body>
+</html>

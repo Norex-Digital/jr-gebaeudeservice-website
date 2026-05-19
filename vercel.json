@@ -1,0 +1,16 @@
+{
+  "redirects": [
+    {
+      "source": "/terassenueberdachung/",
+      "destination": "/terrassenueberdachung/",
+      "permanent": true
+    },
+    {
+      "source": "/terassenueberdachung/:path*",
+      "destination": "/terrassenueberdachung/:path*",
+      "permanent": true
+    }
+  ],
+  "trailingSlash": true,
+  "cleanUrls": true
+}

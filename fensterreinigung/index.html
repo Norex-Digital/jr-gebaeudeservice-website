@@ -3,14 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Fensterreinigung Berlin – 80°C Heißwasser, kein Gerüst | JR</title>
-  <meta name="description" content="Fensterreinigung Berlin: 80°C Heißwasser, ohne Chemie, bis 21m vom Boden. Foto senden → Festpreis noch heute. Privat & Gewerbe." />
-  <link rel="canonical" href="https://premium-fensterreinigung.de/" />
-  <meta property="og:title" content="Fensterreinigung Berlin – 80°C Heißwasser, kein Gerüst | JR" />
-  <meta property="og:description" content="Foto per WhatsApp senden – Festpreis in 24h. 80°C Osmosewasser, bis 21m ohne Gerüst. Privat &amp; Gewerbe in Berlin und Havelland." />
-  <meta property="og:url" content="https://premium-fensterreinigung.de/" />
+  <title>Professionelle Fensterreinigung Berlin &amp; Havelland | JR</title>
+  <meta name="description" content="Fensterreinigung Berlin &amp; Havelland: 80°C Osmosewasser, kein Gerüst, ab 8 € pro Fenster. §35a absetzbar. Festpreis in 24h." />
+  <link rel="canonical" href="https://premium-fensterreinigung.de/fensterreinigung/" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Professionelle Fensterreinigung Berlin &amp; Havelland | JR" />
+  <meta property="og:description" content="80°C Osmosewasser, kein Gerüst, ab 8 € pro Fenster. Rahmen inklusive, §35a absetzbar. Festpreis nach Foto in 24h." />
+  <meta property="og:url" content="https://premium-fensterreinigung.de/fensterreinigung/" />
   <meta property="og:type" content="website" />
-  <meta property="og:image" content="https://premium-fensterreinigung.de/assets/JR_Fensterreinigung_26-05-15_13.43.41-2.jpg.webp" />
+  <meta property="og:image" content="https://premium-fensterreinigung.de/assets/IMG_7689.jpg.webp" />
   <meta property="og:locale" content="de_DE" />
 
   <!-- Fonts: Bebas Neue (display) + Plus Jakarta Sans (body) -->
@@ -96,31 +98,34 @@
     /* Focus-visible */
     :focus-visible { outline: 2px solid #1a56db; outline-offset: 3px; border-radius: 4px; }
 
-    /* Touch targets: alle interaktiven Elemente ≥44px (WCAG 2.5.5) */
+    /* Touch targets */
     #nav a, #nav button { min-height: 44px; display: inline-flex; align-items: center; }
     a[href^="tel:"] { min-height: 44px; display: inline-flex; align-items: center; }
     .rechner-tab { min-height: 44px !important; }
 
-    /* make-interfaces-feel-better: scale on press = exactly 0.96 */
+    /* Scale on press */
     .btn-tap:active { transform: scale(0.96); transition-duration: 80ms; }
 
-    /* make-interfaces-feel-better: text-wrap balance on headings, pretty on body */
+    /* Text wrapping */
     h1, h2, h3 { text-wrap: balance; }
     p { text-wrap: pretty; }
 
-    /* make-interfaces-feel-better: tabular-nums on dynamic numbers */
+    /* Tabular nums */
     .tabular { font-variant-numeric: tabular-nums; }
 
-    /* make-interfaces-feel-better: subtle image outline for depth */
+    /* Image depth */
     img:not([aria-hidden]) {
       outline: 1px solid rgba(255,255,255,0.06);
       outline-offset: 0;
     }
 
-    /* make-interfaces-feel-better: never transition:all — ensure specificity */
+    /* Transition specificity */
     .svc, .svc-bg, .svc-overlay, .svc-arrow {
       transition-property: transform, opacity, background, border-color, box-shadow, filter;
     }
+
+    /* Location grid hover */
+    .loc-link:hover { border-color: rgba(26,86,219,0.35); background: rgba(26,86,219,0.05); }
     #mobile-menu { display:none; }
     #mobile-menu.open { display:flex; }
     body.menu-open { overflow:hidden; }
@@ -160,10 +165,10 @@
 <nav id="nav" class="fixed top-0 inset-x-0 z-40">
   <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
     <a href="/" class="flex items-center gap-3 shrink-0 min-h-[44px]">
-      <img src="../assets/35A0CDFB-340E-43DE-B074-575700301CD6.png.webp" alt="JR Gebäudeservice" class="h-8 w-auto" />
+      <img src="../../assets/35A0CDFB-340E-43DE-B074-575700301CD6.png.webp" alt="JR Gebäudeservice" class="h-8 w-auto" />
     </a>
     <div class="hidden lg:flex items-center gap-8 text-sm font-medium text-t2">
-      <a href="/fensterreinigung/" class="hover:text-t1 transition-colors py-2">Fensterreinigung</a>
+      <a href="/fensterreinigung/" class="text-t1 border-b border-blue pb-0.5 py-2" aria-current="page">Fensterreinigung</a>
       <a href="#leistungen"        class="hover:text-t1 transition-colors py-2">Leistungen</a>
       <a href="#preisrechner"      class="hover:text-t1 transition-colors py-2">Preisrechner</a>
       <a href="#anfrage"           class="hover:text-t1 transition-colors py-2">Kontakt</a>
@@ -205,11 +210,10 @@
 ============================================================ -->
 <section class="relative min-h-[100dvh] flex items-end pb-20 overflow-hidden">
   <div class="absolute inset-0">
-    <img src="../assets/JR_Fensterreinigung_26-05-15_13.43.41-2.jpg.webp" alt="" class="absolute inset-0 w-full h-full object-cover" aria-hidden="true" />
+    <img src="../../assets/IMG_7689.jpg.webp" alt="" class="absolute inset-0 w-full h-full object-cover" aria-hidden="true" />
     <div class="absolute inset-0" style="background:linear-gradient(to bottom,rgba(13,15,18,.18) 0%,rgba(13,15,18,.68) 58%,rgba(13,15,18,.97) 100%)"></div>
     <div class="absolute bottom-0 inset-x-0 h-40" style="background:linear-gradient(to top,#0D0F12,transparent)"></div>
   </div>
-  <!-- Vertical accent line -->
   <div class="absolute left-[76px] top-24 bottom-24 w-px bg-blue opacity-40 hidden xl:block"></div>
 
   <div class="relative z-10 max-w-7xl mx-auto px-6 w-full">
@@ -219,21 +223,21 @@
         <span class="text-blue text-xs font-semibold tracking-widest uppercase">Berlin · Havelland · Brandenburg</span>
       </div>
       <h1 class="font-display text-t1 leading-none mb-6"
-          style="font-size:clamp(64px,10vw,118px);letter-spacing:0.02em">
-        FENSTER-<br/>REINIGUNG<br/><span class="text-blue">BERLIN</span>
-        <span class="sr-only"> – Streifenfrei durch 80°C Heißwasser</span>
+          style="font-size:clamp(56px,9vw,108px);letter-spacing:0.02em">
+        FENSTER-<br/>REINIGUNG<br/><span class="text-blue">PROFESSIONELL</span>
+        <span class="sr-only"> in Berlin und im Havelland — ab 8 € pro Fenster, 80°C Osmosewasser</span>
       </h1>
       <p class="text-t2 text-lg mb-10 max-w-lg leading-relaxed">
-        Die meisten Fensterreiniger arbeiten mit kaltem Leitungswasser und Tuch. Wir nicht. Unser mobiles Heiß-Reinwassersystem erhitzt gefiltertes Osmosewasser auf bis zu 80&nbsp;°C. Das löst Fett, Kalk und Schmutz ohne Chemie, ohne Streifen. Dank Teleskoptechnik bis 21&nbsp;Meter reinigen wir vom Boden aus, ohne Gerüst, ohne Leiter.
+        Unser mobiles Heiß-Reinwassersystem erhitzt gefiltertes Osmosewasser auf bis zu 80&nbsp;°C. Das löst Kalk und Schmutz ohne Chemie, ohne Rückstände. Dank Teleskoptechnik bis 21&nbsp;Meter reinigen wir vom Boden aus, ohne Gerüst. Rahmen, Simse und Griffe bei jedem Auftrag mit, kein Aufpreis.
       </p>
       <div class="flex flex-wrap gap-4 mb-12">
-        <a href="/privatkunden/"
+        <a href="#anfrage"
            class="btn-tap inline-flex items-center gap-2 bg-blue hover:bg-blue-dark text-white font-semibold text-sm tracking-widest uppercase px-8 py-4 rounded transition-[background-color,transform,box-shadow] duration-150 hover:-translate-y-0.5 hover:shadow-lg">
-          Privatkunde — Angebot anfragen <i class="ph ph-arrow-right"></i>
+          Festpreis anfragen <i class="ph ph-arrow-right"></i>
         </a>
-        <a href="/gewerbekunden/"
+        <a href="https://wa.me/491627061789?text=Hallo%2C+ich+m%C3%B6chte+ein+Angebot+anfragen."
            class="btn-tap inline-flex items-center gap-2 border border-white/20 hover:border-white/40 hover:bg-white/5 text-t1 font-semibold text-sm tracking-widest uppercase px-8 py-4 rounded transition-[background-color,border-color] duration-150">
-          Gewerbekunde — Projekt anfragen <i class="ph ph-arrow-right"></i>
+          <i class="ph ph-whatsapp-logo text-wa"></i> Foto senden
         </a>
       </div>
       <div class="flex flex-wrap items-center gap-x-5 gap-y-2 text-xs text-t3">
@@ -243,6 +247,204 @@
         <span class="flex items-center gap-1.5"><i class="ph ph-seal-check text-blue text-sm"></i> Handwerkskammer</span>
       </div>
     </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     LEISTUNGSBESCHREIBUNG (service-spezifisch)
+============================================================ -->
+<section class="py-28 bg-s3" id="leistung">
+  <div class="max-w-7xl mx-auto px-6">
+
+    <!-- Osmosewasser-Technik -->
+    <div class="grid lg:grid-cols-2 gap-20 items-start mb-24">
+      <div class="reveal-l">
+        <div class="flex items-center gap-3 mb-8">
+          <div class="w-8 h-px bg-blue opacity-60"></div>
+          <span class="text-t3 text-xs font-semibold tracking-widest uppercase">Technologie</span>
+        </div>
+        <h2 class="font-display text-t1 leading-none mb-8"
+            style="font-size:clamp(34px,4.5vw,50px);letter-spacing:.02em">
+          WIE OSMOSEWASSER<br/>FENSTER WIRKLICH<br/>SAUBER MACHT
+        </h2>
+        <p class="text-t2 text-base leading-relaxed mb-5">
+          Normales Leitungswasser enthält Kalk und Mineralsalze. Nach dem Trocknen bleiben sie als weiße Schlieren auf dem Glas — das Fenster sieht nach Tagen wieder schmutzig aus, obwohl es gerade geputzt wurde.
+        </p>
+        <p class="text-t2 text-base leading-relaxed mb-5">
+          Unser Osmosewasser enthält 0&nbsp;ppm Mineralien. Es trocknet rückstandsfrei. Kombiniert mit 80&nbsp;°C Wassertemperatur löst das Verfahren Fett, hartnäckige Kalkablagerungen und organischen Schmutz auf molekularer Ebene — ohne Glasreiniger, ohne Chemie.
+        </p>
+        <p class="text-t2 text-base leading-relaxed">
+          Fenster bleiben länger sauber als nach herkömmlicher Reinigung.
+        </p>
+      </div>
+      <div class="reveal">
+        <div class="grid grid-cols-2 gap-3">
+          <div class="bg-bg border border-white/6 rounded p-6">
+            <div class="font-display text-blue leading-none mb-2" style="font-size:48px">80°C</div>
+            <div class="text-t3 text-xs uppercase tracking-widest mb-2">Heißwasser</div>
+            <p class="text-t3 text-xs leading-relaxed">Löst Kalk und Biofilm ohne Chemie oder mechanischen Druck</p>
+          </div>
+          <div class="bg-bg border border-white/6 rounded p-6">
+            <div class="font-display text-t1 leading-none mb-2" style="font-size:48px">0 ppm</div>
+            <div class="text-t3 text-xs uppercase tracking-widest mb-2">Osmosewasser</div>
+            <p class="text-t3 text-xs leading-relaxed">Trocknet rückstandsfrei — keine Streifen, kein Nachwischen</p>
+          </div>
+          <div class="bg-bg border border-white/6 rounded p-6">
+            <div class="font-display text-t1 leading-none mb-2" style="font-size:48px">21m</div>
+            <div class="text-t3 text-xs uppercase tracking-widest mb-2">Teleskop</div>
+            <p class="text-t3 text-xs leading-relaxed">Vom Boden aus, kein Gerüst, kein Hubsteiger</p>
+          </div>
+          <div class="bg-bg border border-white/6 rounded p-6">
+            <div class="font-display text-blue leading-none mb-2" style="font-size:48px">0€</div>
+            <div class="text-t3 text-xs uppercase tracking-widest mb-2">Aufpreis Rahmen</div>
+            <p class="text-t3 text-xs leading-relaxed">Rahmen, Simse und Griffe immer inklusive</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Welche Fenster -->
+    <div class="mb-24 reveal">
+      <div class="flex items-center gap-3 mb-8">
+        <div class="w-8 h-px bg-blue opacity-60"></div>
+        <span class="text-t3 text-xs font-semibold tracking-widest uppercase">Fenstertypen</span>
+      </div>
+      <h2 class="font-display text-t1 leading-none mb-10"
+          style="font-size:clamp(34px,4.5vw,50px);letter-spacing:.02em">
+        WELCHE FENSTER<br/>REINIGEN WIR?
+      </h2>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
+        <div class="bg-bg border border-white/6 rounded p-5 flex items-start gap-4">
+          <i class="ph ph-squares-four text-blue text-xl shrink-0 mt-0.5"></i>
+          <div>
+            <div class="text-t1 text-sm font-semibold mb-1">Standardfenster</div>
+            <div class="text-t3 text-xs leading-relaxed">ca. 1–1,2 m² — ab 8 € netto</div>
+          </div>
+        </div>
+        <div class="bg-bg border border-white/6 rounded p-5 flex items-start gap-4">
+          <i class="ph ph-arrows-vertical text-blue text-xl shrink-0 mt-0.5"></i>
+          <div>
+            <div class="text-t1 text-sm font-semibold mb-1">Bodentiefe Fenster</div>
+            <div class="text-t3 text-xs leading-relaxed">Teleskoptechnik — ab 16 € netto</div>
+          </div>
+        </div>
+        <div class="bg-bg border border-white/6 rounded p-5 flex items-start gap-4">
+          <i class="ph ph-buildings text-blue text-xl shrink-0 mt-0.5"></i>
+          <div>
+            <div class="text-t1 text-sm font-semibold mb-1">Kastenfenster Altbau</div>
+            <div class="text-t3 text-xs leading-relaxed">Berliner Doppelfenster, beidseitig, auch Bleiverglasung</div>
+          </div>
+        </div>
+        <div class="bg-bg border border-white/6 rounded p-5 flex items-start gap-4">
+          <i class="ph ph-house-line text-blue text-xl shrink-0 mt-0.5"></i>
+          <div>
+            <div class="text-t1 text-sm font-semibold mb-1">Dachfenster &amp; Oberlichter</div>
+            <div class="text-t3 text-xs leading-relaxed">Teleskoptechnik, ohne Leiter</div>
+          </div>
+        </div>
+        <div class="bg-bg border border-white/6 rounded p-5 flex items-start gap-4">
+          <i class="ph ph-storefront text-blue text-xl shrink-0 mt-0.5"></i>
+          <div>
+            <div class="text-t1 text-sm font-semibold mb-1">Schaufenster &amp; Glasfronten</div>
+            <div class="text-t3 text-xs leading-relaxed">Gewerbe ab 3 € netto/m²</div>
+          </div>
+        </div>
+        <div class="bg-bg border border-white/6 rounded p-5 flex items-start gap-4">
+          <i class="ph ph-skyscraper text-blue text-xl shrink-0 mt-0.5"></i>
+          <div>
+            <div class="text-t1 text-sm font-semibold mb-1">Glasfassaden bis 21 Meter</div>
+            <div class="text-t3 text-xs leading-relaxed">Kein Gerüst, kein Hubsteiger</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Havelland + Gewerbe -->
+    <div class="grid md:grid-cols-2 gap-4 mb-16 reveal">
+      <div class="bg-bg border border-white/6 rounded p-8">
+        <div class="flex items-center gap-3 mb-6">
+          <div class="w-6 h-px bg-blue"></div>
+          <span class="text-t3 text-xs font-semibold tracking-widest uppercase">Privatkunden</span>
+        </div>
+        <h3 class="font-display text-t1 leading-none mb-4"
+            style="font-size:clamp(26px,3vw,38px);letter-spacing:.02em">
+          HAVELLAND &amp;<br/>UMGEBUNG
+        </h3>
+        <p class="text-t2 text-sm leading-relaxed mb-6">
+          Falkensee, Brieselang, Dallgow-Döberitz, Schönwalde-Glien, Wustermark, Elstal, Staaken, Kladow, Groß Glienicke. Kein Anfahrtsaufschlag. Festpreis nach Foto.
+        </p>
+        <div class="bg-blue/10 border border-blue/20 rounded px-4 py-3 text-xs text-blue font-semibold">
+          §35a EStG: 20% steuerlich absetzbar — bis 4.000 € im Jahr
+        </div>
+      </div>
+      <div class="bg-s1 border border-white/6 rounded p-8">
+        <div class="flex items-center gap-3 mb-6">
+          <div class="w-6 h-px bg-blue-light opacity-60"></div>
+          <span class="text-t3 text-xs font-semibold tracking-widest uppercase">Gewerbekunden</span>
+        </div>
+        <h3 class="font-display text-t1 leading-none mb-4"
+            style="font-size:clamp(26px,3vw,38px);letter-spacing:.02em">
+          BERLIN &amp;<br/>BRANDENBURG
+        </h3>
+        <p class="text-t2 text-sm leading-relaxed mb-6">
+          Hotels, Arztpraxen, Bürogebäude, Wohnanlagen. Ab 3&nbsp;€ netto/m² inkl. Rahmen und Falz. Teleskoptechnik bis 21&nbsp;Meter ersetzt das Gerüst. Auf Wunsch Wartungsverträge.
+        </p>
+        <a href="/gewerbekunden/"
+           class="inline-flex items-center gap-2 text-blue-light opacity-70 hover:opacity-100 text-sm font-semibold transition-opacity">
+          Gewerbekunden-Details <i class="ph ph-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- Preistabelle -->
+    <div class="reveal">
+      <div class="flex items-center gap-3 mb-8">
+        <div class="w-8 h-px bg-blue opacity-60"></div>
+        <span class="text-t3 text-xs font-semibold tracking-widest uppercase">Preise</span>
+      </div>
+      <div class="grid md:grid-cols-5 gap-4">
+        <div class="md:col-span-3 grid grid-cols-2 gap-4">
+          <div class="bg-bg border border-white/6 rounded p-6">
+            <div class="text-t3 text-xs uppercase tracking-widest mb-4">Normal</div>
+            <div class="font-display text-t1 leading-none mb-1" style="font-size:52px">8 €</div>
+            <div class="text-t3 text-xs mb-4">/ Fenster · Innen + Außen</div>
+            <ul class="space-y-2 text-t2 text-xs">
+              <li class="flex items-center gap-2"><i class="ph ph-check text-blue"></i> Rahmen + Simse inkl.</li>
+              <li class="flex items-center gap-2"><i class="ph ph-check text-blue"></i> Osmosewasser 80°C</li>
+              <li class="flex items-center gap-2"><i class="ph ph-check text-blue"></i> §35a EStG absetzbar</li>
+            </ul>
+          </div>
+          <div class="bg-bg border border-blue/25 rounded p-6 relative">
+            <div class="absolute top-4 right-4 bg-blue text-white text-xs px-2 py-1 rounded font-semibold tracking-wide">Beliebt</div>
+            <div class="text-t3 text-xs uppercase tracking-widest mb-4">Bodentief</div>
+            <div class="font-display text-blue leading-none mb-1" style="font-size:52px">16 €</div>
+            <div class="text-t3 text-xs mb-4">/ Fenster · Innen + Außen</div>
+            <ul class="space-y-2 text-t2 text-xs">
+              <li class="flex items-center gap-2"><i class="ph ph-check text-blue"></i> Rahmen + Simse inkl.</li>
+              <li class="flex items-center gap-2"><i class="ph ph-check text-blue"></i> Teleskop bis 21m</li>
+              <li class="flex items-center gap-2"><i class="ph ph-check text-blue"></i> Kein Gerüst</li>
+            </ul>
+          </div>
+        </div>
+        <div class="md:col-span-2 bg-bg border border-white/6 rounded p-8 flex flex-col justify-between">
+          <div>
+            <div class="text-t3 text-xs uppercase tracking-widest mb-6">Gewerbe &amp; Glas</div>
+            <div class="font-display text-t1 leading-none mb-1" style="font-size:64px">3 €</div>
+            <div class="text-t3 text-xs mb-6">pro m² Nettofläche</div>
+            <ul class="space-y-2 text-t2 text-xs">
+              <li class="flex items-center gap-2"><i class="ph ph-check text-blue-light"></i> Rahmen + Falz inkl.</li>
+              <li class="flex items-center gap-2"><i class="ph ph-check text-blue-light"></i> Rahmenvertrag möglich</li>
+              <li class="flex items-center gap-2"><i class="ph ph-check text-blue-light"></i> Rechnung + MwSt.</li>
+            </ul>
+          </div>
+          <a href="#anfrage" class="mt-6 block text-center bg-white/5 hover:bg-blue/20 border border-white/10 hover:border-blue/30 text-t1 text-xs font-semibold uppercase tracking-widest py-3 rounded transition-[background-color,border-color] duration-150">
+            Gewerbe-Anfrage
+          </a>
+        </div>
+      </div>
+      <p class="text-t3 text-xs mt-4 text-center">Alle Preise zzgl. MwSt. · Festpreis nach Foto-Einsendung · Kein Aufpreis für Rahmen, Simse oder Griffe</p>
+    </div>
+
   </div>
 </section>
 
@@ -277,87 +479,6 @@
 </section>
 
 <!-- ============================================================
-     PROBLEM
-============================================================ -->
-<section class="py-28 overflow-hidden">
-  <div class="max-w-7xl mx-auto px-6">
-    <div class="grid lg:grid-cols-2 gap-20 items-center">
-      <div class="reveal-l">
-        <div class="flex items-center gap-3 mb-8">
-          <div class="w-8 h-px bg-blue"></div>
-          <span class="text-t3 text-xs font-semibold tracking-widest uppercase">Das Problem</span>
-        </div>
-        <h2 class="font-display text-t1 leading-none mb-8"
-            style="font-size:clamp(38px,5vw,58px);letter-spacing:.02em">
-          KALK ZERSTÖRT<br/>MEHR ALS<br/>NUR DEN BLICK
-        </h2>
-        <p class="text-t2 text-base leading-relaxed mb-5">
-          Kalkablagerungen ätzen sich mit der Zeit ins Glas ein.
-          Herkömmliches Putzen löst Kalk nicht — es verteilt ihn nur.
-          Das Ergebnis: dauerhaft trübes Glas, das teuer ausgetauscht werden muss.
-        </p>
-        <p class="text-t2 text-base leading-relaxed mb-8">
-          80°C Osmosewasser löst Kalk auf molekularer Ebene — keine Chemie,
-          keine mechanische Belastung, keine Streifen. Bis zu 3× länger sauber.
-        </p>
-        <a href="/fensterreinigung/"
-           class="inline-flex items-center gap-2 text-blue text-sm font-semibold hover:gap-4 transition-[gap] duration-200">
-          Wie die Technologie funktioniert <i class="ph ph-arrow-right"></i>
-        </a>
-      </div>
-      <div class="relative reveal">
-        <img src="../assets/IMG_7689.jpg.webp"
-             alt="Professionelle Fensterreinigung mit Teleskoptechnik"
-             class="w-full rounded aspect-[4/3] object-cover" />
-        <div class="absolute -bottom-4 -left-4 bg-blue text-white px-5 py-3 rounded text-sm font-semibold shadow-xl">
-          <span class="font-display text-3xl tracking-wide align-middle">3×</span> länger sauber
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============================================================
-     USP / TECHNOLOGIE
-============================================================ -->
-<section class="py-28 bg-s3" id="technologie">
-  <div class="max-w-7xl mx-auto px-6">
-    <div class="max-w-xl mb-16 reveal">
-      <div class="flex items-center gap-3 mb-6">
-        <div class="w-8 h-px bg-blue opacity-60"></div>
-        <span class="text-t3 text-xs font-semibold tracking-widest uppercase">Technologie</span>
-      </div>
-      <h2 class="font-display text-t1 leading-none"
-          style="font-size:clamp(38px,5vw,54px);letter-spacing:.02em">
-        WAS UNS VON JEDEM<br/>ANDEREN UNTERSCHEIDET
-      </h2>
-    </div>
-    <div class="grid md:grid-cols-2 border border-white/6 rounded">
-      <div class="p-8 border-b md:border-r border-white/6 hover:bg-white/[.02] transition-colors reveal">
-        <div class="font-display text-blue/35 leading-none mb-4" style="font-size:72px">01</div>
-        <h3 class="text-t1 font-bold text-base mb-3">80°C Heißwasser-System</h3>
-        <p class="text-t2 text-sm leading-relaxed">Mobiles Heiß-Reinwassersystem im Transporter, kein Konkurrent in Berlin & Brandenburg bietet das. Heißes Wasser löst Kalk, Fett und Biofilm auf molekularer Ebene.</p>
-      </div>
-      <div class="p-8 border-b border-white/6 hover:bg-white/[.02] transition-colors reveal" style="transition-delay:.08s">
-        <div class="font-display text-blue/35 leading-none mb-4" style="font-size:72px">02</div>
-        <h3 class="text-t1 font-bold text-base mb-3">0 ppm Osmosewasser</h3>
-        <p class="text-t2 text-sm leading-relaxed">Vollentsalztes Wasser hinterlässt beim Trocknen keine Mineralien. Das Ergebnis trocknet streifenfrei — ohne Nachwischen. Glasfenster bleiben bis zu 3× länger sauber.</p>
-      </div>
-      <div class="p-8 md:border-r border-white/6 hover:bg-white/[.02] transition-colors reveal" style="transition-delay:.16s">
-        <div class="font-display text-blue/35 leading-none mb-4" style="font-size:72px">03</div>
-        <h3 class="text-t1 font-bold text-base mb-3">Ohne Chemie, ohne Gerüst</h3>
-        <p class="text-t2 text-sm leading-relaxed">Kein Biozid, kein Scheuermittel. Teleskoptechnik bis 21m — komplett vom Boden. Für Privathäuser, Berliner Altbauten mit Kastenfenstern und Gewerbefassaden.</p>
-      </div>
-      <div class="p-8 hover:bg-white/[.02] transition-colors reveal" style="transition-delay:.24s">
-        <div class="font-display text-blue/35 leading-none mb-4" style="font-size:72px">04</div>
-        <h3 class="text-t1 font-bold text-base mb-3">Rahmen & Simse inklusive</h3>
-        <p class="text-t2 text-sm leading-relaxed">Bei jeder Fensterreinigung reinigen wir Rahmen, Simse und Griffe — kein Aufpreis. Ein komplett sauberes Fenster, nicht nur sauberes Glas.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============================================================
      VORHER / NACHHER SLIDER
 ============================================================ -->
 <section class="py-28" id="ergebnisse">
@@ -376,7 +497,7 @@
       <div class="swiper-wrapper">
         <div class="swiper-slide">
           <div class="relative aspect-video rounded overflow-hidden">
-            <img src="../assets/B8140E4A-215E-4541-8E18-D27DECF21821.png.webp" alt="Vorher/Nachher Fensterreinigung" class="w-full h-full object-cover" />
+            <img src="../../assets/B8140E4A-215E-4541-8E18-D27DECF21821.png.webp" alt="Fensterreinigung Vorher Nachher Ergebnis Havelland — streifenfrei durch Osmosewasser" class="w-full h-full object-cover" />
             <div class="absolute bottom-0 inset-x-0 p-4" style="background:linear-gradient(to top,rgba(13,15,18,.85),transparent)">
               <p class="text-xs text-t2 uppercase tracking-widest">Einfamilienhaus · Havelland · Kalkflecken-Behandlung</p>
             </div>
@@ -384,7 +505,7 @@
         </div>
         <div class="swiper-slide">
           <div class="relative aspect-video rounded overflow-hidden">
-            <img src="../assets/DA33D6F3-1CC7-4A9F-B657-32D48835F10F.png.webp" alt="Vorher/Nachher Glasreinigung" class="w-full h-full object-cover" />
+            <img src="../../assets/DA33D6F3-1CC7-4A9F-B657-32D48835F10F.png.webp" alt="Fensterreinigung Wintergarten Vorher Nachher Havelland" class="w-full h-full object-cover" />
             <div class="absolute bottom-0 inset-x-0 p-4" style="background:linear-gradient(to top,rgba(13,15,18,.85),transparent)">
               <p class="text-xs text-t2 uppercase tracking-widest">Wintergarten · Havelland · Dachverglasung + Rahmen</p>
             </div>
@@ -392,7 +513,7 @@
         </div>
         <div class="swiper-slide">
           <div class="relative aspect-video rounded overflow-hidden">
-            <img src="../assets/0EC186D7-7830-49EA-97F7-DFACAB2992F5.png.webp" alt="Vorher/Nachher Gewerbeglas" class="w-full h-full object-cover" loading="lazy" />
+            <img src="../../assets/0EC186D7-7830-49EA-97F7-DFACAB2992F5.png.webp" alt="Fensterreinigung Berlin Gewerbefassade Vorher Nachher Ergebnis" class="w-full h-full object-cover" loading="lazy" />
             <div class="absolute bottom-0 inset-x-0 p-4" style="background:linear-gradient(to top,rgba(13,15,18,.85),transparent)">
               <p class="text-xs text-t2 uppercase tracking-widest">Gewerbefassade · Berlin · Großflächige Verglasung</p>
             </div>
@@ -413,7 +534,7 @@
       <div>
         <div class="flex items-center gap-3 mb-6">
           <div class="w-8 h-px bg-blue"></div>
-          <span class="text-t3 text-xs font-semibold tracking-widest uppercase">Leistungen</span>
+          <span class="text-t3 text-xs font-semibold tracking-widest uppercase">Weitere Leistungen</span>
         </div>
         <h2 class="font-display text-t1 leading-none"
             style="font-size:clamp(38px,5vw,54px);letter-spacing:.02em">PRIVAT &amp; GEWERBE</h2>
@@ -424,68 +545,67 @@
     </div>
 
     <div class="flex flex-col gap-3">
-      <!-- Featured -->
-      <a href="/fensterreinigung/" class="svc reveal" style="height:420px" aria-label="Fensterreinigung">
-        <div class="svc-bg" style="background-image:url('../assets/IMG_7689.jpg.webp')"></div>
-        <div class="svc-overlay"></div>
-        <div class="svc-arrow"><i class="ph ph-arrow-right"></i></div>
+      <!-- Featured: Fensterreinigung aktiv -->
+      <div class="svc reveal" style="height:300px;cursor:default" aria-label="Fensterreinigung — aktuelle Seite">
+        <div class="svc-bg" style="background-image:url('../../assets/IMG_7689.jpg.webp')"></div>
+        <div class="svc-overlay" style="background:linear-gradient(to top,rgba(26,86,219,0.45) 0%,rgba(13,15,18,0.38) 55%,transparent 100%)"></div>
         <div class="svc-body" style="justify-content:center;max-width:500px">
-          <span class="svc-num">01 · Hauptleistung</span>
+          <span class="svc-num">01 · Aktuelle Seite</span>
           <div class="svc-name" style="font-size:clamp(30px,4vw,46px)">FENSTERREINIGUNG</div>
           <div class="svc-sub" style="font-size:13px">80°C Osmosewasser · bis 21m · kein Gerüst · ab 8 €/Fenster</div>
         </div>
-      </a>
+      </div>
 
-      <!-- Row 2: 4 cards -->
+      <!-- Row 2 -->
       <div class="grid grid-cols-2 lg:grid-cols-4 gap-3 reveal">
         <a href="/glasreinigung/" class="svc" style="height:280px" aria-label="Glasreinigung">
-          <div class="svc-bg" style="background-image:url('../assets/IMG_7849.jpg.webp')"></div>
+          <div class="svc-bg" style="background-image:url('../../assets/IMG_7849.jpg.webp')"></div>
           <div class="svc-overlay"></div>
           <div class="svc-arrow"><i class="ph ph-arrow-right"></i></div>
           <div class="svc-body"><span class="svc-num">02</span><div class="svc-name">GLASREINIGUNG</div><div class="svc-sub">Fassadenglas · Schaufenster</div></div>
         </a>
         <a href="/wintergartenreinigung/" class="svc" style="height:280px" aria-label="Wintergartenreinigung">
-          <div class="svc-bg" style="background-image:url('../assets/IMG_7654.jpg.webp')"></div>
+          <div class="svc-bg" style="background-image:url('../../assets/IMG_7654.jpg.webp')"></div>
           <div class="svc-overlay"></div>
           <div class="svc-arrow"><i class="ph ph-arrow-right"></i></div>
           <div class="svc-body"><span class="svc-num">03</span><div class="svc-name">WINTERGARTEN</div><div class="svc-sub">Innen + außen · Dachverglasung</div></div>
         </a>
         <a href="/solaranlagenreinigung/" class="svc" style="height:280px" aria-label="Solaranlagenreinigung">
-          <div class="svc-bg" style="background-image:url('../assets/0F0D24C2-3558-4046-BCEC-E52ECBEAC058.png.webp')"></div>
+          <div class="svc-bg" style="background-image:url('../../assets/0F0D24C2-3558-4046-BCEC-E52ECBEAC058.png.webp')"></div>
           <div class="svc-overlay"></div>
           <div class="svc-arrow"><i class="ph ph-arrow-right"></i></div>
           <div class="svc-body"><span class="svc-num">04</span><div class="svc-name">SOLARANLAGE</div><div class="svc-sub">bis +40% Ertrag · kein Hochdruck</div></div>
         </a>
         <a href="/jalousienreinigung/" class="svc" style="height:280px" aria-label="Jalousienreinigung">
-          <div class="svc-bg" style="background-image:url('../assets/IMG_4180.jpg.webp')"></div>
+          <div class="svc-bg" style="background-image:url('../../assets/IMG_4180.jpg.webp')"></div>
           <div class="svc-overlay"></div>
           <div class="svc-arrow"><i class="ph ph-arrow-right"></i></div>
           <div class="svc-body"><span class="svc-num">05</span><div class="svc-name">JALOUSIEN</div><div class="svc-sub">Ultraschall · ohne Demontage</div></div>
         </a>
       </div>
 
-      <!-- Row 3: 4 smaller cards -->
+      <!-- Row 3 -->
       <div class="grid grid-cols-2 lg:grid-cols-4 gap-3 reveal">
         <a href="/terrassenueberdachung/" class="svc" style="height:200px" aria-label="Terrassenüberdachung">
-          <div class="svc-bg" style="background-image:url('../assets/IMG_4520.jpg.webp')"></div>
+          <div class="svc-bg" style="background-image:url('../../assets/IMG_4520.jpg.webp')"></div>
           <div class="svc-overlay"></div>
           <div class="svc-arrow"><i class="ph ph-arrow-right"></i></div>
           <div class="svc-body"><span class="svc-num">06</span><div class="svc-name">TERRASSENÜBERDACHUNG</div></div>
         </a>
         <a href="/dachreinigung/" class="svc" style="height:200px" aria-label="Dachreinigung">
-          <div class="svc-bg" style="background-image:url('../assets/IMG_4444.jpg.webp')"></div>
+          <div class="svc-bg" style="background-image:url('../../assets/IMG_4444.jpg.webp')"></div>
           <div class="svc-overlay"></div>
           <div class="svc-arrow"><i class="ph ph-arrow-right"></i></div>
           <div class="svc-body"><span class="svc-num">07 · Neu</span><div class="svc-name">DACHREINIGUNG</div></div>
         </a>
         <a href="/fassadenreinigung/" class="svc" style="height:200px" aria-label="Fassadenreinigung">
-          <div class="svc-bg" style="background-image:url('../assets/IMG_4337.jpg.webp')"></div>
+          <div class="svc-bg" style="background-image:url('../../assets/IMG_4337.jpg.webp')"></div>
           <div class="svc-overlay"></div>
           <div class="svc-arrow"><i class="ph ph-arrow-right"></i></div>
           <div class="svc-body"><span class="svc-num">08 · Neu</span><div class="svc-name">FASSADENREINIGUNG</div></div>
         </a>
         <a href="/steinreinigung/" class="svc" style="height:200px" aria-label="Steinreinigung">
-          <div class="svc-bg" style="background-image:url('../assets/IMG_4107.jpg.webp')"></div>
+          <div class="svc-bg" style="background-image:url('../../assets/IMG_4107.jpg.webp')"></div>
           <div class="svc-overlay"></div>
           <div class="svc-arrow"><i class="ph ph-arrow-right"></i></div>
           <div class="svc-body"><span class="svc-num">09 · Neu</span><div class="svc-name">STEINREINIGUNG</div></div>
@@ -496,64 +616,13 @@
 </section>
 
 <!-- ============================================================
-     SEGMENT PATHS
-============================================================ -->
-<section class="py-28" id="fuer-wen">
-  <div class="max-w-7xl mx-auto px-6">
-    <div class="text-center mb-16 reveal">
-      <div class="flex items-center justify-center gap-3 mb-6">
-        <div class="w-8 h-px bg-blue"></div>
-        <span class="text-t3 text-xs font-semibold tracking-widest uppercase">Für wen</span>
-        <div class="w-8 h-px bg-blue"></div>
-      </div>
-      <h2 class="font-display text-t1 leading-none"
-          style="font-size:clamp(38px,5vw,54px);letter-spacing:.02em">PRIVAT ODER GEWERBE?</h2>
-    </div>
-    <div class="grid md:grid-cols-2 gap-4">
-      <a href="/privatkunden/"
-         class="block p-10 bg-s1 border border-white/5 hover:border-blue/30 rounded group transition-[background-color,border-color] duration-300 hover:bg-s2 reveal">
-        <div class="flex items-center gap-3 mb-8">
-          <div class="w-8 h-px bg-blue group-hover:w-14 transition-[width] duration-300"></div>
-          <span class="text-t3 text-xs font-semibold tracking-widest uppercase">Privatkunden</span>
-        </div>
-        <h3 class="font-display text-t1 leading-none mb-4"
-            style="font-size:clamp(30px,4vw,46px);letter-spacing:.02em">HAVELLAND<br/>&amp; BERLIN</h3>
-        <p class="text-t2 text-sm leading-relaxed mb-8">
-          Einfamilienhaus, Wintergarten, Solaranlage. Ab 8 €/Fenster, Festpreisangebot nach Foto.
-          §35a EStG: bis zu 20% steuerlich absetzbar.
-        </p>
-        <div class="flex items-center gap-2 text-blue text-sm font-semibold group-hover:gap-4 transition-[gap] duration-200">
-          Für Privatkunden <i class="ph ph-arrow-right"></i>
-        </div>
-      </a>
-      <a href="/gewerbekunden/"
-         class="block p-10 bg-s3 border border-white/5 hover:border-blue/30 rounded group transition-[background-color,border-color] duration-300 hover:bg-s2 reveal" style="transition-delay:.08s">
-        <div class="flex items-center gap-3 mb-8">
-          <div class="w-8 h-px bg-blue-light opacity-50 group-hover:w-14 transition-[width] duration-300"></div>
-          <span class="text-t3 text-xs font-semibold tracking-widest uppercase">Gewerbekunden</span>
-        </div>
-        <h3 class="font-display text-t1 leading-none mb-4"
-            style="font-size:clamp(30px,4vw,46px);letter-spacing:.02em">BERLIN &amp;<br/>BRANDENBURG</h3>
-        <p class="text-t2 text-sm leading-relaxed mb-8">
-          Büro, Hotel, Logistik, Schaufenster. Ab 3 €/m², Rahmenvertrag möglich.
-          Rechnung + MwSt., alle Leistungen auf Abruf.
-        </p>
-        <div class="flex items-center gap-2 text-blue-light opacity-70 text-sm font-semibold group-hover:gap-4 transition-[gap] duration-200">
-          Für Gewerbekunden <i class="ph ph-arrow-right"></i>
-        </div>
-      </a>
-    </div>
-  </div>
-</section>
-
-<!-- ============================================================
      INHABER
 ============================================================ -->
-<section class="py-28 bg-s1 overflow-hidden">
+<section class="py-28 overflow-hidden">
   <div class="max-w-7xl mx-auto px-6">
     <div class="grid lg:grid-cols-2 gap-20 items-center">
       <div class="relative reveal-l">
-        <img src="../assets/E1F5A667-9471-4E22-B183-25758B86F367.png.webp"
+        <img src="../../assets/E1F5A667-9471-4E22-B183-25758B86F367.png.webp"
              alt="Julien Ranft — Inhaber Premium Fensterreinigung"
              class="w-full max-w-sm rounded aspect-[3/4] object-cover object-top" />
         <div class="absolute bottom-6 right-6 bg-bg border border-white/10 px-4 py-3 rounded text-xs">
@@ -571,18 +640,16 @@
           KEIN FRANCHISE.<br/>KEIN CALLCENTER.<br/>NUR JULIEN.
         </h2>
         <p class="text-t2 text-base leading-relaxed mb-5">
-          Julien ist bei jedem Auftrag persönlich vor Ort: direkte Kommunikation,
-          konsistente Qualität, echte Verantwortung.
+          Julien ist bei jedem Auftrag persönlich vor Ort: direkte Kommunikation, konsistente Qualität, echte Verantwortung.
         </p>
         <p class="text-t2 text-base leading-relaxed mb-8">
-          Das mobile Heiß-Reinwassersystem im Transporter wurde nicht von einem Konzern lizenziert —
-          Julien hat es selbst entwickelt und optimiert. Kein Konkurrent in Berlin &amp; Brandenburg bietet das.
+          Das mobile Heiß-Reinwassersystem im Transporter wurde nicht von einem Konzern lizenziert — Julien hat es selbst entwickelt und optimiert. Kein Konkurrent in Berlin &amp; Brandenburg bietet das.
         </p>
         <p class="text-t2 text-sm leading-relaxed mb-8">
           Seit 2022 selbstständig. Über 743 abgeschlossene Aufträge. Handwerkskammer-Mitglied. Haftpflichtversichert.
         </p>
         <div class="flex items-center gap-4">
-          <img src="../assets/A54B9F4B-C854-426C-849F-A3DAAD9F362A.png.webp"
+          <img src="../../assets/A54B9F4B-C854-426C-849F-A3DAAD9F362A.png.webp"
                alt="Team JR Gebäudeservice"
                class="w-12 h-12 rounded-full object-cover" />
           <div>
@@ -598,7 +665,7 @@
 <!-- ============================================================
      SOCIAL PROOF
 ============================================================ -->
-<section class="py-28" id="bewertungen">
+<section class="py-28 bg-s1" id="bewertungen">
   <div class="max-w-7xl mx-auto px-6">
     <div class="mb-16 reveal">
       <div class="flex items-center gap-3 mb-6">
@@ -615,7 +682,7 @@
       </div>
     </div>
     <div class="grid md:grid-cols-2 gap-4 mb-10">
-      <div class="bg-s1 border border-white/5 rounded p-6 reveal">
+      <div class="bg-bg border border-white/5 rounded p-6 reveal">
         <div class="flex gap-1 text-yellow-400 text-sm mb-4"><i class="ph ph-star-fill"></i><i class="ph ph-star-fill"></i><i class="ph ph-star-fill"></i><i class="ph ph-star-fill"></i><i class="ph ph-star-fill"></i></div>
         <p class="text-t2 text-sm leading-relaxed mb-6">"Endlich ein Fensterreiniger, der wirklich streifenfrei arbeitet. Hätte ich nie gedacht, dass der Unterschied so groß ist."</p>
         <div class="flex items-center gap-3 border-t border-white/5 pt-4">
@@ -623,7 +690,7 @@
           <div><div class="text-t1 text-xs font-semibold">Privathaushalt</div><div class="text-t3 text-xs">Falkensee</div></div>
         </div>
       </div>
-      <div class="bg-s1 border border-white/5 rounded p-6 reveal" style="transition-delay:.08s">
+      <div class="bg-bg border border-white/5 rounded p-6 reveal" style="transition-delay:.08s">
         <div class="flex gap-1 text-yellow-400 text-sm mb-4"><i class="ph ph-star-fill"></i><i class="ph ph-star-fill"></i><i class="ph ph-star-fill"></i><i class="ph ph-star-fill"></i><i class="ph ph-star-fill"></i></div>
         <p class="text-t2 text-sm leading-relaxed mb-6">"Wir haben drei Büroetagen im Berliner Westen. Julien hat alles in einem Tag erledigt — kein Gerüst, kein Chaos, kein Aufpreis."</p>
         <div class="flex items-center gap-3 border-t border-white/5 pt-4">
@@ -645,7 +712,7 @@
 <!-- ============================================================
      ABLAUF
 ============================================================ -->
-<section class="py-28 bg-s1" id="ablauf">
+<section class="py-28" id="ablauf">
   <div class="max-w-7xl mx-auto px-6">
     <div class="max-w-xl mb-16 reveal">
       <div class="flex items-center gap-3 mb-6">
@@ -683,70 +750,6 @@
 </section>
 
 <!-- ============================================================
-     PREISE
-============================================================ -->
-<section class="py-28" id="preise">
-  <div class="max-w-7xl mx-auto px-6">
-    <div class="mb-16 reveal">
-      <div class="flex items-center gap-3 mb-6">
-        <div class="w-8 h-px bg-blue"></div>
-        <span class="text-t3 text-xs font-semibold tracking-widest uppercase">Preise</span>
-      </div>
-      <h2 class="font-display text-t1 leading-none mb-4"
-          style="font-size:clamp(38px,5vw,54px);letter-spacing:.02em">FAIRE FESTPREISE</h2>
-      <p class="text-t2 text-sm max-w-lg">Kein Stundensatz, kein Nachberechnen. Festpreis nach Foto-Einsendung — immer inklusive Rahmen, Simse und Griffe.</p>
-    </div>
-    <!-- Preise: asymmetrisches Layout (taste: no 3-equal-column cards) -->
-    <div class="grid md:grid-cols-5 gap-4 mb-6">
-
-      <!-- Privat: 2 Spalten breit, side-by-side -->
-      <div class="md:col-span-3 grid grid-cols-2 gap-4">
-        <div class="bg-s1 border border-white/5 rounded p-6 reveal">
-          <div class="text-t3 text-xs uppercase tracking-widest mb-4">Normal</div>
-          <div class="font-display text-t1 leading-none mb-1" style="font-size:56px">8 €</div>
-          <div class="text-t3 text-xs mb-5">/ Fenster · Innen + Außen</div>
-          <ul class="space-y-2 text-t2 text-xs">
-            <li class="flex items-center gap-2"><i class="ph ph-check text-blue"></i> Rahmen + Simse inkl.</li>
-            <li class="flex items-center gap-2"><i class="ph ph-check text-blue"></i> Osmosewasser</li>
-            <li class="flex items-center gap-2"><i class="ph ph-check text-blue"></i> §35a EStG absetzbar</li>
-          </ul>
-        </div>
-        <div class="bg-s1 border border-blue/25 rounded p-6 relative reveal" style="transition-delay:.08s">
-          <div class="absolute top-4 right-4 bg-blue text-white text-xs px-2 py-1 rounded font-semibold tracking-wide">Beliebt</div>
-          <div class="text-t3 text-xs uppercase tracking-widest mb-4">Bodentief</div>
-          <div class="font-display text-blue leading-none mb-1" style="font-size:56px">16 €</div>
-          <div class="text-t3 text-xs mb-5">/ Fenster · Innen + Außen</div>
-          <ul class="space-y-2 text-t2 text-xs">
-            <li class="flex items-center gap-2"><i class="ph ph-check text-blue"></i> Rahmen + Simse inkl.</li>
-            <li class="flex items-center gap-2"><i class="ph ph-check text-blue"></i> Teleskop bis 21m</li>
-            <li class="flex items-center gap-2"><i class="ph ph-check text-blue"></i> Kein Gerüst</li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- Gewerbe: 2 Spalten breit, vertikal zentriert mit großer Zahl -->
-      <div class="md:col-span-2 bg-s3 border border-white/5 rounded p-8 flex flex-col justify-between reveal" style="transition-delay:.16s">
-        <div>
-          <div class="text-t3 text-xs uppercase tracking-widest mb-6">Gewerbe &amp; Glas</div>
-          <div class="font-display text-t1 leading-none mb-1" style="font-size:72px">3 €</div>
-          <div class="text-t3 text-xs mb-6">pro m² Nettofläche</div>
-          <ul class="space-y-2 text-t2 text-xs">
-            <li class="flex items-center gap-2"><i class="ph ph-check text-blue-light"></i> Rahmenvertrag möglich</li>
-            <li class="flex items-center gap-2"><i class="ph ph-check text-blue-light"></i> Rechnung + MwSt.</li>
-            <li class="flex items-center gap-2"><i class="ph ph-check text-blue-light"></i> bis 1.000 m²</li>
-          </ul>
-        </div>
-        <a href="#anfrage" class="mt-6 block text-center bg-white/5 hover:bg-blue/20 border border-white/10 hover:border-blue/30 text-t1 text-xs font-semibold uppercase tracking-widest py-3 rounded transition-[background-color,border-color] duration-150">
-          Gewerbe-Anfrage
-        </a>
-      </div>
-
-    </div>
-    <p class="text-t3 text-xs text-center reveal">Alle Preise zzgl. MwSt. · Festpreis nach Foto-Einsendung · Kein Aufpreis für Rahmen, Simse oder Griffe</p>
-  </div>
-</section>
-
-<!-- ============================================================
      PREISRECHNER
 ============================================================ -->
 <section class="py-28 bg-s1" id="preisrechner">
@@ -762,7 +765,6 @@
       <p class="text-t2 text-sm">Indikativpreis — verbindlich wird's nach Foto-Einsendung.</p>
     </div>
 
-    <!-- Tab bar -->
     <div class="flex border border-white/10 rounded overflow-hidden mb-8 reveal">
       <button onclick="switchTab(this,'privat')" data-panel="privat" role="tab" aria-selected="true"
               class="rechner-tab flex-1 py-3 text-xs font-semibold uppercase tracking-widest bg-blue text-white transition-[background-color,color]">
@@ -778,25 +780,24 @@
       </button>
     </div>
 
-    <!-- Privat -->
     <div id="panel-privat" class="tab-panel active">
       <div class="bg-s2 border border-white/5 rounded p-8">
         <div class="grid md:grid-cols-2 gap-8 mb-8">
           <div>
             <label class="text-t3 text-xs uppercase tracking-widest block mb-3">Fenster normal</label>
             <div class="flex items-center gap-4">
-              <button onclick="changeVal('pn',-1)" class="w-11 h-11 rounded border border-white/10 hover:border-blue hover:text-blue text-t1 font-display text-xl transition-colors">-</button>
+              <button onclick="changeVal('pn',-1)" class="btn-tap w-11 h-11 rounded border border-white/10 hover:border-blue hover:text-blue text-t1 font-display text-xl transition-colors">-</button>
               <span id="val-pn" class="font-display text-4xl text-t1 w-10 text-center tabular">5</span>
-              <button onclick="changeVal('pn',1)"  class="w-11 h-11 rounded border border-white/10 hover:border-blue hover:text-blue text-t1 font-display text-xl transition-colors">+</button>
+              <button onclick="changeVal('pn',1)"  class="btn-tap w-11 h-11 rounded border border-white/10 hover:border-blue hover:text-blue text-t1 font-display text-xl transition-colors">+</button>
               <span class="text-t3 text-xs">× 8 €</span>
             </div>
           </div>
           <div>
             <label class="text-t3 text-xs uppercase tracking-widest block mb-3">Bodentief</label>
             <div class="flex items-center gap-4">
-              <button onclick="changeVal('pg',-1)" class="w-11 h-11 rounded border border-white/10 hover:border-blue hover:text-blue text-t1 font-display text-xl transition-colors">-</button>
-              <span id="val-pg" class="font-display text-4xl text-t1 w-10 text-center">0</span>
-              <button onclick="changeVal('pg',1)"  class="w-11 h-11 rounded border border-white/10 hover:border-blue hover:text-blue text-t1 font-display text-xl transition-colors">+</button>
+              <button onclick="changeVal('pg',-1)" class="btn-tap w-11 h-11 rounded border border-white/10 hover:border-blue hover:text-blue text-t1 font-display text-xl transition-colors">-</button>
+              <span id="val-pg" class="font-display text-4xl text-t1 w-10 text-center tabular">0</span>
+              <button onclick="changeVal('pg',1)"  class="btn-tap w-11 h-11 rounded border border-white/10 hover:border-blue hover:text-blue text-t1 font-display text-xl transition-colors">+</button>
               <span class="text-t3 text-xs">× 16 €</span>
             </div>
           </div>
@@ -814,15 +815,14 @@
       </div>
     </div>
 
-    <!-- Gewerbe -->
     <div id="panel-gewerbe" class="tab-panel">
       <div class="bg-s2 border border-white/5 rounded p-8">
         <div class="mb-8">
           <label class="text-t3 text-xs uppercase tracking-widest block mb-3">Glasfläche in m²</label>
           <div class="flex items-center gap-4">
-            <button onclick="changeVal('gf',-10)" class="w-11 h-11 rounded border border-white/10 hover:border-blue hover:text-blue text-t1 font-display text-xl transition-colors">-</button>
-            <span id="val-gf" class="font-display text-4xl text-t1 w-16 text-center">100</span>
-            <button onclick="changeVal('gf',10)"  class="w-11 h-11 rounded border border-white/10 hover:border-blue hover:text-blue text-t1 font-display text-xl transition-colors">+</button>
+            <button onclick="changeVal('gf',-10)" class="btn-tap w-11 h-11 rounded border border-white/10 hover:border-blue hover:text-blue text-t1 font-display text-xl transition-colors">-</button>
+            <span id="val-gf" class="font-display text-4xl text-t1 w-16 text-center tabular">100</span>
+            <button onclick="changeVal('gf',10)"  class="btn-tap w-11 h-11 rounded border border-white/10 hover:border-blue hover:text-blue text-t1 font-display text-xl transition-colors">+</button>
             <span class="text-t3 text-xs">m²</span>
           </div>
         </div>
@@ -839,16 +839,15 @@
       </div>
     </div>
 
-    <!-- Steinreinigung -->
     <div id="panel-stein" class="tab-panel">
       <div class="bg-s2 border border-white/5 rounded p-8">
         <div class="grid md:grid-cols-2 gap-8 mb-6">
           <div>
             <label class="text-t3 text-xs uppercase tracking-widest block mb-3">Fläche in m²</label>
             <div class="flex items-center gap-4">
-              <button onclick="changeVal('sf',-10)" class="w-11 h-11 rounded border border-white/10 hover:border-blue hover:text-blue text-t1 font-display text-xl transition-colors">-</button>
-              <span id="val-sf" class="font-display text-4xl text-t1 w-16 text-center">50</span>
-              <button onclick="changeVal('sf',10)"  class="w-11 h-11 rounded border border-white/10 hover:border-blue hover:text-blue text-t1 font-display text-xl transition-colors">+</button>
+              <button onclick="changeVal('sf',-10)" class="btn-tap w-11 h-11 rounded border border-white/10 hover:border-blue hover:text-blue text-t1 font-display text-xl transition-colors">-</button>
+              <span id="val-sf" class="font-display text-4xl text-t1 w-16 text-center tabular">50</span>
+              <button onclick="changeVal('sf',10)"  class="btn-tap w-11 h-11 rounded border border-white/10 hover:border-blue hover:text-blue text-t1 font-display text-xl transition-colors">+</button>
               <span class="text-t3 text-xs">m²</span>
             </div>
           </div>
@@ -879,7 +878,7 @@
 </section>
 
 <!-- ============================================================
-     FAQ
+     FAQ (5 service-spezifische Fragen)
 ============================================================ -->
 <section class="py-28" id="faq">
   <div class="max-w-3xl mx-auto px-6">
@@ -896,22 +895,33 @@
       <div class="border-b border-white/5 reveal">
         <button onclick="toggleFaq(this)" aria-expanded="false"
                 class="w-full flex items-center justify-between py-5 text-left group">
-          <span class="text-t1 text-sm font-semibold pr-8 group-hover:text-blue transition-colors">Warum hinterlässt Ihre Reinigung keine Streifen?</span>
+          <span class="text-t1 text-sm font-semibold pr-8 group-hover:text-blue transition-colors">Was ist der Unterschied zwischen professioneller und privater Fensterreinigung?</span>
           <i class="ph ph-plus text-t3 group-hover:text-blue faq-icon text-lg shrink-0"></i>
         </button>
         <div class="faq-body">
-          <p class="text-t2 text-sm leading-relaxed pb-5">Wir verwenden vollständig demineralisiertes Osmosewasser (0 ppm Mineralien). Normales Leitungswasser enthält Kalk und Salze, die beim Trocknen weiße Rückstände hinterlassen. Unser gefiltertes Reinwasser trocknet rückstandsfrei — keine Streifen, keine Flecken.</p>
+          <p class="text-t2 text-sm leading-relaxed pb-5">Private Reinigung mit Tuch und Leitungswasser hinterlässt Kalk- und Mineralienrückstände als Schlieren. Professionelle Osmosewasser-Reinigung (0 ppm Mineralien) trocknet rückstandsfrei — keine Schlieren, kein Nachputzen. Dazu entfällt das Leiter-Risiko: Wir reinigen mit Teleskoptechnik vom Boden aus, bis 21 Meter Höhe.</p>
         </div>
       </div>
 
       <div class="border-b border-white/5 reveal">
         <button onclick="toggleFaq(this)" aria-expanded="false"
                 class="w-full flex items-center justify-between py-5 text-left group">
-          <span class="text-t1 text-sm font-semibold pr-8 group-hover:text-blue transition-colors">Was bringt das 80°C-Heißwasser-System?</span>
+          <span class="text-t1 text-sm font-semibold pr-8 group-hover:text-blue transition-colors">Wie lange dauert eine professionelle Fensterreinigung?</span>
           <i class="ph ph-plus text-t3 group-hover:text-blue faq-icon text-lg shrink-0"></i>
         </button>
         <div class="faq-body">
-          <p class="text-t2 text-sm leading-relaxed pb-5">Heißes Wasser löst Fett, hartnäckige Kalkablagerungen und organischen Schmutz effektiver als kaltes Wasser, ohne Chemie. Das Glas bleibt länger sauber.</p>
+          <p class="text-t2 text-sm leading-relaxed pb-5">Ein Einfamilienhaus mit 12–15 Fenstern ist in ca. 1,5 bis 2 Stunden fertig. Mehrfamilienhäuser und Gewerbeobjekte kalkulieren wir individuell nach Fotoübersendung. Durch Teleskoptechnik entfällt die Gerüstauf- und -abbauzeit.</p>
+        </div>
+      </div>
+
+      <div class="border-b border-white/5 reveal">
+        <button onclick="toggleFaq(this)" aria-expanded="false"
+                class="w-full flex items-center justify-between py-5 text-left group">
+          <span class="text-t1 text-sm font-semibold pr-8 group-hover:text-blue transition-colors">Wie reinigen Sie Kastenfenster in Berliner Altbauten?</span>
+          <i class="ph ph-plus text-t3 group-hover:text-blue faq-icon text-lg shrink-0"></i>
+        </button>
+        <div class="faq-body">
+          <p class="text-t2 text-sm leading-relaxed pb-5">Kastenfenster haben zwei getrennte Rahmen. Den inneren öffnen wir für die innere Scheibe. Die äußere Scheibe erreichen wir mit der Teleskopbürste vom Boden — auch an denkmalgeschützten Gebäuden mit empfindlichen Rahmen oder Bleiverglasung. Kein Gerüst, kein Hochdruck auf die Substanz.</p>
         </div>
       </div>
 
@@ -922,95 +932,18 @@
           <i class="ph ph-plus text-t3 group-hover:text-blue faq-icon text-lg shrink-0"></i>
         </button>
         <div class="faq-body">
-          <p class="text-t2 text-sm leading-relaxed pb-5">Für Privathaushalte empfehlen wir 2× jährlich (Frühjahr und Herbst). Gewerbliche Objekte mit hohem Besucheraufkommen oder starker Umweltverschmutzung: alle 4–6 Wochen.</p>
+          <p class="text-t2 text-sm leading-relaxed pb-5">Für Privathaushalte empfehlen wir zweimal jährlich: Frühjahr (Streusalz und Winterrückstände) und Herbst (Pollen, Insekten, Sommerstaub). Gewerbliche Objekte mit hohem Publikumsverkehr: alle 4–6 Wochen. Wir bieten Wartungsverträge mit Festpreiskonditionen an.</p>
         </div>
       </div>
 
       <div class="border-b border-white/5 reveal">
         <button onclick="toggleFaq(this)" aria-expanded="false"
                 class="w-full flex items-center justify-between py-5 text-left group">
-          <span class="text-t1 text-sm font-semibold pr-8 group-hover:text-blue transition-colors">Ist Rahmenreinigung inklusive?</span>
+          <span class="text-t1 text-sm font-semibold pr-8 group-hover:text-blue transition-colors">Ist die Fensterreinigung von der Steuer absetzbar?</span>
           <i class="ph ph-plus text-t3 group-hover:text-blue faq-icon text-lg shrink-0"></i>
         </button>
         <div class="faq-body">
-          <p class="text-t2 text-sm leading-relaxed pb-5">Ja. Bei jeder Fensterreinigung sind Rahmen, Simse und Griffe dabei. Kein Aufpreis.</p>
-        </div>
-      </div>
-
-      <div class="border-b border-white/5 reveal">
-        <button onclick="toggleFaq(this)" aria-expanded="false"
-                class="w-full flex items-center justify-between py-5 text-left group">
-          <span class="text-t1 text-sm font-semibold pr-8 group-hover:text-blue transition-colors">Können Sie Kastenfenster in Berliner Altbauten reinigen?</span>
-          <i class="ph ph-plus text-t3 group-hover:text-blue faq-icon text-lg shrink-0"></i>
-        </button>
-        <div class="faq-body">
-          <p class="text-t2 text-sm leading-relaxed pb-5">Ja. Kastenfenster (Berliner Doppelfenster) reinigen wir beidseitig. Die innere Glasscheibe ist durch Öffnen des Rahmens zugänglich, die äußere über unsere Teleskoptechnik — ohne Gerüst, auch bei denkmalgeschützten Gebäuden mit Bleiverglasung.</p>
-        </div>
-      </div>
-
-      <div class="border-b border-white/5 reveal">
-        <button onclick="toggleFaq(this)" aria-expanded="false"
-                class="w-full flex items-center justify-between py-5 text-left group">
-          <span class="text-t1 text-sm font-semibold pr-8 group-hover:text-blue transition-colors">Kann ich die Fensterreinigung von der Steuer absetzen?</span>
-          <i class="ph ph-plus text-t3 group-hover:text-blue faq-icon text-lg shrink-0"></i>
-        </button>
-        <div class="faq-body">
-          <p class="text-t2 text-sm leading-relaxed pb-5">Ja. Als Privathaushalt können Sie 20% der Arbeitskosten direkt von Ihrer Einkommensteuer abziehen (§35a EStG) — bis zu 4.000 € pro Jahr. Voraussetzung: Rechnung + Zahlung per Überweisung.</p>
-        </div>
-      </div>
-
-      <div class="border-b border-white/5 reveal">
-        <button onclick="toggleFaq(this)" aria-expanded="false"
-                class="w-full flex items-center justify-between py-5 text-left group">
-          <span class="text-t1 text-sm font-semibold pr-8 group-hover:text-blue transition-colors">Was kostet eine Fensterreinigung?</span>
-          <i class="ph ph-plus text-t3 group-hover:text-blue faq-icon text-lg shrink-0"></i>
-        </button>
-        <div class="faq-body">
-          <p class="text-t2 text-sm leading-relaxed pb-5">Fensterreinigung Privat: ab 8 € netto pro Fenster (Normalgröße ca. 1–1,2 m²), große bodentiefe Fenster ab 16 € netto. Gewerbe-Glasflächen: ab 3 € netto pro m² einseitig inkl. Rahmen & Falz. Kostenloses Angebot in 24h nach Fotoübersendung. Als Privathaushalt bis zu 20% steuerlich absetzbar (§35a EStG).</p>
-        </div>
-      </div>
-
-      <div class="border-b border-white/5 reveal">
-        <button onclick="toggleFaq(this)" aria-expanded="false"
-                class="w-full flex items-center justify-between py-5 text-left group">
-          <span class="text-t1 text-sm font-semibold pr-8 group-hover:text-blue transition-colors">Sind Sie versichert?</span>
-          <i class="ph ph-plus text-t3 group-hover:text-blue faq-icon text-lg shrink-0"></i>
-        </button>
-        <div class="faq-body">
-          <p class="text-t2 text-sm leading-relaxed pb-5">Ja, wir sind haftpflichtversichert. Alle Arbeiten führen wir als angemeldeter Gewerbebetrieb und Handwerkskammer-Mitglied aus. Bei Schäden haften wir.</p>
-        </div>
-      </div>
-
-      <div class="border-b border-white/5 reveal">
-        <button onclick="toggleFaq(this)" aria-expanded="false"
-                class="w-full flex items-center justify-between py-5 text-left group">
-          <span class="text-t1 text-sm font-semibold pr-8 group-hover:text-blue transition-colors">Wie reinigen Sie Solaranlagen?</span>
-          <i class="ph ph-plus text-t3 group-hover:text-blue faq-icon text-lg shrink-0"></i>
-        </button>
-        <div class="faq-body">
-          <p class="text-t2 text-sm leading-relaxed pb-5">Wir reinigen Photovoltaik-Module ohne Hochdruck, der Rahmenversiegelungen beschädigen kann. Verschmutzte Module verlieren bis zu 40% ihrer Leistung. 1–2 Reinigungen pro Jahr reichen.</p>
-        </div>
-      </div>
-
-      <div class="border-b border-white/5 reveal">
-        <button onclick="toggleFaq(this)" aria-expanded="false"
-                class="w-full flex items-center justify-between py-5 text-left group">
-          <span class="text-t1 text-sm font-semibold pr-8 group-hover:text-blue transition-colors">Verwenden Sie umweltschädliche Reinigungsmittel?</span>
-          <i class="ph ph-plus text-t3 group-hover:text-blue faq-icon text-lg shrink-0"></i>
-        </button>
-        <div class="faq-body">
-          <p class="text-t2 text-sm leading-relaxed pb-5">Nein. Wir arbeiten ausschließlich mit Reinwasser (Osmosewasser) — vollständig ohne Chemie. Das schützt Fensterrahmen, Boden und Umwelt.</p>
-        </div>
-      </div>
-
-      <div class="border-b border-white/5 reveal">
-        <button onclick="toggleFaq(this)" aria-expanded="false"
-                class="w-full flex items-center justify-between py-5 text-left group">
-          <span class="text-t1 text-sm font-semibold pr-8 group-hover:text-blue transition-colors">Arbeiten Sie auch an Hochhäusern?</span>
-          <i class="ph ph-plus text-t3 group-hover:text-blue faq-icon text-lg shrink-0"></i>
-        </button>
-        <div class="faq-body">
-          <p class="text-t2 text-sm leading-relaxed pb-5">Mit unserer Teleskoptechnik erreichen wir Höhen bis zu 21 Metern vom Boden aus — ohne Gerüst. Für Objekte darüber hinaus erstellen wir ein individuelles Angebot.</p>
+          <p class="text-t2 text-sm leading-relaxed pb-5">Ja. Als Privathaushalt können Sie 20% der Arbeitskosten direkt von der Einkommensteuer abziehen (§35a EStG) — bis zu 4.000 € Steuerersparnis pro Jahr. Voraussetzung: Rechnung auf Ihren Namen und Zahlung per Überweisung. Barzahlung ist nicht anrechenbar.</p>
         </div>
       </div>
 
@@ -1046,7 +979,7 @@
           <div class="md:col-span-2">
             <label class="text-t3 text-xs uppercase tracking-widest block mb-2">Leistung</label>
             <select name="leistung" class="w-full bg-s1 border border-white/10 rounded px-4 py-3 text-t1 text-sm focus:border-blue focus:outline-none transition-colors">
-              <option>Fensterreinigung</option><option>Glasreinigung</option>
+              <option selected>Fensterreinigung</option><option>Glasreinigung</option>
               <option>Wintergartenreinigung</option><option>Solaranlagenreinigung</option>
               <option>Jalousienreinigung</option><option>Terrassenüberdachung</option>
               <option>Dachreinigung</option><option>Fassadenreinigung</option>
@@ -1096,7 +1029,7 @@
 ============================================================ -->
 <section class="relative py-36 overflow-hidden">
   <div class="absolute inset-0">
-    <img src="../assets/JR_Fensterreinigung_26-05-15_13.08.28-2.jpg.webp" alt="" class="w-full h-full object-cover" aria-hidden="true" />
+    <img src="../../assets/JR_Fensterreinigung_26-05-15_13.08.28-2.jpg.webp" alt="" class="w-full h-full object-cover" aria-hidden="true" />
     <div class="absolute inset-0" style="background:linear-gradient(to bottom,rgba(13,15,18,.55),rgba(13,15,18,.92))"></div>
   </div>
   <div class="relative z-10 max-w-3xl mx-auto px-6 text-center reveal">
@@ -1119,13 +1052,103 @@
 </section>
 
 <!-- ============================================================
+     LOCATION GRID (14 Fensterreinigung Sub-Pages)
+============================================================ -->
+<section class="py-20 bg-s1" id="standorte">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="mb-10 reveal">
+      <div class="flex items-center gap-3 mb-4">
+        <div class="w-8 h-px bg-blue opacity-60"></div>
+        <span class="text-t3 text-xs font-semibold tracking-widest uppercase">Regionale Verfügbarkeit</span>
+      </div>
+      <h2 class="font-display text-t1 leading-none"
+          style="font-size:clamp(28px,3.5vw,42px);letter-spacing:.02em">
+        FENSTERREINIGUNG IN IHRER REGION
+      </h2>
+    </div>
+    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-7 gap-2 reveal">
+      <a href="/fensterreinigung/fensterreinigung-im-havelland/"
+         class="loc-link block border border-white/6 rounded px-4 py-3 text-center transition-[background-color,border-color] duration-200">
+        <div class="text-t1 text-xs font-semibold mb-0.5">Havelland</div>
+        <div class="text-t3 text-xs">Region</div>
+      </a>
+      <a href="/fensterreinigung/fensterreinigung-in-berlin/"
+         class="loc-link block border border-white/6 rounded px-4 py-3 text-center transition-[background-color,border-color] duration-200">
+        <div class="text-t1 text-xs font-semibold mb-0.5">Berlin</div>
+        <div class="text-t3 text-xs">Stadt</div>
+      </a>
+      <a href="/fensterreinigung/fensterreinigung-in-berlin-spandau/"
+         class="loc-link block border border-white/6 rounded px-4 py-3 text-center transition-[background-color,border-color] duration-200">
+        <div class="text-t1 text-xs font-semibold mb-0.5">Berlin-Spandau</div>
+        <div class="text-t3 text-xs">Bezirk</div>
+      </a>
+      <a href="/fensterreinigung/fensterreinigung-in-brandenburg/"
+         class="loc-link block border border-white/6 rounded px-4 py-3 text-center transition-[background-color,border-color] duration-200">
+        <div class="text-t1 text-xs font-semibold mb-0.5">Brandenburg</div>
+        <div class="text-t3 text-xs">Land</div>
+      </a>
+      <a href="/fensterreinigung/fensterreinigung-in-brieselang/"
+         class="loc-link block border border-white/6 rounded px-4 py-3 text-center transition-[background-color,border-color] duration-200">
+        <div class="text-t1 text-xs font-semibold mb-0.5">Brieselang</div>
+        <div class="text-t3 text-xs">Gemeinde</div>
+      </a>
+      <a href="/fensterreinigung/fensterreinigung-in-dallgow-doeberitz/"
+         class="loc-link block border border-white/6 rounded px-4 py-3 text-center transition-[background-color,border-color] duration-200">
+        <div class="text-t1 text-xs font-semibold mb-0.5">Dallgow</div>
+        <div class="text-t3 text-xs">Döberitz</div>
+      </a>
+      <a href="/fensterreinigung/fensterreinigung-in-elstal/"
+         class="loc-link block border border-white/6 rounded px-4 py-3 text-center transition-[background-color,border-color] duration-200">
+        <div class="text-t1 text-xs font-semibold mb-0.5">Elstal</div>
+        <div class="text-t3 text-xs">Ort</div>
+      </a>
+      <a href="/fensterreinigung/fensterreinigung-in-falkensee/"
+         class="loc-link block border border-white/6 rounded px-4 py-3 text-center transition-[background-color,border-color] duration-200">
+        <div class="text-t1 text-xs font-semibold mb-0.5">Falkensee</div>
+        <div class="text-t3 text-xs">Sitz</div>
+      </a>
+      <a href="/fensterreinigung/fensterreinigung-in-gatow/"
+         class="loc-link block border border-white/6 rounded px-4 py-3 text-center transition-[background-color,border-color] duration-200">
+        <div class="text-t1 text-xs font-semibold mb-0.5">Gatow</div>
+        <div class="text-t3 text-xs">Ortsteil</div>
+      </a>
+      <a href="/fensterreinigung/fensterreinigung-in-gross-glienicke/"
+         class="loc-link block border border-white/6 rounded px-4 py-3 text-center transition-[background-color,border-color] duration-200">
+        <div class="text-t1 text-xs font-semibold mb-0.5">Groß Glienicke</div>
+        <div class="text-t3 text-xs">Ortsteil</div>
+      </a>
+      <a href="/fensterreinigung/fensterreinigung-in-kladow/"
+         class="loc-link block border border-white/6 rounded px-4 py-3 text-center transition-[background-color,border-color] duration-200">
+        <div class="text-t1 text-xs font-semibold mb-0.5">Kladow</div>
+        <div class="text-t3 text-xs">Ortsteil</div>
+      </a>
+      <a href="/fensterreinigung/fensterreinigung-in-schoenwalde-glien/"
+         class="loc-link block border border-white/6 rounded px-4 py-3 text-center transition-[background-color,border-color] duration-200">
+        <div class="text-t1 text-xs font-semibold mb-0.5">Schönwalde-Glien</div>
+        <div class="text-t3 text-xs">Gemeinde</div>
+      </a>
+      <a href="/fensterreinigung/fensterreinigung-in-staaken/"
+         class="loc-link block border border-white/6 rounded px-4 py-3 text-center transition-[background-color,border-color] duration-200">
+        <div class="text-t1 text-xs font-semibold mb-0.5">Staaken</div>
+        <div class="text-t3 text-xs">Ortsteil</div>
+      </a>
+      <a href="/fensterreinigung/fensterreinigung-in-wustermark/"
+         class="loc-link block border border-white/6 rounded px-4 py-3 text-center transition-[background-color,border-color] duration-200">
+        <div class="text-t1 text-xs font-semibold mb-0.5">Wustermark</div>
+        <div class="text-t3 text-xs">Gemeinde</div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
      FOOTER
 ============================================================ -->
 <footer class="bg-s1 border-t border-white/5">
   <div class="max-w-7xl mx-auto px-6 py-16">
     <div class="grid md:grid-cols-4 gap-12 mb-12">
       <div class="md:col-span-2">
-        <img src="../assets/35A0CDFB-340E-43DE-B074-575700301CD6.png.webp" alt="JR Gebäudeservice" class="h-10 w-auto mb-4" />
+        <img src="../../assets/35A0CDFB-340E-43DE-B074-575700301CD6.png.webp" alt="JR Gebäudeservice" class="h-10 w-auto mb-4" />
         <p class="text-t3 text-sm leading-relaxed mb-4 max-w-xs">Professionelle Fenster- und Glasreinigung mit 80°C Osmosewasser-Technologie. Berlin · Havelland · Brandenburg.</p>
         <div class="flex gap-1 text-yellow-400 text-sm mb-1">
           <i class="ph ph-star-fill"></i><i class="ph ph-star-fill"></i><i class="ph ph-star-fill"></i><i class="ph ph-star-fill"></i><i class="ph ph-star-fill"></i>
@@ -1135,11 +1158,11 @@
       <div>
         <h4 class="text-t3 text-xs uppercase tracking-widest mb-4">Leistungen</h4>
         <ul class="space-y-2 text-t3 text-sm">
-          <li><a href="/fensterreinigung/"     class="hover:text-t1 transition-colors">Fensterreinigung</a></li>
-          <li><a href="/glasreinigung/"        class="hover:text-t1 transition-colors">Glasreinigung</a></li>
+          <li><a href="/fensterreinigung/"      class="text-t1 transition-colors">Fensterreinigung</a></li>
+          <li><a href="/glasreinigung/"         class="hover:text-t1 transition-colors">Glasreinigung</a></li>
           <li><a href="/wintergartenreinigung/" class="hover:text-t1 transition-colors">Wintergarten</a></li>
           <li><a href="/solaranlagenreinigung/" class="hover:text-t1 transition-colors">Solaranlage</a></li>
-          <li><a href="/steinreinigung/"       class="hover:text-t1 transition-colors">Steinreinigung</a></li>
+          <li><a href="/steinreinigung/"        class="hover:text-t1 transition-colors">Steinreinigung</a></li>
         </ul>
       </div>
       <div>
@@ -1154,8 +1177,8 @@
     <div class="border-t border-white/5 pt-6 flex flex-wrap items-center justify-between gap-4">
       <p class="text-t3 text-xs">© 2026 JR Gebäudeservice · Premium Fensterreinigung — eine Marke der JR Group · Sonnenstraße 50, 14612 Falkensee</p>
       <div class="flex gap-6 text-t3 text-xs">
-        <a href="/kontakt/impressum/"                class="hover:text-t1 transition-colors">Impressum</a>
-        <a href="/kontakt/datenschutzerklaerung/"    class="hover:text-t1 transition-colors">Datenschutz</a>
+        <a href="/kontakt/impressum/"             class="hover:text-t1 transition-colors">Impressum</a>
+        <a href="/kontakt/datenschutzerklaerung/" class="hover:text-t1 transition-colors">Datenschutz</a>
       </div>
     </div>
   </div>
@@ -1258,13 +1281,14 @@
 {"@context":"https://schema.org","@type":"LocalBusiness","name":"Premium Fensterreinigung","alternateName":"JR Gebäudeservice","url":"https://premium-fensterreinigung.de","telephone":"+491627061789","email":"info@premium-fensterreinigung.de","priceRange":"ab 8 € / Fenster","description":"Professionelle Fensterreinigung mit 80°C Osmosewasser-Technologie in Berlin und Havelland.","address":{"@type":"PostalAddress","streetAddress":"Sonnenstraße 50","addressLocality":"Falkensee","addressRegion":"Brandenburg","postalCode":"14612","addressCountry":"DE"},"areaServed":["Berlin","Havelland","Brandenburg"],"aggregateRating":{"@type":"AggregateRating","ratingValue":"5.0","reviewCount":"6"}}
 </script>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Service","name":"Fensterreinigung Berlin","provider":{"@type":"LocalBusiness","name":"Premium Fensterreinigung","url":"https://premium-fensterreinigung.de"},"serviceType":"Fensterreinigung","areaServed":["Berlin","Havelland","Brandenburg"],"description":"Professionelle Fensterreinigung mit 80°C Heißwasser und Osmose-Technologie. Rahmen inklusive, kein Gerüst bis 21m, §35a absetzbar.","offers":{"@type":"Offer","priceCurrency":"EUR","priceSpecification":[{"@type":"UnitPriceSpecification","price":"8","priceCurrency":"EUR","name":"Fenster Normalgröße"},{"@type":"UnitPriceSpecification","price":"16","priceCurrency":"EUR","name":"Fenster bodentief"}]}}
+{"@context":"https://schema.org","@type":"Service","name":"Fensterreinigung Berlin & Havelland","serviceType":"Fensterreinigung","provider":{"@type":"LocalBusiness","name":"Premium Fensterreinigung","telephone":"+491627061789","address":{"@type":"PostalAddress","streetAddress":"Sonnenstraße 50","addressLocality":"Falkensee","postalCode":"14612","addressCountry":"DE"}},"areaServed":["Berlin","Havelland","Brandenburg","Falkensee","Brieselang","Dallgow-Döberitz","Schönwalde-Glien","Wustermark"],"description":"Professionelle Fensterreinigung mit 80°C Osmosewasser und Teleskoptechnik bis 21 Meter. Privat ab 8 €/Fenster, Gewerbe ab 3 €/m². Rahmen inklusive, kein Gerüst.","offers":{"@type":"Offer","priceSpecification":[{"@type":"UnitPriceSpecification","price":"8.00","priceCurrency":"EUR","unitText":"Fenster normal"},{"@type":"UnitPriceSpecification","price":"16.00","priceCurrency":"EUR","unitText":"Fenster bodentief"},{"@type":"UnitPriceSpecification","price":"3.00","priceCurrency":"EUR","unitText":"m² Glasfläche Gewerbe"}]}}
 </script>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Premium Fensterreinigung","item":"https://premium-fensterreinigung.de/"}]}
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Was ist der Unterschied zwischen professioneller und privater Fensterreinigung?","acceptedAnswer":{"@type":"Answer","text":"Private Reinigung mit Leitungswasser hinterlässt Kalk- und Mineralienrückstände. Professionelle Osmosewasser-Reinigung (0 ppm Mineralien) trocknet rückstandsfrei. Zusätzlich entfällt das Leiter-Risiko: Teleskoptechnik bis 21 Meter vom Boden."}},{"@type":"Question","name":"Wie lange dauert eine professionelle Fensterreinigung?","acceptedAnswer":{"@type":"Answer","text":"Ein Einfamilienhaus mit 12–15 Fenstern: ca. 1,5 bis 2 Stunden. Durch Teleskoptechnik entfällt die Gerüstauf- und -abbauzeit vollständig."}},{"@type":"Question","name":"Wie reinigen Sie Kastenfenster in Berliner Altbauten?","acceptedAnswer":{"@type":"Answer","text":"Den inneren Rahmen öffnen wir für die innere Scheibe. Die äußere erreichen wir mit der Teleskopbürste vom Boden — auch an denkmalgeschützten Gebäuden mit Bleiverglasung."}},{"@type":"Question","name":"Wie oft sollten Fenster professionell gereinigt werden?","acceptedAnswer":{"@type":"Answer","text":"Privathaushalte: zweimal jährlich (Frühjahr und Herbst). Gewerbliche Objekte mit hohem Publikumsverkehr: alle 4–6 Wochen."}},{"@type":"Question","name":"Ist die Fensterreinigung von der Steuer absetzbar?","acceptedAnswer":{"@type":"Answer","text":"Ja. Als Privathaushalt 20% der Arbeitskosten abziehen (§35a EStG) — bis zu 4.000 € pro Jahr. Voraussetzung: Rechnung + Zahlung per Überweisung."}}]}
 </script>
+
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Wie lange halten Fenster nach der Reinigung sauber?","acceptedAnswer":{"@type":"Answer","text":"2–3× länger als herkömmliche Reinigung dank Osmosewasser."}},{"@type":"Question","name":"Werden Rahmen mitgereinigt?","acceptedAnswer":{"@type":"Answer","text":"Ja, Rahmen, Simse und Griffe immer inklusive, kein Aufpreis."}},{"@type":"Question","name":"Kann ich die Fensterreinigung von der Steuer absetzen?","acceptedAnswer":{"@type":"Answer","text":"Ja, §35a EStG: bis zu 20% der Arbeitskosten, max. 4.000 €/Jahr."}},{"@type":"Question","name":"Was kostet eine Fensterreinigung?","acceptedAnswer":{"@type":"Answer","text":"Ab 8 €/Fenster normal, 16 €/Fenster bodentief, Gewerbe ab 3 €/m². Festpreis nach Foto."}}]}
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Premium Fensterreinigung","item":"https://premium-fensterreinigung.de/"},{"@type":"ListItem","position":2,"name":"Fensterreinigung","item":"https://premium-fensterreinigung.de/fensterreinigung/"}]}
 </script>
 
   <script src="/analytics-events.js"></script>

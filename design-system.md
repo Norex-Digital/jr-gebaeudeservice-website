@@ -38,13 +38,15 @@ _CSS-Code: `~/.claude/skills/premium-fensterreinigung-design/references/platform
 
 ## Typografie
 
-Font: **Plus Jakarta Sans** (Google Fonts — weights: 400, 600, 700)
+Fonts:
+- **Bebas Neue** (Google Fonts — weight: 400) — Display, H1, H2 (alle Sektions-Titel, Hero)
+- **Plus Jakarta Sans** (Google Fonts — weights: 400, 600, 700) — Body, Labels, UI-Text
 
-| Token | Größe | Weight | Tracking | Verwendung |
-|---|---|---|---|---|
-| Display | clamp(48px,6vw,72px) | 700 | -0.03em | Hero-Headline |
-| H1 | clamp(36px,4vw,48px) | 700 | -0.02em | Seiten-Titel |
-| H2 | clamp(28px,3vw,36px) | 600 | -0.02em | Sektions-Titel |
+| Token | Font | Größe | Weight | Tracking | Verwendung |
+|---|---|---|---|---|---|
+| Display | Bebas Neue | clamp(64px,10vw,118px) | 400 | +0.02em | Hero-Headline |
+| H1 | Bebas Neue | clamp(36px,4vw,48px) | 400 | -0.02em | Seiten-Titel |
+| H2 | Bebas Neue | clamp(28px,3vw,36px) | 400 | -0.02em | Sektions-Titel |
 | H3 | 24px | 600 | -0.01em | Karten-Titel |
 | H4 | 18px | 600 | 0 | Labels |
 | Body | 16px | 400 | 0 | Fließtext |
