@@ -164,9 +164,13 @@
 ============================================================ -->
 <nav id="nav" class="fixed top-0 inset-x-0 z-40">
   <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
-    <a href="/" class="flex items-center gap-3 shrink-0 min-h-[44px]">
-      <img src="../../assets/35A0CDFB-340E-43DE-B074-575700301CD6.png.webp" alt="JR Gebäudeservice" class="h-8 w-auto" />
-    </a>
+    <div class="flex items-center shrink-0">
+      <a href="/" class="flex items-center gap-3 min-h-[44px]"><img src="../../assets/35A0CDFB-340E-43DE-B074-575700301CD6.png.webp" alt="JR Gebäudeservice" class="h-8 w-auto"/></a>
+      <div class="hidden sm:flex items-center self-stretch gap-1.5 border-l border-white/10 pl-3 ml-1" data-nav-region>
+        <i class="ph ph-map-pin text-blue text-xs" aria-hidden="true"></i>
+        <span class="text-t2 text-[11px] font-medium tracking-wide whitespace-nowrap">Berlin &middot; Havelland &middot; Brandenburg</span>
+      </div>
+    </div>
     <div class="hidden lg:flex items-center gap-8 text-sm font-medium text-t2">
       <a href="/fensterreinigung/" class="text-t1 border-b border-blue pb-0.5 py-2" aria-current="page">Fensterreinigung</a>
       <div class="relative group">
@@ -361,7 +365,7 @@
           <i class="ph ph-storefront text-blue text-xl shrink-0 mt-0.5"></i>
           <div>
             <div class="text-t1 text-sm font-semibold mb-1">Schaufenster &amp; Glasfronten</div>
-            <div class="text-t3 text-xs leading-relaxed">Gewerbe ab 3 € netto/m²</div>
+            <div class="text-t3 text-xs leading-relaxed">Gewerbe ab 1,50 € netto/m²</div>
           </div>
         </div>
         <div class="bg-bg border border-white/6 rounded p-5 flex items-start gap-4">
@@ -444,7 +448,7 @@
         <div class="md:col-span-2 bg-bg border border-white/6 rounded p-8 flex flex-col justify-between">
           <div>
             <div class="text-t3 text-xs uppercase tracking-widest mb-6">Gewerbe &amp; Glas</div>
-            <div class="font-display text-t1 leading-none mb-1" style="font-size:64px">3 €</div>
+            <div class="font-display text-t1 leading-none mb-1" style="font-size:64px">1,50 €</div>
             <div class="text-t3 text-xs mb-6">pro m² Nettofläche</div>
             <ul class="space-y-2 text-t2 text-xs">
               <li class="flex items-center gap-2"><i class="ph ph-check text-blue-light"></i> Rahmen + Falz inkl.</li>
@@ -580,7 +584,7 @@
           <div class="svc-body"><span class="svc-num">02</span><div class="svc-name">GLASREINIGUNG</div><div class="svc-sub">Fassadenglas · Schaufenster</div></div>
         </a>
         <a href="/wintergartenreinigung/" class="svc" style="height:280px" aria-label="Wintergartenreinigung">
-          <div class="svc-bg" style="background-image:url('../../assets/IMG_7654.jpg.webp')"></div>
+          <div class="svc-bg" style="background-image:url('../../assets/wintergarten-hero.webp')"></div>
           <div class="svc-overlay"></div>
           <div class="svc-arrow"><i class="ph ph-arrow-right"></i></div>
           <div class="svc-body"><span class="svc-num">03</span><div class="svc-name">WINTERGARTEN</div><div class="svc-sub">Innen + außen · Dachverglasung</div></div>
@@ -608,19 +612,19 @@
           <div class="svc-body"><span class="svc-num">06</span><div class="svc-name">TERRASSENÜBERDACHUNG</div></div>
         </a>
         <a href="/dachreinigung/" class="svc" style="height:200px" aria-label="Dachreinigung">
-          <div class="svc-bg" style="background-image:url('../../assets/IMG_4444.jpg.webp')"></div>
+          <div class="svc-bg" style="background-image:url('../../assets/dachreinigung-hero.webp')"></div>
           <div class="svc-overlay"></div>
           <div class="svc-arrow"><i class="ph ph-arrow-right"></i></div>
           <div class="svc-body"><span class="svc-num">07 · Neu</span><div class="svc-name">DACHREINIGUNG</div></div>
         </a>
         <a href="/fassadenreinigung/" class="svc" style="height:200px" aria-label="Fassadenreinigung">
-          <div class="svc-bg" style="background-image:url('../../assets/IMG_4337.jpg.webp')"></div>
+          <div class="svc-bg" style="background-image:url('../../assets/fassadenreinigung-hero.webp')"></div>
           <div class="svc-overlay"></div>
           <div class="svc-arrow"><i class="ph ph-arrow-right"></i></div>
           <div class="svc-body"><span class="svc-num">08 · Neu</span><div class="svc-name">FASSADENREINIGUNG</div></div>
         </a>
         <a href="/steinreinigung/" class="svc" style="height:200px" aria-label="Steinreinigung">
-          <div class="svc-bg" style="background-image:url('../../assets/IMG_4107.jpg.webp')"></div>
+          <div class="svc-bg" style="background-image:url('../../assets/IMG_4444.jpg.webp')"></div>
           <div class="svc-overlay"></div>
           <div class="svc-arrow"><i class="ph ph-arrow-right"></i></div>
           <div class="svc-body"><span class="svc-num">09 · Neu</span><div class="svc-name">STEINREINIGUNG</div></div>
@@ -693,7 +697,7 @@
         <div class="flex gap-1 text-yellow-400 text-xl mb-2">
           <i class="ph ph-star-fill"></i><i class="ph ph-star-fill"></i><i class="ph ph-star-fill"></i><i class="ph ph-star-fill"></i><i class="ph ph-star-fill"></i>
         </div>
-        <div class="text-t3 text-sm mb-2">5,0 · 6 Bewertungen auf Google</div>
+        <div class="text-t3 text-sm mb-2">5,0 · 7 Google-Bewertungen</div>
       </div>
     </div>
     <div class="grid md:grid-cols-2 gap-4 mb-10">
@@ -1168,7 +1172,7 @@
         <div class="flex gap-1 text-yellow-400 text-sm mb-1">
           <i class="ph ph-star-fill"></i><i class="ph ph-star-fill"></i><i class="ph ph-star-fill"></i><i class="ph ph-star-fill"></i><i class="ph ph-star-fill"></i>
         </div>
-        <p class="text-t3 text-xs">5,0 · 6 Google-Bewertungen</p>
+        <p class="text-t3 text-xs">5,0 · 7 Google-Bewertungen</p>
       </div>
       <div>
         <h4 class="text-t3 text-xs uppercase tracking-widest mb-4">Leistungen</h4>
@@ -1304,10 +1308,10 @@
 
 <!-- Schema.org -->
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"LocalBusiness","name":"Premium Fensterreinigung","alternateName":"JR Gebäudeservice","url":"https://premium-fensterreinigung.de","telephone":"+491627061789","email":"info@premium-fensterreinigung.de","priceRange":"ab 8 € / Fenster","description":"Professionelle Fensterreinigung mit 80°C Osmosewasser-Technologie in Berlin und Havelland.","address":{"@type":"PostalAddress","streetAddress":"Sonnenstraße 50","addressLocality":"Falkensee","addressRegion":"Brandenburg","postalCode":"14612","addressCountry":"DE"},"areaServed":["Berlin","Havelland","Brandenburg"],"aggregateRating":{"@type":"AggregateRating","ratingValue":"5.0","reviewCount":"6"}}
+{"@context":"https://schema.org","@type":"LocalBusiness","name":"Premium Fensterreinigung","alternateName":"JR Gebäudeservice","url":"https://premium-fensterreinigung.de","telephone":"+491627061789","email":"info@premium-fensterreinigung.de","priceRange":"ab 8 € / Fenster","description":"Professionelle Fensterreinigung mit 80°C Osmosewasser-Technologie in Berlin und Havelland.","address":{"@type":"PostalAddress","streetAddress":"Sonnenstraße 50","addressLocality":"Falkensee","addressRegion":"Brandenburg","postalCode":"14612","addressCountry":"DE"},"areaServed":["Berlin","Havelland","Brandenburg"],"aggregateRating":{"@type":"AggregateRating","ratingValue":"5.0","reviewCount":"7"}}
 </script>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Service","name":"Fensterreinigung Berlin & Havelland","serviceType":"Fensterreinigung","provider":{"@type":"LocalBusiness","name":"Premium Fensterreinigung","telephone":"+491627061789","address":{"@type":"PostalAddress","streetAddress":"Sonnenstraße 50","addressLocality":"Falkensee","postalCode":"14612","addressCountry":"DE"}},"areaServed":["Berlin","Havelland","Brandenburg","Falkensee","Brieselang","Dallgow-Döberitz","Schönwalde-Glien","Wustermark"],"description":"Professionelle Fensterreinigung mit 80°C Osmosewasser und Teleskoptechnik bis 21 Meter. Privat ab 8 €/Fenster, Gewerbe ab 3 €/m². Rahmen inklusive, kein Gerüst.","offers":{"@type":"Offer","priceSpecification":[{"@type":"UnitPriceSpecification","price":"8.00","priceCurrency":"EUR","unitText":"Fenster normal"},{"@type":"UnitPriceSpecification","price":"16.00","priceCurrency":"EUR","unitText":"Fenster bodentief"},{"@type":"UnitPriceSpecification","price":"3.00","priceCurrency":"EUR","unitText":"m² Glasfläche Gewerbe"}]}}
+{"@context":"https://schema.org","@type":"Service","name":"Fensterreinigung Berlin & Havelland","serviceType":"Fensterreinigung","provider":{"@type":"LocalBusiness","name":"Premium Fensterreinigung","telephone":"+491627061789","address":{"@type":"PostalAddress","streetAddress":"Sonnenstraße 50","addressLocality":"Falkensee","postalCode":"14612","addressCountry":"DE"}},"areaServed":["Berlin","Havelland","Brandenburg","Falkensee","Brieselang","Dallgow-Döberitz","Schönwalde-Glien","Wustermark"],"description":"Professionelle Fensterreinigung mit 80°C Osmosewasser und Teleskoptechnik bis 21 Meter. Privat ab 8 €/Fenster, Gewerbe ab 1,50 €/m². Rahmen inklusive, kein Gerüst.","offers":{"@type":"Offer","priceSpecification":[{"@type":"UnitPriceSpecification","price":"8.00","priceCurrency":"EUR","unitText":"Fenster normal"},{"@type":"UnitPriceSpecification","price":"16.00","priceCurrency":"EUR","unitText":"Fenster bodentief"},{"@type":"UnitPriceSpecification","price":"1.50","priceCurrency":"EUR","unitText":"m² Glasfläche Gewerbe"}]}}
 </script>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Was ist der Unterschied zwischen professioneller und privater Fensterreinigung?","acceptedAnswer":{"@type":"Answer","text":"Private Reinigung mit Leitungswasser hinterlässt Kalk- und Mineralienrückstände. Professionelle Osmosewasser-Reinigung (0 ppm Mineralien) trocknet rückstandsfrei. Zusätzlich entfällt das Leiter-Risiko: Teleskoptechnik bis 21 Meter vom Boden."}},{"@type":"Question","name":"Wie lange dauert eine professionelle Fensterreinigung?","acceptedAnswer":{"@type":"Answer","text":"Ein Einfamilienhaus mit 12–15 Fenstern: ca. 1,5 bis 2 Stunden. Durch Teleskoptechnik entfällt die Gerüstauf- und -abbauzeit vollständig."}},{"@type":"Question","name":"Wie reinigen Sie Kastenfenster in Berliner Altbauten?","acceptedAnswer":{"@type":"Answer","text":"Den inneren Rahmen öffnen wir für die innere Scheibe. Die äußere erreichen wir mit der Teleskopbürste vom Boden — auch an denkmalgeschützten Gebäuden mit Bleiverglasung."}},{"@type":"Question","name":"Wie oft sollten Fenster professionell gereinigt werden?","acceptedAnswer":{"@type":"Answer","text":"Privathaushalte: zweimal jährlich (Frühjahr und Herbst). Gewerbliche Objekte mit hohem Publikumsverkehr: alle 4–6 Wochen."}},{"@type":"Question","name":"Ist die Fensterreinigung von der Steuer absetzbar?","acceptedAnswer":{"@type":"Answer","text":"Ja. Als Privathaushalt 20% der Arbeitskosten abziehen (§35a EStG) — bis zu 4.000 € pro Jahr. Voraussetzung: Rechnung + Zahlung per Überweisung."}}]}

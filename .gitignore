@@ -1,3 +1,10 @@
 build-plan.md
 location-lookup.md
 .DS_Store
+.gstack/
+
+# Interne Arbeits-Artefakte — nie deployen
+_backup-*/
+.design-audit-*/
+design-preview.html
+assets/_placeholder-*

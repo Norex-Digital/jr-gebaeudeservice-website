@@ -67,10 +67,10 @@
 
   <!-- Schema.org Location Page -->
   <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"LocalBusiness","name":"JR Gebäudeservice","alternateName":"Premium Fensterreinigung","url":"https://premium-fensterreinigung.de","telephone":"+491627061789","email":"info@premium-fensterreinigung.de","priceRange":"ab 8 € / Fenster","description":"Professionelle Fensterreinigung, Glasreinigung und Wintergartenreinigung mit 80°C Osmosewasser-Technologie in Berlin und Havelland.","address":{"@type":"PostalAddress","streetAddress":"Sonnenstraße 50","addressLocality":"Falkensee","addressRegion":"Brandenburg","postalCode":"14612","addressCountry":"DE"},"areaServed":["Berlin","Havelland","Brandenburg","Potsdam"],"aggregateRating":{"@type":"AggregateRating","ratingValue":"5.0","reviewCount":"6"}}
+{"@context":"https://schema.org","@type":"LocalBusiness","name":"JR Gebäudeservice","alternateName":"Premium Fensterreinigung","url":"https://premium-fensterreinigung.de","telephone":"+491627061789","email":"info@premium-fensterreinigung.de","priceRange":"ab 8 € / Fenster","description":"Professionelle Fensterreinigung, Glasreinigung und Wintergartenreinigung mit 80°C Osmosewasser-Technologie in Berlin und Havelland.","address":{"@type":"PostalAddress","streetAddress":"Sonnenstraße 50","addressLocality":"Falkensee","addressRegion":"Brandenburg","postalCode":"14612","addressCountry":"DE"},"areaServed":["Berlin","Havelland","Brandenburg","Potsdam"],"aggregateRating":{"@type":"AggregateRating","ratingValue":"5.0","reviewCount":"7"}}
   </script>
   <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Service","name":"Glasreinigung in Gatow","serviceType":"Glasreinigung","provider":{"@type":"LocalBusiness","name":"JR Gebäudeservice","telephone":"+491627061789","address":{"@type":"PostalAddress","streetAddress":"Sonnenstraße 50","addressLocality":"Falkensee","postalCode":"14612","addressCountry":"DE"}},"areaServed":{"@type":"City","name":"Gatow","addressCountry":"DE"},"url":"https://premium-fensterreinigung.de/glasreinigung/glasreinigung-in-gatow/","description":"Professionelle Glasreinigung in Gatow – 80°C Osmosewasser, kein Gerüst bis 21m, ohne Chemie. Für Villen und Glasfronten. Festpreis in 24h.","offers":{"@type":"Offer","priceSpecification":[{"@type":"UnitPriceSpecification","price":"8.00","priceCurrency":"EUR","unitText":"Fenster Normalgröße"},{"@type":"UnitPriceSpecification","price":"16.00","priceCurrency":"EUR","unitText":"Fenster bodentief"},{"@type":"UnitPriceSpecification","price":"3.00","priceCurrency":"EUR","unitText":"m² Glasfläche Gewerbe"}]}}
+{"@context":"https://schema.org","@type":"Service","name":"Glasreinigung in Gatow","serviceType":"Glasreinigung","provider":{"@type":"LocalBusiness","name":"JR Gebäudeservice","telephone":"+491627061789","address":{"@type":"PostalAddress","streetAddress":"Sonnenstraße 50","addressLocality":"Falkensee","postalCode":"14612","addressCountry":"DE"}},"areaServed":{"@type":"City","name":"Gatow","addressCountry":"DE"},"url":"https://premium-fensterreinigung.de/glasreinigung/glasreinigung-in-gatow/","description":"Professionelle Glasreinigung in Gatow – 80°C Osmosewasser, kein Gerüst bis 21m, ohne Chemie. Für Villen und Glasfronten. Festpreis in 24h.","offers":{"@type":"Offer","priceSpecification":[{"@type":"UnitPriceSpecification","price":"8.00","priceCurrency":"EUR","unitText":"Fenster Normalgröße"},{"@type":"UnitPriceSpecification","price":"16.00","priceCurrency":"EUR","unitText":"Fenster bodentief"},{"@type":"UnitPriceSpecification","price":"1.50","priceCurrency":"EUR","unitText":"m² Glasfläche Gewerbe"}]}}
   </script>
   <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Premium Fensterreinigung","item":"https://premium-fensterreinigung.de/"},{"@type":"ListItem","position":2,"name":"Glasreinigung","item":"/glasreinigung/"},{"@type":"ListItem","position":3,"name":"Glasreinigung in Gatow","item":"https://premium-fensterreinigung.de/glasreinigung/glasreinigung-in-gatow/"}]}
@@ -107,9 +107,13 @@
 <!-- NAV -->
 <nav id="nav" class="fixed top-0 inset-x-0 z-40">
   <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
-    <a href="/" class="flex items-center gap-3 shrink-0 min-h-[44px]">
-      <img src="../../assets/35A0CDFB-340E-43DE-B074-575700301CD6.png.webp" alt="JR Gebäudeservice" class="h-8 w-auto" />
-    </a>
+    <div class="flex items-center shrink-0">
+      <a href="/" class="flex items-center gap-3 min-h-[44px]"><img src="../../assets/35A0CDFB-340E-43DE-B074-575700301CD6.png.webp" alt="JR Gebäudeservice" class="h-8 w-auto"/></a>
+      <div class="hidden sm:flex items-center self-stretch gap-1.5 border-l border-white/10 pl-3 ml-1" data-nav-region>
+        <i class="ph ph-map-pin text-blue text-xs" aria-hidden="true"></i>
+        <span class="text-t2 text-[11px] font-medium tracking-wide whitespace-nowrap">Berlin &middot; Havelland &middot; Brandenburg</span>
+      </div>
+    </div>
     <div class="hidden lg:flex items-center gap-8 text-sm font-medium text-t2">
       <a href="/glasreinigung/" class="text-t1 border-b border-blue pb-0.5 py-2" aria-current="page">Glasreinigung</a>
       <a href="#leistung"  class="hover:text-t1 transition-colors py-2">Leistung</a>
@@ -365,6 +369,34 @@
 </section>
 
 <!-- FAQ — VILLENVORORT-FOKUS -->
+<!-- ============================================================
+     T5: VORHER / NACHHER
+============================================================ -->
+<section class="py-24 border-t border-white/5" id="ergebnisse" data-t5>
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="flex items-center gap-3 mb-4">
+      <div class="w-8 h-px bg-blue"></div>
+      <span class="text-t3 text-xs font-semibold tracking-widest uppercase">Vorher / Nachher</span>
+    </div>
+    <h2 class="font-display text-t1 leading-none mb-3" style="font-size:clamp(30px,4vw,46px);letter-spacing:.02em">ERGEBNISSE, DIE MAN SIEHT</h2>
+    <p class="text-t2 text-sm mb-10 max-w-xl">Echte Auftr&auml;ge aus Berlin, dem Havelland und Brandenburg: vom Kalkschleier zum streifenfreien Glas.</p>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+      <figure class="m-0 relative rounded overflow-hidden ring-1 ring-white/10">
+        <img src="../../assets/B8140E4A-215E-4541-8E18-D27DECF21821.png.webp" alt="Vorher und Nachher: Fensterreinigung an einem Wohnhaus" class="w-full aspect-[3/2] object-cover" loading="lazy" />
+        <figcaption class="absolute inset-x-0 bottom-0 px-3 py-2 text-[11px] text-t2 uppercase tracking-widest" style="background:linear-gradient(to top,rgba(13,15,18,.9),transparent)">Fensterreinigung</figcaption>
+      </figure>
+      <figure class="m-0 relative rounded overflow-hidden ring-1 ring-white/10">
+        <img src="../../assets/DA33D6F3-1CC7-4A9F-B657-32D48835F10F.png.webp" alt="Vorher und Nachher: Glasreinigung" class="w-full aspect-[3/2] object-cover" loading="lazy" />
+        <figcaption class="absolute inset-x-0 bottom-0 px-3 py-2 text-[11px] text-t2 uppercase tracking-widest" style="background:linear-gradient(to top,rgba(13,15,18,.9),transparent)">Glasreinigung</figcaption>
+      </figure>
+      <figure class="m-0 relative rounded overflow-hidden ring-1 ring-white/10">
+        <img src="../../assets/0EC186D7-7830-49EA-97F7-DFACAB2992F5.png.webp" alt="Vorher und Nachher: Glasfl&auml;chen im Gewerbe" class="w-full aspect-[3/2] object-cover" loading="lazy" />
+        <figcaption class="absolute inset-x-0 bottom-0 px-3 py-2 text-[11px] text-t2 uppercase tracking-widest" style="background:linear-gradient(to top,rgba(13,15,18,.9),transparent)">Gewerbeglas</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
 <section class="py-24 bg-s1" id="faq">
   <div class="max-w-3xl mx-auto px-6">
     <div class="mb-12 reveal">
@@ -580,7 +612,7 @@
         <div class="flex gap-1 text-yellow-400 text-sm mb-1">
           <i class="ph ph-star-fill"></i><i class="ph ph-star-fill"></i><i class="ph ph-star-fill"></i><i class="ph ph-star-fill"></i><i class="ph ph-star-fill"></i>
         </div>
-        <p class="text-t3 text-xs">5,0 · 6 Google-Bewertungen</p>
+        <p class="text-t3 text-xs">5,0 · 7 Google-Bewertungen</p>
       </div>
       <div>
         <h4 class="text-t3 text-xs uppercase tracking-widest mb-4">Leistungen</h4>

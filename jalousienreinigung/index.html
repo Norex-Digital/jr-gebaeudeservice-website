@@ -93,9 +93,13 @@
 
 <nav id="nav" class="fixed top-0 inset-x-0 z-40">
   <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
-    <a href="/" class="flex items-center gap-3 shrink-0 min-h-[44px]">
-      <img src="../../assets/35A0CDFB-340E-43DE-B074-575700301CD6.png.webp" alt="JR Gebäudeservice" class="h-8 w-auto" />
-    </a>
+    <div class="flex items-center shrink-0">
+      <a href="/" class="flex items-center gap-3 min-h-[44px]"><img src="../../assets/35A0CDFB-340E-43DE-B074-575700301CD6.png.webp" alt="JR Gebäudeservice" class="h-8 w-auto"/></a>
+      <div class="hidden sm:flex items-center self-stretch gap-1.5 border-l border-white/10 pl-3 ml-1" data-nav-region>
+        <i class="ph ph-map-pin text-blue text-xs" aria-hidden="true"></i>
+        <span class="text-t2 text-[11px] font-medium tracking-wide whitespace-nowrap">Berlin &middot; Havelland &middot; Brandenburg</span>
+      </div>
+    </div>
     <div class="hidden lg:flex items-center gap-8 text-sm font-medium text-t2">
       <a href="/jalousienreinigung/" class="text-t1 border-b border-blue pb-0.5 py-2" aria-current="page">Jalousien</a>
       <div class="relative group">
@@ -417,7 +421,7 @@
           <div class="svc-body"><span class="svc-num">02</span><div class="svc-name">GLASREINIGUNG</div><div class="svc-sub">Fassaden · Geländer · Trennwände</div></div>
         </a>
         <a href="/wintergartenreinigung/" class="svc" style="height:280px" aria-label="Wintergartenreinigung">
-          <div class="svc-bg" style="background-image:url('../../assets/IMG_7654.jpg.webp')"></div>
+          <div class="svc-bg" style="background-image:url('../../assets/wintergarten-hero.webp')"></div>
           <div class="svc-overlay"></div><div class="svc-arrow"><i class="ph ph-arrow-right"></i></div>
           <div class="svc-body"><span class="svc-num">03</span><div class="svc-name">WINTERGARTEN</div><div class="svc-sub">Dach · Seiten · Profile · Dichtungen</div></div>
         </a>
@@ -434,17 +438,17 @@
           <div class="svc-body"><span class="svc-num">06</span><div class="svc-name">TERRASSENÜBERDACHUNG</div></div>
         </a>
         <a href="/dachreinigung/" class="svc" style="height:200px" aria-label="Dachreinigung">
-          <div class="svc-bg" style="background-image:url('../../assets/IMG_4444.jpg.webp')"></div>
+          <div class="svc-bg" style="background-image:url('../../assets/dachreinigung-hero.webp')"></div>
           <div class="svc-overlay"></div><div class="svc-arrow"><i class="ph ph-arrow-right"></i></div>
           <div class="svc-body"><span class="svc-num">07 · Neu</span><div class="svc-name">DACHREINIGUNG</div></div>
         </a>
         <a href="/fassadenreinigung/" class="svc" style="height:200px" aria-label="Fassadenreinigung">
-          <div class="svc-bg" style="background-image:url('../../assets/IMG_4337.jpg.webp')"></div>
+          <div class="svc-bg" style="background-image:url('../../assets/fassadenreinigung-hero.webp')"></div>
           <div class="svc-overlay"></div><div class="svc-arrow"><i class="ph ph-arrow-right"></i></div>
           <div class="svc-body"><span class="svc-num">08 · Neu</span><div class="svc-name">FASSADENREINIGUNG</div></div>
         </a>
         <a href="/steinreinigung/" class="svc" style="height:200px" aria-label="Steinreinigung">
-          <div class="svc-bg" style="background-image:url('../../assets/IMG_4107.jpg.webp')"></div>
+          <div class="svc-bg" style="background-image:url('../../assets/IMG_4444.jpg.webp')"></div>
           <div class="svc-overlay"></div><div class="svc-arrow"><i class="ph ph-arrow-right"></i></div>
           <div class="svc-body"><span class="svc-num">09 · Neu</span><div class="svc-name">STEINREINIGUNG</div></div>
         </a>
@@ -482,7 +486,7 @@
       <div class="flex flex-wrap items-end gap-6">
         <h2 class="font-display text-t1 leading-none" style="font-size:clamp(38px,5vw,54px);letter-spacing:.02em">WAS KUNDEN SAGEN</h2>
         <div class="flex gap-1 text-yellow-400 text-xl mb-2"><i class="ph ph-star-fill"></i><i class="ph ph-star-fill"></i><i class="ph ph-star-fill"></i><i class="ph ph-star-fill"></i><i class="ph ph-star-fill"></i></div>
-        <div class="text-t3 text-sm mb-2">5,0 · 6 Bewertungen auf Google</div>
+        <div class="text-t3 text-sm mb-2">5,0 · 7 Google-Bewertungen</div>
       </div>
     </div>
     <div class="grid md:grid-cols-2 gap-4 mb-10">
@@ -671,30 +675,6 @@
   </div>
 </section>
 
-<section class="py-20 bg-s1" id="standorte">
-  <div class="max-w-7xl mx-auto px-6">
-    <div class="mb-10 reveal">
-      <div class="flex items-center gap-3 mb-4"><div class="w-8 h-px bg-blue opacity-60"></div><span class="text-t3 text-xs font-semibold tracking-widest uppercase">Regionale Verfügbarkeit</span></div>
-      <h2 class="font-display text-t1 leading-none" style="font-size:clamp(28px,3.5vw,42px);letter-spacing:.02em">JALOUSIENREINIGUNG IN IHRER REGION</h2>
-    </div>
-    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-7 gap-2 reveal">
-      <a href="/jalousienreinigung/jalousienreinigung-im-havelland/" class="loc-link block border border-white/6 rounded px-4 py-3 text-center transition-[background-color,border-color] duration-200"><div class="text-t1 text-xs font-semibold mb-0.5">Havelland</div><div class="text-t3 text-xs">Region</div></a>
-      <a href="/jalousienreinigung/jalousienreinigung-in-berlin/" class="loc-link block border border-white/6 rounded px-4 py-3 text-center transition-[background-color,border-color] duration-200"><div class="text-t1 text-xs font-semibold mb-0.5">Berlin</div><div class="text-t3 text-xs">Stadt</div></a>
-      <a href="/jalousienreinigung/jalousienreinigung-in-berlin-spandau/" class="loc-link block border border-white/6 rounded px-4 py-3 text-center transition-[background-color,border-color] duration-200"><div class="text-t1 text-xs font-semibold mb-0.5">Berlin-Spandau</div><div class="text-t3 text-xs">Bezirk</div></a>
-      <a href="/jalousienreinigung/jalousienreinigung-in-brandenburg/" class="loc-link block border border-white/6 rounded px-4 py-3 text-center transition-[background-color,border-color] duration-200"><div class="text-t1 text-xs font-semibold mb-0.5">Brandenburg</div><div class="text-t3 text-xs">Land</div></a>
-      <a href="/jalousienreinigung/jalousienreinigung-in-brieselang/" class="loc-link block border border-white/6 rounded px-4 py-3 text-center transition-[background-color,border-color] duration-200"><div class="text-t1 text-xs font-semibold mb-0.5">Brieselang</div><div class="text-t3 text-xs">Gemeinde</div></a>
-      <a href="/jalousienreinigung/jalousienreinigung-in-dallgow-doeberitz/" class="loc-link block border border-white/6 rounded px-4 py-3 text-center transition-[background-color,border-color] duration-200"><div class="text-t1 text-xs font-semibold mb-0.5">Dallgow</div><div class="text-t3 text-xs">Döberitz</div></a>
-      <a href="/jalousienreinigung/jalousienreinigung-in-elstal/" class="loc-link block border border-white/6 rounded px-4 py-3 text-center transition-[background-color,border-color] duration-200"><div class="text-t1 text-xs font-semibold mb-0.5">Elstal</div><div class="text-t3 text-xs">Ort</div></a>
-      <a href="/jalousienreinigung/jalousienreinigung-in-falkensee/" class="loc-link block border border-white/6 rounded px-4 py-3 text-center transition-[background-color,border-color] duration-200"><div class="text-t1 text-xs font-semibold mb-0.5">Falkensee</div><div class="text-t3 text-xs">Sitz</div></a>
-      <a href="/jalousienreinigung/jalousienreinigung-in-gatow/" class="loc-link block border border-white/6 rounded px-4 py-3 text-center transition-[background-color,border-color] duration-200"><div class="text-t1 text-xs font-semibold mb-0.5">Gatow</div><div class="text-t3 text-xs">Ortsteil</div></a>
-      <a href="/jalousienreinigung/jalousienreinigung-in-gross-glienicke/" class="loc-link block border border-white/6 rounded px-4 py-3 text-center transition-[background-color,border-color] duration-200"><div class="text-t1 text-xs font-semibold mb-0.5">Groß Glienicke</div><div class="text-t3 text-xs">Ortsteil</div></a>
-      <a href="/jalousienreinigung/jalousienreinigung-in-kladow/" class="loc-link block border border-white/6 rounded px-4 py-3 text-center transition-[background-color,border-color] duration-200"><div class="text-t1 text-xs font-semibold mb-0.5">Kladow</div><div class="text-t3 text-xs">Ortsteil</div></a>
-      <a href="/jalousienreinigung/jalousienreinigung-in-schoenwalde-glien/" class="loc-link block border border-white/6 rounded px-4 py-3 text-center transition-[background-color,border-color] duration-200"><div class="text-t1 text-xs font-semibold mb-0.5">Schönwalde-Glien</div><div class="text-t3 text-xs">Gemeinde</div></a>
-      <a href="/jalousienreinigung/jalousienreinigung-in-staaken/" class="loc-link block border border-white/6 rounded px-4 py-3 text-center transition-[background-color,border-color] duration-200"><div class="text-t1 text-xs font-semibold mb-0.5">Staaken</div><div class="text-t3 text-xs">Ortsteil</div></a>
-      <a href="/jalousienreinigung/jalousienreinigung-in-wustermark/" class="loc-link block border border-white/6 rounded px-4 py-3 text-center transition-[background-color,border-color] duration-200"><div class="text-t1 text-xs font-semibold mb-0.5">Wustermark</div><div class="text-t3 text-xs">Gemeinde</div></a>
-    </div>
-  </div>
-</section>
 
 <footer class="bg-s1 border-t border-white/5">
   <div class="max-w-7xl mx-auto px-6 py-16">
@@ -703,7 +683,7 @@
         <img src="../../assets/35A0CDFB-340E-43DE-B074-575700301CD6.png.webp" alt="JR Gebäudeservice" class="h-10 w-auto mb-4" />
         <p class="text-t3 text-sm leading-relaxed mb-4 max-w-xs">Professionelle Fenster- und Glasreinigung mit 80°C Osmosewasser-Technologie. Berlin · Havelland · Brandenburg.</p>
         <div class="flex gap-1 text-yellow-400 text-sm mb-1"><i class="ph ph-star-fill"></i><i class="ph ph-star-fill"></i><i class="ph ph-star-fill"></i><i class="ph ph-star-fill"></i><i class="ph ph-star-fill"></i></div>
-        <p class="text-t3 text-xs">5,0 · 6 Google-Bewertungen</p>
+        <p class="text-t3 text-xs">5,0 · 7 Google-Bewertungen</p>
       </div>
       <div>
         <h4 class="text-t3 text-xs uppercase tracking-widest mb-4">Leistungen</h4>
@@ -764,7 +744,7 @@
 </script>
 
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"LocalBusiness","name":"Premium Fensterreinigung","alternateName":"JR Gebäudeservice","url":"https://premium-fensterreinigung.de","telephone":"+491627061789","email":"info@premium-fensterreinigung.de","priceRange":"ab 8 € / Fenster","description":"Professionelle Jalousienreinigung mit Ultraschalltechnik in Berlin und Havelland. Ohne Demontage, schonend für alle Lamellentypen.","address":{"@type":"PostalAddress","streetAddress":"Sonnenstraße 50","addressLocality":"Falkensee","addressRegion":"Brandenburg","postalCode":"14612","addressCountry":"DE"},"areaServed":["Berlin","Havelland","Brandenburg"],"aggregateRating":{"@type":"AggregateRating","ratingValue":"5.0","reviewCount":"6"}}
+{"@context":"https://schema.org","@type":"LocalBusiness","name":"Premium Fensterreinigung","alternateName":"JR Gebäudeservice","url":"https://premium-fensterreinigung.de","telephone":"+491627061789","email":"info@premium-fensterreinigung.de","priceRange":"ab 8 € / Fenster","description":"Professionelle Jalousienreinigung mit Ultraschalltechnik in Berlin und Havelland. Ohne Demontage, schonend für alle Lamellentypen.","address":{"@type":"PostalAddress","streetAddress":"Sonnenstraße 50","addressLocality":"Falkensee","addressRegion":"Brandenburg","postalCode":"14612","addressCountry":"DE"},"areaServed":["Berlin","Havelland","Brandenburg"],"aggregateRating":{"@type":"AggregateRating","ratingValue":"5.0","reviewCount":"7"}}
 </script>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"Service","name":"Jalousienreinigung Berlin & Havelland","serviceType":"Jalousienreinigung","provider":{"@type":"LocalBusiness","name":"Premium Fensterreinigung","telephone":"+491627061789","address":{"@type":"PostalAddress","streetAddress":"Sonnenstraße 50","addressLocality":"Falkensee","postalCode":"14612","addressCountry":"DE"}},"areaServed":["Berlin","Havelland","Brandenburg","Falkensee","Brieselang","Dallgow-Döberitz","Schönwalde-Glien","Wustermark"],"description":"Jalousienreinigung mit Ultraschalltechnik: Jalousien, Rollläden, Plissees, Markisen. Ohne Demontage, schonend für Aluminium, Holz und Kunststoff. Festpreis nach Foto."}
