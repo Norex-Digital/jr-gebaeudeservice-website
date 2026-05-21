@@ -212,6 +212,10 @@
         <div class="bg-s1 border border-white/5 rounded p-8">
           <div id="form-success" class="hidden text-center py-8"><div class="w-12 h-12 rounded-full bg-blue/10 flex items-center justify-center mx-auto mb-4"><i class="ph ph-check text-blue text-2xl"></i></div><h3 class="text-t1 font-bold mb-2">Anfrage gesendet</h3><p class="text-t2 text-sm">Wir melden uns innerhalb von 24h mit Ihrem Festpreis.</p></div>
           <form id="contact-form" onsubmit="submitForm(event)" novalidate>
+            <input type="hidden" name="access_key" value="6939aa52-711e-4e65-84c2-ed4663437227" />
+            <input type="hidden" name="subject" value="Neue Anfrage über premium-fensterreinigung.de" />
+            <input type="hidden" name="from_name" value="Website premium-fensterreinigung.de" />
+            <input type="checkbox" name="botcheck" class="hidden" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true" />
             <div class="mb-6">
               <div class="flex items-center justify-center gap-3 mb-4"><div class="w-8 h-px bg-blue"></div><span class="text-t3 text-xs font-semibold tracking-widest uppercase">Angebot anfragen</span><div class="w-8 h-px bg-blue"></div></div>
             </div>
@@ -242,6 +246,7 @@
               </div>
             </div>
             <button type="submit" class="btn-tap w-full bg-blue hover:bg-blue-dark text-white font-semibold text-xs uppercase tracking-widest py-4 rounded transition-[background-color] mt-2">Festpreis anfragen</button>
+            <p id="form-error" class="hidden text-red-400 text-xs text-center mt-3">Das Senden hat nicht geklappt. Bitte rufen Sie uns direkt an: <a href="tel:+491627061789" class="text-blue underline">0162 7061789</a></p>
             <p class="text-xs text-t3 text-center mt-3 flex items-center justify-center gap-1.5">
               <i class="ph ph-receipt text-blue"></i>
               Privatkunden: Bis 20 % steuerlich absetzbar (§ 35a EStG)
@@ -448,18 +453,17 @@
   const ro = new IntersectionObserver(entries => { entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('on'); ro.unobserve(e.target); } }); }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
   document.querySelectorAll('.reveal, .reveal-l').forEach(el => ro.observe(el));
   function toggleFaq(btn) { const open = btn.getAttribute('aria-expanded') === 'true'; document.querySelectorAll('[aria-expanded]').forEach(b => { b.setAttribute('aria-expanded', 'false'); b.nextElementSibling.classList.remove('open'); }); if (!open) { btn.setAttribute('aria-expanded', 'true'); btn.nextElementSibling.classList.add('open'); } }
-  function submitForm(e) {
+  // Versand über Web3Forms (AJAX, kein Seitenwechsel)
+  async function submitForm(e) {
     e.preventDefault();
     const f = e.target;
     const plz = f.querySelector('[name="plz"]').value.trim();
     const tel = f.querySelector('[name="telefon"]').value.trim();
     const leistungEl = f.querySelector('[name="leistung"]');
     const leistung = leistungEl ? leistungEl.value : 'Anfrage';
-    let valid = true;
     f.querySelectorAll('[data-required]').forEach(el => {
       const err = el.parentElement.querySelector('.field-error');
       if (!el.value.trim()) {
-        valid = false;
         el.classList.add('border-red-500');
         if (err) err.classList.remove('hidden');
       } else {
@@ -468,10 +472,23 @@
       }
     });
     if (!plz || !tel) return;
-    const msg = encodeURIComponent('Hallo Julien,\n\nLeistung: ' + leistung + '\nPLZ: ' + plz + '\nTelefon: ' + tel + '\n\nBitte um ein Angebot. Danke!');
-    window.open('https://wa.me/491627061789?text=' + msg, '_blank');
-    document.getElementById('contact-form').classList.add('hidden');
-    document.getElementById('form-success').classList.remove('hidden');
+    const subj = f.querySelector('[name="subject"]');
+    if (subj) subj.value = 'Anfrage: ' + leistung + ' · PLZ ' + plz;
+    const btn = f.querySelector('button[type="submit"]');
+    const errBox = document.getElementById('form-error');
+    if (errBox) errBox.classList.add('hidden');
+    const label = btn ? btn.textContent : '';
+    if (btn) { btn.disabled = true; btn.textContent = 'Wird gesendet …'; }
+    try {
+      const res = await fetch('https://api.web3forms.com/submit', { method: 'POST', body: new FormData(f) });
+      const data = await res.json();
+      if (!data.success) throw new Error(data.message || 'submit failed');
+      document.getElementById('contact-form').classList.add('hidden');
+      document.getElementById('form-success').classList.remove('hidden');
+    } catch (ex) {
+      if (btn) { btn.disabled = false; btn.textContent = label; }
+      if (errBox) errBox.classList.remove('hidden');
+    }
   }
   function toggleMenu(){const btn=document.getElementById('menu-btn');const menu=document.getElementById('mobile-menu');const icon=document.getElementById('menu-icon');const open=menu.classList.toggle('open');btn.setAttribute('aria-expanded',open);menu.setAttribute('aria-hidden',!open);icon.className=open?'ph ph-x text-xl':'ph ph-list text-xl';document.body.classList.toggle('menu-open',open);}
   
