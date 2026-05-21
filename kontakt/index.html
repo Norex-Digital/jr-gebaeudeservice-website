@@ -14,12 +14,8 @@
   <meta property="og:locale" content="de_DE" />
   <link rel="preconnect" href="https://fonts.bunny.net" />
   <link href="https://fonts.bunny.net/css2?family=bebas-neue&family=plus-jakarta-sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: { extend: { colors: { bg:'#0D0F12',s1:'#161A20',s2:'#1E2530',s3:'#0D1B2A',blue:{DEFAULT:'#1a56db',light:'#4A8FFF',dark:'#0e3a9e'},t1:'#F2F4F8',t2:'#8A95A3',t3:'#5A6472',wa:'#25D366' }, fontFamily: { display:['"Bebas Neue"','Impact','sans-serif'], body:['"Plus Jakarta Sans"','sans-serif'] } } }
-    }
-  </script>
+  <!-- Tailwind CSS (vorkompiliert, ersetzt cdn.tailwindcss.com) -->
+  <link rel="stylesheet" href="/assets/css/tailwind.css" />
   <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2/src/regular/style.css" />
   <style>
     * { -webkit-font-smoothing: antialiased; box-sizing: border-box; }
@@ -249,6 +245,10 @@
             <p class="text-xs text-t3 text-center mt-3 flex items-center justify-center gap-1.5">
               <i class="ph ph-receipt text-blue"></i>
               Privatkunden: Bis 20 % steuerlich absetzbar (§ 35a EStG)
+            </p>
+            <p class="text-xs text-t3 text-center mt-3 flex items-center justify-center gap-1.5">
+              <i class="ph ph-whatsapp-logo text-wa"></i>
+              Senden Sie ein Foto vom Objekt per WhatsApp, dann ist Ihr Festpreis verbindlich.
             </p>
             <p class="text-t3 text-xs text-center mt-4">Kein Spam. Nur Ihr Festpreis.</p>
           </form>
