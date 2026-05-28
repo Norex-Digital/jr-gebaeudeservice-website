@@ -1261,13 +1261,25 @@
   }
 
   // Formular — Versand über Web3Forms (AJAX, kein Seitenwechsel)
+  // Formular — Versand über Web3Forms (AJAX, kein Seitenwechsel)
   async function submitForm(e) {
     e.preventDefault();
     const f = e.target;
     const plz = f.querySelector('[name="plz"]').value.trim();
     const tel = f.querySelector('[name="telefon"]').value.trim();
+    const leistungEl = f.querySelector('[name="leistung"]');
+    const leistung = leistungEl ? leistungEl.value : 'Anfrage';
+    f.querySelectorAll('[data-required]').forEach(el => {
+      const err = el.parentElement.querySelector('.field-error');
+      if (!el.value.trim()) {
+        el.classList.add('border-red-500');
+        if (err) err.classList.remove('hidden');
+      } else {
+        el.classList.remove('border-red-500');
+        if (err) err.classList.add('hidden');
+      }
+    });
     if (!plz || !tel) return;
-    const leistung = f.querySelector('[name="leistung"]').value;
     const subj = f.querySelector('[name="subject"]');
     if (subj) subj.value = 'Anfrage: ' + leistung + ' · PLZ ' + plz;
     const btn = f.querySelector('button[type="submit"]');
@@ -1280,7 +1292,7 @@
       const data = await res.json();
       if (!data.success) throw new Error(data.message || 'submit failed');
       window.dataLayer = window.dataLayer || [];
-      window.dataLayer.push({ event: 'generate_lead', form_location: 'startseite', leistung: leistung });
+      window.dataLayer.push({ event: 'generate_lead', form_location: location.pathname, leistung: leistung });
       document.getElementById('contact-form').classList.add('hidden');
       document.getElementById('form-success').classList.remove('hidden');
     } catch (ex) {
@@ -1307,7 +1319,5 @@
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Wie lange halten Fenster nach der Reinigung sauber?","acceptedAnswer":{"@type":"Answer","text":"2–3× länger als herkömmliche Reinigung dank Osmosewasser."}},{"@type":"Question","name":"Werden Rahmen mitgereinigt?","acceptedAnswer":{"@type":"Answer","text":"Ja, Rahmen, Simse und Griffe immer inklusive, kein Aufpreis."}},{"@type":"Question","name":"Kann ich die Fensterreinigung von der Steuer absetzen?","acceptedAnswer":{"@type":"Answer","text":"Ja, §35a EStG: bis zu 20% der Arbeitskosten, max. 4.000 €/Jahr."}},{"@type":"Question","name":"Was kostet eine Fensterreinigung?","acceptedAnswer":{"@type":"Answer","text":"Ab 8 €/Fenster normal, 16 €/Fenster bodentief, Gewerbe ab 1,50 €/m². Festpreis nach Foto."}}]}
 </script>
-
-  <script src="/analytics-events.js"></script>
 </body>
 </html>

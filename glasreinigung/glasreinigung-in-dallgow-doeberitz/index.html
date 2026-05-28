@@ -492,6 +492,10 @@
         <p class="text-t2 text-sm">Wir melden uns innerhalb von 24h mit deinem Festpreis.</p>
       </div>
       <form id="contact-form" onsubmit="submitForm(event)" novalidate>
+            <input type="hidden" name="access_key" value="6939aa52-711e-4e65-84c2-ed4663437227" />
+            <input type="hidden" name="subject" value="Neue Anfrage über premium-fensterreinigung.de" />
+            <input type="hidden" name="from_name" value="Website premium-fensterreinigung.de" />
+            <input type="checkbox" name="botcheck" class="hidden" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true" />
         <div class="grid md:grid-cols-2 gap-4 mb-4">
           <div class="md:col-span-2">
             <label class="text-t3 text-xs uppercase tracking-widest block mb-2">Leistung</label>
@@ -672,21 +676,45 @@
       btn.setAttribute('aria-expanded', 'true');
       btn.nextElementSibling.classList.add('open');
     }
-  }
-
-  function submitForm(e) {
+  // Formular — Versand über Web3Forms (AJAX, kein Seitenwechsel)
+  async function submitForm(e) {
     e.preventDefault();
     const f = e.target;
     const plz = f.querySelector('[name="plz"]').value.trim();
     const tel = f.querySelector('[name="telefon"]').value.trim();
+    const leistungEl = f.querySelector('[name="leistung"]');
+    const leistung = leistungEl ? leistungEl.value : 'Anfrage';
+    f.querySelectorAll('[data-required]').forEach(el => {
+      const err = el.parentElement.querySelector('.field-error');
+      if (!el.value.trim()) {
+        el.classList.add('border-red-500');
+        if (err) err.classList.remove('hidden');
+      } else {
+        el.classList.remove('border-red-500');
+        if (err) err.classList.add('hidden');
+      }
+    });
     if (!plz || !tel) return;
-    const leistung = f.querySelector('[name="leistung"]').value;
-    window.location.href = `mailto:info@premium-fensterreinigung.de?subject=${encodeURIComponent('Anfrage: ' + leistung + ' · PLZ ' + plz)}&body=${encodeURIComponent('Leistung: ' + leistung + '\nPLZ: ' + plz + '\nTelefon: ' + tel)}`;
-    document.getElementById('contact-form').classList.add('hidden');
-    document.getElementById('form-success').classList.remove('hidden');
+    const subj = f.querySelector('[name="subject"]');
+    if (subj) subj.value = 'Anfrage: ' + leistung + ' · PLZ ' + plz;
+    const btn = f.querySelector('button[type="submit"]');
+    const errBox = document.getElementById('form-error');
+    if (errBox) errBox.classList.add('hidden');
+    const label = btn ? btn.textContent : '';
+    if (btn) { btn.disabled = true; btn.textContent = 'Wird gesendet …'; }
+    try {
+      const res = await fetch('https://api.web3forms.com/submit', { method: 'POST', body: new FormData(f) });
+      const data = await res.json();
+      if (!data.success) throw new Error(data.message || 'submit failed');
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({ event: 'generate_lead', form_location: location.pathname, leistung: leistung });
+      document.getElementById('contact-form').classList.add('hidden');
+      document.getElementById('form-success').classList.remove('hidden');
+    } catch (ex) {
+      if (btn) { btn.disabled = false; btn.textContent = label; }
+      if (errBox) errBox.classList.remove('hidden');
+    }
   }
 </script>
-
-  <script src="/analytics-events.js"></script>
 </body>
 </html>

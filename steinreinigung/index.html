@@ -633,6 +633,10 @@
     <div class="bg-bg border border-white/5 rounded p-8 reveal">
       <div id="form-success" class="hidden text-center py-8"><div class="w-12 h-12 rounded-full bg-blue/10 flex items-center justify-center mx-auto mb-4"><i class="ph ph-check text-blue text-2xl"></i></div><h3 class="text-t1 font-bold mb-2">Anfrage gesendet</h3><p class="text-t2 text-sm">Wir melden uns innerhalb von 24h mit deinem Festpreis.</p></div>
       <form id="contact-form" onsubmit="submitForm(event)" novalidate>
+            <input type="hidden" name="access_key" value="6939aa52-711e-4e65-84c2-ed4663437227" />
+            <input type="hidden" name="subject" value="Neue Anfrage über premium-fensterreinigung.de" />
+            <input type="hidden" name="from_name" value="Website premium-fensterreinigung.de" />
+            <input type="checkbox" name="botcheck" class="hidden" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true" />
         <div class="grid md:grid-cols-2 gap-4 mb-4">
           <div class="md:col-span-2">
             <label class="text-t3 text-xs uppercase tracking-widest block mb-2">Leistung</label>
@@ -721,8 +725,45 @@
   function calcPrivat() { const t = vals.pn*8 + vals.pg*16; document.getElementById('result-privat').textContent = t; document.getElementById('steuer-hint').textContent = t > 0 ? `§35a EStG: bis ${Math.round(t*.2)} € steuerlich absetzbar` : '§35a EStG: steuerlich absetzbar'; }
   function calcGewerbe() { document.getElementById('result-gewerbe').textContent = vals.gf * 3; }
   function calcStein() { const imp = document.getElementById('check-impraeg').checked ? 2 : 0; const fuge = document.getElementById('check-fuge').checked ? 3 : 0; document.getElementById('result-stein').textContent = Math.round(vals.sf * (6 + imp + fuge)); }
-  function switchTab(btn, panel) { document.querySelectorAll('.rechner-tab').forEach(t => { t.classList.remove('bg-blue','text-white'); t.classList.add('text-t3'); t.setAttribute('aria-selected','false'); }); btn.classList.add('bg-blue','text-white'); btn.classList.remove('text-t3'); btn.setAttribute('aria-selected','true'); document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active')); document.getElementById('panel-' + panel).classList.add('active'); }
-  function submitForm(e) { e.preventDefault(); const f = e.target; const plz = f.querySelector('[name="plz"]').value.trim(); const tel = f.querySelector('[name="telefon"]').value.trim(); if (!plz || !tel) return; const leistung = f.querySelector('[name="leistung"]').value; window.location.href = `mailto:info@premium-fensterreinigung.de?subject=${encodeURIComponent('Anfrage: ' + leistung + ' · PLZ ' + plz)}&body=${encodeURIComponent('Leistung: ' + leistung + '\nPLZ: ' + plz + '\nTelefon: ' + tel)}`; document.getElementById('contact-form').classList.add('hidden'); document.getElementById('form-success').classList.remove('hidden'); }
+  // Formular — Versand über Web3Forms (AJAX, kein Seitenwechsel)
+  async function submitForm(e) {
+    e.preventDefault();
+    const f = e.target;
+    const plz = f.querySelector('[name="plz"]').value.trim();
+    const tel = f.querySelector('[name="telefon"]').value.trim();
+    const leistungEl = f.querySelector('[name="leistung"]');
+    const leistung = leistungEl ? leistungEl.value : 'Anfrage';
+    f.querySelectorAll('[data-required]').forEach(el => {
+      const err = el.parentElement.querySelector('.field-error');
+      if (!el.value.trim()) {
+        el.classList.add('border-red-500');
+        if (err) err.classList.remove('hidden');
+      } else {
+        el.classList.remove('border-red-500');
+        if (err) err.classList.add('hidden');
+      }
+    });
+    if (!plz || !tel) return;
+    const subj = f.querySelector('[name="subject"]');
+    if (subj) subj.value = 'Anfrage: ' + leistung + ' · PLZ ' + plz;
+    const btn = f.querySelector('button[type="submit"]');
+    const errBox = document.getElementById('form-error');
+    if (errBox) errBox.classList.add('hidden');
+    const label = btn ? btn.textContent : '';
+    if (btn) { btn.disabled = true; btn.textContent = 'Wird gesendet …'; }
+    try {
+      const res = await fetch('https://api.web3forms.com/submit', { method: 'POST', body: new FormData(f) });
+      const data = await res.json();
+      if (!data.success) throw new Error(data.message || 'submit failed');
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({ event: 'generate_lead', form_location: location.pathname, leistung: leistung });
+      document.getElementById('contact-form').classList.add('hidden');
+      document.getElementById('form-success').classList.remove('hidden');
+    } catch (ex) {
+      if (btn) { btn.disabled = false; btn.textContent = label; }
+      if (errBox) errBox.classList.remove('hidden');
+    }
+  }
   function toggleMenu(){const btn=document.getElementById('menu-btn');const menu=document.getElementById('mobile-menu');const icon=document.getElementById('menu-icon');const open=menu.classList.toggle('open');btn.setAttribute('aria-expanded',open);menu.setAttribute('aria-hidden',!open);icon.className=open?'ph ph-x text-xl':'ph ph-list text-xl';document.body.classList.toggle('menu-open',open);}
   
   function toggleLeistungen(){
@@ -751,7 +792,5 @@
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Premium Fensterreinigung","item":"https://premium-fensterreinigung.de/"},{"@type":"ListItem","position":2,"name":"Steinreinigung","item":"https://premium-fensterreinigung.de/steinreinigung/"}]}
 </script>
-
-  <script src="/analytics-events.js"></script>
 </body>
 </html>

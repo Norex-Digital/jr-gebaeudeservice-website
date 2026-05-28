@@ -454,6 +454,7 @@
   document.querySelectorAll('.reveal, .reveal-l').forEach(el => ro.observe(el));
   function toggleFaq(btn) { const open = btn.getAttribute('aria-expanded') === 'true'; document.querySelectorAll('[aria-expanded]').forEach(b => { b.setAttribute('aria-expanded', 'false'); b.nextElementSibling.classList.remove('open'); }); if (!open) { btn.setAttribute('aria-expanded', 'true'); btn.nextElementSibling.classList.add('open'); } }
   // Versand über Web3Forms (AJAX, kein Seitenwechsel)
+  // Formular — Versand über Web3Forms (AJAX, kein Seitenwechsel)
   async function submitForm(e) {
     e.preventDefault();
     const f = e.target;
@@ -484,7 +485,7 @@
       const data = await res.json();
       if (!data.success) throw new Error(data.message || 'submit failed');
       window.dataLayer = window.dataLayer || [];
-      window.dataLayer.push({ event: 'generate_lead', form_location: 'kontakt', leistung: leistung });
+      window.dataLayer.push({ event: 'generate_lead', form_location: location.pathname, leistung: leistung });
       document.getElementById('contact-form').classList.add('hidden');
       document.getElementById('form-success').classList.remove('hidden');
     } catch (ex) {
@@ -520,7 +521,5 @@
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Premium Fensterreinigung","item":"https://premium-fensterreinigung.de/"},{"@type":"ListItem","position":2,"name":"Kontakt","item":"https://premium-fensterreinigung.de/kontakt/"}]}
 </script>
-
-  <script src="/analytics-events.js"></script>
 </body>
 </html>
