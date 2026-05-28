@@ -483,6 +483,8 @@
       const res = await fetch('https://api.web3forms.com/submit', { method: 'POST', body: new FormData(f) });
       const data = await res.json();
       if (!data.success) throw new Error(data.message || 'submit failed');
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({ event: 'generate_lead', form_location: 'kontakt', leistung: leistung });
       document.getElementById('contact-form').classList.add('hidden');
       document.getElementById('form-success').classList.remove('hidden');
     } catch (ex) {
