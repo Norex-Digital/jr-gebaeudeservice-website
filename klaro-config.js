@@ -62,14 +62,14 @@
 })();
 
 var klaroConfig = {
-  version: 1,
+  version: 2,
   elementID: 'klaro',
   storageMethod: 'localStorage',
   storageName: 'klaro-jr',
   cookieExpiresAfterDays: 365,
   privacyPolicy: '/kontakt/datenschutzerklaerung/',
   default: false,
-  mustConsent: false,
+  mustConsent: true,
   acceptAll: true,
   hideDeclineAll: false,
   lang: 'de',
@@ -77,12 +77,12 @@ var klaroConfig = {
   translations: {
     de: {
       consentNotice: {
-        description: 'Wir nutzen Google Analytics, um unsere Website zu verbessern. Ihre Einwilligung ist freiwillig und jederzeit widerrufbar.',
+        description: 'Wir nutzen Google Analytics und Google Ads Conversion-Tracking, um unsere Website und Werbung zu verbessern. Ihre Einwilligung ist freiwillig und jederzeit widerrufbar.',
         learnMore: 'Datenschutz'
       },
       consentModal: {
         title: 'Datenschutz-Einstellungen',
-        description: 'Hier können Sie einsehen und anpassen, welche Daten wir erheben. Ihre Einwilligung ist freiwillig und kann jederzeit widerrufen werden (Art. 7 Abs. 3 DSGVO).'
+        description: 'Wir nutzen Dienste zur Analyse und zur Messung unserer Werbung. Hier können Sie einsehen und anpassen, welche Daten wir erheben. Ihre Einwilligung ist freiwillig und kann jederzeit widerrufen werden (Art. 7 Abs. 3 DSGVO).'
       },
       acceptAll: 'Alle akzeptieren',
       declineAll: 'Ablehnen',
@@ -90,11 +90,16 @@ var klaroConfig = {
       close: 'Schließen',
       poweredBy: 'Datenschutz',
       purposes: {
-        analytics: 'Analyse'
+        analytics: 'Analyse',
+        marketing: 'Marketing'
       },
       googleAnalytics: {
         title: 'Google Analytics 4',
         description: 'Ermöglicht uns zu verstehen, wie Besucher unsere Website nutzen. Keine persönlichen Daten werden gespeichert. IP-Adressen werden anonymisiert.'
+      },
+      googleAds: {
+        title: 'Google Ads Conversion & Remarketing',
+        description: 'Misst, ob Besucher über unsere Google-Anzeigen kommen und eine Anfrage stellen. Hilft uns, Werbung sinnvoll auszusteuern.'
       }
     }
   },
@@ -112,6 +117,25 @@ var klaroConfig = {
       onDecline: function() {
         gtag('consent', 'update', {
           'analytics_storage': 'denied'
+        });
+      }
+    },
+    {
+      name: 'googleAds',
+      title: 'Google Ads Conversion & Remarketing',
+      purposes: ['marketing'],
+      onAccept: function() {
+        gtag('consent', 'update', {
+          'ad_storage': 'granted',
+          'ad_user_data': 'granted',
+          'ad_personalization': 'granted'
+        });
+      },
+      onDecline: function() {
+        gtag('consent', 'update', {
+          'ad_storage': 'denied',
+          'ad_user_data': 'denied',
+          'ad_personalization': 'denied'
         });
       }
     }
