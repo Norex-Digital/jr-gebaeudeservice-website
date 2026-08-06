@@ -61,6 +61,16 @@
     #mobile-menu { display:none; }
     #mobile-menu.open { display:flex; }
     body.menu-open { overflow:hidden; }
+      /* Einsatz-Galerie (gemischte Bildformate, Slides in nativer Breite) */
+    #resultsSwiper .swiper-slide { width: auto; }
+    .gal-item     { position: relative; height: 420px; border-radius: 3px; overflow: hidden; }
+    .gal-item img { height: 100%; width: auto; display: block; }
+    @media (max-width: 640px) { .gal-item { height: 320px; } }
+    #resultsSwiper .swiper-button-prev, #resultsSwiper .swiper-button-next {
+      color: #fff; background: rgba(13,15,18,0.55); width: 40px; height: 40px;
+      border-radius: 50%; backdrop-filter: blur(4px);
+    }
+    #resultsSwiper .swiper-button-prev::after, #resultsSwiper .swiper-button-next::after { font-size: 15px; }
   </style>
   <!-- Consent Mode v2 — Standard: verweigert bis Klaro-Zustimmung -->
   <script>
@@ -207,6 +217,9 @@
         </p>
       </div>
       <div class="reveal">
+        <img src="../../assets/van-osmose-technik.webp"
+             alt="Heiss-Osmosewasser-System fest im Transporter — Schlauchtrommeln und Teleskopstangen der Premium Fensterreinigung"
+             class="w-full rounded object-cover mb-3" loading="lazy" />
         <div class="grid grid-cols-2 gap-3">
           <div class="bg-bg border border-white/6 rounded p-6">
             <div class="font-display text-blue leading-none mb-2" style="font-size:48px">80°C</div>
@@ -371,16 +384,75 @@
   <div class="max-w-7xl mx-auto px-6">
     <div class="flex items-end justify-between mb-12 reveal">
       <div>
-        <div class="flex items-center gap-3 mb-6"><div class="w-8 h-px bg-blue"></div><span class="text-t3 text-xs font-semibold tracking-widest uppercase">Ergebnisse</span></div>
-        <h2 class="font-display text-t1 leading-none" style="font-size:clamp(38px,5vw,54px);letter-spacing:.02em">VORHER · NACHHER</h2>
+        <div class="flex items-center gap-3 mb-6"><div class="w-8 h-px bg-blue"></div><span class="text-t3 text-xs font-semibold tracking-widest uppercase">Einblicke &amp; Ergebnisse</span></div>
+        <h2 class="font-display text-t1 leading-none" style="font-size:clamp(38px,5vw,54px);letter-spacing:.02em">UNSERE ARBEIT. ECHTE ERGEBNISSE.</h2>
       </div>
     </div>
     <div class="swiper" id="resultsSwiper">
       <div class="swiper-wrapper">
-        <div class="swiper-slide"><div class="relative aspect-video rounded overflow-hidden"><img src="../../assets/IMG_4444.jpg.webp" alt="Steinreinigung Vorher Nachher Berlin Terrasse Algen entfernt" class="w-full h-full object-cover" /><div class="absolute bottom-0 inset-x-0 p-4" style="background:linear-gradient(to top,rgba(13,15,18,.85),transparent)"><p class="text-xs text-t2 uppercase tracking-widest">Terrasse · Havelland · Algen + Moos entfernt</p></div></div></div>
-        <div class="swiper-slide"><div class="relative aspect-video rounded overflow-hidden"><img src="../../assets/B8140E4A-215E-4541-8E18-D27DECF21821.png.webp" alt="Reinigung Vorher Nachher Ergebnis" class="w-full h-full object-cover" /><div class="absolute bottom-0 inset-x-0 p-4" style="background:linear-gradient(to top,rgba(13,15,18,.85),transparent)"><p class="text-xs text-t2 uppercase tracking-widest">Einfamilienhaus · Havelland · Komplettservice</p></div></div></div>
-        <div class="swiper-slide"><div class="relative aspect-video rounded overflow-hidden"><img src="../../assets/0EC186D7-7830-49EA-97F7-DFACAB2992F5.png.webp" alt="Außenanlage Reinigung Ergebnis" class="w-full h-full object-cover" loading="lazy" /><div class="absolute bottom-0 inset-x-0 p-4" style="background:linear-gradient(to top,rgba(13,15,18,.85),transparent)"><p class="text-xs text-t2 uppercase tracking-widest">Außenanlage · Berlin · Pflaster gereinigt</p></div></div></div>
+        <div class="swiper-slide">
+          <div class="gal-item">
+            <img src="../../assets/IMG_4444.jpg.webp" alt="Premium Fensterreinigung im Einsatz" loading="lazy" />
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="gal-item">
+            <img src="../../assets/einsatz-therme-eingang.webp" alt="Glasreinigung Gewerbe Brandenburg — Glasfront am Therme-Eingang mit Teleskoptechnik" loading="lazy" />
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="gal-item">
+            <img src="../../assets/B8140E4A-215E-4541-8E18-D27DECF21821.png.webp" alt="Fensterreinigung Vorher Nachher Ergebnis Havelland — streifenfrei durch Osmosewasser" loading="lazy" />
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="gal-item">
+            <img src="../../assets/einsatz-therme-fassade.webp" alt="Glasfassaden-Reinigung Gewerbeobjekt Brandenburg mit Osmosewasser und Teleskopstangen" loading="lazy" />
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="gal-item">
+            <img src="../../assets/einsatz-glasanbau-leiter.webp" alt="Fensterreinigung Einfamilienhaus Havelland — Glasanbau ueber zwei Etagen" loading="lazy" />
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="gal-item">
+            <img src="../../assets/DA33D6F3-1CC7-4A9F-B657-32D48835F10F.png.webp" alt="Fensterreinigung Wintergarten Vorher Nachher Havelland" loading="lazy" />
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="gal-item">
+            <img src="../../assets/einsatz-mfh-teleskop.webp" alt="Fensterreinigung Mehrfamilienhaus Berlin Brandenburg — Teleskopstange ohne Geruest" loading="lazy" />
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="gal-item">
+            <img src="../../assets/einsatz-pooldach-gruenbelag.webp" alt="Pool-Ueberdachung reinigen Havelland — Gruenbelag-Entfernung auf Glasdach" loading="lazy" />
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="gal-item">
+            <img src="../../assets/0EC186D7-7830-49EA-97F7-DFACAB2992F5.png.webp" alt="Fensterreinigung Berlin Gewerbefassade Vorher Nachher Ergebnis" loading="lazy" />
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="gal-item">
+            <img src="../../assets/einsatz-panorama-innen.webp" alt="Fensterreinigung innen Gewerbeobjekt — Panoramaverglasung streifenfrei" loading="lazy" />
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="gal-item">
+            <img src="../../assets/einsatz-abzieher-innen.webp" alt="Glasreinigung innen mit Abzieher — Premium Fensterreinigung im Einsatz" loading="lazy" />
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="gal-item">
+            <img src="../../assets/einsatz-rahmen-detail.webp" alt="Fensterrahmen-Reinigung Privathaushalt — Rahmen und Falze immer inklusive" loading="lazy" />
+          </div>
+        </div>
       </div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
       <div class="swiper-pagination mt-5"></div>
     </div>
   </div>
@@ -456,9 +528,21 @@
 <section class="py-28 overflow-hidden">
   <div class="max-w-7xl mx-auto px-6">
     <div class="grid lg:grid-cols-2 gap-20 items-center">
-      <div class="relative reveal-l">
-        <img src="../../assets/E1F5A667-9471-4E22-B183-25758B86F367.png.webp" alt="Julien Ranft — Inhaber Premium Fensterreinigung" class="w-full max-w-sm rounded aspect-[3/4] object-cover object-top" />
-        <div class="absolute bottom-6 right-6 bg-bg border border-white/10 px-4 py-3 rounded text-xs"><div class="text-blue font-semibold mb-1">Julien Ranft</div><div class="text-t3">Inhaber · seit 2022</div></div>
+            <div class="reveal-l">
+        <div class="grid grid-cols-2 gap-3 items-start">
+          <div class="relative">
+            <img src="../../assets/E1F5A667-9471-4E22-B183-25758B86F367.png.webp"
+                 alt="Julien Ranft — Inhaber Premium Fensterreinigung"
+                 class="w-full rounded aspect-[3/4] object-cover object-top" />
+            <div class="absolute bottom-3 left-3 bg-bg border border-white/10 px-4 py-3 rounded text-xs">
+              <div class="text-blue font-semibold mb-1">Julien Ranft</div>
+              <div class="text-t3">Inhaber · seit 2022</div>
+            </div>
+          </div>
+          <img src="../../assets/team-van-folierung.webp"
+               alt="Premium Fensterreinigung Transporter mit neuer Folierung und Teammitglied"
+               class="w-full rounded aspect-[3/4] object-cover mt-10" loading="lazy" />
+        </div>
       </div>
       <div class="reveal">
         <div class="flex items-center gap-3 mb-8"><div class="w-8 h-px bg-blue"></div><span class="text-t3 text-xs font-semibold tracking-widest uppercase">Über uns</span></div>
@@ -717,7 +801,11 @@
   window.addEventListener('scroll', () => { nav.classList.toggle('scrolled', window.scrollY > 50); }, { passive: true });
   const ro = new IntersectionObserver(entries => { entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('on'); ro.unobserve(e.target); } }); }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
   document.querySelectorAll('.reveal, .reveal-l').forEach(el => ro.observe(el));
-  new Swiper('#resultsSwiper', { slidesPerView: 1, spaceBetween: 16, pagination: { el: '.swiper-pagination', clickable: true }, breakpoints: { 768: { slidesPerView: 2 }, 1024: { slidesPerView: 3 } } });
+  new Swiper('#resultsSwiper', {
+    slidesPerView: 'auto', spaceBetween: 16,
+    pagination: { el: '.swiper-pagination', clickable: true },
+    navigation: { nextEl: '#resultsSwiper .swiper-button-next', prevEl: '#resultsSwiper .swiper-button-prev' },
+  });
   function toggleFaq(btn) { const open = btn.getAttribute('aria-expanded') === 'true'; document.querySelectorAll('[aria-expanded]').forEach(b => { b.setAttribute('aria-expanded', 'false'); b.nextElementSibling.classList.remove('open'); }); if (!open) { btn.setAttribute('aria-expanded', 'true'); btn.nextElementSibling.classList.add('open'); } }
   const vals = { pn:5, pg:0, gf:100, sf:50 };
   const mins = { pn:0, pg:0, gf:10, sf:10 };
